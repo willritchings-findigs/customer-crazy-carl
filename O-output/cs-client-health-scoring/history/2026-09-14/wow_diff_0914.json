@@ -1,0 +1,288 @@
+{
+ "band_counts_old": {
+  "Yellow": 95,
+  "Red": 31,
+  "Churned": 7,
+  "Green": 132,
+  "None": 3
+ },
+ "band_counts_new": {
+  "Yellow": 107,
+  "Green": 132,
+  "Red": 19,
+  "Churned": 8,
+  "None": 1
+ },
+ "band_flips": [
+  {
+   "account": "Cobalt Property Services Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology-0red-cap",
+   "why": "Platform & Product Metrics (50%): Red (57.1) | Strategic Alignment, Governance & Relationship (30%): Yellow (50.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "FBM Real Estate Inc.",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology-0red-cap",
+   "why": "Platform & Product Metrics (50%): Red (45.6) | Strategic Alignment, Governance & Relationship (30%): Yellow (50.0) | Client Sentiment (20%): Yellow (50.0)"
+  },
+  {
+   "account": "Harbor Property Management, Inc.",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (37.3) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Howard Management Group Parent",
+   "old": "Green",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (100.0) | Strategic Alignment, Governance & Relationship (30%): Green (80.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Hudson Homes Management LLC",
+   "old": "Yellow",
+   "new": "Green",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (92.0) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "MJW Investments Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (100.0) | Strategic Alignment, Governance & Relationship (30%): Yellow (50.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "MS Coast Property Management II LLC",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology-0red-cap",
+   "why": "Platform & Product Metrics (50%): Red (42.9) | Strategic Alignment, Governance & Relationship (30%): Yellow (50.0) | Client Sentiment (20%): Yellow (50.0)"
+  },
+  {
+   "account": "Modern City Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology-0red-cap",
+   "why": "Platform & Product Metrics (50%): Red (41.2) | Strategic Alignment, Governance & Relationship (30%): Yellow (50.0) | Client Sentiment (20%): Yellow (42.9)"
+  },
+  {
+   "account": "Morgan Property Management",
+   "old": null,
+   "new": "Churned",
+   "kind": "emma_override",
+   "why": "Churned 2026-12-31 -- Dissatisfaction with Product/Service (moving to BoomPay)"
+  },
+  {
+   "account": "Neighborhood Revival",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (57.9) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Real Property Management Piedmont",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (50.8) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Realty Solutions LLC",
+   "old": "Green",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (89.7) | Strategic Alignment, Governance & Relationship (30%): Green (83.3) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Redwood Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology-0red-cap",
+   "why": "Platform & Product Metrics (50%): Red (50.8) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Yellow (50.0)"
+  },
+  {
+   "account": "Stevens Realty LLC",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology-0red-cap",
+   "why": "Platform & Product Metrics (50%): Red (56.6) | Strategic Alignment, Governance & Relationship (30%): Yellow (55.6) | Client Sentiment (20%): Yellow (50.0)"
+  },
+  {
+   "account": "The Charleston Property Company",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology-0red-cap",
+   "why": "Platform & Product Metrics (50%): Red (36.5) | Strategic Alignment, Governance & Relationship (30%): Yellow (50.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "White Property Management - Ridgewood Apartments",
+   "old": "Yellow",
+   "new": "Green",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (82.5) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "Woodlake Properties Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology-0red-cap",
+   "why": "Platform & Product Metrics (50%): Red (32.1) | Strategic Alignment, Governance & Relationship (30%): Yellow (50.0) | Client Sentiment (20%): Yellow (50.0)"
+  }
+ ],
+ "csm_flag_changes": [],
+ "stale_notes": [
+  "Standard Management Company Parent: no HubSpot company match; units carried forward",
+  "Standard Management Company Parent: Pylon account not found this run; 9/2 tone carried forward",
+  "Highmark Residential Parent: no HubSpot company match; units carried forward",
+  "Willowdale Property Management: no HubSpot company match; units carried forward",
+  "Above Property Management: no HubSpot company match; units carried forward",
+  "Amerihome: no HubSpot company match; units carried forward",
+  "Bryten Real Estate Partners Parent: no HubSpot company match; units carried forward",
+  "Capital Property Management Parent: no HubSpot company match; units carried forward",
+  "Carolina Management Parent: no HubSpot company match; units carried forward",
+  "Elda Management Services: no HubSpot company match; units carried forward",
+  "Exit Realty - Realty Place: no HubSpot company match; units carried forward",
+  "FBM Real Estate Inc.: no HubSpot company match; units carried forward",
+  "Firethorn Realty: no HubSpot company match; units carried forward",
+  "First Place Management, Inc: no HubSpot company match; units carried forward",
+  "Group Fox Management: no HubSpot company match; units carried forward",
+  "Howard Management Group Parent: no HubSpot company match; units carried forward",
+  "ICR Consulting, LLC: no HubSpot company match; units carried forward",
+  "Infinite Property Management, LLC: no HubSpot company match; units carried forward",
+  "Legacy Invest Realty Parent: no HubSpot company match; units carried forward",
+  "Legacy Invest Realty Parent: Pylon account not found this run; 9/2 tone carried forward",
+  "MIG Management Inc.: no HubSpot company match; units carried forward",
+  "MJW Investments Parent: no HubSpot company match; units carried forward",
+  "MS Coast Property Management II LLC: no HubSpot company match; units carried forward",
+  "Modern City Parent: no HubSpot company match; units carried forward",
+  "New City Property Management Parent: no HubSpot company match; units carried forward",
+  "North State Financial: no HubSpot company match; units carried forward",
+  "Real Property Management: no HubSpot company match; units carried forward",
+  "Real Property Management Southland: no HubSpot company match; units carried forward",
+  "Real Property Management Three Bridges: no HubSpot company match; units carried forward",
+  "Remax Properties, Inc - Chuck Wartman: no HubSpot company match; units carried forward",
+  "TPG Management Parent: no HubSpot company match; units carried forward",
+  "Taylor & Taylor Realty Services LLC: no HubSpot company match; units carried forward",
+  "The Windsor Companies: no HubSpot company match; units carried forward",
+  "Weiss Parent: no HubSpot company match; units carried forward",
+  "Welcome Home Syr Inc: no HubSpot company match; units carried forward"
+ ],
+ "touched": {
+  "platform": 246,
+  "units_switched": 228,
+  "ccs": 128,
+  "pylon": 112,
+  "review_cadence": 25,
+  "exec_sponsor": 25,
+  "pms_flagged": 6,
+  "units_carried": 17,
+  "parked_methodology_fixed": 2
+ },
+ "rpm_umbrella_removed": "Real Property Management umbrella row removed from the record per Emma 2026-09-14 (individual RPM franchises remain scored as their own accounts). Do not resurrect.",
+ "band_flips_pre_0redcap": [
+  {
+   "account": "Hudson Homes Management LLC",
+   "old": "Yellow",
+   "new": "Green",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (92.0) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "Beztak Properties Parent",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (45.6) | Strategic Alignment, Governance & Relationship (30%): Green (81.8) | Client Sentiment (20%): Red (50.0)"
+  },
+  {
+   "account": "Oakwood Parent",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (45.6) | Strategic Alignment, Governance & Relationship (30%): Green (88.6) | Client Sentiment (20%): Red (50.0)"
+  },
+  {
+   "account": "Benjamin H Realty Corp.",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (41.5) | Strategic Alignment, Governance & Relationship (30%): Yellow (38.9) | Client Sentiment (20%): Red (50.0)"
+  },
+  {
+   "account": "CRI Property Management",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (49.2) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Red (50.0)"
+  },
+  {
+   "account": "Harbor Property Management, Inc.",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (37.3) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Howard Management Group Parent",
+   "old": "Green",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (100.0) | Strategic Alignment, Governance & Relationship (30%): Green (80.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "MJW Investments Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (100.0) | Strategic Alignment, Governance & Relationship (30%): Red (50.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "Neighborhood Revival",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (57.9) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Real Property Management Piedmont",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (50.8) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Realty Solutions LLC",
+   "old": "Green",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (89.7) | Strategic Alignment, Governance & Relationship (30%): Green (83.3) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "TPG Management Parent",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (48.2) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Red (50.0)"
+  },
+  {
+   "account": "White Property Management - Ridgewood Apartments",
+   "old": "Yellow",
+   "new": "Green",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (82.5) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "kind": "emma_override",
+   "account": "Morgan Property Management",
+   "old": null,
+   "new": "Churned",
+   "note": "Emma 2026-09-14: churned now (HubSpot date 2026-12-31 is contract end); was parked-unscored"
+  }
+ ],
+ "rule_change_2026_09_14": "0-red-rows-caps-at-yellow adopted same day (Emma): a pillar can no longer band Red on value alone with zero Red rows. 26 pillar bands corrected (17 sentiment, 9 strategic), 13 composites Red->Yellow. Flips marked kind='methodology-0red-cap' are the rule change, not account movement; no Slack kudos for them."
+}

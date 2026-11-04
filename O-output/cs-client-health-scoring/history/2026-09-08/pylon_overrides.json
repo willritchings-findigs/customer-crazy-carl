@@ -1,0 +1,23 @@
+{
+ "Maymont Homes": {
+  "pm_friction_titles": [
+   "Urgent: RBAC Access Denied - Findigs Login Issue (9/7)",
+   "FinDigs- Down- BTR (8/19)",
+   "Findigs Promo Codes Not Working (9/4)",
+   "#07288623 - X7 - API Call Throttling (7/27)",
+   "All Applicant Releases Have Anchor Point Logo (8/7)"
+  ],
+  "pm_friction_count": 5,
+  "note": "Direct verification 2026-09-08: agent's cited titles were implementation threads; real in-window friction is access/outage/config issues listed here. Classification Negative unchanged."
+ },
+ "Sentral": {
+  "pm_friction_titles": [
+   "Unable to Submit Applications - Joinery 2 (9/1)",
+   "URGENT: Joinery Findigs (9/4)",
+   "Need update on screening ASAP (9/7, on_hold)",
+   "Escalate screening (9/7)"
+  ],
+  "pm_friction_count": 4,
+  "note": "Direct verification 2026-09-08: replaced follow-up/coordination titles with genuine friction (submission failure + urgent escalations). Classification Negative unchanged. 43 open tickets in 90d is itself elevated load."
+ }
+}

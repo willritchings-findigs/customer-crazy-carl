@@ -1,0 +1,63 @@
+{
+ "run": "2026-10-28",
+ "prev_run": "2026-10-19",
+ "channel": "C0B4QMETZ52",
+ "header": ":stethoscope: *Client health weekly refresh 2026-10-28* \u2014 1 alert(s): 0 newly Red, 1 worsened to Yellow \u00b7 1 improved \ud83c\udf89 \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+ "alerts": [
+  {
+   "account": "Campanas Property Management Inc",
+   "transition": "Green -> Yellow",
+   "band": "Yellow",
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udfe1 *Campanas Property Management Inc* \u2014 moved Green \u2192 Yellow\nDrivers: Platform & Product yellow\nSignals: volume trend red / QA rate yellow\nOwner: <@U080L3P0RLG> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/166649056956|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": true,
+   "posted_ts": "1793222580.580619"
+  }
+ ],
+ "kudos": [
+  {
+   "account": "Group Fox Management",
+   "transition": "Red -> Yellow",
+   "band": "Yellow",
+   "am": null,
+   "am_slack_id": null,
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udcc8 *Group Fox Management* \u2014 improved Red \u2192 Yellow, nice work\nWhat moved: Client Sentiment Red \u2192 Yellow\nStill watching: Platform & Product still red \u00b7 Client Sentiment still yellow\nOwner: _unresolved \u2014 not in the ownership sheet_ \u00b7 (no HubSpot record matched) \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": true,
+   "posted_ts": "1793222590.345499"
+  }
+ ],
+ "still_red_digest": {
+  "message": "\u26aa Still Red this week (22), no change \u2014 grouped so no one gets re-pinged: Brandywine Homes Parent (Natalie, 9 wks) \u00b7 Bridge Tower Properties LLC (Reese, 9 wks) \u00b7 CORE Residential (Javier, 9 wks) \u00b7 Elda Management Services (Reese, 9 wks) \u00b7 Equity Real Estate (Reese, 9 wks) \u00b7 Evernest (Natalie, 9 wks) \u00b7 Exceptional Property Management (Javier, 9 wks) \u00b7 HomeRiver Group Holdings LLC (Stephanie, 9 wks) \u00b7 KAIZEN Realty (Javier, 9 wks) \u00b7 Lynco Properties (Natalie, 9 wks) \u00b7 Remax Properties, Inc - Chuck Wartman (Javier, 9 wks) \u00b7 Rookwood Properties (Natalie, 9 wks) \u00b7 Toomey Property Advisors (Javier, 9 wks) \u00b7 TruHome Property Solutions (Reese, 9 wks) \u00b7 Weiss Parent (unassigned, 9 wks) \u00b7 3 Options Realty (Javier, 8 wks) \u00b7 MGC Leasing &Property Management, LLC (Reese, 8 wks) \u00b7 Cooper Zadeh Property Management, LLC (Reese, 5 wks) \u00b7 Harbor Group Parent (Stephanie, 4 wks) \u00b7 MJW Investments Parent (Reese, 3 wks) \u00b7 Encore Management (Reese, 2 wks) \u00b7 Sentral (Natalie, 2 wks)",
+  "accounts": [
+   "Brandywine Homes Parent",
+   "Bridge Tower Properties LLC",
+   "CORE Residential",
+   "Elda Management Services",
+   "Equity Real Estate",
+   "Evernest",
+   "Exceptional Property Management",
+   "HomeRiver Group Holdings LLC",
+   "KAIZEN Realty",
+   "Lynco Properties",
+   "Remax Properties, Inc - Chuck Wartman",
+   "Rookwood Properties",
+   "Toomey Property Advisors",
+   "TruHome Property Solutions",
+   "Weiss Parent",
+   "3 Options Realty",
+   "MGC Leasing &Property Management, LLC",
+   "Cooper Zadeh Property Management, LLC",
+   "Harbor Group Parent",
+   "MJW Investments Parent",
+   "Encore Management",
+   "Sentral"
+  ],
+  "posted": true,
+  "posted_ts": "1793222598.129749"
+ }
+}

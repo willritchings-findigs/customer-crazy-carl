@@ -1,0 +1,68 @@
+{
+ "Beztak Properties Parent": {
+  "classification": "Negative",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] Client-leadership escalations count as complaints: 8/28 Beztak leadership escalated applicants being pushed for more income under the conditional band (RTI config misfires); 9/2 asked to stop passing processing fees to applicants. Counter-signal (6 properties coming online 11/1, 9/30) does not cancel an in-window complaint.",
+  "override_reason": "slack-verify-a (blind, opus): batch Neutral -> Negative; explicit in-window client escalation (rule a)"
+ },
+ "Cooper Zadeh Property Management, LLC": {
+  "classification": "Negative",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] 8/7 relayed client pricing complaint (its DA pricing vs what it charges applicants; competitors cheaper). 'Shopping around' is internal speculation and is not counted as a client statement. Internal relay only.",
+  "override_reason": "slack-verify-a (blind, opus): batch Neutral -> Negative; relayed explicit pricing complaint in window (rule a)"
+ },
+ "Equity Real Estate": {
+  "classification": "Negative",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] Relayed client upset on 8/7 (criminal report delays not explained) and 8/17 (applicant approved despite payment history; client upset Findigs did not auto-decline). Buildium note-sync issue still open 9/8. Internal relay only.",
+  "override_reason": "slack-verify-a (blind, opus): batch Neutral -> Negative; relayed explicit client upset in window (rule a)"
+ },
+ "Group Fox Management": {
+  "classification": "Negative",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] 9/21 'trending in the wrong direction'; 9/24 recap that the client contact is frustrated and unhappy with the extra investigative work. The same recap has praise (happy path), which does not cancel a relayed frustration. Pilot decision date 10/27.",
+  "override_reason": "slack-verify-a (blind, opus): batch Neutral -> Negative; relayed frustration in window (rule a)"
+ },
+ "Highmark Residential Parent": {
+  "classification": "Negative",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] 8/18 client frustration over the missing VAWA answer; 9/2 Highmark asked why an issue affecting its properties was not communicated. Expansion signals (112 properties confirmed 9/18; Starwood praise 10/14) do not cancel explicit frustration.",
+  "override_reason": "slack-verify-a (blind, opus): batch Neutral -> Negative; explicit client frustration in window (rule a)"
+ },
+ "HomeRiver Group Holdings LLC": {
+  "classification": "Negative",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] 8/24 relay that HRG churned off Termwise (an in-window report of reduced product use, rule b); 9/9 'accepted churn risk' (internal); 10/15 unresponsiveness. Borderline: rests entirely on internal relay. Without the Termwise opt-out it would be Neutral.",
+  "override_reason": "slack-verify-a (blind, opus): batch Neutral -> Negative (borderline); in-window report of Termwise opt-out (rule b)"
+ },
+ "Lynco Properties": {
+  "classification": "Negative",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] 7/27 client pushback that Findigs was blocking its system access (explicit complaint, rule a); 8/12 and 8/20 applications blocked by LRO; 8/25 contract-language concerns. Each in-window issue was later fixed and expansion went live 8/28 and 9/1, so this is borderline. Gong read stays Neutral.",
+  "override_reason": "slack-verify-a (blind, opus): batch Neutral -> Negative (borderline); explicit client complaint 7/27 (rule a)"
+ },
+ "McKinley Companies, LLC": {
+  "classification": "Negative",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] 8/17 explicit client concerns about enhanced checkout; 8/27 escalated decline-automation examples; 9/25 McKinley reached out again on the sNotes merge issue (escalation D3-1249). Repeated unresolved escalation (rules a and c). Relay only; 10/8 notes the client is hard to reach.",
+  "override_reason": "slack-verify-a (blind, opus): batch Neutral -> Negative; repeated unresolved escalation in window (rules a/c)"
+ },
+ "Oakwood Parent": {
+  "classification": "Negative",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] Lead attribution overstating Findigs was raised 9/18 and again 9/25 by Oakwood marketing; earlier fixes did not hold and no confirmed fix appears (rule c). Internal relay.",
+  "override_reason": "slack-verify-a (blind, opus): batch Neutral -> Negative; same unresolved defect on two in-window occasions (rule c)"
+ },
+ "The Windsor Companies": {
+  "classification": "Neutral",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] Internal relay only: #p-windsor-company has no client-authored messages. Christian's 8/7 'churn risk' line is his own label, not a client statement. The Rent Manager 403 and integration problem (7/23, 7/31) was confirmed fixed 8/11. The go-lives (8/13 and 10/15, all 864 units) are reported without client-voiced praise, so Neutral rather than Positive.",
+  "override_reason": "slack-verify-b (blind, opus): batch Positive -> Neutral; no client-voiced praise, internal relay only"
+ },
+ "Capital Property Management Parent": {
+  "classification": "Neutral",
+  "thin_sample": false,
+  "rationale": "[blind second read 2026-10-19] Internal-only channel; the client does not write in it. 7/31 'high likelihood to FTL' was resolved by the 9/15 go-live after the site rebuild, and link syndication ended in 'full go' on 10/7. Client-voiced positivity is absent, and the 10/7 opt-out reset was Findigs goodwill, not a client request. Neutral rather than Positive.",
+  "override_reason": "slack-verify-b (blind, opus): batch Positive -> Neutral; go-live reported internally, no client-voiced satisfaction"
+ }
+}

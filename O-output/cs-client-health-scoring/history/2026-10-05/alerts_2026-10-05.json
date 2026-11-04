@@ -1,0 +1,69 @@
+{
+ "run": "2026-10-05",
+ "prev_run": "2026-09-28",
+ "channel": "C0B4QMETZ52",
+ "header": ":stethoscope: *Client health weekly refresh 2026-10-05* \u2014 1 alert(s): 1 newly Red, 0 worsened to Yellow \u00b7 2 improved \ud83c\udf89 \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+ "alerts": [
+  {
+   "account": "Harbor Group Parent",
+   "transition": "Yellow -> Red",
+   "band": "Red",
+   "am": "Thomas McCarthy",
+   "am_slack_id": "U07SM7JMHME",
+   "csa": "Ashley Settergren",
+   "csa_slack_id": "U0A16BK5HK3",
+   "message": "\ud83d\udd34 *Harbor Group Parent* \u2014 moved Yellow \u2192 Red\nDrivers: Client Sentiment yellow \u00b7 Platform & Product yellow\nSignals: Slack/Gong negative, Pylon neutral \u00b7 support-ticket ratio red / volume trend yellow\nOwner: <@U07SM7JMHME> \u00b7 CSA: <@U0A16BK5HK3> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/335497258711|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": true
+  }
+ ],
+ "kudos": [
+  {
+   "account": "Beztak Properties Parent",
+   "transition": "Red -> Yellow",
+   "band": "Yellow",
+   "am": "Thomas McCarthy",
+   "am_slack_id": "U07SM7JMHME",
+   "csa": "Ryan Yorra",
+   "csa_slack_id": "U087UA3563Y",
+   "message": "\ud83d\udcc8 *Beztak Properties Parent* \u2014 improved Red \u2192 Yellow, nice work\nStill watching: Platform & Product still red \u00b7 Client Sentiment still red\nOwner: <@U07SM7JMHME> \u00b7 CSA: <@U087UA3563Y> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/164663438067|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": true
+  },
+  {
+   "account": "Brick and Timber Parent",
+   "transition": "Red -> Yellow",
+   "band": "Yellow",
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udcc8 *Brick and Timber Parent* \u2014 improved Red \u2192 Yellow, nice work\nStill watching: Platform & Product still red \u00b7 Strategic Alignment still red \u00b7 Client Sentiment still red\nOwner: <@U09E14MCRM3> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/154284146397|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": true
+  }
+ ],
+ "still_red_digest": {
+  "message": "\u26aa Still Red this week (20), no change \u2014 grouped so no one gets re-pinged: Brandywine Homes Parent (Natalie, 6 wks) \u00b7 Bridge Tower Properties LLC (Reese, 6 wks) \u00b7 CORE Residential (Javier, 6 wks) \u00b7 Elda Management Services (Reese, 6 wks) \u00b7 Equity Real Estate (Reese, 6 wks) \u00b7 Evernest (Natalie, 6 wks) \u00b7 Exceptional Property Management (Javier, 6 wks) \u00b7 HomeRiver Group Holdings LLC (Thomas, 6 wks) \u00b7 KAIZEN Realty (Javier, 6 wks) \u00b7 Lynco Properties (Natalie, 6 wks) \u00b7 Remax Properties, Inc - Chuck Wartman (Javier, 6 wks) \u00b7 Rookwood Properties (Natalie, 6 wks) \u00b7 Toomey Property Advisors (Javier, 6 wks) \u00b7 TruHome Property Solutions (Reese, 6 wks) \u00b7 Weiss Parent (unassigned, 6 wks) \u00b7 3 Options Realty (Javier, 5 wks) \u00b7 MGC Leasing &Property Management, LLC (Reese, 5 wks) \u00b7 Sentral (Natalie, 5 wks) \u00b7 Cooper Zadeh Property Management, LLC (Reese, 2 wks) \u00b7 Group Fox Management (unassigned, 2 wks)",
+  "accounts": [
+   "Brandywine Homes Parent",
+   "Bridge Tower Properties LLC",
+   "CORE Residential",
+   "Elda Management Services",
+   "Equity Real Estate",
+   "Evernest",
+   "Exceptional Property Management",
+   "HomeRiver Group Holdings LLC",
+   "KAIZEN Realty",
+   "Lynco Properties",
+   "Remax Properties, Inc - Chuck Wartman",
+   "Rookwood Properties",
+   "Toomey Property Advisors",
+   "TruHome Property Solutions",
+   "Weiss Parent",
+   "3 Options Realty",
+   "MGC Leasing &Property Management, LLC",
+   "Sentral",
+   "Cooper Zadeh Property Management, LLC",
+   "Group Fox Management"
+  ],
+  "posted": true
+ }
+}

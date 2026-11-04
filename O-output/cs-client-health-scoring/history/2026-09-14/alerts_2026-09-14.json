@@ -1,0 +1,124 @@
+{
+ "run": "2026-09-14",
+ "prev_run": "2026-09-08",
+ "channel": "C0B4QMETZ52",
+ "header": ":stethoscope: *Client health weekly refresh 2026-09-14* \u2014 2 alert(s): 0 newly Red, 2 worsened to Yellow \u00b7 6 improved \ud83c\udf89 \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+ "alerts": [
+  {
+   "account": "Howard Management Group Parent",
+   "transition": "Green -> Yellow",
+   "band": "Yellow",
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udfe1 *Howard Management Group Parent* \u2014 moved Green \u2192 Yellow\nDrivers: Client Sentiment yellow\nSignals: Slack/Gong neutral\nOwner: <@U06TY8N92LQ> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/154135543529|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  },
+  {
+   "account": "Realty Solutions LLC",
+   "transition": "Green -> Yellow",
+   "band": "Yellow",
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udfe1 *Realty Solutions LLC* \u2014 moved Green \u2192 Yellow\nDrivers: Client Sentiment yellow\nSignals: Slack/Gong neutral\nOwner: <@U080L3P0RLG> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/154068284106|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  }
+ ],
+ "kudos": [
+  {
+   "account": "Hudson Homes Management LLC",
+   "transition": "Yellow -> Green",
+   "band": "Green",
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83c\udf89 *Hudson Homes Management LLC* \u2014 improved Yellow \u2192 Green, nice work\nWhat moved: Client Sentiment Red \u2192 Green\nAll pillars Green\nOwner: <@U09E14MCRM3> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/166717317843|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  },
+  {
+   "account": "Harbor Property Management, Inc.",
+   "transition": "Red -> Yellow",
+   "band": "Yellow",
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udcc8 *Harbor Property Management, Inc.* \u2014 improved Red \u2192 Yellow, nice work\nWhat moved: Client Sentiment Red \u2192 Yellow\nStill watching: Platform & Product still red \u00b7 Client Sentiment still yellow\nOwner: <@U06TY8N92LQ> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/154077717195|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  },
+  {
+   "account": "MJW Investments Parent",
+   "transition": "Red -> Yellow",
+   "band": "Yellow",
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udcc8 *MJW Investments Parent* \u2014 improved Red \u2192 Yellow, nice work\nWhat moved: Strategic Alignment Red \u2192 Yellow \u00b7 Client Sentiment Red \u2192 Green\nStill watching: Strategic Alignment still yellow\nOwner: <@U06TY8N92LQ> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/166645268173|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  },
+  {
+   "account": "Neighborhood Revival",
+   "transition": "Red -> Yellow",
+   "band": "Yellow",
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udcc8 *Neighborhood Revival* \u2014 improved Red \u2192 Yellow, nice work\nWhat moved: Client Sentiment Red \u2192 Yellow\nStill watching: Platform & Product still red \u00b7 Strategic Alignment still yellow \u00b7 Client Sentiment still yellow\nOwner: <@U080L3P0RLG> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/166664256221|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  },
+  {
+   "account": "Real Property Management Piedmont",
+   "transition": "Red -> Yellow",
+   "band": "Yellow",
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udcc8 *Real Property Management Piedmont* \u2014 improved Red \u2192 Yellow, nice work\nWhat moved: Client Sentiment Red \u2192 Yellow\nStill watching: Platform & Product still red \u00b7 Strategic Alignment still yellow \u00b7 Client Sentiment still yellow\nOwner: <@U080L3P0RLG> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/166647343819|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  },
+  {
+   "account": "White Property Management - Ridgewood Apartments",
+   "transition": "Yellow -> Green",
+   "band": "Green",
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83c\udf89 *White Property Management - Ridgewood Apartments* \u2014 improved Yellow \u2192 Green, nice work\nWhat moved: Platform & Product Yellow \u2192 Green\nAll pillars Green\nOwner: <@U080L3P0RLG> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/160674942713|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  }
+ ],
+ "still_red_digest": {
+  "message": "\u26aa Still Red this week (19), no change \u2014 grouped so no one gets re-pinged: Brandywine Homes Parent (Natalie, 3 wks) \u00b7 Brick and Timber Parent (Natalie, 3 wks) \u00b7 Bridge Tower Properties LLC (Reese, 3 wks) \u00b7 CORE Residential (Javier, 3 wks) \u00b7 Elda Management Services (Reese, 3 wks) \u00b7 Equity Real Estate (Reese, 3 wks) \u00b7 Evernest (Natalie, 3 wks) \u00b7 Exceptional Property Management (Javier, 3 wks) \u00b7 HomeRiver Group Holdings LLC (Thomas, 3 wks) \u00b7 KAIZEN Realty (Javier, 3 wks) \u00b7 Lynco Properties (Natalie, 3 wks) \u00b7 Remax Properties, Inc - Chuck Wartman (Javier, 3 wks) \u00b7 Rookwood Properties (Natalie, 3 wks) \u00b7 Toomey Property Advisors (Javier, 3 wks) \u00b7 TruHome Property Solutions (Reese, 3 wks) \u00b7 Weiss Parent (unassigned, 3 wks) \u00b7 3 Options Realty (Javier, 2 wks) \u00b7 MGC Leasing &Property Management, LLC (Reese, 2 wks) \u00b7 Sentral (Natalie, 2 wks)",
+  "accounts": [
+   "Brandywine Homes Parent",
+   "Brick and Timber Parent",
+   "Bridge Tower Properties LLC",
+   "CORE Residential",
+   "Elda Management Services",
+   "Equity Real Estate",
+   "Evernest",
+   "Exceptional Property Management",
+   "HomeRiver Group Holdings LLC",
+   "KAIZEN Realty",
+   "Lynco Properties",
+   "Remax Properties, Inc - Chuck Wartman",
+   "Rookwood Properties",
+   "Toomey Property Advisors",
+   "TruHome Property Solutions",
+   "Weiss Parent",
+   "3 Options Realty",
+   "MGC Leasing &Property Management, LLC",
+   "Sentral"
+  ],
+  "posted": false
+ },
+ "status": "SCRAPPED 2026-09-21 per Emma -- superseded by the 2026-09-21 run; never posted (verified against #p-account-health). Do not send."
+}

@@ -1,0 +1,70 @@
+{
+ "run": "2026-09-21",
+ "prev_run": "2026-09-14",
+ "channel": "C0B4QMETZ52",
+ "header": ":stethoscope: *Client health weekly refresh 2026-09-21* \u2014 3 alert(s): 1 newly Red, 2 worsened to Yellow \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+ "alerts": [
+  {
+   "account": "Hudson Homes Management LLC",
+   "transition": "Green -> Yellow",
+   "band": "Yellow",
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udfe1 *Hudson Homes Management LLC* \u2014 moved Green \u2192 Yellow\nDrivers: Client Sentiment yellow\nSignals: Slack/Gong neutral, Pylon neutral\nOwner: <@U09E14MCRM3> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/166717317843|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  },
+  {
+   "account": "Beztak Properties Parent",
+   "transition": "Yellow -> Red",
+   "band": "Red",
+   "am": "Thomas McCarthy",
+   "am_slack_id": "U07SM7JMHME",
+   "csa": "Ryan Yorra",
+   "csa_slack_id": "U087UA3563Y",
+   "message": "\ud83d\udd34 *Beztak Properties Parent* \u2014 moved Yellow \u2192 Red\nDrivers: Client Sentiment red \u00b7 Platform & Product red\nSignals: Slack/Gong negative, Pylon negative \u00b7 time-to-decision, support-ticket ratio red / override rate, QA rate yellow \u00b7 7 Pylon friction issues (\"50155 Uptown Ave. 15102 glitch\", \"Fw: URGENT Help Needed \u2013 The Pointe at Highland, Jackson MS\")\nOwner: <@U07SM7JMHME> \u00b7 CSA: <@U087UA3563Y> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/164663438067|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  },
+  {
+   "account": "White Property Management - Ridgewood Apartments",
+   "transition": "Green -> Yellow",
+   "band": "Yellow",
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "\ud83d\udfe1 *White Property Management - Ridgewood Apartments* \u2014 moved Green \u2192 Yellow\nDrivers: Platform & Product yellow\nSignals: time-to-decision red / support-ticket ratio yellow\nOwner: <@U080L3P0RLG> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/160674942713|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+   "posted": false
+  }
+ ],
+ "kudos": [],
+ "still_red_digest": {
+  "message": "\u26aa Still Red this week (19), no change \u2014 grouped so no one gets re-pinged: Brandywine Homes Parent (Natalie, 4 wks) \u00b7 Brick and Timber Parent (Natalie, 4 wks) \u00b7 Bridge Tower Properties LLC (Reese, 4 wks) \u00b7 CORE Residential (Javier, 4 wks) \u00b7 Elda Management Services (Reese, 4 wks) \u00b7 Equity Real Estate (Reese, 4 wks) \u00b7 Evernest (Natalie, 4 wks) \u00b7 Exceptional Property Management (Javier, 4 wks) \u00b7 HomeRiver Group Holdings LLC (Thomas, 4 wks) \u00b7 KAIZEN Realty (Javier, 4 wks) \u00b7 Lynco Properties (Natalie, 4 wks) \u00b7 Remax Properties, Inc - Chuck Wartman (Javier, 4 wks) \u00b7 Rookwood Properties (Natalie, 4 wks) \u00b7 Toomey Property Advisors (Javier, 4 wks) \u00b7 TruHome Property Solutions (Reese, 4 wks) \u00b7 Weiss Parent (unassigned, 4 wks) \u00b7 3 Options Realty (Javier, 3 wks) \u00b7 MGC Leasing &Property Management, LLC (Reese, 3 wks) \u00b7 Sentral (Natalie, 3 wks)",
+  "accounts": [
+   "Brandywine Homes Parent",
+   "Brick and Timber Parent",
+   "Bridge Tower Properties LLC",
+   "CORE Residential",
+   "Elda Management Services",
+   "Equity Real Estate",
+   "Evernest",
+   "Exceptional Property Management",
+   "HomeRiver Group Holdings LLC",
+   "KAIZEN Realty",
+   "Lynco Properties",
+   "Remax Properties, Inc - Chuck Wartman",
+   "Rookwood Properties",
+   "Toomey Property Advisors",
+   "TruHome Property Solutions",
+   "Weiss Parent",
+   "3 Options Realty",
+   "MGC Leasing &Property Management, LLC",
+   "Sentral"
+  ],
+  "posted": false
+ },
+ "ledger_status": "SCRAPPED",
+ "scrapped_reason": "Never posted (built 2026-09-21, shown to Emma, no go given before the 2026-09-28 refresh superseded it). Superseded by the 2026-09-28 batch built from the 2026-09-21->2026-09-28 transition, per the standing \"stale batch gets scrapped, not posted\" rule.",
+ "scrapped_at": "2026-09-28T13:30:00.000Z"
+}

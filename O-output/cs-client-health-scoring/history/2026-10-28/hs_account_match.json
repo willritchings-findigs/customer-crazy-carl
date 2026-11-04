@@ -1,0 +1,4788 @@
+{
+ "Maymont Homes": {
+  "hs_names": [
+   "Maymont Homes"
+  ],
+  "hs_object_id": "166682233543",
+  "total_units_all": 18251.0,
+  "domains": [
+   "maymonthomes.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Hudson Homes Management LLC": {
+  "hs_names": [
+   "Hudson Homes"
+  ],
+  "hs_object_id": "166717317843",
+  "total_units_all": 18500.0,
+  "domains": [
+   "hudsonhomesmanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Evernest": {
+  "hs_names": [
+   "Evernest"
+  ],
+  "hs_object_id": "345640538863",
+  "total_units_all": 12000.0,
+  "domains": [
+   "evernest.co"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2025-09-29"
+  ],
+  "hs_churn_reasons": [
+   "Merged/Acquired"
+  ],
+  "match_stage": "A-exact"
+ },
+ "Elme Communities": {
+  "hs_names": [
+   "Elme Communities"
+  ],
+  "hs_object_id": "166658708158",
+  "total_units_all": 9368.0,
+  "domains": [
+   "elmecommunities.com"
+  ],
+  "account_status__c": "Disqualified",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2026-08-04"
+  ],
+  "hs_churn_reasons": [
+   "Elme listed themselves for sale, properties are actively being purchased."
+  ],
+  "match_stage": "A-exact"
+ },
+ "Harbor Group Parent": {
+  "hs_names": [
+   "Harbor Group Management"
+  ],
+  "hs_object_id": "335497258711",
+  "total_units_all": 21655.0,
+  "domains": [
+   "harborgroupmanagement.com"
+  ],
+  "account_status__c": "Onboarding",
+  "hs_churned_any": false,
+  "hs_health_override_any": true,
+  "hs_health_override_rating": "Red",
+  "hs_health_override_score": "76.9",
+  "hs_health_override_detail": "Platform & Product (Yellow): Support Ticket Ratio Red, Revenue Trend Yellow || Strategic Alignment & Governance (Green): CSM churn risk Yellow || Client Sentiment (Red): Pylon ticket tone Yellow",
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Beztak Properties Parent": {
+  "hs_names": [
+   "Oakland Mgmt (Beztak)"
+  ],
+  "hs_object_id": "164663438067",
+  "total_units_all": 25556.0,
+  "domains": [
+   "beztak.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": true,
+  "hs_health_override_rating": "Yellow",
+  "hs_health_override_score": "54.2",
+  "hs_health_override_detail": "Platform & Product (Red): Median Time-to-Decision Red, Decision Override Rate Yellow, QA % Yellow, Support Ticket Ratio Red, Revenue Trend Yellow || Strategic Alignment & Governance (Yellow): Executive sponsor alignment Yellow, CSM churn risk Yellow || Client Sentiment (Yellow): Gong call sentiment Yellow, Pylon ticket tone Red",
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Oakwood Parent": {
+  "hs_names": [
+   "Oakwood Management Company"
+  ],
+  "hs_object_id": "160407443175",
+  "total_units_all": 15480.0,
+  "domains": [
+   "liveoakwood.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": true,
+  "hs_health_override_rating": "Yellow",
+  "hs_health_override_score": "57.7",
+  "hs_health_override_detail": "Platform & Product (Red): Median Time-to-Decision Red, Decision Override Rate Yellow, QA % Yellow, Support Ticket Ratio Red || Strategic Alignment & Governance (Yellow): Performance review cadence Yellow, Executive sponsor alignment Yellow || Client Sentiment (Red): Gong call sentiment Yellow, Pylon ticket tone Yellow",
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Western Wealth Parent": {
+  "hs_names": [
+   "Western Wealth Communities"
+  ],
+  "hs_object_id": "153993744072",
+  "total_units_all": 7615.0,
+  "domains": [
+   "westernwealthcommunities.com"
+  ],
+  "account_status__c": "Onboarding",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "McKinley Companies, LLC": {
+  "hs_names": [
+   "McKinley Property Management"
+  ],
+  "hs_object_id": "159961604836",
+  "total_units_all": 13773.0,
+  "domains": [
+   "mckinley.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Brandywine Homes Parent": {
+  "hs_names": [
+   "Brandywine Homes USA"
+  ],
+  "hs_object_id": "154543733497",
+  "total_units_all": 9240.0,
+  "domains": [
+   "brandywinehomesusa.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Brick and Timber Parent": {
+  "hs_names": [
+   "Brick and Timber, Inc"
+  ],
+  "hs_object_id": "154284146397",
+  "total_units_all": 6052.0,
+  "domains": [
+   "rentbt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": true,
+  "hs_health_override_rating": "Yellow",
+  "hs_health_override_score": "58.9",
+  "hs_health_override_detail": "Platform & Product (Red): Approval Rate Yellow, QA % Red, Support Ticket Ratio Red || Strategic Alignment & Governance (Yellow): Performance review cadence Yellow, Executive sponsor alignment Yellow, CSM churn risk Red || Client Sentiment (Yellow): Gong call sentiment Red, Pylon ticket tone Yellow",
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Kairos Living LLC Parent": {
+  "hs_names": [
+   "Kairos Living"
+  ],
+  "hs_object_id": "159995826934",
+  "total_units_all": 4912.0,
+  "domains": [
+   "kairosliving.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Open House Management": {
+  "hs_names": [
+   "Open House Property Management"
+  ],
+  "hs_object_id": "164106726123",
+  "total_units_all": 5000.0,
+  "domains": [
+   "openhousepm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Sentral": {
+  "hs_names": [
+   "Sentral"
+  ],
+  "hs_object_id": "159374131925",
+  "total_units_all": 3929.0,
+  "domains": [
+   "sentral.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Rookwood Properties": {
+  "hs_names": [
+   "Rookwood Properties"
+  ],
+  "hs_object_id": "159995424462",
+  "total_units_all": 3311.0,
+  "domains": [
+   "rookwoodproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Jones and Jones Communities": {
+  "hs_names": [
+   "Jones & Jones Communities"
+  ],
+  "hs_object_id": "349441592029",
+  "total_units_all": 2980.0,
+  "domains": [
+   "jjcommunities.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Highmark Residential Parent": {
+  "hs_names": [
+   "Highmark Residential"
+  ],
+  "hs_object_id": "158187815614",
+  "total_units_all": 53991.0,
+  "domains": [
+   "highmarkres.com"
+  ],
+  "account_status__c": "Onboarding",
+  "hs_churned_any": false,
+  "hs_health_override_any": true,
+  "hs_health_override_rating": "Yellow",
+  "hs_health_override_score": "70.5",
+  "hs_health_override_detail": "Platform & Product (Yellow): Approval Rate Red, Support Ticket Ratio Yellow, TES Volume Yellow, Volume Trend NULL || Strategic Alignment & Governance (Yellow): Performance review cadence Yellow, Executive sponsor alignment Yellow || Client Sentiment (Yellow): Pylon ticket tone Red",
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Imagine Homes Parent": {
+  "hs_names": [
+   "Imagine Homes Management"
+  ],
+  "hs_object_id": "154297376486",
+  "total_units_all": 2000.0,
+  "domains": [
+   "imagine-homes.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "SFR3 Operator, LLC": {
+  "hs_names": [
+   "American Avenue (SFR3)"
+  ],
+  "hs_object_id": "166598802143",
+  "total_units_all": 12012.0,
+  "domains": [
+   "sfr3.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Lynco Properties": {
+  "hs_names": [
+   "LynCo Properties"
+  ],
+  "hs_object_id": "154117483205",
+  "total_units_all": 6433.0,
+  "domains": [
+   "lyncoproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Excalibur Homes": {
+  "hs_names": [
+   "Excalibur Homes"
+  ],
+  "hs_object_id": "165833192122",
+  "total_units_all": 7000.0,
+  "domains": [
+   "excaliburhomes.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Renters Warehouse": {
+  "hs_names": [
+   "Renters Warehouse Corporate"
+  ],
+  "hs_object_id": "339651827395",
+  "total_units_all": 12410.0,
+  "domains": [
+   "renterswarehouse.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2025-02-14"
+  ],
+  "hs_churn_reasons": [
+   "Leadership Change"
+  ],
+  "match_stage": "C-phrase"
+ },
+ "Open Management": {
+  "hs_names": [
+   "Open Management"
+  ],
+  "hs_object_id": "166645407449",
+  "total_units_all": 5500.0,
+  "domains": [
+   "openmgmt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Kotarides Property Management": {
+  "hs_names": [
+   "Kotarides Property Management"
+  ],
+  "hs_object_id": "166664086228",
+  "total_units_all": 5478.0,
+  "domains": [
+   "kotarides.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "KRS Holdings Inc": {
+  "hs_names": [
+   "KRS Holdings Inc"
+  ],
+  "hs_object_id": "155245061825",
+  "total_units_all": 4000.0,
+  "domains": [
+   "krsholdings.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Bridge Tower Properties LLC": {
+  "hs_names": [
+   "Bridge Tower Properties"
+  ],
+  "hs_object_id": "166656537324",
+  "total_units_all": 1500.0,
+  "domains": [
+   "bridgetowergp.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "10X Property Management": {
+  "hs_names": [
+   "10X Property Management"
+  ],
+  "hs_object_id": "166664435432",
+  "total_units_all": 704.0,
+  "domains": [
+   "10xpropertymanagers.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "25th Century": {
+  "hs_names": [
+   "25th Century Property Management"
+  ],
+  "hs_object_id": "166649058025",
+  "total_units_all": 904.0,
+  "domains": [
+   "hartfordluxuryapts.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "3 Options Realty": {
+  "hs_names": [
+   "3 Options Realty"
+  ],
+  "hs_object_id": "160115620566",
+  "total_units_all": 225.0,
+  "domains": [
+   "3optionsrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "33 Realty Management": {
+  "hs_names": [
+   "33 Realty Management"
+  ],
+  "hs_object_id": "166571666163",
+  "total_units_all": 514.0,
+  "domains": [
+   "33realtymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2025-11-10"
+  ],
+  "hs_churn_reasons": [
+   "(Pre-2026)"
+  ],
+  "match_stage": "A-exact"
+ },
+ "334 Property Management": {
+  "hs_names": [
+   "334 Property Management"
+  ],
+  "hs_object_id": "166553602760",
+  "total_units_all": 500.0,
+  "domains": [
+   "334rentals.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "40 Oaks PM LLC": {
+  "hs_names": [
+   "40 Oaks Properties"
+  ],
+  "hs_object_id": "166664072914",
+  "total_units_all": 589.0,
+  "domains": [
+   "40oaks.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "A Plus Management": {
+  "hs_names": [
+   "A Plus Management dba PenFed Realty Texas Property Management"
+  ],
+  "hs_object_id": "166684218043",
+  "total_units_all": 250.0,
+  "domains": [
+   "bhhspenfedrealtytx.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "AD Distributions, LLC. Dba Black and Cherry": {
+  "hs_names": [
+   "Black and Cherry Real Estate Group"
+  ],
+  "hs_object_id": "164982388473",
+  "total_units_all": 1500.0,
+  "domains": [
+   "blackandcherryrealestate.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Access Property Management Group, LLC.": {
+  "hs_names": [
+   "Access Property Management Group"
+  ],
+  "hs_object_id": "164131922633",
+  "total_units_all": 700.0,
+  "domains": [
+   "accesspmgroup.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Advantage Realty Services, Inc": {
+  "hs_names": [
+   "Advantage Realty Services, Inc."
+  ],
+  "hs_object_id": "166663979726",
+  "total_units_all": 190.0,
+  "domains": [
+   "advantagerealtytampa.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Aggus Realty": {
+  "hs_names": [
+   "Aggus Realty"
+  ],
+  "hs_object_id": "165997808358",
+  "total_units_all": 150.0,
+  "domains": [
+   "aggusrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Allegiant Management Group, Inc.": {
+  "hs_names": [
+   "Allegiant Management Group"
+  ],
+  "hs_object_id": "166754561739",
+  "total_units_all": 200.0,
+  "domains": [
+   "amgrents.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Apartments Niagara LLC": {
+  "hs_names": [
+   "Apartments Niagara"
+  ],
+  "hs_object_id": "159414327016",
+  "total_units_all": 850.0,
+  "domains": [
+   "apartmentsniagara.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Aramis Realty": {
+  "hs_names": [
+   "Aramis Realty"
+  ],
+  "hs_object_id": "166598770398",
+  "total_units_all": 295.0,
+  "domains": [
+   "aramisrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Ashman Associates": {
+  "hs_names": [
+   "Ashman Associates, Inc"
+  ],
+  "hs_object_id": "166647329499",
+  "total_units_all": 100.0,
+  "domains": [
+   "propertymanagementroswell.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Atlanta Partners Property Management": {
+  "hs_names": [
+   "Atlanta Partners Property Management"
+  ],
+  "hs_object_id": "166664121076",
+  "total_units_all": 630.0,
+  "domains": [
+   "atlantapartnerspropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Atlas Rental Property": {
+  "hs_names": [
+   "Atlas Rental Property"
+  ],
+  "hs_object_id": "158187402983",
+  "total_units_all": 4054.0,
+  "domains": [
+   "atlasrpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Augusta Partners Property Management": {
+  "hs_names": [
+   "Augusta Partners Property Management"
+  ],
+  "hs_object_id": "166682234558",
+  "total_units_all": 435.0,
+  "domains": [
+   "augustapropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Aulder Property Management": {
+  "hs_names": [
+   "Aulder Property Management"
+  ],
+  "hs_object_id": "166763646713",
+  "total_units_all": 2710.0,
+  "domains": [
+   "aulder.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "BVW Property Management LLC": {
+  "hs_names": [
+   "BVW Property Management"
+  ],
+  "hs_object_id": "154526267113",
+  "total_units_all": 1500.0,
+  "domains": [
+   "bvwpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Barringer Investments & Property Management": {
+  "hs_names": [
+   "Barringer Investments & Property Management"
+  ],
+  "hs_object_id": "166663979760",
+  "total_units_all": 375.0,
+  "domains": [
+   "barringeripm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Benjamin H Realty Corp.": {
+  "hs_names": [
+   "Benjamin H Realty"
+  ],
+  "hs_object_id": "317739893436",
+  "total_units_all": 1500.0,
+  "domains": [
+   "benjaminhrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Blue Fox Properties": {
+  "hs_names": [
+   "Blue Fox Properties"
+  ],
+  "hs_object_id": "158591322833",
+  "total_units_all": 900.0,
+  "domains": [
+   "bluefoxproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Blue Oak Property Management": {
+  "hs_names": [
+   "Blue Oak Property Management"
+  ],
+  "hs_object_id": "164284293875",
+  "total_units_all": 606.0,
+  "domains": [
+   "blueoakchico.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Boardwalk Property Management, LLC": {
+  "hs_names": [
+   "Boardwalk Property Management"
+  ],
+  "hs_object_id": "163993919218",
+  "total_units_all": 600.0,
+  "domains": [
+   "boardwalk-rent.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Bouse Properties": {
+  "hs_names": [
+   "Bouse Properties"
+  ],
+  "hs_object_id": "166682233544",
+  "total_units_all": 540.0,
+  "domains": [
+   "bouserentals.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Brick & Mortar Properties": {
+  "hs_names": [
+   "Brick & Mortar Properties"
+  ],
+  "hs_object_id": "166745143019",
+  "total_units_all": 75.0,
+  "domains": [
+   "brickandmortarnv.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Bridge Homes": {
+  "hs_names": [
+   "Bridge Homes SFR"
+  ],
+  "hs_object_id": "159905266403",
+  "total_units_all": 4180.0,
+  "domains": [
+   "goalproperties.com"
+  ],
+  "account_status__c": "Prospect",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2026-09-29"
+  ],
+  "hs_churn_reasons": [
+   "Bridge was acquired "
+  ],
+  "match_stage": "C-phrase"
+ },
+ "Brim Properties": {
+  "hs_names": [
+   "Brim Properties"
+  ],
+  "hs_object_id": "166645102306",
+  "total_units_all": 420.0,
+  "domains": [
+   "brim.managebuilding.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Broadmoor Property Management LLC": {
+  "hs_names": [
+   "Broadmoor Property Management"
+  ],
+  "hs_object_id": "163990363866",
+  "total_units_all": 81.0,
+  "domains": [
+   "broadmoorprop.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Bueno & Finnick dba RE/MAX Center": {
+  "hs_names": [
+   "The RMS Team - Bueno & Finnick dba RE/MAX Center"
+  ],
+  "hs_object_id": "166573438668",
+  "total_units_all": 520.0,
+  "domains": [
+   "rmsteam.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Bullseye Property Management LLC": {
+  "hs_names": [
+   "Bullseye Property Management"
+  ],
+  "hs_object_id": "158991343309",
+  "total_units_all": 200.0,
+  "domains": [
+   "bullseyeaz.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Byrd Palmer & Associates": {
+  "hs_names": [
+   "Byrd Palmer"
+  ],
+  "hs_object_id": "166645408473",
+  "total_units_all": 220.0,
+  "domains": [
+   "byrdpalmer.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "CORE Residential": {
+  "hs_names": [
+   "Core Residential Co."
+  ],
+  "hs_object_id": "304006674153",
+  "total_units_all": 105.0,
+  "domains": [
+   "coreresidentialco.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "CREC Property Management": {
+  "hs_names": [
+   "CREC Property Management"
+  ],
+  "hs_object_id": "166664348364",
+  "total_units_all": 500.0,
+  "domains": [
+   "crecpropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "CRI Property Management": {
+  "hs_names": [
+   "CRI Property Management"
+  ],
+  "hs_object_id": "166656636614",
+  "total_units_all": 100.0,
+  "domains": [
+   "cripropertymanagementgeorgia.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "California Leasing": {
+  "hs_names": [
+   "California Leasing"
+  ],
+  "hs_object_id": "154404856513",
+  "total_units_all": 600.0,
+  "domains": [
+   "californialeasing.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "California Realty Group": {
+  "hs_names": [
+   "California Realty Group"
+  ],
+  "hs_object_id": "166664436456",
+  "total_units_all": 540.0,
+  "domains": [
+   "cabesthomes.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Campanas Property Management Inc": {
+  "hs_names": [
+   "Real Property Management LoneStar (FKA Campanas)"
+  ],
+  "hs_object_id": "166649056956",
+  "total_units_all": 356.0,
+  "domains": [
+   "rpmlonestar.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Canyon Residential LLC": {
+  "hs_names": [
+   "Canyon Residential"
+  ],
+  "hs_object_id": "166645513919",
+  "total_units_all": 178.0,
+  "domains": [
+   "canyonresi.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Chevron Realty Management": {
+  "hs_names": [
+   "Chevron Realty Management LLC"
+  ],
+  "hs_object_id": "155947473624",
+  "total_units_all": 701.0,
+  "domains": [
+   "chevronprop.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Chicago Turnkey Properties": {
+  "hs_names": [
+   "Chicago Turnkey Properties"
+  ],
+  "hs_object_id": "159396177617",
+  "total_units_all": 235.0,
+  "domains": [
+   "chicagoturnkeyproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Cleveland Property Management": {
+  "hs_names": [
+   "Cleveland Property Management Group"
+  ],
+  "hs_object_id": "154506264257",
+  "total_units_all": 1420.0,
+  "domains": [
+   "clevelandpropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Coastal Group": {
+  "hs_names": [
+   "Coastal Group"
+  ],
+  "hs_object_id": "154306729692",
+  "total_units_all": 310.0,
+  "domains": [
+   "coastalgroupinc.managebuilding.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Coastal One Property Management": {
+  "hs_names": [
+   "ROG Coastal Property Management"
+  ],
+  "hs_object_id": "166645269182",
+  "total_units_all": 180.0,
+  "domains": [
+   "coastalpm.net"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Cobalt Property Services Parent": {
+  "hs_names": [
+   "Cobalt Property Services"
+  ],
+  "hs_object_id": "154118182637",
+  "total_units_all": 800.0,
+  "domains": [
+   "cobaltatl.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Coldwell Banker Residential Property Management": {
+  "hs_names": [
+   "Coldwell Banker Residential Property Management Lubbock"
+  ],
+  "hs_object_id": "166554113767",
+  "total_units_all": 1000.0,
+  "domains": [
+   "cblubbockleasing.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Colonial Residential Properties Inc.": {
+  "hs_names": [
+   "Trustmark Property Management (Colonial Properties)"
+  ],
+  "hs_object_id": "158999271148",
+  "total_units_all": 770.0,
+  "domains": [
+   "trustpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Cooper Zadeh Property Management, LLC": {
+  "hs_names": [
+   "Cooper Zadeh Property Management, LLC"
+  ],
+  "hs_object_id": "159992298182",
+  "total_units_all": 1431.0,
+  "domains": [
+   "camden-homes.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Cornerstone Income Properties": {
+  "hs_names": [
+   "Cornerstone Income Properties"
+  ],
+  "hs_object_id": "166598849210",
+  "total_units_all": 1000.0,
+  "domains": [
+   "cornerstoneincomeproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Cowboy Properties": {
+  "hs_names": [
+   "Cowboy Properties"
+  ],
+  "hs_object_id": "341110585055",
+  "total_units_all": 272.0,
+  "domains": [
+   "cowboy.us"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "CrestCore Realty LLC": {
+  "hs_names": [
+   "CrestCore Realty"
+  ],
+  "hs_object_id": "166721211080",
+  "total_units_all": 3000.0,
+  "domains": [
+   "crestcore.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Crossview Property Management": {
+  "hs_names": [
+   "CrossView Property Management"
+  ],
+  "hs_object_id": "164131992287",
+  "total_units_all": 120.0,
+  "domains": [
+   "crossviewpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "D Land Parent": {
+  "hs_names": [
+   "D Land Group"
+  ],
+  "hs_object_id": "154658207478",
+  "total_units_all": 680.0,
+  "domains": [
+   "dlandgroup.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "D&K Property Management & Real Estate LLC": {
+  "hs_names": [
+   "D & K Property Management & Real Estate, LLC"
+  ],
+  "hs_object_id": "166644986610",
+  "total_units_all": 150.0,
+  "domains": [
+   "dkpropmgt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "DS Huber Group": {
+  "hs_names": [
+   "DS Huber Real Estate Group LLC"
+  ],
+  "hs_object_id": "164835924718",
+  "total_units_all": 1428.0,
+  "domains": [
+   "dshubergroup.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Dillon Realty": {
+  "hs_names": [
+   "Dillon Realty"
+  ],
+  "hs_object_id": "166645513917",
+  "total_units_all": 219.0,
+  "domains": [
+   "dillon-realty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Discovery Investments": {
+  "hs_names": [
+   "Discovery Investments"
+  ],
+  "hs_object_id": "166023416551",
+  "total_units_all": 750.0,
+  "domains": [
+   "discoinvest.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Domain Property Management": {
+  "hs_names": [
+   "Domain Realty Corporation D.B.A. Domain Property Management"
+  ],
+  "hs_object_id": "166664347371",
+  "total_units_all": 304.0,
+  "domains": [
+   "domainpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Dunfee Real Estate Services": {
+  "hs_names": [
+   "Dunfee Real Estate Services"
+  ],
+  "hs_object_id": "158365488861",
+  "total_units_all": 520.0,
+  "domains": [
+   "longbeachpropertymgmt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "E&E Capital Management, LLC": {
+  "hs_names": [
+   "E & E Capital Management"
+  ],
+  "hs_object_id": "166664124114",
+  "total_units_all": 1000.0,
+  "domains": [
+   "eecapitalmanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "EGL Properties, Inc.": {
+  "hs_names": [
+   "EGL Properties"
+  ],
+  "hs_object_id": "158899920611",
+  "total_units_all": 2000.0,
+  "domains": [
+   "eglproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Ebner Properties": {
+  "hs_names": [
+   "Ebner Properties"
+  ],
+  "hs_object_id": "158238046955",
+  "total_units_all": null,
+  "domains": [
+   "liveebner.com"
+  ],
+  "account_status__c": "",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2026-04-06"
+  ],
+  "hs_churn_reasons": [],
+  "match_stage": "churn-only:A-exact"
+ },
+ "Edgewater Real Estate LLC": {
+  "hs_names": [
+   "Edgewater Real Estate"
+  ],
+  "hs_object_id": "166763647674",
+  "total_units_all": 615.0,
+  "domains": [
+   "edgewaterre.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Elder Properties of Greensboro Inc. - DBA Your Home Triad": {
+  "hs_names": [
+   "Your Home Triad Property Management"
+  ],
+  "hs_object_id": "166645389004",
+  "total_units_all": 225.0,
+  "domains": [
+   "yourhometriad.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Elevate Hawaii Management LLC": {
+  "hs_names": [
+   "Elevate Hawaii Management"
+  ],
+  "hs_object_id": "154639548100",
+  "total_units_all": 300.0,
+  "domains": [
+   "elevatehawaiimgmt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Elite Team Realty": {
+  "hs_names": [
+   "Elite Team Realty"
+  ],
+  "hs_object_id": "166598848232",
+  "total_units_all": 230.0,
+  "domains": [
+   "elitecarolinas.net"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Emerald Shores Realty Inc.": {
+  "hs_names": [
+   "Emerald Shores Realty"
+  ],
+  "hs_object_id": "166647422709",
+  "total_units_all": 101.0,
+  "domains": [
+   "emeraldshoresrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Encore Management": {
+  "hs_names": [
+   "Encore Management"
+  ],
+  "hs_object_id": "166645513922",
+  "total_units_all": 985.0,
+  "domains": [
+   "encorerental.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Equity Real Estate": {
+  "hs_names": [
+   "Equity Real Estate - Property Management Division"
+  ],
+  "hs_object_id": "185486192354",
+  "total_units_all": 2500.0,
+  "domains": [
+   "equityrealestate.net"
+  ],
+  "account_status__c": "Onboarding",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Exceptional Property Management": {
+  "hs_names": [
+   "Exceptional Property Management"
+  ],
+  "hs_object_id": "166645389002",
+  "total_units_all": 120.0,
+  "domains": [
+   "exceptionalpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Fairin Realty, LLC": {
+  "hs_names": [
+   "Fairin Realty"
+  ],
+  "hs_object_id": "154506196681",
+  "total_units_all": 145.0,
+  "domains": [
+   "leasefairin.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Faranesh Real Estate and Property Management": {
+  "hs_names": [
+   "Faranesh Real Estate and Property Management"
+  ],
+  "hs_object_id": "154506883789",
+  "total_units_all": 1179.0,
+  "domains": [
+   "faraneshlv.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Foundation Property Management, LLC": {
+  "hs_names": [
+   "Foundation PM"
+  ],
+  "hs_object_id": "166664436463",
+  "total_units_all": 1100.0,
+  "domains": [
+   "foundationpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2026-09-30"
+  ],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Futurevision Inc": {
+  "hs_names": [
+   "FutureVision Property"
+  ],
+  "hs_object_id": "166645473989",
+  "total_units_all": 513.0,
+  "domains": [
+   "futurevisionproperty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "GC Realty & Development, LLC": {
+  "hs_names": [
+   "GC Realty & Management"
+  ],
+  "hs_object_id": "166645435102",
+  "total_units_all": 1102.0,
+  "domains": [
+   "gcrealtyinc.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "GPM Property Management, LLC.": {
+  "hs_names": [
+   "GPM Property Management"
+  ],
+  "hs_object_id": "160544892664",
+  "total_units_all": 1746.0,
+  "domains": [
+   "livegpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Garden City Property Management": {
+  "hs_names": [
+   "Garden City Property Management"
+  ],
+  "hs_object_id": "159990035163",
+  "total_units_all": 950.0,
+  "domains": [
+   "gcpmmissoula.com"
+  ],
+  "account_status__c": "Onboarding",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Glover Property Management, Inc.": {
+  "hs_names": [
+   "Glover Property Management, Inc."
+  ],
+  "hs_object_id": "158188067556",
+  "total_units_all": 500.0,
+  "domains": [
+   "gloverproperty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "HNN Atlanta": {
+  "hs_names": [
+   "HNN Atlanta"
+  ],
+  "hs_object_id": "166645102288",
+  "total_units_all": 182.0,
+  "domains": [
+   "hnnatlanta.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Habitue Homes": {
+  "hs_names": [
+   "Brass Lion Property Management (FKA Habitue Homes)"
+  ],
+  "hs_object_id": "155221646011",
+  "total_units_all": 100.0,
+  "domains": [
+   "habituehomes.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Harbor Property Management, Inc.": {
+  "hs_names": [
+   "Harbor Property Management"
+  ],
+  "hs_object_id": "154077717195",
+  "total_units_all": 1300.0,
+  "domains": [
+   "harborpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Hawaii Property Advisors": {
+  "hs_names": [
+   "Hawaii Property Advisors dba Hawaii Coastal Property Management"
+  ],
+  "hs_object_id": "166553682668",
+  "total_units_all": 100.0,
+  "domains": [
+   "hpa.managebuilding.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "HomeRock, LLC": {
+  "hs_names": [
+   "HomeRock"
+  ],
+  "hs_object_id": "166656833213",
+  "total_units_all": 450.0,
+  "domains": [
+   "homerock.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Homebox": {
+  "hs_names": [
+   "Homebox"
+  ],
+  "hs_object_id": "166553683686",
+  "total_units_all": 150.0,
+  "domains": [
+   "livehomebox.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Intown Home Property Management": {
+  "hs_names": [
+   "Your Intown Home"
+  ],
+  "hs_object_id": "166645357268",
+  "total_units_all": 160.0,
+  "domains": [
+   "yourintownhome.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "InveServe Corp": {
+  "hs_names": [
+   "InveServe Corp"
+  ],
+  "hs_object_id": "158303881965",
+  "total_units_all": 1200.0,
+  "domains": [
+   "inveserve.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "J & L Management Inc DBA Nexus Property Management - Fall River Property Management": {
+  "hs_names": [
+   "Fall River Property Management"
+  ],
+  "hs_object_id": "166645102296",
+  "total_units_all": 500.0,
+  "domains": [
+   "fallriverpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "JAMM Property Management": {
+  "hs_names": [
+   "JAMM Property Management"
+  ],
+  "hs_object_id": "166684220114",
+  "total_units_all": 530.0,
+  "domains": [
+   "jammrealestate.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "JMAX Property Management LLC": {
+  "hs_names": [
+   "JMAX Property Management"
+  ],
+  "hs_object_id": "166656834240",
+  "total_units_all": 324.0,
+  "domains": [
+   "jmaxpropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "JMS Property": {
+  "hs_names": [
+   "JMS Properties Las Vegas"
+  ],
+  "hs_object_id": "166664122084",
+  "total_units_all": 248.0,
+  "domains": [
+   "jmsproperties.vegas"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Jilot Property Managment": {
+  "hs_names": [
+   "Jilot Real Estate LLC"
+  ],
+  "hs_object_id": "165007339213",
+  "total_units_all": 218.0,
+  "domains": [
+   "jilotrealestate.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Journey Real Estate": {
+  "hs_names": [
+   "Journey Real Estate"
+  ],
+  "hs_object_id": "154286668537",
+  "total_units_all": 500.0,
+  "domains": [
+   "journeyazrealestate.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "KAIZEN Realty": {
+  "hs_names": [
+   "KAIZEN Property Management"
+  ],
+  "hs_object_id": "185488000758",
+  "total_units_all": 400.0,
+  "domains": [
+   "kaizen-realty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "KCP Real Estate LLC": {
+  "hs_names": [
+   "KCP Real Estate LLC"
+  ],
+  "hs_object_id": "154200133339",
+  "total_units_all": 400.0,
+  "domains": [
+   "rentfortsmith.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "KENCO Residential Parent": {
+  "hs_names": [
+   "KENCO Residential"
+  ],
+  "hs_object_id": "154293655242",
+  "total_units_all": 1282.0,
+  "domains": [
+   "kencoapartments.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Keystone Brokers, Inc": {
+  "hs_names": [
+   "Keystone Brokers, Inc."
+  ],
+  "hs_object_id": "166765445830",
+  "total_units_all": 250.0,
+  "domains": [
+   "keystone-brokers.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Keyway Property Management": {
+  "hs_names": [
+   "Meybohm Bridges DBA Keyway Property Management"
+  ],
+  "hs_object_id": "339990335225",
+  "total_units_all": 1350.0,
+  "domains": [
+   "augustaproperty.management"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2025-01-01"
+  ],
+  "hs_churn_reasons": [
+   "Merged/Acquired"
+  ],
+  "match_stage": "C-phrase"
+ },
+ "Kunkel Wittenauer Group": {
+  "hs_names": [
+   "Kunkel Wittenauer Group, Inc"
+  ],
+  "hs_object_id": "166662251214",
+  "total_units_all": 2118.0,
+  "domains": [
+   "choosekwg.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Lacy Management Inc": {
+  "hs_names": [
+   "Lacy Management Inc."
+  ],
+  "hs_object_id": "166658707174",
+  "total_units_all": 560.0,
+  "domains": [
+   "lacymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Lease Las Vegas, Gvre, LLC": {
+  "hs_names": [
+   "Lease Las Vegas"
+  ],
+  "hs_object_id": "154540029688",
+  "total_units_all": 800.0,
+  "domains": [
+   "llvpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Lighthouse Real Estate Services Inc.": {
+  "hs_names": [
+   "Lighthouse Real Estate Services Inc"
+  ],
+  "hs_object_id": "166645019382",
+  "total_units_all": 100.0,
+  "domains": [
+   "lighthouse-realestate.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Littell Properties": {
+  "hs_names": [
+   "Littell Properties"
+  ],
+  "hs_object_id": "166656537287",
+  "total_units_all": 119.0,
+  "domains": [
+   "littellproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Living In Town Realty Group LLC": {
+  "hs_names": [
+   "Living In Town Realty Group, LLC"
+  ],
+  "hs_object_id": "165188889329",
+  "total_units_all": 463.0,
+  "domains": [
+   "livingintown.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Longstep Property Solutions": {
+  "hs_names": [
+   "Longstep Property Solutions"
+  ],
+  "hs_object_id": "166553682677",
+  "total_units_all": 23.0,
+  "domains": [
+   "staywithlps.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "MECA Realty LLC.": {
+  "hs_names": [
+   "Meca Realty"
+  ],
+  "hs_object_id": "166656832228",
+  "total_units_all": 319.0,
+  "domains": [
+   "mecarealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "MGC Leasing &Property Management, LLC": {
+  "hs_names": [
+   "MGC Leasing & Property Management"
+  ],
+  "hs_object_id": "158285991655",
+  "total_units_all": 1100.0,
+  "domains": [
+   "mgcleasing.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Managex": {
+  "hs_names": [
+   "Managex"
+  ],
+  "hs_object_id": "164094680816",
+  "total_units_all": 1000.0,
+  "domains": [
+   "managex.net"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Market Pro Realty, Inc DBA TouchPoint Property Management": {
+  "hs_names": [
+   "TouchPoint Property Management"
+  ],
+  "hs_object_id": "154571299521",
+  "total_units_all": 430.0,
+  "domains": [
+   "touchpointpropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "McCaw Property Management": {
+  "hs_names": [
+   "McCaw Property Management"
+  ],
+  "hs_object_id": "158245221098",
+  "total_units_all": 1178.0,
+  "domains": [
+   "mccawpropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Metro Property Management Parent": {
+  "hs_names": [
+   "Metro Property Management"
+  ],
+  "hs_object_id": "164982388472",
+  "total_units_all": 740.0,
+  "domains": [
+   "rentalsbymetro.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Metropolitan Real Estate LLC": {
+  "hs_names": [
+   "Metropolitan Real Estate"
+  ],
+  "hs_object_id": "166599339751",
+  "total_units_all": 1099.0,
+  "domains": [
+   "metrowb.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Midland Property Partners, LLC - DBA Real Property Management Main": {
+  "hs_names": [
+   "Midland Property Partners LLC dba Real Property Management Main"
+  ],
+  "hs_object_id": "166647377636",
+  "total_units_all": 310.0,
+  "domains": [
+   "rpmmain.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Millennial Realty & Property Management": {
+  "hs_names": [
+   "Millennial Realty & Property Management"
+  ],
+  "hs_object_id": "166647293668",
+  "total_units_all": 488.0,
+  "domains": [
+   "tbrents.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Minnix Property Management": {
+  "hs_names": [
+   "Minnix Property Management"
+  ],
+  "hs_object_id": "166684220100",
+  "total_units_all": 1889.0,
+  "domains": [
+   "minnixproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Mississippi Property Managers, LLC": {
+  "hs_names": [
+   "Jason Warren & Associates Inc (Mississippi Property Managers LLC)"
+  ],
+  "hs_object_id": "166598803140",
+  "total_units_all": 111.0,
+  "domains": [
+   "jasonwarrentupelo.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Monarch Multifamily": {
+  "hs_names": [
+   "Monarch Multifamily"
+  ],
+  "hs_object_id": "166684092096",
+  "total_units_all": 660.0,
+  "domains": [
+   "monarchohio.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Morgan Property Management": {
+  "hs_names": [
+   "Morgan Property Management"
+  ],
+  "hs_object_id": "160412908229",
+  "total_units_all": 209.0,
+  "domains": [
+   "morganpm.com"
+  ],
+  "account_status__c": "Disqualified",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2026-12-31"
+  ],
+  "hs_churn_reasons": [
+   "Dissatisfaction with Product/Service"
+  ],
+  "match_stage": "A-exact"
+ },
+ "Mutual Property Management": {
+  "hs_names": [
+   "Mutual Property Management"
+  ],
+  "hs_object_id": "166645206730",
+  "total_units_all": 2800.0,
+  "domains": [
+   "rentals.ownitdetroit.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "NAB 324 LLC": {
+  "hs_names": [
+   "VRA Property Management. (Formerly NAB 324, LLC DBA Wright Home Stays)"
+  ],
+  "hs_object_id": "166664122052",
+  "total_units_all": 52.0,
+  "domains": [
+   "vrapropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "NWA Peak Property Management LLC": {
+  "hs_names": [
+   "NWA Peak Property Management LLC"
+  ],
+  "hs_object_id": "313329789684",
+  "total_units_all": 110.0,
+  "domains": [
+   "eliterealtyar.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Navy to Navy Homes": {
+  "hs_names": [
+   "Navy to Navy Homes"
+  ],
+  "hs_object_id": "166645192395",
+  "total_units_all": 350.0,
+  "domains": [
+   "navytonavy.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Neighborhood Revival": {
+  "hs_names": [
+   "Neighborhood Revival"
+  ],
+  "hs_object_id": "166664256221",
+  "total_units_all": 160.0,
+  "domains": [
+   "neighborhoodrevival.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Niguel Point Properties": {
+  "hs_names": [
+   "Niguel Point Properties"
+  ],
+  "hs_object_id": "163768201920",
+  "total_units_all": 180.0,
+  "domains": [
+   "niguelpointpropertiespm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Oasys Properties": {
+  "hs_names": [
+   "Oasys Properties"
+  ],
+  "hs_object_id": "166587673285",
+  "total_units_all": 150.0,
+  "domains": [
+   "oasysproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "OneSource Real Estate LLC": {
+  "hs_names": [
+   "OneSource Real Estate"
+  ],
+  "hs_object_id": "166598818536",
+  "total_units_all": 120.0,
+  "domains": [
+   "listtosellatl.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Optimum Properties": {
+  "hs_names": [
+   "Optimum Properties"
+  ],
+  "hs_object_id": "160725333735",
+  "total_units_all": 3932.0,
+  "domains": [
+   "optimumprop.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Orlando Real Estate and Property Management": {
+  "hs_names": [
+   "Orlando Realty & Property Management"
+  ],
+  "hs_object_id": "164781357765",
+  "total_units_all": 800.0,
+  "domains": [
+   "407rentals.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Out Fast Property Management": {
+  "hs_names": [
+   "Out Fast Property Management"
+  ],
+  "hs_object_id": "164788091582",
+  "total_units_all": 700.0,
+  "domains": [
+   "outfastpropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "PF Holdings": {
+  "hs_names": [
+   "PF Holdings LLC"
+  ],
+  "hs_object_id": "166644743917",
+  "total_units_all": 5531.0,
+  "domains": [
+   "aloftmgt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Paielli Realty, Inc.": {
+  "hs_names": [
+   "Paielli Realty, Inc."
+  ],
+  "hs_object_id": "166770841294",
+  "total_units_all": 192.0,
+  "domains": [
+   "phoenixpropertymgmt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Paragon Property Management Group LLC": {
+  "hs_names": [
+   "Paragon Property Management"
+  ],
+  "hs_object_id": "166647329513",
+  "total_units_all": 200.0,
+  "domains": [
+   "paragonpropertymanagement.net"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Payton's Place Real Estate, LLC": {
+  "hs_names": [
+   "Paytons Place Real Estate"
+  ],
+  "hs_object_id": "166684001996",
+  "total_units_all": 150.0,
+  "domains": [
+   "paytonsplacerealestate.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Peak Property Management": {
+  "hs_names": [
+   "Peak Property Management"
+  ],
+  "hs_object_id": "166631892703",
+  "total_units_all": 2410.0,
+  "domains": [
+   "leasepeak.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Perimeter Property Services": {
+  "hs_names": [
+   "Perimeter Property Services"
+  ],
+  "hs_object_id": "166664119032",
+  "total_units_all": 450.0,
+  "domains": [
+   "001ui00000am1s7yab.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Place Management LLC": {
+  "hs_names": [
+   "Place Property Management"
+  ],
+  "hs_object_id": "166656636631",
+  "total_units_all": 665.0,
+  "domains": [
+   "placegr.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Platinum Realty and Management": {
+  "hs_names": [
+   "Platinum Realty & Management"
+  ],
+  "hs_object_id": "166684003007",
+  "total_units_all": 700.0,
+  "domains": [
+   "platinumrealtyandmgmt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Point Real Estate Parent Company": {
+  "hs_names": [
+   "Point Real Estate Management"
+  ],
+  "hs_object_id": "154307602161",
+  "total_units_all": 4393.0,
+  "domains": [
+   "prmapartments.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "PropertySourced": {
+  "hs_names": [
+   "PropertySourced"
+  ],
+  "hs_object_id": "166664122091",
+  "total_units_all": 270.0,
+  "domains": [
+   "propertysourcedrentals.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "RPM Charlotte Metro DBA Real Property Management Charlotte Metro": {
+  "hs_names": [
+   "Real Property Management Charlotte Metro"
+  ],
+  "hs_object_id": "166645268192",
+  "total_units_all": 300.0,
+  "domains": [
+   "rpmcm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "RPM Rental Solutions": {
+  "hs_names": [
+   "Real Property Management Rental Solutions"
+  ],
+  "hs_object_id": "158187144952",
+  "total_units_all": 480.0,
+  "domains": [
+   "rpmrentalsolutions.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2026-07-27"
+  ],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Raynor Realty": {
+  "hs_names": [
+   "Raynor Realty"
+  ],
+  "hs_object_id": "166553683698",
+  "total_units_all": 153.0,
+  "domains": [
+   "raynorrealtync.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Capital Group Property Management LLC": {
+  "hs_names": [
+   "Real Capital Group"
+  ],
+  "hs_object_id": "166644986557",
+  "total_units_all": 450.0,
+  "domains": [
+   "518renter.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Real Property Management - Agile": {
+  "hs_names": [
+   "Real Property Management Agile"
+  ],
+  "hs_object_id": "166553647862",
+  "total_units_all": 85.0,
+  "domains": [
+   "rpmagile.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2025-12-15"
+  ],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management - North Point": {
+  "hs_names": [
+   "Real Property Management North Point"
+  ],
+  "hs_object_id": "166656538307",
+  "total_units_all": 43.0,
+  "domains": [
+   "rpmnorthpoint.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Advantage": {
+  "hs_names": [
+   "Real Property Management Advantage"
+  ],
+  "hs_object_id": "166684187344",
+  "total_units_all": 85.0,
+  "domains": [
+   "realpmadvantage.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Central Valley": {
+  "hs_names": [
+   "Real Property Management Central Valley dba Valleywide Property Management"
+  ],
+  "hs_object_id": "166645287660",
+  "total_units_all": 600.0,
+  "domains": [
+   "valleywidepm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Real Property Management Clarity": {
+  "hs_names": [
+   "Real Property Management Clarity"
+  ],
+  "hs_object_id": "166645121769",
+  "total_units_all": 122.0,
+  "domains": [
+   "rpmclarity.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Consultants": {
+  "hs_names": [
+   "Real Property Management Consultants"
+  ],
+  "hs_object_id": "166647256789",
+  "total_units_all": 250.0,
+  "domains": [
+   "realpmconsultants.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Hill Country": {
+  "hs_names": [
+   "Real Property Management Hill Country"
+  ],
+  "hs_object_id": "166664257229",
+  "total_units_all": 100.0,
+  "domains": [
+   "rpmhillcountry.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Ignite": {
+  "hs_names": [
+   "Real Property Management Ignite"
+  ],
+  "hs_object_id": "166656538308",
+  "total_units_all": 3.0,
+  "domains": [
+   "rpmignite.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Midlands": {
+  "hs_names": [
+   "Real Property Management Midlands"
+  ],
+  "hs_object_id": "166644921029",
+  "total_units_all": 150.0,
+  "domains": [
+   "rpmmidlands.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Midtown": {
+  "hs_names": [
+   "Real Property Management MidTown"
+  ],
+  "hs_object_id": "166647260890",
+  "total_units_all": 150.0,
+  "domains": [
+   "rpmmidtown.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Piedmont": {
+  "hs_names": [
+   "Real Property Management Piedmont"
+  ],
+  "hs_object_id": "166647343819",
+  "total_units_all": 65.0,
+  "domains": [
+   "rpmpiedmont.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Premium": {
+  "hs_names": [
+   "Real Property Management Premium"
+  ],
+  "hs_object_id": "166645474014",
+  "total_units_all": 319.0,
+  "domains": [
+   "rpmpremium.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management South Orlando": {
+  "hs_names": [
+   "Real Property Management South Orlando"
+  ],
+  "hs_object_id": "166647341788",
+  "total_units_all": 483.0,
+  "domains": [
+   "southorlandorpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Superior Properties": {
+  "hs_names": [
+   "Real Property Management Superior Properties"
+  ],
+  "hs_object_id": "154231539396",
+  "total_units_all": 74.0,
+  "domains": [
+   "rpmsuperiorproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Real Property Management Three Bridges": {
+  "hs_names": [
+   "Real Property Management Three Bridges"
+  ],
+  "hs_object_id": "166658673379",
+  "total_units_all": null,
+  "domains": [
+   "rpmthreebridges.com"
+  ],
+  "account_status__c": "",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2025-08-14"
+  ],
+  "hs_churn_reasons": [],
+  "match_stage": "churn-only:A-exact"
+ },
+ "Real Property Management Titan": {
+  "hs_names": [
+   "Real Property Management Titan"
+  ],
+  "hs_object_id": "166656635620",
+  "total_units_all": 47.0,
+  "domains": [
+   "titanrpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Realty Solutions LLC": {
+  "hs_names": [
+   "Realty Solutions LLC"
+  ],
+  "hs_object_id": "154068284106",
+  "total_units_all": 550.0,
+  "domains": [
+   "njrealtysolutions.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Red Bricks Property Management": {
+  "hs_names": [
+   "Red Bricks Property Management"
+  ],
+  "hs_object_id": "297830785776",
+  "total_units_all": 400.0,
+  "domains": [
+   "redbricksproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Red Realty, LLC": {
+  "hs_names": [
+   "Red Realty"
+  ],
+  "hs_object_id": "166664255204",
+  "total_units_all": 150.0,
+  "domains": [
+   "redrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Redwood Parent": {
+  "hs_names": [
+   "Redwood Urban Inc."
+  ],
+  "hs_object_id": "156248400600",
+  "total_units_all": 819.0,
+  "domains": [
+   "redwoodurban.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Reeder Companies LLC, REALTORS": {
+  "hs_names": [
+   "Reeder Companies LLC"
+  ],
+  "hs_object_id": "158336232149",
+  "total_units_all": 750.0,
+  "domains": [
+   "reedercompany.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Rehmann Realty Group": {
+  "hs_names": [
+   "Rehmann Realty Group Inc"
+  ],
+  "hs_object_id": "164930086612",
+  "total_units_all": 91.0,
+  "domains": [
+   "rehmannrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Relogic": {
+  "hs_names": [
+   "RELogic"
+  ],
+  "hs_object_id": "166647295732",
+  "total_units_all": 230.0,
+  "domains": [
+   "managementprocess.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Remax Properties, Inc (Mark Jones)": {
+  "hs_names": [
+   "Remax Properties, Inc. (Mark Jones Homes)"
+  ],
+  "hs_object_id": "166656538347",
+  "total_units_all": 1400.0,
+  "domains": [
+   "markjoneshomes.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase+units"
+ },
+ "Remax Properties, Inc - Chuck Wartman": {
+  "hs_names": [
+   "Remax Properties, Inc. (Mark Jones Homes) - Chuck Wartman Group"
+  ],
+  "hs_object_id": "238938119912",
+  "total_units_all": null,
+  "domains": [
+   "chuckwartman.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-full2"
+ },
+ "Rent 805": {
+  "hs_names": [
+   "Rent 805"
+  ],
+  "hs_object_id": "166631860984",
+  "total_units_all": 18.0,
+  "domains": [
+   "rent805.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Rent Appeal, Inc.": {
+  "hs_names": [
+   "Rent Appeal"
+  ],
+  "hs_object_id": "164087407347",
+  "total_units_all": 230.0,
+  "domains": [
+   "rentappeal.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Rent Solutions": {
+  "hs_names": [
+   "Rent Solutions"
+  ],
+  "hs_object_id": "164094759628",
+  "total_units_all": 961.0,
+  "domains": [
+   "rentsolutions.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Rental Management Group LLC": {
+  "hs_names": [
+   "Rental Management Group"
+  ],
+  "hs_object_id": "166730604239",
+  "total_units_all": 200.0,
+  "domains": [
+   "rentalmanagementgroup.net"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Rental Management Guys, LLC": {
+  "hs_names": [
+   "Rental Management Guys"
+  ],
+  "hs_object_id": "166599339749",
+  "total_units_all": 650.0,
+  "domains": [
+   "rentalmanagementguys.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "ResiHome": {
+  "hs_names": [
+   "RESIHOME"
+  ],
+  "hs_object_id": "159396022979",
+  "total_units_all": 4550.0,
+  "domains": [
+   "resihome.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Residential Leasing and Management Corporation": {
+  "hs_names": [
+   "Residential Leasing & Management Systems Corp. dba Residential Leasing & Management Corp."
+  ],
+  "hs_object_id": "166647422690",
+  "total_units_all": 700.0,
+  "domains": [
+   "residentialleasing.net"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase+units"
+ },
+ "River City Property Group LLC dba PMI Scenic City": {
+  "hs_names": [
+   "PMI Scenic City"
+  ],
+  "hs_object_id": "166767243986",
+  "total_units_all": 70.0,
+  "domains": [
+   "chattanoogavacationmanagementinc.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "SMD Management LLC": {
+  "hs_names": [
+   "Smd Capital Group"
+  ],
+  "hs_object_id": "154634966768",
+  "total_units_all": 400.0,
+  "domains": [
+   "smdcapitalgroup.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Schambs Property Management Group, Inc.": {
+  "hs_names": [
+   "Schambs Property Management"
+  ],
+  "hs_object_id": "166647246547",
+  "total_units_all": 775.0,
+  "domains": [
+   "spmtrianglerentals.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Scout Property Management": {
+  "hs_names": [
+   "Scout Property Management"
+  ],
+  "hs_object_id": "166664121078",
+  "total_units_all": 366.0,
+  "domains": [
+   "scoutpropertymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Signature Real Estate Group": {
+  "hs_names": [
+   "Signature Real Estate Group"
+  ],
+  "hs_object_id": "166684091112",
+  "total_units_all": 835.0,
+  "domains": [
+   "siganturenv.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Soniat Realty": {
+  "hs_names": [
+   "Soniat Realty"
+  ],
+  "hs_object_id": "153993685702",
+  "total_units_all": 2100.0,
+  "domains": [
+   "soniatrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Sound City Realty, LLC": {
+  "hs_names": [
+   "Sound City Realty"
+  ],
+  "hs_object_id": "154543652550",
+  "total_units_all": 150.0,
+  "domains": [
+   "soundcityrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2026-06-01"
+  ],
+  "hs_churn_reasons": [
+   "Dissatisfaction with Product/Service"
+  ],
+  "match_stage": "A-exact"
+ },
+ "Sound Mind Realty": {
+  "hs_names": [
+   "Sound Mind Realty"
+  ],
+  "hs_object_id": "192889198305",
+  "total_units_all": 200.0,
+  "domains": [
+   "solarhot.managebuilding.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Specialized Realty, Inc.": {
+  "hs_names": [
+   "Specialized Realty, Inc."
+  ],
+  "hs_object_id": "166664040155",
+  "total_units_all": 350.0,
+  "domains": [
+   "specializedrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Stevens Realty LLC": {
+  "hs_names": [
+   "Stevens Realty LLC"
+  ],
+  "hs_object_id": "157024958188",
+  "total_units_all": 3000.0,
+  "domains": [
+   "stevensrentals.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Stever and Associates": {
+  "hs_names": [
+   "Stever and Associates"
+  ],
+  "hs_object_id": "166684002004",
+  "total_units_all": 204.0,
+  "domains": [
+   "steverandassociates.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Stones River Property Management": {
+  "hs_names": [
+   "Stones River Property Management"
+  ],
+  "hs_object_id": "164202028762",
+  "total_units_all": 1422.0,
+  "domains": [
+   "stonesriverproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "T2M Real Estate": {
+  "hs_names": [
+   "T2M Real Estate"
+  ],
+  "hs_object_id": "166752564927",
+  "total_units_all": 55.0,
+  "domains": [
+   "t2mre.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Tampa's Best Realty, LLC": {
+  "hs_names": [
+   "Tampa's Best Realty"
+  ],
+  "hs_object_id": "166721135291",
+  "total_units_all": 271.0,
+  "domains": [
+   "tampasbestrealty.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Team Cadwell Investments DBA Park Place PM": {
+  "hs_names": [
+   "Park Place Property Management dba Resolute RDM"
+  ],
+  "hs_object_id": "166656635641",
+  "total_units_all": 420.0,
+  "domains": [
+   "resoluterdm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "ALIAS"
+ },
+ "The Charleston Property Company": {
+  "hs_names": [
+   "Charleston Property Company"
+  ],
+  "hs_object_id": "158302530288",
+  "total_units_all": 365.0,
+  "domains": [
+   "charlestonpc.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "The Mor Group, LLC": {
+  "hs_names": [
+   "The Mor Group"
+  ],
+  "hs_object_id": "166571692761",
+  "total_units_all": 600.0,
+  "domains": [
+   "themorgroup.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "The Renshaw Company Realtors": {
+  "hs_names": [
+   "Renshaw Company Realtors"
+  ],
+  "hs_object_id": "154306582203",
+  "total_units_all": 1850.0,
+  "domains": [
+   "renshawcompany.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Thousand Oaks HOA": {
+  "hs_names": [
+   "Thousand Oaks HOA"
+  ],
+  "hs_object_id": "166647296707",
+  "total_units_all": 200.0,
+  "domains": [
+   "thousandoaksflorida.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Tim Carr Group": {
+  "hs_names": [
+   "Tim Carr Group"
+  ],
+  "hs_object_id": "166647377617",
+  "total_units_all": 375.0,
+  "domains": [
+   "timcarrgrouprentals.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Toomey Property Advisors": {
+  "hs_names": [
+   "Toomey Property Advisors"
+  ],
+  "hs_object_id": "154505442008",
+  "total_units_all": 1000.0,
+  "domains": [
+   "svntpa.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Trademark Property Management LLC": {
+  "hs_names": [
+   "Trademark Property Management"
+  ],
+  "hs_object_id": "166598771407",
+  "total_units_all": 289.0,
+  "domains": [
+   "trademarklancaster.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "TruHome Property Solutions": {
+  "hs_names": [
+   "TruHome Property Solutions"
+  ],
+  "hs_object_id": "158203710152",
+  "total_units_all": 750.0,
+  "domains": [
+   "truhomeproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Valiant Realty & Management": {
+  "hs_names": [
+   "SaF Enterprises, LLC, DBA Valiant Realty and Management"
+  ],
+  "hs_object_id": "166631892712",
+  "total_units_all": 179.0,
+  "domains": [
+   "valiantrealtypm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Valley Homes": {
+  "hs_names": [
+   "Valley Homes"
+  ],
+  "hs_object_id": "164130116302",
+  "total_units_all": 260.0,
+  "domains": [
+   "valleyhomeshuntsville.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Vesta Real Estate, LLC": {
+  "hs_names": [
+   "Vesta Realty"
+  ],
+  "hs_object_id": "166647440073",
+  "total_units_all": 200.0,
+  "domains": [
+   "vestasells.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-token+units"
+ },
+ "Vision Realty & Management": {
+  "hs_names": [
+   "Vision Realty & Management"
+  ],
+  "hs_object_id": "166728716008",
+  "total_units_all": 629.0,
+  "domains": [
+   "visionwestgeorgia.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Waypoint Residential Management": {
+  "hs_names": [
+   "Waypoint Residential Management"
+  ],
+  "hs_object_id": "166645074668",
+  "total_units_all": 100.0,
+  "domains": [
+   "waypointboise.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "West USA Realty": {
+  "hs_names": [
+   "West USA Realty"
+  ],
+  "hs_object_id": "338238217958",
+  "total_units_all": 6311.0,
+  "domains": [
+   "joinwestusa.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": true,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [
+   "2023-04-15"
+  ],
+  "hs_churn_reasons": [
+   "(Pre-2026)"
+  ],
+  "match_stage": "A-exact"
+ },
+ "White Property Management": {
+  "hs_names": [
+   "White Property Management"
+  ],
+  "hs_object_id": "160674942713",
+  "total_units_all": 350.0,
+  "domains": [
+   "whitepropertymgmt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "White Property Management - Ridgewood Apartments": {
+  "hs_names": [
+   "White Property Management"
+  ],
+  "hs_object_id": "160674942713",
+  "total_units_all": 350.0,
+  "domains": [
+   "whitepropertymgmt.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "C-phrase"
+ },
+ "Wilkinson PM, Inc.": {
+  "hs_names": [
+   "Wilkinson Property Management"
+  ],
+  "hs_object_id": "154231950055",
+  "total_units_all": 650.0,
+  "domains": [
+   "wilkinsonpm.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Winfield Property Management, LLC": {
+  "hs_names": [
+   "Winfield Property Management"
+  ],
+  "hs_object_id": "154218520260",
+  "total_units_all": 5100.0,
+  "domains": [
+   "winfieldliving.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Woodlake Properties Parent": {
+  "hs_names": [
+   "Woodlake Properties"
+  ],
+  "hs_object_id": "166656539356",
+  "total_units_all": 1300.0,
+  "domains": [
+   "woodlakeproperties.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "Yancey Management": {
+  "hs_names": [
+   "Yancey Management"
+  ],
+  "hs_object_id": "185584875256",
+  "total_units_all": 175.0,
+  "domains": [
+   "yanceymanagement.com"
+  ],
+  "account_status__c": "Live",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ },
+ "iProperties International": {
+  "hs_names": [
+   "iProperties International"
+  ],
+  "hs_object_id": "154240283382",
+  "total_units_all": 550.0,
+  "domains": [
+   "ipropertiesinternational.com"
+  ],
+  "account_status__c": "Onboarding",
+  "hs_churned_any": false,
+  "hs_health_override_any": false,
+  "hs_health_override_rating": null,
+  "hs_health_override_score": null,
+  "hs_health_override_detail": null,
+  "hs_health_override_note": null,
+  "hs_churn_dates": [],
+  "hs_churn_reasons": [],
+  "match_stage": "A-exact"
+ }
+}

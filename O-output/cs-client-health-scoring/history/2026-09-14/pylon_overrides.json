@@ -1,0 +1,32 @@
+{
+ "Western Wealth Parent": {
+  "classification": "Neutral",
+  "pm_friction_count": 1,
+  "pm_friction_titles": [
+   "Site down?"
+  ],
+  "note": "Donna spot-verified 9/14 against Pylon direct: 23 open issues exact, but only 'Site down?' (9/10) is PM-side platform friction. 'Findigs: Expansion (4 Properties) Yardi Access' is expansion/implementation coordination and 'Application Remodel - Live Tomorrow' is launch coordination -- excluded per friction definition. Window otherwise dominated by weekly syncs, expansion waves, and relationship events (offsite, Texas Cookout). 1 friction = Neutral."
+ },
+ "Oakwood Parent": {
+  "classification": "Neutral",
+  "pm_friction_count": 2,
+  "pm_friction_titles": [
+   "Findigs <> Oakwood Redirect Scripts",
+   "Findigs <>Oakwood: RentCafe Sites - Link Syndication Updates"
+  ],
+  "note": "Donna spot-verified 9/14 against Pylon direct: 38 open issues exact, but the agent's Negative was wrong. 'Findigs x Oakwood Sync' (8/26) is a weekly-sync meeting invite, not a data-sync problem, and the cited 'Stuck criminal record check on applications' title does not exist on this account (misattributed). Real PM friction is the redirect-scripts/RentCafe link-syndication workstream (9/10, 8/15). Window also holds positive signals: G2 review request (9/1), case-study thread (8/17), 'Relationship Reunion'. 2 frictions = Neutral."
+ },
+ "Sentral": {
+  "classification": "Negative",
+  "total_open_issues_90d": 59,
+  "pm_friction_count": 5,
+  "pm_friction_titles": [
+   "Unable to Submit Applications - Joinery 2",
+   "URGENT: Joinery Findigs",
+   "Findigs x Yardi Application Statuses",
+   "Joinery Lead Source Attribution Follow Up",
+   "Sentral - Lead attribution"
+  ],
+  "note": "Donna spot-verified 9/14 against Pylon direct: 59 open in-window issues (agent undercounted) and at least 5 PM-friction items -- cannot-submit at Joinery 2 (9/1), an URGENT Joinery escalation (9/4), Yardi application-status integration issue (8/27), and two lead-source attribution problems (8/26, 9/3) that match the Slack complaints. 3+ frictions = Negative; the agent's Neutral (2) missed the 9/4 urgent and the Yardi thread."
+ }
+}

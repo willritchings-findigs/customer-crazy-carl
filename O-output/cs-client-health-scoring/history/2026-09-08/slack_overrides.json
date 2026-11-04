@@ -1,0 +1,38 @@
+{
+ "MGC Leasing &Property Management, LLC": {
+  "classification": "Neutral",
+  "thin_sample": true,
+  "message_count_90d": 5,
+  "rationale": "Verified directly against #p-mgc-leasing-and-pm-pilot 2026-06-10->09-08: only a handful of mid-June messages. Grace (6/15): account status still Onboarding, not churned -- 'is that a good sign?'; Hailey (6/15): onsite walkthrough of their NEW OFFICE, 'we do not need a new contract'. Reads as the account stabilizing/staying. The March-May crisis (33 tickets, internal 5/19 termination recommendation) is all PRE-window history and no longer current evidence.",
+  "integration_friction": false,
+  "integration_note": null,
+  "override_reason": "agent cited pre-window (Mar-May) events; in-window content contradicts Negative"
+ },
+ "Firethorn Realty": {
+  "classification": "Neutral",
+  "thin_sample": true,
+  "message_count_90d": 1,
+  "rationale": "Verified directly: single in-window message (7/24) -- a routine config escalation about null approve/decline templates. The Positive evidence (go-live 5/7, 'full automation from the jump' 4/16) all predates the 90-day window.",
+  "integration_friction": false,
+  "integration_note": null,
+  "override_reason": "agent cited only pre-window events"
+ },
+ "McCaw Property Management": {
+  "classification": "Neutral",
+  "thin_sample": true,
+  "message_count_90d": 0,
+  "rationale": "Verified directly: ZERO messages in #p-mccaw-property-management within 2026-06-10->09-08. The 'loving things' quote (2/4) and AppFolio fix (4/13) are pre-window.",
+  "integration_friction": false,
+  "integration_note": null,
+  "override_reason": "agent cited only pre-window events; window is empty"
+ },
+ "Lease Las Vegas, Gvre, LLC": {
+  "classification": "Neutral",
+  "thin_sample": true,
+  "message_count_90d": 10,
+  "rationale": "Verified directly: in-window messages are all internal Findigs coordination. Client (Katie/Irene) unresponsive to check-ins -- Matt (8/10) 'a little concerned that Katie and Irene haven't responded'; Amanda (8/7) 'Not much interaction... no response. On the bright side, no escalations or issues.' Early-days config churn is pre-window. Silence + zero escalations = Neutral, flagged for AM outreach rather than Negative.",
+  "integration_friction": false,
+  "integration_note": null,
+  "override_reason": "Negative rested on pre-window config churn; in-window = unresponsive but no friction"
+ }
+}

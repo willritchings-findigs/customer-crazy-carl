@@ -1,0 +1,734 @@
+{
+ "Modern City Parent": {
+  "calls_90d": 5,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner",
+   "Vice President of Operations"
+  ],
+  "sample_titles": [
+   "Modern City / Findigs Check In",
+   "Findigs <> Modern City: Weekly Implementation Touchbase",
+   "Findigs <> Modern City: Weekly Implementation Touchbase",
+   "Modern City Launch",
+   "Findigs <> Modern City: Weekly Implementation Touchbase"
+  ]
+ },
+ "Highmark Residential Parent": {
+  "calls_90d": 28,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Assistant Regional VP",
+   "Chief Accounting Officer",
+   "Director of Strategic Initiatives",
+   "Head Senior VP, Operations",
+   "SVP Operations",
+   "Senior Vice President, Asset Management",
+   "Southeast Region VP",
+   "Vice President, Information Technology",
+   "Vice President, Learning & Development"
+  ],
+  "sample_titles": [
+   "Gina / Josiah Sync",
+   "Findigs x Highmark FL LIHTC App",
+   "Findigs <> Highmark - Weekly Sync",
+   "Findigs <> Highmark - Weekly Sync",
+   "Ashley / Gina Sync",
+   "Findigs <> Highmark - More fun!",
+   "Findigs <> Highmark - Weekly Sync",
+   "Findigs Configuration Training"
+  ]
+ },
+ "Western Wealth Parent": {
+  "calls_90d": 14,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Vice President, Operations"
+  ],
+  "sample_titles": [
+   "Findigs & Western Wealth Implementation Weekly",
+   "Findigs & Western Wealth Implementation Weekly",
+   "Findigs | Western Weekly",
+   "Findigs | Western Weekly",
+   "Findigs & Western Wealth Implementation Weekly",
+   "Findigs | Western Weekly",
+   "[Hold] Findigs Training",
+   "Findigs & Western Wealth Implementation Weekly"
+  ]
+ },
+ "Woodlake Properties Parent": {
+  "calls_90d": 7,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Woodlake <> Findigs App Review",
+   "Woodlake Sync",
+   "Woodlake <> Findigs Application Review",
+   "Woodlake <> Findigs Sync",
+   "Findigs <> Woodlake Application Review",
+   "Woodlake <> Findigs Sync",
+   "Woodlake <> Findigs Training"
+  ]
+ },
+ "Beztak Properties Parent": {
+  "calls_90d": 23,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "President, Residential Division",
+   "Senior Vice President",
+   "Vice President",
+   "Vice President Beztak Owned Division",
+   "Vice President of Operations"
+  ],
+  "sample_titles": [
+   "Beztak & Findigs - Voucher",
+   "Sarah's Region | Findigs",
+   "Findigs | Andrea's Portfolio",
+   "Findigs | Brandi's Portfolio",
+   "Findigs | Dan's Portfolio",
+   "Findigs | Christine's Portfolio",
+   "Findigs | Read: Akiva's Region",
+   "Beztak | Findigs - Bi-Weekly Exec Meeting"
+  ]
+ },
+ "TPG Management Parent": {
+  "calls_90d": 6,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <> TPG Management: Weekly Implementation Sync",
+   "Findigs <> TPG Management: Weekly Implementation Sync",
+   "Findigs <> TPG Management: Weekly Implementation Sync",
+   "Findigs <> TPG Management: Weekly Implementation Sync",
+   "Findigs <> TPG Management: Training",
+   "Findigs <> TPG Management: Weekly Implementation Sync"
+  ]
+ },
+ "HomeRiver Group Holdings LLC": {
+  "calls_90d": 9,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Leasing",
+   "Regional VP"
+  ],
+  "sample_titles": [
+   "HRG / Findigs Weekly Meeting",
+   "HRG / Findigs Weekly Meeting",
+   "HRG / Findigs Weekly Meeting",
+   "HRG / Findigs Weekly Meeting",
+   "HRG / Findigs Weekly Meeting",
+   "HRG / Findigs Weekly Meeting",
+   "Call with Pure HomeRiver - Robert Machado",
+   "HRG / Findigs Weekly Meeting"
+  ]
+ },
+ "Oakwood Parent": {
+  "calls_90d": 6,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "VP of Operations"
+  ],
+  "sample_titles": [
+   "Oakwood + Findigs Sync",
+   "Findigs x Oakwood Sync",
+   "Findigs x Oakwood | Bi-Weekly Sync",
+   "Oakwood | Findigs Case Study Prep",
+   "Findigs x Oakwood | Bi-Weekly Sync",
+   "Findigs x Oakwood | Bi-Weekly Sync"
+  ]
+ },
+ "Winfield Property Management, LLC": {
+  "calls_90d": 3,
+  "review_call_titles": [
+   "Winfield Business Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "WPM <> Findigs CSM Intro & DA Review",
+   "Winfield Business Review",
+   "Winfield Sync"
+  ]
+ },
+ "Redwood Parent": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Redwood Urban / Findigs Check In"
+  ]
+ },
+ "Real Property Management Three Bridges": {
+  "calls_90d": 4,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "President"
+  ],
+  "sample_titles": [
+   "RPM Three Bridges <> Findigs App Review",
+   "RPM Three Bridges <> Findigs Application Review",
+   "RPM Three Bridges <> Findigs Training",
+   "RPM Three Bridges <> Findigs SOP Review"
+  ]
+ },
+ "Kotarides Property Management": {
+  "calls_90d": 11,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase"
+  ]
+ },
+ "MGC Leasing &Property Management, LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner/Managing Director"
+  ],
+  "sample_titles": [
+   "MGC Weekly Check In"
+  ]
+ },
+ "Capital Property Management Parent": {
+  "calls_90d": 6,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Capital Property Management <> Findigs Sync",
+   "Capital Property Management <> Findigs Sync",
+   "Findigs | Capital Property Management Weekly",
+   "Findigs | Capital Property Management Weekly",
+   "Findigs | Capital Property Management Weekly",
+   "Findigs | Capital Property Management Weekly"
+  ]
+ },
+ "Above Property Management": {
+  "calls_90d": 7,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <> Above Property Management: Weekly Implementation Touchbase",
+   "Findigs <> Above Property Management: Weekly Implementation Touchbase",
+   "Findigs <> Above Property Management: Weekly Implementation Touchbase",
+   "Findigs <> Above Property Management: Weekly Implementation Touchbase",
+   "Findigs <> Above Property Management: Weekly Implementation Touchbase",
+   "Findigs <> Above Property Management: Weekly Implementation Touchbase",
+   "Findigs <> Above Property Management"
+  ]
+ },
+ "Cooper Zadeh Property Management, LLC": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Executive Officer"
+  ],
+  "sample_titles": [
+   "Findigs <> Cooper Zadeh",
+   "Cooper Zadeh API Discovery Call"
+  ]
+ },
+ "Kairos Living LLC Parent": {
+  "calls_90d": 5,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Operating Officer",
+   "Vice President of Leasing"
+  ],
+  "sample_titles": [
+   "Kairos <> Findigs: Urgent Item Review",
+   "Kairos | Findigs - Bi-Weekly Connect",
+   "Kairos | Findigs - Bi-Weekly Connect",
+   "Kairos | Findigs - Bi-Weekly Connect",
+   "Kairos | Findigs - Bi-Weekly Connect"
+  ]
+ },
+ "Amerihome": {
+  "calls_90d": 5,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Broker/Founder"
+  ],
+  "sample_titles": [
+   "Findigs <> Amerihome: Weekly Implementation Sync",
+   "Findigs <> Amerihome: Weekly Implementation Sync",
+   "Findigs <> Amerihome: Weekly Implementation Sync",
+   "Findigs <> Amerihome: Training",
+   "Findigs <> Amerihome: Weekly Implementation Sync/Training"
+  ]
+ },
+ "Howard Management Group Parent": {
+  "calls_90d": 8,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Vice President"
+  ],
+  "sample_titles": [
+   "Findigs <> Howard Management Group: Weekly Implementation Sync",
+   "Findigs <> Howard Management Group: Weekly Implementation Sync",
+   "Findigs <> Howard Management Group: Weekly Implementation Sync",
+   "Findigs <> Howard Management Group: Tentative Launch",
+   "Findigs <> Howard Management Group: Training",
+   "Findigs <> Howard Management Group: Third Party Site Review",
+   "Findigs <> Howard Management Group: Weekly Implementation Sync",
+   "Findigs <> Howard Management Group: Weekly Implementation Sync"
+  ]
+ },
+ "MJW Investments Parent": {
+  "calls_90d": 6,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "MJW Investments <> Findigs Check In",
+   "MJW Investments <> Findigs Check In",
+   "MJW Investments <> Findigs Check In",
+   "MJW Investments <> Findigs Check In",
+   "MJW Investments <> Findigs Check In",
+   "MJW Investments <> Findigs Check In"
+  ]
+ },
+ "Evernest": {
+  "calls_90d": 11,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <-> Evernest Weekly Sync",
+   "Findigs <-> Evernest Weekly Sync",
+   "Findigs DecisionAssist Training",
+   "Findigs <-> Evernest Weekly Sync",
+   "Findigs <-> Evernest Weekly Sync",
+   "Findigs <-> Evernest Weekly Sync",
+   "Findigs <-> Evernest Weekly Sync",
+   "Findigs <-> Evernest Weekly Sync"
+  ]
+ },
+ "Maymont Homes": {
+  "calls_90d": 8,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Marketing Technology",
+   "VP of Product Management - Housing",
+   "VP, Leasing",
+   "Vice President of Operations"
+  ],
+  "sample_titles": [
+   "Findigs & Maymont Weekly - Labor Day Reschedule",
+   "Promo Codes | Findigs",
+   "Findigs <> Brookfield - Lead Sourcing & Marketing Websites",
+   "Maymont - Scoping Call Source Attribution",
+   "Findigs & Maymont Weekly",
+   "Findigs & Maymont Weekly",
+   "Findigs & Maymont Weekly",
+   "Findigs & Maymont Weekly"
+  ]
+ },
+ "Sentral": {
+  "calls_90d": 14,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Associate Director of Business Intelligence",
+   "Director of Design Operations",
+   "Director of Portfolio Operations"
+  ],
+  "sample_titles": [
+   "Sentral <> Findigs Weekly",
+   "Sentral <> Jonah <> Findigs Sync [HOLD]",
+   "Sentral + Findigs Bi-Weekly Call",
+   "Sentral | Findigs Makeup Meeting",
+   "Sentral + Findigs Bi-Weekly Call",
+   "Call with Sentral - Kristen Mauro",
+   "Sentral + Findigs Bi-Weekly Call",
+   "Sentral + Findigs Bi-Weekly Call"
+  ]
+ },
+ "Valley Homes": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <> Hazel Valley Homes: Termwise Sync",
+   "Hazel Valley Homes Org Sync"
+  ]
+ },
+ "Aulder Property Management": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Information Officer",
+   "Vice President"
+  ],
+  "sample_titles": [
+   "Meeting with Reese (Kelli Gordon Stepp)",
+   "Findigs x Aulder | Sync",
+   "Aulder Sync -  Lead Source Attribution"
+  ]
+ },
+ "E&E Capital Management, LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Operations Officer (COO)"
+  ],
+  "sample_titles": [
+   "Findigs DecisionAssist Training/Open Forum"
+  ]
+ },
+ "Stevens Realty LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "Stevens Realty Business Review"
+  ],
+  "exec_titles_seen": [
+   "Owner"
+  ],
+  "sample_titles": [
+   "Stevens Realty Business Review"
+  ]
+ },
+ "Infinite Property Management, LLC": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Infinite Property Management <> Findigs Training",
+   "Findigs <> Infinite Property Management Kickoff"
+  ]
+ },
+ "Brick and Timber Parent": {
+  "calls_90d": 8,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Brick + Timber | Findigs Weekly",
+   "Findigs || Brick & Timber Monthly",
+   "Brick + Timber | Findigs Weekly",
+   "Brick + Timber | Findigs Weekly",
+   "Brick + Timber | Findigs Weekly",
+   "Brick + Timber | Findigs Weekly",
+   "Brick + Timber | Findigs Weekly",
+   "Findigs || Brick & Timber"
+  ]
+ },
+ "Metro Property Management Parent": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Weekly Check In - Metro Property Management"
+  ]
+ },
+ "Group Fox Management": {
+  "calls_90d": 7,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Property Management"
+  ],
+  "sample_titles": [
+   "Findigs <> Group Fox Management: Training (Leasing Teams)",
+   "Findigs <> Group Fox Management: Weekly Sync",
+   "Findigs <> Group Fox Management: Weekly Sync",
+   "Findigs <> Group Fox Management: Weekly Sync",
+   "Findigs || Group Fox Management: Yardi Integration",
+   "Findigs <> Group Fox Management: Weekly Sync",
+   "Kickoff Call: Findigs <> Group Fox Management"
+  ]
+ },
+ "California Realty Group": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "QBR - California Realty Group"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "QBR - California Realty Group"
+  ]
+ },
+ "Bridge Homes": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "Bridge Homes | Findigs QBR"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Bridge Homes | Findigs QBR"
+  ]
+ },
+ "ResiHome": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Property Compliance"
+  ],
+  "sample_titles": [
+   "ResiHome | Findigs CSM Intro",
+   "Resihome Sync",
+   "Resihome Sync"
+  ]
+ },
+ "Optimum Properties": {
+  "calls_90d": 2,
+  "review_call_titles": [
+   "QBR Optimum"
+  ],
+  "exec_titles_seen": [
+   "Director of Operations & Asset Management"
+  ],
+  "sample_titles": [
+   "Optimum Prop | Findigs Sync",
+   "QBR Optimum"
+  ]
+ },
+ "Aramis Realty": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Aramis Realty | Findigs Q2 2026 Review"
+  ]
+ },
+ "New City Property Management Parent": {
+  "calls_90d": 5,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Accounts Receivable and Client Relations",
+   "Director of Leasing"
+  ],
+  "sample_titles": [
+   "Findigs <> New City Property Management: Training & Touchbase",
+   "Findigs <> New City Property Management: Training & Touchbase",
+   "Findigs <> New City Property Management: Weekly Implementation Touchbase",
+   "Findigs <> New City Property Management: Weekly Implementation Touchbase",
+   "Findigs <> New City Property Management: Training"
+  ]
+ },
+ "Lynco Properties": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Lynco <> Findigs Sync",
+   "Lynco Sync"
+  ]
+ },
+ "Standard Management Company Parent": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs || Standard Management Company: Training!",
+   "Findigs || Standard Management: Training",
+   "Findigs || Standard Management: Review and Approve DA SOP/ Criminal"
+  ]
+ },
+ "KRS Holdings Inc": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs/KRS Check In"
+  ]
+ },
+ "Littell Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "QBR - Littell Properties"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "QBR - Littell Properties"
+  ]
+ },
+ "Vision Realty & Management": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "Vision Realty & Management|Findigs Q2 Business Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Vision Realty & Management|Findigs Q2 Business Review"
+  ]
+ },
+ "KENCO Residential Parent": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "Kenco Business Review"
+  ],
+  "exec_titles_seen": [
+   "President"
+  ],
+  "sample_titles": [
+   "Kenco Business Review"
+  ]
+ },
+ "The Charleston Property Company": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Leasing"
+  ],
+  "sample_titles": [
+   "DecisionAssist Review"
+  ]
+ },
+ "Journey Real Estate": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "QBR -Journey Real Estate"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "QBR -Journey Real Estate"
+  ]
+ },
+ "McKinley Companies, LLC": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Digital Marketing",
+   "Vice President",
+   "Vice President, Asset Management and Marketing",
+   "Vice President, Information & Strategy"
+  ],
+  "sample_titles": [
+   "Findigs | McKinley- Monthly Operations Connect",
+   "Findigs | McKinley- Monthly Operations Connect",
+   "Findigs <> McKinley: New App Walkthrough"
+  ]
+ },
+ "Imagine Homes Parent": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Imagine Homes - Mn/St.Paul Compliance Chat"
+  ]
+ },
+ "California Leasing": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner"
+  ],
+  "sample_titles": [
+   "California Leasing - DA check-in",
+   "DA Training/California Leasing",
+   "DA Training/California Leasing"
+  ]
+ },
+ "Exit Realty - Realty Place": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner"
+  ],
+  "sample_titles": [
+   "Findigs <> Exit Realty-Realty Place: Weekly Sync",
+   "Findigs <> Exit Realty-Realty Place: Weekly Sync",
+   "Findigs <> Exit Realty-Realty Place: Weekly Sync"
+  ]
+ },
+ "JMAX Property Management LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Decline Overview"
+  ]
+ },
+ "Mutual Property Management": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Marketing and Leasing"
+  ],
+  "sample_titles": [
+   "Mutual Property Management <> Findigs Kickoff"
+  ]
+ },
+ "HNN Atlanta": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "DA Training/HNN Atlanta"
+  ]
+ },
+ "Peak Property Management": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "VP of Operations"
+  ],
+  "sample_titles": [
+   "Peak Property Management <> Findigs"
+  ]
+ },
+ "Cowboy Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Cowboy Properties & Findigs | Demo Meeting"
+  ]
+ },
+ "SFR3 Operator, LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "American Avenue | Findigs Quarterly Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "American Avenue | Findigs Quarterly Review"
+  ]
+ },
+ "Tim Carr Group": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Tim Carr Group - DecisionAssist"
+  ]
+ },
+ "Open Management": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Booked Sync - Natalie (Jose Mendoza)"
+  ]
+ },
+ "Harbor Property Management, Inc.": {
+  "calls_90d": 2,
+  "review_call_titles": [
+   "QBR: Findigs <> Harbor PM"
+  ],
+  "exec_titles_seen": [
+   "President"
+  ],
+  "sample_titles": [
+   "QBR: Findigs <> Harbor PM",
+   "QBR: Findigs <> Harbor PM"
+  ]
+ },
+ "Rookwood Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Booked Sync - Natalie (Lauren Beckley)"
+  ]
+ },
+ "Excalibur Homes": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Meeting with Reese (Callie Guzman)"
+  ]
+ }
+}

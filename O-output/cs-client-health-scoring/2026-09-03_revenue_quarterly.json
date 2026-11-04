@@ -1,0 +1,2770 @@
+[
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff291",
+    "rollup_company_name": "SFR3 Operator, LLC",
+    "Q1_2026": 401933.99,
+    "Q2_2026": 389280.11,
+    "Q3_2026_partial_thru_sep2": 240099.11,
+    "Q1_to_Q2_qoq_pct": -3.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff374",
+    "rollup_company_name": "McKinley Companies, LLC",
+    "Q1_2026": 133968,
+    "Q2_2026": 256636.25,
+    "Q3_2026_partial_thru_sep2": 280637.75,
+    "Q1_to_Q2_qoq_pct": 91.6
+  },
+  {
+    "rollup_company_id": "e8f8a430-e6bd-4d63-9030-44359c019b0d",
+    "rollup_company_name": "Harbor Group Parent",
+    "Q1_2026": 194339.91,
+    "Q2_2026": 273403.71,
+    "Q3_2026_partial_thru_sep2": 149940,
+    "Q1_to_Q2_qoq_pct": 40.7
+  },
+  {
+    "rollup_company_id": "d59a3acc-54f9-41f2-a3cb-3dc0e5a5cdc2",
+    "rollup_company_name": "Maymont Homes",
+    "Q1_2026": 221471.11,
+    "Q2_2026": 238535.6,
+    "Q3_2026_partial_thru_sep2": 152289,
+    "Q1_to_Q2_qoq_pct": 7.7
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff133",
+    "rollup_company_name": "HomeRiver Group Holdings LLC",
+    "Q1_2026": 236215.34,
+    "Q2_2026": 232981.32,
+    "Q3_2026_partial_thru_sep2": 118270.21,
+    "Q1_to_Q2_qoq_pct": -1.4
+  },
+  {
+    "rollup_company_id": "2e886d0e-391e-4ef6-bdf1-a3ffc0439f89",
+    "rollup_company_name": "Beztak Properties Parent Company",
+    "Q1_2026": 96986.87,
+    "Q2_2026": 283330.02,
+    "Q3_2026_partial_thru_sep2": 164648.2,
+    "Q1_to_Q2_qoq_pct": 192.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff102",
+    "rollup_company_name": "Evernest",
+    "Q1_2026": 182759,
+    "Q2_2026": 163747,
+    "Q3_2026_partial_thru_sep2": 82388,
+    "Q1_to_Q2_qoq_pct": -10.4
+  },
+  {
+    "rollup_company_id": "fc360a2a-0784-4d9c-93ad-0c9ec231bab3",
+    "rollup_company_name": "Kairos Living LLC Parent Company",
+    "Q1_2026": 167758.18,
+    "Q2_2026": 154073.55,
+    "Q3_2026_partial_thru_sep2": 96683.86,
+    "Q1_to_Q2_qoq_pct": -8.2
+  },
+  {
+    "rollup_company_id": "068ec41e-8dd2-44c6-8366-6f152c405627",
+    "rollup_company_name": "Open House Management",
+    "Q1_2026": 148474,
+    "Q2_2026": 144456,
+    "Q3_2026_partial_thru_sep2": 100647,
+    "Q1_to_Q2_qoq_pct": -2.7
+  },
+  {
+    "rollup_company_id": "dd78c694-7e46-4823-aaea-8df2a98dcc23",
+    "rollup_company_name": "Oakwood Parent",
+    "Q1_2026": 81189.78,
+    "Q2_2026": 136369.22,
+    "Q3_2026_partial_thru_sep2": 85543.04,
+    "Q1_to_Q2_qoq_pct": 68.0
+  },
+  {
+    "rollup_company_id": "14e220d5-5507-4520-9faf-3f69f7273b5b",
+    "rollup_company_name": "Highmark Residential Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 46363.69,
+    "Q3_2026_partial_thru_sep2": 219093.34,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "315d7666-8734-4631-a296-e58ba7ecadae",
+    "rollup_company_name": "ResiHome",
+    "Q1_2026": 89132.33,
+    "Q2_2026": 86900,
+    "Q3_2026_partial_thru_sep2": 59825,
+    "Q1_to_Q2_qoq_pct": -2.5
+  },
+  {
+    "rollup_company_id": "455f1098-f586-41c9-89bb-9fa30d1e3879",
+    "rollup_company_name": "Hudson Homes Management, LLC",
+    "Q1_2026": 65182.21,
+    "Q2_2026": 85721.72,
+    "Q3_2026_partial_thru_sep2": 65828.19,
+    "Q1_to_Q2_qoq_pct": 31.5
+  },
+  {
+    "rollup_company_id": "32116662-531b-4f2e-af18-c703d977c11e",
+    "rollup_company_name": "SFR OpCo LLC (Truehold)",
+    "Q1_2026": 88094.62,
+    "Q2_2026": 72415.71,
+    "Q3_2026_partial_thru_sep2": 55405.29,
+    "Q1_to_Q2_qoq_pct": -17.8
+  },
+  {
+    "rollup_company_id": "0742ec88-3d90-435c-978d-688ff01797e2",
+    "rollup_company_name": "Brandywine Homes Parent",
+    "Q1_2026": 77286.79,
+    "Q2_2026": 89763.9,
+    "Q3_2026_partial_thru_sep2": 46342.34,
+    "Q1_to_Q2_qoq_pct": 16.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff375",
+    "rollup_company_name": "KRS Holdings Inc",
+    "Q1_2026": 58555,
+    "Q2_2026": 87116,
+    "Q3_2026_partial_thru_sep2": 53170,
+    "Q1_to_Q2_qoq_pct": 48.8
+  },
+  {
+    "rollup_company_id": "f9fe86c3-ee5c-4e1c-921f-bc6673cfcc35",
+    "rollup_company_name": "Lynco Properties",
+    "Q1_2026": 58436.11,
+    "Q2_2026": 80878.16,
+    "Q3_2026_partial_thru_sep2": 52468.29,
+    "Q1_to_Q2_qoq_pct": 38.4
+  },
+  {
+    "rollup_company_id": "9a4a3aa2-14dc-479b-9b38-1aae11e883af",
+    "rollup_company_name": "Point Real Estate Parent Company",
+    "Q1_2026": 43923.24,
+    "Q2_2026": 68147.55,
+    "Q3_2026_partial_thru_sep2": 42342.89,
+    "Q1_to_Q2_qoq_pct": 55.2
+  },
+  {
+    "rollup_company_id": "88fd4024-d32b-44f1-b5b3-0b6576c9cd6e",
+    "rollup_company_name": "Minnix Property Management",
+    "Q1_2026": 43675.33,
+    "Q2_2026": 55860.81,
+    "Q3_2026_partial_thru_sep2": 40275.02,
+    "Q1_to_Q2_qoq_pct": 27.9
+  },
+  {
+    "rollup_company_id": "c0df6bd9-5c2d-4c29-846c-4eef9e3d9459",
+    "rollup_company_name": "Residential Services Holdings, LLC",
+    "Q1_2026": 98304.36,
+    "Q2_2026": 37435.75,
+    "Q3_2026_partial_thru_sep2": -81.95,
+    "Q1_to_Q2_qoq_pct": -61.9
+  },
+  {
+    "rollup_company_id": "7f2d5acc-d107-4a90-98eb-a445b97f9810",
+    "rollup_company_name": "Brick and Timber Parent",
+    "Q1_2026": 1050,
+    "Q2_2026": 65226.4,
+    "Q3_2026_partial_thru_sep2": 62656.06,
+    "Q1_to_Q2_qoq_pct": 6112.0
+  },
+  {
+    "rollup_company_id": "82319227-5829-45f0-a69f-36a2fc8af902",
+    "rollup_company_name": "Kotarides Property Management",
+    "Q1_2026": 44584,
+    "Q2_2026": 52528,
+    "Q3_2026_partial_thru_sep2": 31015,
+    "Q1_to_Q2_qoq_pct": 17.8
+  },
+  {
+    "rollup_company_id": "c75e36df-f4d0-4516-b481-eda5c73a4c9a",
+    "rollup_company_name": "Western Wealth Parent",
+    "Q1_2026": 50008,
+    "Q2_2026": 45378,
+    "Q3_2026_partial_thru_sep2": 32321,
+    "Q1_to_Q2_qoq_pct": -9.3
+  },
+  {
+    "rollup_company_id": "a7a63cea-7b18-4b25-bcd9-37bfa578693a",
+    "rollup_company_name": "Rookwood Properties",
+    "Q1_2026": 42356.91,
+    "Q2_2026": 56960.09,
+    "Q3_2026_partial_thru_sep2": 26944.95,
+    "Q1_to_Q2_qoq_pct": 34.5
+  },
+  {
+    "rollup_company_id": "1bfc88cd-e59a-44d0-817c-cfa2c28faa26",
+    "rollup_company_name": "Imagine Homes Parent",
+    "Q1_2026": 46428,
+    "Q2_2026": 45548,
+    "Q3_2026_partial_thru_sep2": 23187,
+    "Q1_to_Q2_qoq_pct": -1.9
+  },
+  {
+    "rollup_company_id": "59fdbac4-8229-48a2-897f-5d4f6bb67073",
+    "rollup_company_name": "Cooper Zadeh Property Management, LLC",
+    "Q1_2026": 51359.34,
+    "Q2_2026": 37699.62,
+    "Q3_2026_partial_thru_sep2": 20904.92,
+    "Q1_to_Q2_qoq_pct": -26.6
+  },
+  {
+    "rollup_company_id": "8de5695c-e4c8-4b07-8f0b-4bd2980495da",
+    "rollup_company_name": "Winfield Property Management, LLC",
+    "Q1_2026": 39345.47,
+    "Q2_2026": 38589,
+    "Q3_2026_partial_thru_sep2": 27123,
+    "Q1_to_Q2_qoq_pct": -1.9
+  },
+  {
+    "rollup_company_id": "e83364fd-fd5b-4e4f-a486-42bf20688630",
+    "rollup_company_name": "Jones and Jones Communities",
+    "Q1_2026": 23727.87,
+    "Q2_2026": 41714.52,
+    "Q3_2026_partial_thru_sep2": 26719.42,
+    "Q1_to_Q2_qoq_pct": 75.8
+  },
+  {
+    "rollup_company_id": "1c612045-808d-48e3-88eb-08e55ee0dfac",
+    "rollup_company_name": "Sentral",
+    "Q1_2026": 14292.99,
+    "Q2_2026": 42763.39,
+    "Q3_2026_partial_thru_sep2": 33333.17,
+    "Q1_to_Q2_qoq_pct": 199.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff117",
+    "rollup_company_name": "GC Realty & Development, LLC",
+    "Q1_2026": 30999,
+    "Q2_2026": 34917,
+    "Q3_2026_partial_thru_sep2": 19404,
+    "Q1_to_Q2_qoq_pct": 12.6
+  },
+  {
+    "rollup_company_id": "a2f4f47a-9e3b-49dd-a7c9-be2d9fe04f4f",
+    "rollup_company_name": "Encore Management",
+    "Q1_2026": 27962.59,
+    "Q2_2026": 37701.47,
+    "Q3_2026_partial_thru_sep2": 18035.65,
+    "Q1_to_Q2_qoq_pct": 34.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff047",
+    "rollup_company_name": "Bridge Homes",
+    "Q1_2026": 30329,
+    "Q2_2026": 35075,
+    "Q3_2026_partial_thru_sep2": 16863,
+    "Q1_to_Q2_qoq_pct": 15.6
+  },
+  {
+    "rollup_company_id": "b85d0225-96bc-4f6a-82aa-f5f395c51260",
+    "rollup_company_name": "McCaw Property Management",
+    "Q1_2026": 25818.86,
+    "Q2_2026": 31388.18,
+    "Q3_2026_partial_thru_sep2": 21097.43,
+    "Q1_to_Q2_qoq_pct": 21.6
+  },
+  {
+    "rollup_company_id": "3b1948db-7533-4daf-b73a-acc34930d3df",
+    "rollup_company_name": "Open Management",
+    "Q1_2026": 30462.58,
+    "Q2_2026": 26495.63,
+    "Q3_2026_partial_thru_sep2": 20939.64,
+    "Q1_to_Q2_qoq_pct": -13.0
+  },
+  {
+    "rollup_company_id": "e5fd3054-f91d-47b8-a5ca-ba340d530d35",
+    "rollup_company_name": "Metropolitan Holdings Parent",
+    "Q1_2026": 29592.84,
+    "Q2_2026": 44857.76,
+    "Q3_2026_partial_thru_sep2": 78.06,
+    "Q1_to_Q2_qoq_pct": 51.6
+  },
+  {
+    "rollup_company_id": "9af3b1a5-803f-46a8-bfbe-b26315fe2598",
+    "rollup_company_name": "Bridge Tower Properties LLC",
+    "Q1_2026": 32363.32,
+    "Q2_2026": 29094.21,
+    "Q3_2026_partial_thru_sep2": 12305.38,
+    "Q1_to_Q2_qoq_pct": -10.1
+  },
+  {
+    "rollup_company_id": "e4c1c6c9-7e6f-4ac8-86b4-892588022be2",
+    "rollup_company_name": "Schambs Property Management Group, Inc.",
+    "Q1_2026": 21052.61,
+    "Q2_2026": 35510.77,
+    "Q3_2026_partial_thru_sep2": 17117.36,
+    "Q1_to_Q2_qoq_pct": 68.7
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff027",
+    "rollup_company_name": "Atlas Rental Property",
+    "Q1_2026": 28727,
+    "Q2_2026": 25014,
+    "Q3_2026_partial_thru_sep2": 18535,
+    "Q1_to_Q2_qoq_pct": -12.9
+  },
+  {
+    "rollup_company_id": "696decf7-fd9b-4708-ae02-2762005c632f",
+    "rollup_company_name": "Signature Real Estate Group",
+    "Q1_2026": 24859.81,
+    "Q2_2026": 24101.21,
+    "Q3_2026_partial_thru_sep2": 15093.07,
+    "Q1_to_Q2_qoq_pct": -3.1
+  },
+  {
+    "rollup_company_id": "d72c2c33-5eb4-481e-9626-ef5c8730cd2b",
+    "rollup_company_name": "Faranesh Real Estate and Property Management",
+    "Q1_2026": 20316.04,
+    "Q2_2026": 23646.32,
+    "Q3_2026_partial_thru_sep2": 18289.48,
+    "Q1_to_Q2_qoq_pct": 16.4
+  },
+  {
+    "rollup_company_id": "1096bfd2-2377-4e4b-9601-2817b33cd28b",
+    "rollup_company_name": "Kunkel Wittenauer Group",
+    "Q1_2026": 21048.66,
+    "Q2_2026": 24344.27,
+    "Q3_2026_partial_thru_sep2": 16196.8,
+    "Q1_to_Q2_qoq_pct": 15.7
+  },
+  {
+    "rollup_company_id": "65967e03-bb5b-4a9e-af1e-6ec3bd5334a0",
+    "rollup_company_name": "Lease Las Vegas, Gvre, LLC",
+    "Q1_2026": 17795.92,
+    "Q2_2026": 23449.99,
+    "Q3_2026_partial_thru_sep2": 17913.26,
+    "Q1_to_Q2_qoq_pct": 31.8
+  },
+  {
+    "rollup_company_id": "e4292106-1b1b-4887-8a4f-53238637ad25",
+    "rollup_company_name": "Optimum Properties",
+    "Q1_2026": 19706.98,
+    "Q2_2026": 23198.7,
+    "Q3_2026_partial_thru_sep2": 13825.67,
+    "Q1_to_Q2_qoq_pct": 17.7
+  },
+  {
+    "rollup_company_id": "c2b9eb6a-16b8-4faf-b57d-9c46195c07ff",
+    "rollup_company_name": "Highpoint Real Estate",
+    "Q1_2026": 23217.24,
+    "Q2_2026": 19961.56,
+    "Q3_2026_partial_thru_sep2": 11734.23,
+    "Q1_to_Q2_qoq_pct": -14.0
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff193",
+    "rollup_company_name": "Navy to Navy Homes",
+    "Q1_2026": 15715,
+    "Q2_2026": 23560,
+    "Q3_2026_partial_thru_sep2": 13470,
+    "Q1_to_Q2_qoq_pct": 49.9
+  },
+  {
+    "rollup_company_id": "0f7710bb-daf2-40b8-b945-3df2d5957045",
+    "rollup_company_name": "Carolina Management Parent",
+    "Q1_2026": 18005,
+    "Q2_2026": 20815,
+    "Q3_2026_partial_thru_sep2": 13785,
+    "Q1_to_Q2_qoq_pct": 15.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff305",
+    "rollup_company_name": "Stevens Realty LLC",
+    "Q1_2026": 19571.93,
+    "Q2_2026": 18313.36,
+    "Q3_2026_partial_thru_sep2": 14092.15,
+    "Q1_to_Q2_qoq_pct": -6.4
+  },
+  {
+    "rollup_company_id": "309f4bae-27b8-48e1-af4b-2733e0d23bf1",
+    "rollup_company_name": "H2 Real Estate LLC",
+    "Q1_2026": 30652.34,
+    "Q2_2026": 20455.24,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -33.3
+  },
+  {
+    "rollup_company_id": "ca526c71-0948-4bbd-b553-bfec1d3085d1",
+    "rollup_company_name": "KENCO Residential Parent",
+    "Q1_2026": 14394.23,
+    "Q2_2026": 21299.63,
+    "Q3_2026_partial_thru_sep2": 12942.88,
+    "Q1_to_Q2_qoq_pct": 48.0
+  },
+  {
+    "rollup_company_id": "afe4df24-9e84-44b0-b667-1b1d4313bbd7",
+    "rollup_company_name": "Toomey Property Advisors",
+    "Q1_2026": 12694.38,
+    "Q2_2026": 17852.22,
+    "Q3_2026_partial_thru_sep2": 16456.84,
+    "Q1_to_Q2_qoq_pct": 40.6
+  },
+  {
+    "rollup_company_id": "88ab4ac5-8e79-47de-b6d9-1e92ae2102fe",
+    "rollup_company_name": "MGC Leasing &Property Management, LLC",
+    "Q1_2026": 6097.57,
+    "Q2_2026": 27303.22,
+    "Q3_2026_partial_thru_sep2": 13107.3,
+    "Q1_to_Q2_qoq_pct": 347.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff010",
+    "rollup_company_name": "AD Distributions, LLC. Dba Black and Cherry",
+    "Q1_2026": 14904,
+    "Q2_2026": 20902,
+    "Q3_2026_partial_thru_sep2": 9997,
+    "Q1_to_Q2_qoq_pct": 40.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff044",
+    "rollup_company_name": "Boardwalk Property Management, LLC",
+    "Q1_2026": 18123,
+    "Q2_2026": 15540,
+    "Q3_2026_partial_thru_sep2": 11898,
+    "Q1_to_Q2_qoq_pct": -14.3
+  },
+  {
+    "rollup_company_id": "b1bf2302-9b33-4e53-9059-74c9ce45442f",
+    "rollup_company_name": "Chevron Realty Management",
+    "Q1_2026": 12833.55,
+    "Q2_2026": 20099.5,
+    "Q3_2026_partial_thru_sep2": 11063.7,
+    "Q1_to_Q2_qoq_pct": 56.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff138",
+    "rollup_company_name": "ICR Consulting, LLC",
+    "Q1_2026": 19051,
+    "Q2_2026": 14129,
+    "Q3_2026_partial_thru_sep2": 10280,
+    "Q1_to_Q2_qoq_pct": -25.8
+  },
+  {
+    "rollup_company_id": "3ff53f83-d0cb-4466-a27a-65e5a2fffd67",
+    "rollup_company_name": "Stones River Property Management",
+    "Q1_2026": 11910,
+    "Q2_2026": 18038,
+    "Q3_2026_partial_thru_sep2": 12736,
+    "Q1_to_Q2_qoq_pct": 51.5
+  },
+  {
+    "rollup_company_id": "615c329d-e3cb-48ce-bae6-b8d641cbd636",
+    "rollup_company_name": "California Realty Group",
+    "Q1_2026": 14055,
+    "Q2_2026": 14265,
+    "Q3_2026_partial_thru_sep2": 13950,
+    "Q1_to_Q2_qoq_pct": 1.5
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff103",
+    "rollup_company_name": "Excalibur Homes",
+    "Q1_2026": 15415,
+    "Q2_2026": 16007,
+    "Q3_2026_partial_thru_sep2": 10258,
+    "Q1_to_Q2_qoq_pct": 3.8
+  },
+  {
+    "rollup_company_id": "db3cd9fb-a15f-4c16-83df-aac1ff9efdab",
+    "rollup_company_name": "The Renshaw Company Realtors",
+    "Q1_2026": 9259.03,
+    "Q2_2026": 17322.21,
+    "Q3_2026_partial_thru_sep2": 11383.76,
+    "Q1_to_Q2_qoq_pct": 87.1
+  },
+  {
+    "rollup_company_id": "6f5c960a-f1aa-4466-be84-8d9f409a35b4",
+    "rollup_company_name": "Aulder Property Management",
+    "Q1_2026": 13005,
+    "Q2_2026": 13921,
+    "Q3_2026_partial_thru_sep2": 10993.76,
+    "Q1_to_Q2_qoq_pct": 7.0
+  },
+  {
+    "rollup_company_id": "0f5cab95-626d-48b3-b5f2-f4e12fb86136",
+    "rollup_company_name": "Redwood Parent",
+    "Q1_2026": 13013.39,
+    "Q2_2026": 13075.43,
+    "Q3_2026_partial_thru_sep2": 11310.94,
+    "Q1_to_Q2_qoq_pct": 0.5
+  },
+  {
+    "rollup_company_id": "1314fe3c-d064-47eb-b75c-cd3f9563ac00",
+    "rollup_company_name": "Blue Fox Properties",
+    "Q1_2026": 13915,
+    "Q2_2026": 13369,
+    "Q3_2026_partial_thru_sep2": 9835,
+    "Q1_to_Q2_qoq_pct": -3.9
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff192",
+    "rollup_company_name": "Mutual Property Management",
+    "Q1_2026": 12565,
+    "Q2_2026": 12038,
+    "Q3_2026_partial_thru_sep2": 9985,
+    "Q1_to_Q2_qoq_pct": -4.2
+  },
+  {
+    "rollup_company_id": "19701723-2ea4-48cf-abe9-91b00e699c80",
+    "rollup_company_name": "Garden City Property Management",
+    "Q1_2026": 12024.08,
+    "Q2_2026": 14801.9,
+    "Q3_2026_partial_thru_sep2": 7686.05,
+    "Q1_to_Q2_qoq_pct": 23.1
+  },
+  {
+    "rollup_company_id": "58f582bd-75f4-4143-9a1f-a65c21894ad0",
+    "rollup_company_name": "Old South Properties, Inc",
+    "Q1_2026": 13070,
+    "Q2_2026": 19105,
+    "Q3_2026_partial_thru_sep2": 2325,
+    "Q1_to_Q2_qoq_pct": 46.2
+  },
+  {
+    "rollup_company_id": "be4d030c-f154-4ec8-a651-cb3b2af086db",
+    "rollup_company_name": "Foundation Property Management, LLC",
+    "Q1_2026": 14603,
+    "Q2_2026": 16831,
+    "Q3_2026_partial_thru_sep2": 2580,
+    "Q1_to_Q2_qoq_pct": 15.3
+  },
+  {
+    "rollup_company_id": "d5ee9517-5f8f-4e2f-8c99-b99341258660",
+    "rollup_company_name": "Keyway Property Management",
+    "Q1_2026": 16721,
+    "Q2_2026": 13041,
+    "Q3_2026_partial_thru_sep2": 2015,
+    "Q1_to_Q2_qoq_pct": -22.0
+  },
+  {
+    "rollup_company_id": "0d5278f0-119a-4448-ae28-1667424d47c5",
+    "rollup_company_name": "Rent Solutions",
+    "Q1_2026": 11150,
+    "Q2_2026": 12910,
+    "Q3_2026_partial_thru_sep2": 7535,
+    "Q1_to_Q2_qoq_pct": 15.8
+  },
+  {
+    "rollup_company_id": "894347b4-b4e1-4871-94fe-3d0c1b833603",
+    "rollup_company_name": "CREC Property Management",
+    "Q1_2026": 12086.74,
+    "Q2_2026": 11362.31,
+    "Q3_2026_partial_thru_sep2": 7077.01,
+    "Q1_to_Q2_qoq_pct": -6.0
+  },
+  {
+    "rollup_company_id": "acc930d7-d237-4366-969d-651a77fc312c",
+    "rollup_company_name": "White Property Management",
+    "Q1_2026": 12775.38,
+    "Q2_2026": 10121.6,
+    "Q3_2026_partial_thru_sep2": 7274.17,
+    "Q1_to_Q2_qoq_pct": -20.8
+  },
+  {
+    "rollup_company_id": "ccfeba96-94eb-4a33-be6f-408bdce1e9b8",
+    "rollup_company_name": "Blue Oak Property Management",
+    "Q1_2026": 12515,
+    "Q2_2026": 13475,
+    "Q3_2026_partial_thru_sep2": 4090,
+    "Q1_to_Q2_qoq_pct": 7.7
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff334",
+    "rollup_company_name": "Trademark Property Management LLC",
+    "Q1_2026": 13587,
+    "Q2_2026": 10696,
+    "Q3_2026_partial_thru_sep2": 5173,
+    "Q1_to_Q2_qoq_pct": -21.3
+  },
+  {
+    "rollup_company_id": "412359c3-0f47-4c65-9eb7-be08364b877b",
+    "rollup_company_name": "Red Bricks Property Management",
+    "Q1_2026": 0.0,
+    "Q2_2026": 15282.51,
+    "Q3_2026_partial_thru_sep2": 13101.86,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff081",
+    "rollup_company_name": "West USA Realty",
+    "Q1_2026": 9772.4,
+    "Q2_2026": 10075,
+    "Q3_2026_partial_thru_sep2": 7891,
+    "Q1_to_Q2_qoq_pct": 3.1
+  },
+  {
+    "rollup_company_id": "d8d15b6d-e5c3-48f6-ba36-77d7e53d367a",
+    "rollup_company_name": "Managex",
+    "Q1_2026": 10100,
+    "Q2_2026": 10395,
+    "Q3_2026_partial_thru_sep2": 6180,
+    "Q1_to_Q2_qoq_pct": 2.9
+  },
+  {
+    "rollup_company_id": "b30b722a-69f0-413d-a93e-d31b8606ce4c",
+    "rollup_company_name": "Lacy Management Inc",
+    "Q1_2026": 8350,
+    "Q2_2026": 11240,
+    "Q3_2026_partial_thru_sep2": 5845,
+    "Q1_to_Q2_qoq_pct": 34.6
+  },
+  {
+    "rollup_company_id": "832027f8-8e38-4916-81ea-21d5d0d7b3b0",
+    "rollup_company_name": "334 Property Management",
+    "Q1_2026": 9975.46,
+    "Q2_2026": 8852.33,
+    "Q3_2026_partial_thru_sep2": 6018.75,
+    "Q1_to_Q2_qoq_pct": -11.3
+  },
+  {
+    "rollup_company_id": "ba0d5001-ee41-4c8d-ac2b-0540f6ec2967",
+    "rollup_company_name": "Harbor Property Management, Inc.",
+    "Q1_2026": 6185.66,
+    "Q2_2026": 12508.36,
+    "Q3_2026_partial_thru_sep2": 5186.4,
+    "Q1_to_Q2_qoq_pct": 102.2
+  },
+  {
+    "rollup_company_id": "0ffc91e1-0a50-4e80-9e7c-495cd25bbea2",
+    "rollup_company_name": "Realty Solutions LLC",
+    "Q1_2026": 10184.82,
+    "Q2_2026": 8442.91,
+    "Q3_2026_partial_thru_sep2": 5186.58,
+    "Q1_to_Q2_qoq_pct": -17.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff364",
+    "rollup_company_name": "Renters Warehouse",
+    "Q1_2026": 8013,
+    "Q2_2026": 9627,
+    "Q3_2026_partial_thru_sep2": 6148,
+    "Q1_to_Q2_qoq_pct": 20.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff056",
+    "rollup_company_name": "California Leasing",
+    "Q1_2026": 8149,
+    "Q2_2026": 9007,
+    "Q3_2026_partial_thru_sep2": 5918,
+    "Q1_to_Q2_qoq_pct": 10.5
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff355",
+    "rollup_company_name": "Wilkinson PM, Inc.",
+    "Q1_2026": 8763,
+    "Q2_2026": 8609,
+    "Q3_2026_partial_thru_sep2": 5661,
+    "Q1_to_Q2_qoq_pct": -1.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff091",
+    "rollup_company_name": "E&E Capital Management, LLC",
+    "Q1_2026": 7785,
+    "Q2_2026": 7090,
+    "Q3_2026_partial_thru_sep2": 7828,
+    "Q1_to_Q2_qoq_pct": -8.9
+  },
+  {
+    "rollup_company_id": "5145a4c3-09c8-45af-836a-709a4712070e",
+    "rollup_company_name": "FIG Property Management",
+    "Q1_2026": 15080,
+    "Q2_2026": 7600,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -49.6
+  },
+  {
+    "rollup_company_id": "d519f138-e160-4add-bea2-dfe6267fffbc",
+    "rollup_company_name": "Era Management Co.",
+    "Q1_2026": 19861,
+    "Q2_2026": 1411.73,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -92.9
+  },
+  {
+    "rollup_company_id": "27514411-d414-47e5-b306-baaa81ab3855",
+    "rollup_company_name": "Chase International Property Management",
+    "Q1_2026": 11341.47,
+    "Q2_2026": 7450.14,
+    "Q3_2026_partial_thru_sep2": 2066.94,
+    "Q1_to_Q2_qoq_pct": -34.3
+  },
+  {
+    "rollup_company_id": "adb466de-5c73-4310-bb7f-12bc328bd5e8",
+    "rollup_company_name": "JAMM Property Management",
+    "Q1_2026": 6678.59,
+    "Q2_2026": 9093.78,
+    "Q3_2026_partial_thru_sep2": 5076.32,
+    "Q1_to_Q2_qoq_pct": 36.2
+  },
+  {
+    "rollup_company_id": "b75e73ca-27e7-460a-b16b-f9bca134357d",
+    "rollup_company_name": "Scout Property Management",
+    "Q1_2026": 6235,
+    "Q2_2026": 7780,
+    "Q3_2026_partial_thru_sep2": 6170,
+    "Q1_to_Q2_qoq_pct": 24.8
+  },
+  {
+    "rollup_company_id": "518446d1-b39d-4997-8dfd-8d4849596de4",
+    "rollup_company_name": "CRI Property Management",
+    "Q1_2026": 7830.93,
+    "Q2_2026": 7744.2,
+    "Q3_2026_partial_thru_sep2": 4143.82,
+    "Q1_to_Q2_qoq_pct": -1.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff251",
+    "rollup_company_name": "Reeder Companies LLC, REALTORS",
+    "Q1_2026": 7250,
+    "Q2_2026": 6865,
+    "Q3_2026_partial_thru_sep2": 5395,
+    "Q1_to_Q2_qoq_pct": -5.3
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff068",
+    "rollup_company_name": "Coldwell Banker Residential Property Management",
+    "Q1_2026": 8540,
+    "Q2_2026": 9761,
+    "Q3_2026_partial_thru_sep2": 1008,
+    "Q1_to_Q2_qoq_pct": 14.3
+  },
+  {
+    "rollup_company_id": "5fff35a1-6cb1-4b30-90c3-1e4baf81e602",
+    "rollup_company_name": "SMD Management LLC",
+    "Q1_2026": 2949.98,
+    "Q2_2026": 10554.74,
+    "Q3_2026_partial_thru_sep2": 5698.55,
+    "Q1_to_Q2_qoq_pct": 257.8
+  },
+  {
+    "rollup_company_id": "08f72ccb-7464-4a50-a463-0feece6bf0e3",
+    "rollup_company_name": "DS Huber Group",
+    "Q1_2026": 7055,
+    "Q2_2026": 8005,
+    "Q3_2026_partial_thru_sep2": 4060,
+    "Q1_to_Q2_qoq_pct": 13.5
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff210",
+    "rollup_company_name": "Orlando Real Estate and Property Management",
+    "Q1_2026": 7783,
+    "Q2_2026": 6535,
+    "Q3_2026_partial_thru_sep2": 4433,
+    "Q1_to_Q2_qoq_pct": -16.0
+  },
+  {
+    "rollup_company_id": "eaac9494-c78d-4043-9dc9-e8016a8a2030",
+    "rollup_company_name": "Aramis Realty",
+    "Q1_2026": 4540,
+    "Q2_2026": 8145,
+    "Q3_2026_partial_thru_sep2": 5325,
+    "Q1_to_Q2_qoq_pct": 79.4
+  },
+  {
+    "rollup_company_id": "fae79cdf-b445-4e28-b50d-be2536c9a7dc",
+    "rollup_company_name": "RPM Rental Solutions",
+    "Q1_2026": 0.0,
+    "Q2_2026": 8998.31,
+    "Q3_2026_partial_thru_sep2": 8405.53,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "ff6bb85b-2e8b-4835-9cee-0db0a8012a54",
+    "rollup_company_name": "Cobalt Property Services Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 10999.29,
+    "Q3_2026_partial_thru_sep2": 6320.98,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff066",
+    "rollup_company_name": "Cleveland Property Management",
+    "Q1_2026": 7075,
+    "Q2_2026": 6151,
+    "Q3_2026_partial_thru_sep2": 4004,
+    "Q1_to_Q2_qoq_pct": -13.1
+  },
+  {
+    "rollup_company_id": null,
+    "rollup_company_name": null,
+    "Q1_2026": 6602,
+    "Q2_2026": 6151.26,
+    "Q3_2026_partial_thru_sep2": 4314,
+    "Q1_to_Q2_qoq_pct": -6.8
+  },
+  {
+    "rollup_company_id": "3d05b8a1-2ea8-4593-addc-db049f031197",
+    "rollup_company_name": "Equity Real Estate",
+    "Q1_2026": 0.0,
+    "Q2_2026": 10480.25,
+    "Q3_2026_partial_thru_sep2": 6533.17,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "ff4f9c46-d20b-432b-9a8f-a6adb6d7d5b3",
+    "rollup_company_name": "Platinum Realty and Management",
+    "Q1_2026": 4480,
+    "Q2_2026": 7946,
+    "Q3_2026_partial_thru_sep2": 4505,
+    "Q1_to_Q2_qoq_pct": 77.4
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff074",
+    "rollup_company_name": "CrestCore Realty LLC",
+    "Q1_2026": 7861,
+    "Q2_2026": 5303,
+    "Q3_2026_partial_thru_sep2": 3660,
+    "Q1_to_Q2_qoq_pct": -32.5
+  },
+  {
+    "rollup_company_id": "8267c45c-8807-4f58-8c9b-a2701445a45a",
+    "rollup_company_name": "MIG Management Inc.",
+    "Q1_2026": 4025,
+    "Q2_2026": 6965,
+    "Q3_2026_partial_thru_sep2": 5775,
+    "Q1_to_Q2_qoq_pct": 73.0
+  },
+  {
+    "rollup_company_id": "17407d59-e38f-4d44-8cc3-d6eea5186d74",
+    "rollup_company_name": "Discovery Investments",
+    "Q1_2026": 4025,
+    "Q2_2026": 7070,
+    "Q3_2026_partial_thru_sep2": 5405,
+    "Q1_to_Q2_qoq_pct": 75.7
+  },
+  {
+    "rollup_company_id": "b9eef96b-d06c-4d09-9fce-d4eb627c632b",
+    "rollup_company_name": "InveServe Corp",
+    "Q1_2026": 5095.22,
+    "Q2_2026": 5977.75,
+    "Q3_2026_partial_thru_sep2": 5259.63,
+    "Q1_to_Q2_qoq_pct": 17.3
+  },
+  {
+    "rollup_company_id": "7a449fa0-94b9-424a-a7b9-d0afaca892aa",
+    "rollup_company_name": "Vision Realty & Management",
+    "Q1_2026": 6120,
+    "Q2_2026": 5100,
+    "Q3_2026_partial_thru_sep2": 4818,
+    "Q1_to_Q2_qoq_pct": -16.7
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff154",
+    "rollup_company_name": "Keystone Brokers, Inc",
+    "Q1_2026": 5606,
+    "Q2_2026": 4520,
+    "Q3_2026_partial_thru_sep2": 5900,
+    "Q1_to_Q2_qoq_pct": -19.4
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff051",
+    "rollup_company_name": "Bullseye Property Management LLC",
+    "Q1_2026": 6706,
+    "Q2_2026": 5365,
+    "Q3_2026_partial_thru_sep2": 3433,
+    "Q1_to_Q2_qoq_pct": -20.0
+  },
+  {
+    "rollup_company_id": "2ee3dbfb-61d5-430f-8078-f78d7f07cbde",
+    "rollup_company_name": "360 Management Services Parent",
+    "Q1_2026": 8783.66,
+    "Q2_2026": 6613.5,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -24.7
+  },
+  {
+    "rollup_company_id": "71d9a03f-7112-4cdd-a2ca-00e842887b30",
+    "rollup_company_name": "Doorby Property Management",
+    "Q1_2026": 9636.6,
+    "Q2_2026": 5504.97,
+    "Q3_2026_partial_thru_sep2": 36.05,
+    "Q1_to_Q2_qoq_pct": -42.9
+  },
+  {
+    "rollup_company_id": "266bbb4e-b8ff-4c4e-8bcd-1a2b22f67851",
+    "rollup_company_name": "Benjamin H Realty Corp.",
+    "Q1_2026": 0.0,
+    "Q2_2026": 6343.73,
+    "Q3_2026_partial_thru_sep2": 8618.69,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "a29f3304-d5e4-4785-91dc-53d03f0efebd",
+    "rollup_company_name": "Real Property Management Southland",
+    "Q1_2026": 0.0,
+    "Q2_2026": 3130.35,
+    "Q3_2026_partial_thru_sep2": 11828.28,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff272",
+    "rollup_company_name": "Results Plus, Inc. dba WILMOTH Group",
+    "Q1_2026": 14403,
+    "Q2_2026": 550,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -96.2
+  },
+  {
+    "rollup_company_id": "eabb1e36-ff71-4164-b211-9193cf09da02",
+    "rollup_company_name": "FBM Real Estate Inc.",
+    "Q1_2026": 0.0,
+    "Q2_2026": 1289.07,
+    "Q3_2026_partial_thru_sep2": 13652.62,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff009",
+    "rollup_company_name": "Access Property Management Group, LLC.",
+    "Q1_2026": 7016,
+    "Q2_2026": 5281,
+    "Q3_2026_partial_thru_sep2": 2625,
+    "Q1_to_Q2_qoq_pct": -24.7
+  },
+  {
+    "rollup_company_id": "a080928c-5e50-4639-b0d1-1091086543e2",
+    "rollup_company_name": "Real Property Management Premium",
+    "Q1_2026": 5085,
+    "Q2_2026": 5945,
+    "Q3_2026_partial_thru_sep2": 3885,
+    "Q1_to_Q2_qoq_pct": 16.9
+  },
+  {
+    "rollup_company_id": "77afe14b-5f42-4756-9b7c-e0a6c9ae15fa",
+    "rollup_company_name": "Niguel Point Properties",
+    "Q1_2026": 4170,
+    "Q2_2026": 6530,
+    "Q3_2026_partial_thru_sep2": 4018,
+    "Q1_to_Q2_qoq_pct": 56.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff238",
+    "rollup_company_name": "Real Property Management - Viking",
+    "Q1_2026": 6870,
+    "Q2_2026": 7200,
+    "Q3_2026_partial_thru_sep2": 315,
+    "Q1_to_Q2_qoq_pct": 4.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff253",
+    "rollup_company_name": "Bueno & Finnick dba RE/MAX Center",
+    "Q1_2026": 4470,
+    "Q2_2026": 6293,
+    "Q3_2026_partial_thru_sep2": 3550,
+    "Q1_to_Q2_qoq_pct": 40.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff170",
+    "rollup_company_name": "Market Pro Realty, Inc DBA TouchPoint Property Management",
+    "Q1_2026": 5835,
+    "Q2_2026": 5400,
+    "Q3_2026_partial_thru_sep2": 2975,
+    "Q1_to_Q2_qoq_pct": -7.5
+  },
+  {
+    "rollup_company_id": "36ee8ae6-cf9c-4814-aeb3-882190a86162",
+    "rollup_company_name": "Journey Real Estate",
+    "Q1_2026": 2528.3,
+    "Q2_2026": 6589.46,
+    "Q3_2026_partial_thru_sep2": 4975.22,
+    "Q1_to_Q2_qoq_pct": 160.6
+  },
+  {
+    "rollup_company_id": "30fb68c1-040d-470a-b15d-bd3f396f14f5",
+    "rollup_company_name": "10X Property Management",
+    "Q1_2026": 0.0,
+    "Q2_2026": 8285,
+    "Q3_2026_partial_thru_sep2": 5765,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "9faae6df-4b1a-4b84-b8e6-28ae21695c1b",
+    "rollup_company_name": "Relogic",
+    "Q1_2026": 3155.39,
+    "Q2_2026": 5266.81,
+    "Q3_2026_partial_thru_sep2": 5435.5,
+    "Q1_to_Q2_qoq_pct": 66.9
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff271",
+    "rollup_company_name": "Residential Leasing and Management Corporation",
+    "Q1_2026": 4501,
+    "Q2_2026": 5500,
+    "Q3_2026_partial_thru_sep2": 3804,
+    "Q1_to_Q2_qoq_pct": 22.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff101",
+    "rollup_company_name": "Evergrow Property Management",
+    "Q1_2026": 5600,
+    "Q2_2026": 5370,
+    "Q3_2026_partial_thru_sep2": 2705,
+    "Q1_to_Q2_qoq_pct": -4.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff099",
+    "rollup_company_name": "Enterprise Property Management, Inc.",
+    "Q1_2026": 2760,
+    "Q2_2026": 4605,
+    "Q3_2026_partial_thru_sep2": 6240,
+    "Q1_to_Q2_qoq_pct": 66.8
+  },
+  {
+    "rollup_company_id": "4541dc21-e7d8-4980-be6f-95fd5e8a0d71",
+    "rollup_company_name": "Remax Properties, Inc (Mark Jones)",
+    "Q1_2026": 5360,
+    "Q2_2026": 6124,
+    "Q3_2026_partial_thru_sep2": 2035,
+    "Q1_to_Q2_qoq_pct": 14.3
+  },
+  {
+    "rollup_company_id": "a7df1c84-8e23-49b8-942d-87723eaf20d6",
+    "rollup_company_name": "Dillon Realty",
+    "Q1_2026": 5453,
+    "Q2_2026": 5973,
+    "Q3_2026_partial_thru_sep2": 1995,
+    "Q1_to_Q2_qoq_pct": 9.5
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff105",
+    "rollup_company_name": "Fairin Realty, LLC",
+    "Q1_2026": 4210,
+    "Q2_2026": 6130,
+    "Q3_2026_partial_thru_sep2": 2975,
+    "Q1_to_Q2_qoq_pct": 45.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff049",
+    "rollup_company_name": "Brim Properties",
+    "Q1_2026": 2520,
+    "Q2_2026": 5775,
+    "Q3_2026_partial_thru_sep2": 4725,
+    "Q1_to_Q2_qoq_pct": 129.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff214",
+    "rollup_company_name": "Peak Property Management",
+    "Q1_2026": 4655,
+    "Q2_2026": 4485,
+    "Q3_2026_partial_thru_sep2": 3775,
+    "Q1_to_Q2_qoq_pct": -3.7
+  },
+  {
+    "rollup_company_id": "0cdf2b2e-a3e6-4371-91da-609995a53102",
+    "rollup_company_name": "D Land Parent",
+    "Q1_2026": 2777.55,
+    "Q2_2026": 6554.63,
+    "Q3_2026_partial_thru_sep2": 3501.46,
+    "Q1_to_Q2_qoq_pct": 136.0
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff093",
+    "rollup_company_name": "EGL Properties, Inc.",
+    "Q1_2026": 4285,
+    "Q2_2026": 4600,
+    "Q3_2026_partial_thru_sep2": 3900,
+    "Q1_to_Q2_qoq_pct": 7.4
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff322",
+    "rollup_company_name": "The Charleston Property Company",
+    "Q1_2026": 2860,
+    "Q2_2026": 6325,
+    "Q3_2026_partial_thru_sep2": 3335,
+    "Q1_to_Q2_qoq_pct": 121.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff148",
+    "rollup_company_name": "JMAX Property Management LLC",
+    "Q1_2026": 3940,
+    "Q2_2026": 5265,
+    "Q3_2026_partial_thru_sep2": 3060,
+    "Q1_to_Q2_qoq_pct": 33.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff002",
+    "rollup_company_name": "25th Century",
+    "Q1_2026": 3071.97,
+    "Q2_2026": 5835.83,
+    "Q3_2026_partial_thru_sep2": 3344.22,
+    "Q1_to_Q2_qoq_pct": 90.0
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff319",
+    "rollup_company_name": "Team Cadwell Investments DBA Park Place PM",
+    "Q1_2026": 3546,
+    "Q2_2026": 8275,
+    "Q3_2026_partial_thru_sep2": 140,
+    "Q1_to_Q2_qoq_pct": 133.4
+  },
+  {
+    "rollup_company_id": "5559a74e-591c-4ac9-8e66-7287d38d31ac",
+    "rollup_company_name": "Groma",
+    "Q1_2026": 1294.49,
+    "Q2_2026": 10611.97,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": 719.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff121",
+    "rollup_company_name": "GPM Property Management, LLC.",
+    "Q1_2026": 4380,
+    "Q2_2026": 3900,
+    "Q3_2026_partial_thru_sep2": 3600,
+    "Q1_to_Q2_qoq_pct": -11.0
+  },
+  {
+    "rollup_company_id": "846eaf14-4128-47f0-908e-905f29dbe4fb",
+    "rollup_company_name": "Chicago Turnkey Properties",
+    "Q1_2026": 2391.76,
+    "Q2_2026": 5042.26,
+    "Q3_2026_partial_thru_sep2": 4214.68,
+    "Q1_to_Q2_qoq_pct": 110.8
+  },
+  {
+    "rollup_company_id": "bf43028c-5c3f-4a38-b855-f315d77ddcf0",
+    "rollup_company_name": "Monarch Multifamily",
+    "Q1_2026": 4771.28,
+    "Q2_2026": 4244.4,
+    "Q3_2026_partial_thru_sep2": 2381.88,
+    "Q1_to_Q2_qoq_pct": -11.0
+  },
+  {
+    "rollup_company_id": "03231dac-41b8-4407-b358-268fa05081eb",
+    "rollup_company_name": "Modern City Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 636.42,
+    "Q3_2026_partial_thru_sep2": 10448.76,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "dd2d135d-2b12-41e8-a326-621c2a13e7fa",
+    "rollup_company_name": "RPM Tampa Bay - Instant Equity",
+    "Q1_2026": 4421.79,
+    "Q2_2026": 5977.63,
+    "Q3_2026_partial_thru_sep2": 603.69,
+    "Q1_to_Q2_qoq_pct": 35.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff057",
+    "rollup_company_name": "Campanas Property Management Inc",
+    "Q1_2026": 5915,
+    "Q2_2026": 3380,
+    "Q3_2026_partial_thru_sep2": 1690,
+    "Q1_to_Q2_qoq_pct": -42.9
+  },
+  {
+    "rollup_company_id": "13bab3cd-fa3d-412a-92ee-f3eac414ec00",
+    "rollup_company_name": "Atlanta Partners Property Management",
+    "Q1_2026": 4471,
+    "Q2_2026": 3395,
+    "Q3_2026_partial_thru_sep2": 3105,
+    "Q1_to_Q2_qoq_pct": -24.1
+  },
+  {
+    "rollup_company_id": "059a0e4a-d970-4df3-8bdf-57c5634beec8",
+    "rollup_company_name": "Sound City Realty, LLC",
+    "Q1_2026": 2430.29,
+    "Q2_2026": 5304.95,
+    "Q3_2026_partial_thru_sep2": 3209.66,
+    "Q1_to_Q2_qoq_pct": 118.3
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff095",
+    "rollup_company_name": "Elevate Hawaii Management LLC",
+    "Q1_2026": 2280,
+    "Q2_2026": 6275,
+    "Q3_2026_partial_thru_sep2": 2375,
+    "Q1_to_Q2_qoq_pct": 175.2
+  },
+  {
+    "rollup_company_id": "2b2d195a-cc00-4d58-841d-e5c83ccca50e",
+    "rollup_company_name": "Neighborhood Revival",
+    "Q1_2026": 2688.88,
+    "Q2_2026": 4076.75,
+    "Q3_2026_partial_thru_sep2": 3986.69,
+    "Q1_to_Q2_qoq_pct": 51.6
+  },
+  {
+    "rollup_company_id": "2e2bacce-256c-4fb5-b377-578e05a4af58",
+    "rollup_company_name": "True Rock Property Management",
+    "Q1_2026": 10723.83,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "b58f5992-29a8-470d-8f7f-67c485f465cf",
+    "rollup_company_name": "Real Property Management Experts",
+    "Q1_2026": 8063.4,
+    "Q2_2026": 2553.61,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -68.3
+  },
+  {
+    "rollup_company_id": "cbe1fadb-4cb5-4b20-b216-e7880ca7a4f0",
+    "rollup_company_name": "A Plus Management",
+    "Q1_2026": 2619.03,
+    "Q2_2026": 4786.92,
+    "Q3_2026_partial_thru_sep2": 3189.71,
+    "Q1_to_Q2_qoq_pct": 82.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff053",
+    "rollup_company_name": "BVW Property Management LLC",
+    "Q1_2026": 4823,
+    "Q2_2026": 3500,
+    "Q3_2026_partial_thru_sep2": 2240,
+    "Q1_to_Q2_qoq_pct": -27.4
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff146",
+    "rollup_company_name": "J & L Management Inc DBA Nexus Property Management - Fall River Property Management",
+    "Q1_2026": 4045,
+    "Q2_2026": 4360,
+    "Q3_2026_partial_thru_sep2": 2040,
+    "Q1_to_Q2_qoq_pct": 7.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff324",
+    "rollup_company_name": "The Mor Group, LLC",
+    "Q1_2026": 4508,
+    "Q2_2026": 2895,
+    "Q3_2026_partial_thru_sep2": 2895,
+    "Q1_to_Q2_qoq_pct": -35.8
+  },
+  {
+    "rollup_company_id": "698593e8-245d-4a12-ab70-a378f0550809",
+    "rollup_company_name": "Elm Realty",
+    "Q1_2026": 3607.65,
+    "Q2_2026": 4226.68,
+    "Q3_2026_partial_thru_sep2": 2451.46,
+    "Q1_to_Q2_qoq_pct": 17.2
+  },
+  {
+    "rollup_company_id": "96978fdf-0db2-4805-a158-d10b4cb80437",
+    "rollup_company_name": "Real Property Management Piedmont",
+    "Q1_2026": 2210.73,
+    "Q2_2026": 4827.17,
+    "Q3_2026_partial_thru_sep2": 3174.38,
+    "Q1_to_Q2_qoq_pct": 118.4
+  },
+  {
+    "rollup_company_id": "6c277692-0c3b-4bde-bbfe-1c74b5466f48",
+    "rollup_company_name": "Real Property Management Consultants",
+    "Q1_2026": 3970,
+    "Q2_2026": 4145,
+    "Q3_2026_partial_thru_sep2": 2003,
+    "Q1_to_Q2_qoq_pct": 4.4
+  },
+  {
+    "rollup_company_id": "9292e833-8db0-46f5-87e0-8b399ada028e",
+    "rollup_company_name": "PropertySourced",
+    "Q1_2026": 3045,
+    "Q2_2026": 4935,
+    "Q3_2026_partial_thru_sep2": 2125,
+    "Q1_to_Q2_qoq_pct": 62.1
+  },
+  {
+    "rollup_company_id": "f24bb31d-8c14-4f59-bcb7-4f46849db547",
+    "rollup_company_name": "TruHome Property Solutions",
+    "Q1_2026": 0.0,
+    "Q2_2026": 3902.44,
+    "Q3_2026_partial_thru_sep2": 6194.36,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff017",
+    "rollup_company_name": "Allegiant Management Group, Inc.",
+    "Q1_2026": 5885,
+    "Q2_2026": 2750,
+    "Q3_2026_partial_thru_sep2": 1425,
+    "Q1_to_Q2_qoq_pct": -53.3
+  },
+  {
+    "rollup_company_id": "7a05a6b6-3625-4cfc-a6fc-1172ea87b680",
+    "rollup_company_name": "Domain Property Management",
+    "Q1_2026": 2860,
+    "Q2_2026": 4075,
+    "Q3_2026_partial_thru_sep2": 3025,
+    "Q1_to_Q2_qoq_pct": 42.5
+  },
+  {
+    "rollup_company_id": "b6f008a9-9084-4a53-abf0-d70a6dd8efe2",
+    "rollup_company_name": "iProperties International",
+    "Q1_2026": 0.0,
+    "Q2_2026": 4038.11,
+    "Q3_2026_partial_thru_sep2": 5823.99,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff062",
+    "rollup_company_name": "Chroma Property Management LLC",
+    "Q1_2026": 6265,
+    "Q2_2026": 3535,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -43.6
+  },
+  {
+    "rollup_company_id": "867c49c0-beb7-4f07-973d-c649d7e3c16f",
+    "rollup_company_name": "Real Property Management Central Valley",
+    "Q1_2026": 3770,
+    "Q2_2026": 3250,
+    "Q3_2026_partial_thru_sep2": 2695,
+    "Q1_to_Q2_qoq_pct": -13.8
+  },
+  {
+    "rollup_company_id": "c5ea3025-0f0b-444c-9dcc-2355b818f17a",
+    "rollup_company_name": "Real Property Management Hill Country",
+    "Q1_2026": 2223.93,
+    "Q2_2026": 3787.1,
+    "Q3_2026_partial_thru_sep2": 3622.86,
+    "Q1_to_Q2_qoq_pct": 70.3
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff209",
+    "rollup_company_name": "OneSource Real Estate LLC",
+    "Q1_2026": 5825,
+    "Q2_2026": 2218,
+    "Q3_2026_partial_thru_sep2": 1515,
+    "Q1_to_Q2_qoq_pct": -61.9
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff236",
+    "rollup_company_name": "Real Capital Group Property Management LLC",
+    "Q1_2026": 2680,
+    "Q2_2026": 4380,
+    "Q3_2026_partial_thru_sep2": 2460,
+    "Q1_to_Q2_qoq_pct": 63.4
+  },
+  {
+    "rollup_company_id": "a27d08bc-52bb-4d43-9938-aef5739ab577",
+    "rollup_company_name": "Tim Carr Group",
+    "Q1_2026": 2565.12,
+    "Q2_2026": 3532.42,
+    "Q3_2026_partial_thru_sep2": 3398.01,
+    "Q1_to_Q2_qoq_pct": 37.7
+  },
+  {
+    "rollup_company_id": "f55a9846-5f14-4ab2-b0fb-3b829c922c07",
+    "rollup_company_name": "Hawaii Property Advisors",
+    "Q1_2026": 811.35,
+    "Q2_2026": 5264.22,
+    "Q3_2026_partial_thru_sep2": 3321.54,
+    "Q1_to_Q2_qoq_pct": 548.8
+  },
+  {
+    "rollup_company_id": "56399b4e-334a-454c-b082-7023fadb218a",
+    "rollup_company_name": "Midland Property Partners, LLC - DBA Real Property Management Main",
+    "Q1_2026": 3000,
+    "Q2_2026": 3425,
+    "Q3_2026_partial_thru_sep2": 2895,
+    "Q1_to_Q2_qoq_pct": 14.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff115",
+    "rollup_company_name": "Futurevision Inc",
+    "Q1_2026": 3275,
+    "Q2_2026": 3898,
+    "Q3_2026_partial_thru_sep2": 2100,
+    "Q1_to_Q2_qoq_pct": 19.0
+  },
+  {
+    "rollup_company_id": "6f2e6ff3-8974-4b38-a9e0-ab1ad46d9eb4",
+    "rollup_company_name": "Elme Communities",
+    "Q1_2026": 5054.73,
+    "Q2_2026": 2673.25,
+    "Q3_2026_partial_thru_sep2": 1482.36,
+    "Q1_to_Q2_qoq_pct": -47.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff092",
+    "rollup_company_name": "Edgewater Real Estate LLC",
+    "Q1_2026": 2500,
+    "Q2_2026": 3925,
+    "Q3_2026_partial_thru_sep2": 2675,
+    "Q1_to_Q2_qoq_pct": 57.0
+  },
+  {
+    "rollup_company_id": "19ff6822-1674-4c09-9920-a53a153b0a22",
+    "rollup_company_name": "Valley Homes",
+    "Q1_2026": 2805,
+    "Q2_2026": 2530,
+    "Q3_2026_partial_thru_sep2": 3465,
+    "Q1_to_Q2_qoq_pct": -9.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff090",
+    "rollup_company_name": "Dunfee Real Estate Services",
+    "Q1_2026": 2205,
+    "Q2_2026": 2870,
+    "Q3_2026_partial_thru_sep2": 3465,
+    "Q1_to_Q2_qoq_pct": 30.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff218",
+    "rollup_company_name": "PF Holdings",
+    "Q1_2026": 5576,
+    "Q2_2026": 2416,
+    "Q3_2026_partial_thru_sep2": 340,
+    "Q1_to_Q2_qoq_pct": -56.7
+  },
+  {
+    "rollup_company_id": "98b322a1-8ef5-4f21-be2f-14c00838a6ef",
+    "rollup_company_name": "Ashman Associates",
+    "Q1_2026": 2785.97,
+    "Q2_2026": 2995.69,
+    "Q3_2026_partial_thru_sep2": 2492,
+    "Q1_to_Q2_qoq_pct": 7.5
+  },
+  {
+    "rollup_company_id": "868562b0-d53a-4a7f-9448-50af883d1366",
+    "rollup_company_name": "Real Property Management Midtown",
+    "Q1_2026": 2802.8,
+    "Q2_2026": 3408.72,
+    "Q3_2026_partial_thru_sep2": 1894.19,
+    "Q1_to_Q2_qoq_pct": 21.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff256",
+    "rollup_company_name": "Rent Appeal, Inc.",
+    "Q1_2026": 2815,
+    "Q2_2026": 3535,
+    "Q3_2026_partial_thru_sep2": 1680,
+    "Q1_to_Q2_qoq_pct": 25.6
+  },
+  {
+    "rollup_company_id": "56795cd6-f7d0-4f41-88c2-88482a1e8dfb",
+    "rollup_company_name": "Cowboy Properties",
+    "Q1_2026": 2674.09,
+    "Q2_2026": 3476.18,
+    "Q3_2026_partial_thru_sep2": 1841.64,
+    "Q1_to_Q2_qoq_pct": 30.0
+  },
+  {
+    "rollup_company_id": "85e27135-e233-40cc-9794-9f8b3068eda9",
+    "rollup_company_name": "Real Property Management South Orlando",
+    "Q1_2026": 2330,
+    "Q2_2026": 3695,
+    "Q3_2026_partial_thru_sep2": 1905,
+    "Q1_to_Q2_qoq_pct": 58.6
+  },
+  {
+    "rollup_company_id": "30141bbd-48b7-407c-8e79-d097807b384c",
+    "rollup_company_name": "Homebox",
+    "Q1_2026": 1575,
+    "Q2_2026": 4800,
+    "Q3_2026_partial_thru_sep2": 1498,
+    "Q1_to_Q2_qoq_pct": 204.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff067",
+    "rollup_company_name": "Coastal One Property Management",
+    "Q1_2026": 3045,
+    "Q2_2026": 2755,
+    "Q3_2026_partial_thru_sep2": 2030,
+    "Q1_to_Q2_qoq_pct": -9.5
+  },
+  {
+    "rollup_company_id": "f78b5af7-a807-467f-b3cc-08a0067abf80",
+    "rollup_company_name": "Woodlake Properties Parent",
+    "Q1_2026": 110.49,
+    "Q2_2026": 2525.66,
+    "Q3_2026_partial_thru_sep2": 5156.08,
+    "Q1_to_Q2_qoq_pct": 2185.9
+  },
+  {
+    "rollup_company_id": "64d4039c-c1e3-4a3e-b92f-4a44109e1408",
+    "rollup_company_name": "Longstep Property Solutions",
+    "Q1_2026": 2647.01,
+    "Q2_2026": 2451.32,
+    "Q3_2026_partial_thru_sep2": 2544.22,
+    "Q1_to_Q2_qoq_pct": -7.4
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff181",
+    "rollup_company_name": "Mesa Properties",
+    "Q1_2026": 7640,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff018",
+    "rollup_company_name": "Alliance Property Management, Inc",
+    "Q1_2026": 4025,
+    "Q2_2026": 3500,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -13.0
+  },
+  {
+    "rollup_company_id": "b13b78ce-9d20-41b2-80f2-9c165ae560f9",
+    "rollup_company_name": "Perimeter Property Services",
+    "Q1_2026": 2644.4,
+    "Q2_2026": 3085.99,
+    "Q3_2026_partial_thru_sep2": 1766.68,
+    "Q1_to_Q2_qoq_pct": 16.7
+  },
+  {
+    "rollup_company_id": "069dba1f-c1c8-4e61-8443-bf2c16b4382b",
+    "rollup_company_name": "Canyon Residential LLC",
+    "Q1_2026": 3015,
+    "Q2_2026": 3600,
+    "Q3_2026_partial_thru_sep2": 855,
+    "Q1_to_Q2_qoq_pct": 19.4
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff094",
+    "rollup_company_name": "Elder Properties of Greensboro Inc. - DBA Your Home Triad",
+    "Q1_2026": 3335,
+    "Q2_2026": 1470,
+    "Q3_2026_partial_thru_sep2": 2455,
+    "Q1_to_Q2_qoq_pct": -55.9
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff224",
+    "rollup_company_name": "Place Management LLC",
+    "Q1_2026": 2268,
+    "Q2_2026": 3143,
+    "Q3_2026_partial_thru_sep2": 1785,
+    "Q1_to_Q2_qoq_pct": 38.6
+  },
+  {
+    "rollup_company_id": "44800f5f-8c36-4fc0-aead-c6aca0033380",
+    "rollup_company_name": "RPM Charlotte Metro DBA Real Property Management Charlotte Metro",
+    "Q1_2026": 3212,
+    "Q2_2026": 2447,
+    "Q3_2026_partial_thru_sep2": 1532,
+    "Q1_to_Q2_qoq_pct": -23.8
+  },
+  {
+    "rollup_company_id": "c527bee3-f36e-4660-aaaa-578c2d6bdcda",
+    "rollup_company_name": "Cornerstone Income Properties",
+    "Q1_2026": 3457.21,
+    "Q2_2026": 2618.57,
+    "Q3_2026_partial_thru_sep2": 1011.4,
+    "Q1_to_Q2_qoq_pct": -24.3
+  },
+  {
+    "rollup_company_id": "c1d13244-3bde-4522-9306-a1aff56831f3",
+    "rollup_company_name": "Crossview Property Management",
+    "Q1_2026": 2400.23,
+    "Q2_2026": 3206.89,
+    "Q3_2026_partial_thru_sep2": 1473.08,
+    "Q1_to_Q2_qoq_pct": 33.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff183",
+    "rollup_company_name": "Metropolitan Real Estate LLC",
+    "Q1_2026": 3086,
+    "Q2_2026": 1953,
+    "Q3_2026_partial_thru_sep2": 1925,
+    "Q1_to_Q2_qoq_pct": -36.7
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff054",
+    "rollup_company_name": "Byrd Palmer & Associates",
+    "Q1_2026": 2625,
+    "Q2_2026": 1925,
+    "Q3_2026_partial_thru_sep2": 2275,
+    "Q1_to_Q2_qoq_pct": -26.7
+  },
+  {
+    "rollup_company_id": "0419f40e-5e8b-4ce8-a1fe-5e47828f744e",
+    "rollup_company_name": "Soniat Realty",
+    "Q1_2026": 2300,
+    "Q2_2026": 2370,
+    "Q3_2026_partial_thru_sep2": 2015,
+    "Q1_to_Q2_qoq_pct": 3.0
+  },
+  {
+    "rollup_company_id": "cf5aa3c5-9f2b-4b66-95a3-e27746400af0",
+    "rollup_company_name": "Real Property Management Midlands",
+    "Q1_2026": 2995,
+    "Q2_2026": 2140,
+    "Q3_2026_partial_thru_sep2": 1505,
+    "Q1_to_Q2_qoq_pct": -28.5
+  },
+  {
+    "rollup_company_id": "5dfb5913-c926-469a-8445-064ddf7250a8",
+    "rollup_company_name": "VP Management Inc",
+    "Q1_2026": 6629,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff259",
+    "rollup_company_name": "Rental Management Guys, LLC",
+    "Q1_2026": 4588.5,
+    "Q2_2026": 1925,
+    "Q3_2026_partial_thru_sep2": 105,
+    "Q1_to_Q2_qoq_pct": -58.0
+  },
+  {
+    "rollup_company_id": "18507749-0d8c-4154-b2f8-fccadc56e8e2",
+    "rollup_company_name": "Bouse Properties",
+    "Q1_2026": 2079,
+    "Q2_2026": 2337.98,
+    "Q3_2026_partial_thru_sep2": 2191.26,
+    "Q1_to_Q2_qoq_pct": 12.5
+  },
+  {
+    "rollup_company_id": "a69e1b33-0d1b-4780-b6d7-efe0d2d9600c",
+    "rollup_company_name": "Paragon Property Management Group LLC",
+    "Q1_2026": 1155,
+    "Q2_2026": 3885,
+    "Q3_2026_partial_thru_sep2": 1560,
+    "Q1_to_Q2_qoq_pct": 236.4
+  },
+  {
+    "rollup_company_id": "63fb39c2-e9e5-47da-8e4f-81e06b5f7091",
+    "rollup_company_name": "Metro Property Management Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 4584.32,
+    "Q3_2026_partial_thru_sep2": 2011.79,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "6b0079db-4c09-4f1d-b355-50e5e794ada9",
+    "rollup_company_name": "Elite Team Realty",
+    "Q1_2026": 2069.88,
+    "Q2_2026": 3204.92,
+    "Q3_2026_partial_thru_sep2": 1267.28,
+    "Q1_to_Q2_qoq_pct": 54.8
+  },
+  {
+    "rollup_company_id": "5fc9ad88-c968-4927-9961-d0026b0244a3",
+    "rollup_company_name": "Sound Mind Realty",
+    "Q1_2026": 0.0,
+    "Q2_2026": 2681.89,
+    "Q3_2026_partial_thru_sep2": 3837.04,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "4ee7f30f-806a-4ac0-b768-e45cc9ea6bd6",
+    "rollup_company_name": "Payton\u2019s Place Real Estate, LLC",
+    "Q1_2026": 2080,
+    "Q2_2026": 2018,
+    "Q3_2026_partial_thru_sep2": 2418,
+    "Q1_to_Q2_qoq_pct": -3.0
+  },
+  {
+    "rollup_company_id": "e9f0147d-314a-48e3-9d15-cd8e848c8232",
+    "rollup_company_name": "Crossroads Realty",
+    "Q1_2026": 2280,
+    "Q2_2026": 2715,
+    "Q3_2026_partial_thru_sep2": 1465,
+    "Q1_to_Q2_qoq_pct": 19.1
+  },
+  {
+    "rollup_company_id": "fed830a1-d843-4b56-9156-f13327e8d931",
+    "rollup_company_name": "Coastal Group",
+    "Q1_2026": 2855,
+    "Q2_2026": 1775,
+    "Q3_2026_partial_thru_sep2": 1780,
+    "Q1_to_Q2_qoq_pct": -37.8
+  },
+  {
+    "rollup_company_id": "c162e682-fe9e-4f4d-b5ba-2f28de703747",
+    "rollup_company_name": "Out Fast Property Management",
+    "Q1_2026": 2933.57,
+    "Q2_2026": 3443.57,
+    "Q3_2026_partial_thru_sep2": 6.19,
+    "Q1_to_Q2_qoq_pct": 17.4
+  },
+  {
+    "rollup_company_id": "7244f908-8253-421b-a40f-6231486f92ca",
+    "rollup_company_name": "Augusta Partners Property Management",
+    "Q1_2026": 2974.58,
+    "Q2_2026": 1900.74,
+    "Q3_2026_partial_thru_sep2": 1441.25,
+    "Q1_to_Q2_qoq_pct": -36.1
+  },
+  {
+    "rollup_company_id": "58dd2cc2-a137-4008-8bc0-1e0fb09077b2",
+    "rollup_company_name": "Standard Management Company Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 6223.05,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff144",
+    "rollup_company_name": "Intown Home Property Management",
+    "Q1_2026": 1510,
+    "Q2_2026": 2218,
+    "Q3_2026_partial_thru_sep2": 2455,
+    "Q1_to_Q2_qoq_pct": 46.9
+  },
+  {
+    "rollup_company_id": "f02518ad-4145-4edc-9a67-56e1528885c8",
+    "rollup_company_name": "Exceptional Property Management",
+    "Q1_2026": 1886.67,
+    "Q2_2026": 2660.36,
+    "Q3_2026_partial_thru_sep2": 1602.99,
+    "Q1_to_Q2_qoq_pct": 41.0
+  },
+  {
+    "rollup_company_id": "2eff6cdf-9026-467a-a8e1-01e51efc7228",
+    "rollup_company_name": "KAIZEN Realty",
+    "Q1_2026": 2459.81,
+    "Q2_2026": 1721.87,
+    "Q3_2026_partial_thru_sep2": 1783.36,
+    "Q1_to_Q2_qoq_pct": -30.0
+  },
+  {
+    "rollup_company_id": "d99b2cda-8f67-485c-9f48-cb3b2c2acdd3",
+    "rollup_company_name": "Willowdale Property Management",
+    "Q1_2026": 0.0,
+    "Q2_2026": 2373.72,
+    "Q3_2026_partial_thru_sep2": 3582.82,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "29cd0bed-7e8f-499c-842e-4eb2911d1314",
+    "rollup_company_name": "Living In Town Realty Group LLC",
+    "Q1_2026": 3206,
+    "Q2_2026": 2065,
+    "Q3_2026_partial_thru_sep2": 595,
+    "Q1_to_Q2_qoq_pct": -35.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff016",
+    "rollup_company_name": "All 3 Realty LLC",
+    "Q1_2026": 5790,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "fe2d2c22-3063-4c47-9313-7f98eee3aa86",
+    "rollup_company_name": "Remax Properties, Inc - Chuck Wartman",
+    "Q1_2026": 920,
+    "Q2_2026": 2745,
+    "Q3_2026_partial_thru_sep2": 2083,
+    "Q1_to_Q2_qoq_pct": 198.4
+  },
+  {
+    "rollup_company_id": "bb9a9f89-b3ab-4970-bb32-a26fc6a52735",
+    "rollup_company_name": "Blue Door Living",
+    "Q1_2026": 5567.86,
+    "Q2_2026": 66.2,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -98.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff022",
+    "rollup_company_name": "Apartments Niagara LLC",
+    "Q1_2026": 1673,
+    "Q2_2026": 2085,
+    "Q3_2026_partial_thru_sep2": 1775,
+    "Q1_to_Q2_qoq_pct": 24.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff317",
+    "rollup_company_name": "Tampa's Best Realty, LLC",
+    "Q1_2026": 1860,
+    "Q2_2026": 2180,
+    "Q3_2026_partial_thru_sep2": 1410,
+    "Q1_to_Q2_qoq_pct": 17.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff072",
+    "rollup_company_name": "Compass Property Management, LLC",
+    "Q1_2026": 4320,
+    "Q2_2026": 928,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -78.5
+  },
+  {
+    "rollup_company_id": "72a0eaf3-dc72-4a10-9540-1553cc05bb3f",
+    "rollup_company_name": "Advantage Property Management",
+    "Q1_2026": 3323.62,
+    "Q2_2026": 1911.55,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -42.5
+  },
+  {
+    "rollup_company_id": "b310e184-c33d-4d97-a306-437905501b24",
+    "rollup_company_name": "Raynor Realty",
+    "Q1_2026": 1890,
+    "Q2_2026": 2100,
+    "Q3_2026_partial_thru_sep2": 1190,
+    "Q1_to_Q2_qoq_pct": 11.1
+  },
+  {
+    "rollup_company_id": "6afbb9fb-80fa-4917-b6d1-c1416f89f610",
+    "rollup_company_name": "Homestead Property Management",
+    "Q1_2026": 5083.47,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "c87097ec-e7e6-4306-80f2-3ec50f59e31e",
+    "rollup_company_name": "Yancey Management",
+    "Q1_2026": 0.0,
+    "Q2_2026": 2137.06,
+    "Q3_2026_partial_thru_sep2": 2922.13,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "4b04122e-b91f-42b6-8be1-83ff8c306a61",
+    "rollup_company_name": "Habitue Homes",
+    "Q1_2026": 427.4,
+    "Q2_2026": 2765.28,
+    "Q3_2026_partial_thru_sep2": 1802.33,
+    "Q1_to_Q2_qoq_pct": 547.0
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff032",
+    "rollup_company_name": "Avenue LLC",
+    "Q1_2026": 4970,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "7baa3953-a86d-4c13-bf72-e5b9278ae078",
+    "rollup_company_name": "Real Property Management Ignite",
+    "Q1_2026": 1538,
+    "Q2_2026": 1920,
+    "Q3_2026_partial_thru_sep2": 1480,
+    "Q1_to_Q2_qoq_pct": 24.8
+  },
+  {
+    "rollup_company_id": "69287b86-c534-44f3-9c91-bc13129d0ac5",
+    "rollup_company_name": "Millennial Realty & Property Management",
+    "Q1_2026": 2296.92,
+    "Q2_2026": 1790.58,
+    "Q3_2026_partial_thru_sep2": 834.98,
+    "Q1_to_Q2_qoq_pct": -22.0
+  },
+  {
+    "rollup_company_id": "8f5e5904-ba49-4984-9f17-aef8cd103c65",
+    "rollup_company_name": "In the City Apartments",
+    "Q1_2026": 768.11,
+    "Q2_2026": 3010.63,
+    "Q3_2026_partial_thru_sep2": 1064.62,
+    "Q1_to_Q2_qoq_pct": 292.0
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff280",
+    "rollup_company_name": "River City Property Group LLC dba PMI Scenic City",
+    "Q1_2026": 1800,
+    "Q2_2026": 2120,
+    "Q3_2026_partial_thru_sep2": 920,
+    "Q1_to_Q2_qoq_pct": 17.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff316",
+    "rollup_company_name": "T2M Real Estate",
+    "Q1_2026": 2870,
+    "Q2_2026": 1410,
+    "Q3_2026_partial_thru_sep2": 365,
+    "Q1_to_Q2_qoq_pct": -50.9
+  },
+  {
+    "rollup_company_id": "9b6f40c0-0cb2-4e66-a78d-0727e1d9f4c4",
+    "rollup_company_name": "Real Property Management Titan",
+    "Q1_2026": 1253,
+    "Q2_2026": 2303,
+    "Q3_2026_partial_thru_sep2": 1062,
+    "Q1_to_Q2_qoq_pct": 83.8
+  },
+  {
+    "rollup_company_id": "43f6c4e3-bc25-4019-af42-9b75b7b9361e",
+    "rollup_company_name": "Jilot Property Managment",
+    "Q1_2026": 1498,
+    "Q2_2026": 1960,
+    "Q3_2026_partial_thru_sep2": 1085,
+    "Q1_to_Q2_qoq_pct": 30.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff004",
+    "rollup_company_name": "40 Oaks PM LLC",
+    "Q1_2026": 1225,
+    "Q2_2026": 2170,
+    "Q3_2026_partial_thru_sep2": 980,
+    "Q1_to_Q2_qoq_pct": 77.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff129",
+    "rollup_company_name": "HNN Atlanta",
+    "Q1_2026": 1365,
+    "Q2_2026": 2205,
+    "Q3_2026_partial_thru_sep2": 700,
+    "Q1_to_Q2_qoq_pct": 61.5
+  },
+  {
+    "rollup_company_id": "6a0eacb5-5352-4639-bc95-6346ed9171ef",
+    "rollup_company_name": "Oasys Properties",
+    "Q1_2026": 1238.5,
+    "Q2_2026": 1176.5,
+    "Q3_2026_partial_thru_sep2": 1782.5,
+    "Q1_to_Q2_qoq_pct": -5.0
+  },
+  {
+    "rollup_company_id": "1ff9ff25-cca7-41b1-b9c6-085b08413147",
+    "rollup_company_name": "Rental Property Management",
+    "Q1_2026": 1931.07,
+    "Q2_2026": 1158.64,
+    "Q3_2026_partial_thru_sep2": 1081.4,
+    "Q1_to_Q2_qoq_pct": -40.0
+  },
+  {
+    "rollup_company_id": "e2a8658d-6d65-448a-ac64-1a963f50d6d8",
+    "rollup_company_name": "Real Property Management Advantage",
+    "Q1_2026": 1130,
+    "Q2_2026": 1495,
+    "Q3_2026_partial_thru_sep2": 1521,
+    "Q1_to_Q2_qoq_pct": 32.3
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff201",
+    "rollup_company_name": "Nomad Labs, Inc.",
+    "Q1_2026": 2340,
+    "Q2_2026": 1530,
+    "Q3_2026_partial_thru_sep2": 240,
+    "Q1_to_Q2_qoq_pct": -34.6
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff013",
+    "rollup_company_name": "Aggus Realty",
+    "Q1_2026": 839,
+    "Q2_2026": 1716,
+    "Q3_2026_partial_thru_sep2": 1404,
+    "Q1_to_Q2_qoq_pct": 104.5
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff151",
+    "rollup_company_name": "Katy PM, LLC - Patriot Property",
+    "Q1_2026": 2929.64,
+    "Q2_2026": 952.57,
+    "Q3_2026_partial_thru_sep2": 29.27,
+    "Q1_to_Q2_qoq_pct": -67.5
+  },
+  {
+    "rollup_company_id": "045dbf69-7609-4e1a-a7e0-4133cc30bdc9",
+    "rollup_company_name": "RAM Austin",
+    "Q1_2026": 3688.7,
+    "Q2_2026": 218.97,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -94.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff077",
+    "rollup_company_name": "D&K Property Management & Real Estate LLC",
+    "Q1_2026": 795,
+    "Q2_2026": 1560,
+    "Q3_2026_partial_thru_sep2": 1545,
+    "Q1_to_Q2_qoq_pct": 96.2
+  },
+  {
+    "rollup_company_id": "644f0500-6632-470e-aa54-eade1561cf09",
+    "rollup_company_name": "First Pacific Parent",
+    "Q1_2026": 450.42,
+    "Q2_2026": 3435.75,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": 662.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff149",
+    "rollup_company_name": "Joe Kapp Real Estate IC",
+    "Q1_2026": 3540,
+    "Q2_2026": 340,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -90.4
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff020",
+    "rollup_company_name": "Alabama's Rental Managers",
+    "Q1_2026": 3840,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff179",
+    "rollup_company_name": "MECA Realty LLC.",
+    "Q1_2026": 1270,
+    "Q2_2026": 1240,
+    "Q3_2026_partial_thru_sep2": 1315,
+    "Q1_to_Q2_qoq_pct": -2.4
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff188",
+    "rollup_company_name": "Mississippi Property Managers, LLC",
+    "Q1_2026": 1365,
+    "Q2_2026": 1505,
+    "Q3_2026_partial_thru_sep2": 875,
+    "Q1_to_Q2_qoq_pct": 10.3
+  },
+  {
+    "rollup_company_id": "2d470f86-cfa6-4050-9ae4-cd150f41e5ba",
+    "rollup_company_name": "Hot Florida Real Estate Company",
+    "Q1_2026": 2530,
+    "Q2_2026": 1140,
+    "Q3_2026_partial_thru_sep2": 60,
+    "Q1_to_Q2_qoq_pct": -54.9
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff012",
+    "rollup_company_name": "Advantage Realty Services, Inc",
+    "Q1_2026": 1165,
+    "Q2_2026": 1515,
+    "Q3_2026_partial_thru_sep2": 1030,
+    "Q1_to_Q2_qoq_pct": 30.0
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff258",
+    "rollup_company_name": "Rental Management Group LLC",
+    "Q1_2026": 968,
+    "Q2_2026": 1445,
+    "Q3_2026_partial_thru_sep2": 1290,
+    "Q1_to_Q2_qoq_pct": 49.3
+  },
+  {
+    "rollup_company_id": "59ec4a29-9502-453d-b429-6d83fd105f12",
+    "rollup_company_name": "NAB 324 LLC",
+    "Q1_2026": 800,
+    "Q2_2026": 1670,
+    "Q3_2026_partial_thru_sep2": 1150,
+    "Q1_to_Q2_qoq_pct": 108.7
+  },
+  {
+    "rollup_company_id": "26ba368a-a198-4bb8-ac5d-74ae9bc75fa6",
+    "rollup_company_name": "Real Property Management Three Bridges",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 3587.12,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "2d6ab016-dbed-4a70-aeec-1d54c3e9a277",
+    "rollup_company_name": "KCP Real Estate LLC",
+    "Q1_2026": 0.0,
+    "Q2_2026": 1307.1,
+    "Q3_2026_partial_thru_sep2": 2240.73,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff039",
+    "rollup_company_name": "Beyond Property Management",
+    "Q1_2026": 1155,
+    "Q2_2026": 2310,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": 100.0
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff096",
+    "rollup_company_name": "Emerald Shores Realty Inc.",
+    "Q1_2026": 1730,
+    "Q2_2026": 910,
+    "Q3_2026_partial_thru_sep2": 825,
+    "Q1_to_Q2_qoq_pct": -47.4
+  },
+  {
+    "rollup_company_id": "99be3a03-d0f0-42b9-938b-8f2bbf069510",
+    "rollup_company_name": "Madison Parke",
+    "Q1_2026": 3388,
+    "Q2_2026": 35,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -99.0
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff071",
+    "rollup_company_name": "Columbia Property Management, LLC",
+    "Q1_2026": 1710,
+    "Q2_2026": 1620,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -5.3
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff189",
+    "rollup_company_name": "Monterey Rentals",
+    "Q1_2026": 3255,
+    "Q2_2026": 70,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -97.8
+  },
+  {
+    "rollup_company_id": "8b4b2153-0809-4a2f-935e-8751d4fb2e7a",
+    "rollup_company_name": "PPG Property Management",
+    "Q1_2026": 3279.09,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "565a1ed2-0d40-41bc-b83c-f85e318f5898",
+    "rollup_company_name": "Bryten Real Estate Partners Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 3270.4,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "30b949f2-b5df-46d6-a3e0-ad7541c3f9d4",
+    "rollup_company_name": "Real Property Management - North Point",
+    "Q1_2026": 685,
+    "Q2_2026": 1740,
+    "Q3_2026_partial_thru_sep2": 800,
+    "Q1_to_Q2_qoq_pct": 154.0
+  },
+  {
+    "rollup_company_id": "6139c87f-8d5e-40a7-8634-10897f96de62",
+    "rollup_company_name": "Red Realty, LLC",
+    "Q1_2026": 575,
+    "Q2_2026": 1200,
+    "Q3_2026_partial_thru_sep2": 1315,
+    "Q1_to_Q2_qoq_pct": 108.7
+  },
+  {
+    "rollup_company_id": "bd9d186f-bcd9-44b1-8787-886d29350036",
+    "rollup_company_name": "Littell Properties",
+    "Q1_2026": 998,
+    "Q2_2026": 938,
+    "Q3_2026_partial_thru_sep2": 998,
+    "Q1_to_Q2_qoq_pct": -6.0
+  },
+  {
+    "rollup_company_id": "4b9a39c9-607e-4a55-88b2-14c353d46273",
+    "rollup_company_name": "Elda Management Services",
+    "Q1_2026": 0.0,
+    "Q2_2026": 557.49,
+    "Q3_2026_partial_thru_sep2": 2211.91,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff163",
+    "rollup_company_name": "Lighthouse Real Estate Services Inc.",
+    "Q1_2026": 665,
+    "Q2_2026": 1225,
+    "Q3_2026_partial_thru_sep2": 875,
+    "Q1_to_Q2_qoq_pct": 84.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff207",
+    "rollup_company_name": "Omega Realty Group",
+    "Q1_2026": 2720,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "9ddc8651-b87b-48de-b937-019f1c166861",
+    "rollup_company_name": "Infinite Property Management, LLC",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 2665.69,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "13a3e9be-0f38-4ac9-a8f6-db5fb27d5d2d",
+    "rollup_company_name": "JMS Property",
+    "Q1_2026": 1615,
+    "Q2_2026": 525,
+    "Q3_2026_partial_thru_sep2": 515,
+    "Q1_to_Q2_qoq_pct": -67.5
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff342",
+    "rollup_company_name": "Valiant Realty & Management",
+    "Q1_2026": 770,
+    "Q2_2026": 805,
+    "Q3_2026_partial_thru_sep2": 1050,
+    "Q1_to_Q2_qoq_pct": 4.5
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff359",
+    "rollup_company_name": "Winfield Captial",
+    "Q1_2026": 608,
+    "Q2_2026": 960,
+    "Q3_2026_partial_thru_sep2": 1020,
+    "Q1_to_Q2_qoq_pct": 57.9
+  },
+  {
+    "rollup_company_id": "1b50cd82-9f37-4f9d-bc66-b79d2b6a809f",
+    "rollup_company_name": "White Property Management - Ridgewood Apartments",
+    "Q1_2026": 845.12,
+    "Q2_2026": 923.52,
+    "Q3_2026_partial_thru_sep2": 765.3,
+    "Q1_to_Q2_qoq_pct": 9.3
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff255",
+    "rollup_company_name": "Rent 805",
+    "Q1_2026": 840,
+    "Q2_2026": 1295,
+    "Q3_2026_partial_thru_sep2": 385,
+    "Q1_to_Q2_qoq_pct": 54.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff302",
+    "rollup_company_name": "Specialized Realty, Inc.",
+    "Q1_2026": 1665,
+    "Q2_2026": 840,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -49.5
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff350",
+    "rollup_company_name": "Waypoint Residential Management",
+    "Q1_2026": 480,
+    "Q2_2026": 630,
+    "Q3_2026_partial_thru_sep2": 1170,
+    "Q1_to_Q2_qoq_pct": 31.2
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff035",
+    "rollup_company_name": "Barringer Investments & Property Management",
+    "Q1_2026": 630,
+    "Q2_2026": 705,
+    "Q3_2026_partial_thru_sep2": 905,
+    "Q1_to_Q2_qoq_pct": 11.9
+  },
+  {
+    "rollup_company_id": "9d7569de-6704-4a78-a9c6-5e22f25343f9",
+    "rollup_company_name": "Defined Property Management Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 2193.85,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff212",
+    "rollup_company_name": "Paielli Realty, Inc.",
+    "Q1_2026": 735,
+    "Q2_2026": 810,
+    "Q3_2026_partial_thru_sep2": 630,
+    "Q1_to_Q2_qoq_pct": 10.2
+  },
+  {
+    "rollup_company_id": "d11ccea7-44c6-4d23-b764-bfefc3b050fd",
+    "rollup_company_name": "Green Property Management LLC",
+    "Q1_2026": 200.83,
+    "Q2_2026": 1972.42,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": 882.1
+  },
+  {
+    "rollup_company_id": "e295b1bc-2f93-41bb-bfd6-85f1eb95d2c1",
+    "rollup_company_name": "First Place Management, Inc",
+    "Q1_2026": 735,
+    "Q2_2026": 910,
+    "Q3_2026_partial_thru_sep2": 455,
+    "Q1_to_Q2_qoq_pct": 23.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff046",
+    "rollup_company_name": "Brick & Mortar Properties",
+    "Q1_2026": 525,
+    "Q2_2026": 938,
+    "Q3_2026_partial_thru_sep2": 595,
+    "Q1_to_Q2_qoq_pct": 78.7
+  },
+  {
+    "rollup_company_id": "ec1cf5da-ed90-405c-8237-720a18d390d9",
+    "rollup_company_name": "MS Coast Property Management II LLC",
+    "Q1_2026": 0.0,
+    "Q2_2026": 761.91,
+    "Q3_2026_partial_thru_sep2": 1272.1,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "a0cfa574-353a-4903-9183-ee70751bfb2c",
+    "rollup_company_name": "MT Properties Group LLC",
+    "Q1_2026": 0.0,
+    "Q2_2026": 1990.52,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff304",
+    "rollup_company_name": "Spruce Quality Rentals",
+    "Q1_2026": 1855,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "37ef7ba8-415d-4acf-bac4-fb70aa1d5822",
+    "rollup_company_name": "Thousand Oaks HOA",
+    "Q1_2026": 835,
+    "Q2_2026": 580,
+    "Q3_2026_partial_thru_sep2": 435,
+    "Q1_to_Q2_qoq_pct": -30.5
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff069",
+    "rollup_company_name": "Colonial Residential Properties Inc.",
+    "Q1_2026": 1690,
+    "Q2_2026": 150,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -91.1
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff043",
+    "rollup_company_name": "Bluewater Property Management LLC",
+    "Q1_2026": 805,
+    "Q2_2026": 735,
+    "Q3_2026_partial_thru_sep2": 280,
+    "Q1_to_Q2_qoq_pct": -8.7
+  },
+  {
+    "rollup_company_id": "32f7fc21-a37a-41e2-b0a8-7b5317e2424d",
+    "rollup_company_name": "FS Houses - Indianapolis - dba Property Management 317",
+    "Q1_2026": 1808,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "a8fed10c-0d0c-4c9b-bd52-08eb1c3ba4d5",
+    "rollup_company_name": "Real Property Management Superior Properties",
+    "Q1_2026": 933.64,
+    "Q2_2026": 581.45,
+    "Q3_2026_partial_thru_sep2": 248.98,
+    "Q1_to_Q2_qoq_pct": -37.7
+  },
+  {
+    "rollup_company_id": "22076760-2133-4659-b3d4-8a1cd07ff3e4",
+    "rollup_company_name": "Glover Property Management, Inc.",
+    "Q1_2026": 67.24,
+    "Q2_2026": 967.15,
+    "Q3_2026_partial_thru_sep2": 672.43,
+    "Q1_to_Q2_qoq_pct": 1338.4
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff344",
+    "rollup_company_name": "Vesta Real Estate, LLC",
+    "Q1_2026": 1000,
+    "Q2_2026": 658,
+    "Q3_2026_partial_thru_sep2": 40,
+    "Q1_to_Q2_qoq_pct": -34.2
+  },
+  {
+    "rollup_company_id": "547bf6d7-c815-4749-a989-32f6f577dcb4",
+    "rollup_company_name": "Fresno Management Company Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 1655.36,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "7f0a0bc1-7c9a-4752-acc9-30a9834ea364",
+    "rollup_company_name": "NWA Peak Property Management LLC",
+    "Q1_2026": 0.0,
+    "Q2_2026": 373.46,
+    "Q3_2026_partial_thru_sep2": 1171.87,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff134",
+    "rollup_company_name": "HomeRock, LLC",
+    "Q1_2026": 630,
+    "Q2_2026": 455,
+    "Q3_2026_partial_thru_sep2": 455,
+    "Q1_to_Q2_qoq_pct": -27.8
+  },
+  {
+    "rollup_company_id": "28370528-4fb6-41b1-ba09-865670f80da8",
+    "rollup_company_name": "Howard Management Group Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 1539.22,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "7331e6ec-e419-4deb-b065-ed189b6d1180",
+    "rollup_company_name": "ALNA Management INC",
+    "Q1_2026": 1050,
+    "Q2_2026": 315,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -70.0
+  },
+  {
+    "rollup_company_id": "87bf054c-4eed-4990-9df0-8662e83156f0",
+    "rollup_company_name": "Actlien Holdings",
+    "Q1_2026": 1168.42,
+    "Q2_2026": 184.49,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -84.2
+  },
+  {
+    "rollup_company_id": "9cadf1f5-1578-43b1-9186-43608b70310a",
+    "rollup_company_name": "3 Options Realty",
+    "Q1_2026": 537.94,
+    "Q2_2026": 496.45,
+    "Q3_2026_partial_thru_sep2": 201.73,
+    "Q1_to_Q2_qoq_pct": -7.7
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff202",
+    "rollup_company_name": "Northpoint LLC",
+    "Q1_2026": 1208,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff365",
+    "rollup_company_name": "Real Property Management",
+    "Q1_2026": 805,
+    "Q2_2026": 158,
+    "Q3_2026_partial_thru_sep2": 175,
+    "Q1_to_Q2_qoq_pct": -80.4
+  },
+  {
+    "rollup_company_id": "a7e7b54d-e9f9-4809-a347-3bd1fdb0f76e",
+    "rollup_company_name": "33 Realty Management",
+    "Q1_2026": 388,
+    "Q2_2026": 513,
+    "Q3_2026_partial_thru_sep2": 157,
+    "Q1_to_Q2_qoq_pct": 32.2
+  },
+  {
+    "rollup_company_id": "8eddb7b8-82b5-475f-b041-f54af952e05b",
+    "rollup_company_name": "The Windsor Companies",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 1021.88,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "81f27253-4d54-4118-9ae7-0c1b2da26916",
+    "rollup_company_name": "North State Financial",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 1016.95,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "6eb6c45a-7e0b-4744-a2d4-0137a4f7d5e7",
+    "rollup_company_name": "Real Property Management - Agile",
+    "Q1_2026": 235,
+    "Q2_2026": 530,
+    "Q3_2026_partial_thru_sep2": 225,
+    "Q1_to_Q2_qoq_pct": 125.5
+  },
+  {
+    "rollup_company_id": "3855259c-9149-4f52-922f-7b1d65623e0f",
+    "rollup_company_name": "TPG Management Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 988.41,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "3a076cd0-d099-4d4c-964f-499e4223bada",
+    "rollup_company_name": "Veritas Property Management",
+    "Q1_2026": 0.0,
+    "Q2_2026": 956.64,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff015",
+    "rollup_company_name": "Alicia Brim",
+    "Q1_2026": 455,
+    "Q2_2026": 385,
+    "Q3_2026_partial_thru_sep2": 70,
+    "Q1_to_Q2_qoq_pct": -15.4
+  },
+  {
+    "rollup_company_id": "e40d6317-c561-4f25-bf6d-98c2c43765e9",
+    "rollup_company_name": "Amerihome",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 878.18,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "ce473037-4c52-4329-8ad0-7d74a7b0e8ad",
+    "rollup_company_name": "Sherman & Hemstreet",
+    "Q1_2026": 821.06,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "a4af38e5-0c2f-49fb-b6d6-62088db51964",
+    "rollup_company_name": "Real Property Management Clarity",
+    "Q1_2026": 330,
+    "Q2_2026": 390,
+    "Q3_2026_partial_thru_sep2": 90,
+    "Q1_to_Q2_qoq_pct": 18.2
+  },
+  {
+    "rollup_company_id": "64cc67a0-b8d4-4343-86ca-dbc83cc5032a",
+    "rollup_company_name": "Hekemian & Co",
+    "Q1_2026": 797.7,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "f60d8b42-66fa-4618-a953-a87405464ab7",
+    "rollup_company_name": "Milestone Premier Properties",
+    "Q1_2026": 704.65,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "9e8cdbf2-c83b-411a-8028-3f1a08b9a535",
+    "rollup_company_name": "Above Property Management",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 672.43,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "519985c7-23b8-4710-897d-20847abd63d2",
+    "rollup_company_name": "FS Houses - Louisville - dba Black Key Club",
+    "Q1_2026": 660,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff139",
+    "rollup_company_name": "IIP Management LLC",
+    "Q1_2026": 645,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "084232fa-012c-40fe-be0f-3fb11c33c9ab",
+    "rollup_company_name": "Commercial Investors Group, LLC",
+    "Q1_2026": 237,
+    "Q2_2026": 405.5,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": 71.1
+  },
+  {
+    "rollup_company_id": "23a583c8-6d58-42ce-a086-eaf778856e82",
+    "rollup_company_name": "Firethorn Realty",
+    "Q1_2026": 0.0,
+    "Q2_2026": 186.73,
+    "Q3_2026_partial_thru_sep2": 435.7,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "15610dd2-d3c2-4623-af16-05e9f67fa24a",
+    "rollup_company_name": "CORE Residential",
+    "Q1_2026": 0.0,
+    "Q2_2026": 267.15,
+    "Q3_2026_partial_thru_sep2": 334.72,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff190",
+    "rollup_company_name": "Montgomery",
+    "Q1_2026": 450,
+    "Q2_2026": 120,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -73.3
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff050",
+    "rollup_company_name": "Broadmoor Property Management LLC",
+    "Q1_2026": 280,
+    "Q2_2026": 240,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -14.3
+  },
+  {
+    "rollup_company_id": "0ce9a449-7305-41fb-ba27-c5b7383f7159",
+    "rollup_company_name": "The Hornberger Group",
+    "Q1_2026": 458,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "ad61d9e6-fc00-429a-811b-ec00e12f25f7",
+    "rollup_company_name": "Group Fox Management",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 411.12,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "47054858-1fd7-4494-8b5a-f452946eebbe",
+    "rollup_company_name": "Stever and Associates",
+    "Q1_2026": 315,
+    "Q2_2026": 70,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -77.8
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff252",
+    "rollup_company_name": "Rehmann Realty Group",
+    "Q1_2026": 35,
+    "Q2_2026": 70,
+    "Q3_2026_partial_thru_sep2": 245,
+    "Q1_to_Q2_qoq_pct": 100.0
+  },
+  {
+    "rollup_company_id": "631be724-a488-4404-b04a-c69c496988d9",
+    "rollup_company_name": "Taylor & Taylor Realty Services LLC",
+    "Q1_2026": 175,
+    "Q2_2026": 105,
+    "Q3_2026_partial_thru_sep2": 70,
+    "Q1_to_Q2_qoq_pct": -40.0
+  },
+  {
+    "rollup_company_id": "ab460647-4a87-40a9-8559-ef23998dcc6a",
+    "rollup_company_name": "RENTit Colorado LLC",
+    "Q1_2026": 0.0,
+    "Q2_2026": 309.72,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff086",
+    "rollup_company_name": "Results Property Management, DBA DN2UP LLC",
+    "Q1_2026": 280,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff191",
+    "rollup_company_name": "Morgan Property Management",
+    "Q1_2026": 140,
+    "Q2_2026": 105,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -25.0
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff040",
+    "rollup_company_name": "Bijou Property Management Inc.",
+    "Q1_2026": 120,
+    "Q2_2026": 65,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": -45.8
+  },
+  {
+    "rollup_company_id": "2262cdf6-c45a-43d6-8bb0-36990fd4233c",
+    "rollup_company_name": "VEOT Group",
+    "Q1_2026": 178.74,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff112",
+    "rollup_company_name": "FriedLam Partners LLC",
+    "Q1_2026": 125,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "4459a8f4-90e0-4cca-b2c2-4cb8ecb8c731",
+    "rollup_company_name": "New City Property Management Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 124.49,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "2b63b863-f4ba-4e78-93a6-69ed991fec12",
+    "rollup_company_name": "Big State Real Estate",
+    "Q1_2026": 120.99,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "bb30abd6-f766-455e-9d19-b58bfd51fe79",
+    "rollup_company_name": "Orange Property Management",
+    "Q1_2026": 105,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "d9897e89-44c9-4292-9741-bac030162925",
+    "rollup_company_name": "City Life Property Management",
+    "Q1_2026": 98,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5478d0e1-442e-4d91-b497-4b85833e10c4",
+    "rollup_company_name": "Legacy Invest Realty Parent",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 72.4,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "f227ad01-8cf4-47ba-8d3d-614393f2d3a2",
+    "rollup_company_name": "Eagle Property Management",
+    "Q1_2026": 70,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "26689975-e7e9-4db3-bd1a-10158fde720e",
+    "rollup_company_name": "Apco Living",
+    "Q1_2026": 0.0,
+    "Q2_2026": 68.6,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "446688be-464f-4578-b05b-a364f3f1dc1d",
+    "rollup_company_name": "Grassano Properties Parent",
+    "Q1_2026": 62.09,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "29a52731-cf0c-48e8-ab31-0c0d061712f6",
+    "rollup_company_name": "MyKC.Rentals",
+    "Q1_2026": 36.5,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff298",
+    "rollup_company_name": "Soultions Realty Network Inc. DBA PMI Georgia",
+    "Q1_2026": 0.0,
+    "Q2_2026": 35,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "5c2276ef-801d-4d64-a58a-95eaa09ff014",
+    "rollup_company_name": "Alarca Realty, LLC",
+    "Q1_2026": 0.0,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 33,
+    "Q1_to_Q2_qoq_pct": null
+  },
+  {
+    "rollup_company_id": "022e712d-d96a-4bc6-a213-aad2d76901f6",
+    "rollup_company_name": "Cornerstone Property Management Group",
+    "Q1_2026": 15.04,
+    "Q2_2026": 16.92,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": 12.5
+  },
+  {
+    "rollup_company_id": "ecad3aee-58a8-4baf-85f3-89364ba75526",
+    "rollup_company_name": "JWC Living Parent",
+    "Q1_2026": 0.12,
+    "Q2_2026": 0.0,
+    "Q3_2026_partial_thru_sep2": 0.0,
+    "Q1_to_Q2_qoq_pct": null
+  }
+]

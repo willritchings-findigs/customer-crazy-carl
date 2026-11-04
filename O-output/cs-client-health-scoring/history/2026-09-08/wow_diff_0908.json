@@ -1,0 +1,494 @@
+{
+ "band_counts_old": {
+  "Yellow": 79,
+  "Red": 52,
+  "Churned": 7,
+  "Green": 127,
+  "None": 3
+ },
+ "band_counts_new": {
+  "Yellow": 95,
+  "Red": 31,
+  "Churned": 7,
+  "Green": 132,
+  "None": 3
+ },
+ "band_flips": [
+  {
+   "account": "Oakwood Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (52.2) | Strategic Alignment, Governance & Relationship (30%): Green (88.6) | Client Sentiment (20%): Yellow (72.7)"
+  },
+  {
+   "account": "Sentral",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (30.0) | Strategic Alignment, Governance & Relationship (30%): Green (88.6) | Client Sentiment (20%): Red (0.0)"
+  },
+  {
+   "account": "SFR3 Operator, LLC",
+   "old": "Yellow",
+   "new": "Green",
+   "kind": "data",
+   "why": "None"
+  },
+  {
+   "account": "10X Property Management",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (54.0) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "3 Options Realty",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (61.9) | Strategic Alignment, Governance & Relationship (30%): Red (33.3) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "Benjamin H Realty Corp.",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (41.5) | Strategic Alignment, Governance & Relationship (30%): Yellow (38.9) | Client Sentiment (20%): Yellow (45.5)"
+  },
+  {
+   "account": "Bryten Real Estate Partners Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (20.0) | Strategic Alignment, Governance & Relationship (30%): Yellow (61.4) | Client Sentiment (20%): Yellow (72.7)"
+  },
+  {
+   "account": "California Leasing",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (70.6) | Strategic Alignment, Governance & Relationship (30%): Green (90.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "California Realty Group",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (54.0) | Strategic Alignment, Governance & Relationship (30%): Yellow (80.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Campanas Property Management Inc",
+   "old": "Yellow",
+   "new": "Green",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (95.2) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "Chicago Turnkey Properties",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (64.3) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Cooper Zadeh Property Management, LLC",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (50.8) | Strategic Alignment, Governance & Relationship (30%): Yellow (70.0) | Client Sentiment (20%): Yellow (42.9)"
+  },
+  {
+   "account": "FBM Real Estate Inc.",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (45.6) | Strategic Alignment, Governance & Relationship (30%): Red (50.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "Firethorn Realty",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Yellow (78.6) | Strategic Alignment, Governance & Relationship (30%): Red (33.3) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "GPM Property Management, LLC.",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Yellow (84.9) | Strategic Alignment, Governance & Relationship (30%): Red (40.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "Garden City Property Management",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology_unification",
+   "why": "Platform & Product Metrics (50%): Red (58.7) | Strategic Alignment, Governance & Relationship (30%): Yellow (60.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "HNN Atlanta",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Yellow (73.0) | Strategic Alignment, Governance & Relationship (30%): Yellow (60.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Habitue Homes",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology_unification",
+   "why": "Platform & Product Metrics (50%): Red (61.9) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Harbor Property Management, Inc.",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (49.2) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Red (50.0)"
+  },
+  {
+   "account": "InveServe Corp",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (39.6) | Strategic Alignment, Governance & Relationship (30%): Yellow (52.9) | Client Sentiment (20%): Yellow (72.7)"
+  },
+  {
+   "account": "J & L Management Inc DBA Nexus Property Management - Fall River Property Management",
+   "old": "Green",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "None"
+  },
+  {
+   "account": "KCP Real Estate LLC",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology_unification",
+   "why": "Platform & Product Metrics (50%): Red (50.8) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Legacy Invest Realty Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (100.0) | Strategic Alignment, Governance & Relationship (30%): Yellow (70.0) | Client Sentiment (20%): Yellow (42.9)"
+  },
+  {
+   "account": "Living In Town Realty Group LLC",
+   "old": "Yellow",
+   "new": "Green",
+   "kind": "data",
+   "why": "None"
+  },
+  {
+   "account": "MGC Leasing &Property Management, LLC",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (60.3) | Strategic Alignment, Governance & Relationship (30%): Red (50.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Metro Property Management Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Yellow (68.3) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Optimum Properties",
+   "old": "Yellow",
+   "new": "Green",
+   "kind": "data",
+   "why": "None"
+  },
+  {
+   "account": "Out Fast Property Management",
+   "old": "Red",
+   "new": "Green",
+   "kind": "data",
+   "why": "None"
+  },
+  {
+   "account": "RPM Rental Solutions",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (61.1) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Real Property Management Piedmont",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (50.8) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Red (50.0)"
+  },
+  {
+   "account": "Realty Solutions LLC",
+   "old": "Yellow",
+   "new": "Green",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Green (89.7) | Strategic Alignment, Governance & Relationship (30%): Green (83.3) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "Redwood Parent",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (50.8) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Red (50.0)"
+  },
+  {
+   "account": "Reeder Companies LLC, REALTORS",
+   "old": "Green",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "None"
+  },
+  {
+   "account": "Relogic",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (46.0) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (42.9)"
+  },
+  {
+   "account": "SMD Management LLC",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (23.0) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Schambs Property Management Group, Inc.",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (59.5) | Strategic Alignment, Governance & Relationship (30%): Yellow (66.7) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Specialized Realty, Inc.",
+   "old": "Red",
+   "new": "Green",
+   "kind": "data",
+   "why": "None"
+  },
+  {
+   "account": "TPG Management Parent",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (28.9) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "Team Cadwell Investments DBA Park Place PM",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (46.0) | Strategic Alignment, Governance & Relationship (30%): Green (100.0) | Client Sentiment (20%): Green (100.0)"
+  },
+  {
+   "account": "White Property Management",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology_unification",
+   "why": "Platform & Product Metrics (50%): Green (92.9) | Strategic Alignment, Governance & Relationship (30%): Red (50.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Yancey Management",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "methodology_unification",
+   "why": "Platform & Product Metrics (50%): Red (42.9) | Strategic Alignment, Governance & Relationship (30%): Yellow (50.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "iProperties International",
+   "old": "Red",
+   "new": "Yellow",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (60.3) | Strategic Alignment, Governance & Relationship (30%): Yellow (50.0) | Client Sentiment (20%): Yellow (71.4)"
+  }
+ ],
+ "csm_flag_changes": [
+  [
+   "Imagine Homes Parent",
+   "csm_flag",
+   "",
+   "Green"
+  ],
+  [
+   "SFR3 Operator, LLC",
+   "csm_flag",
+   "Yellow",
+   "Green"
+  ],
+  [
+   "Renters Warehouse",
+   "csm_flag",
+   "Green",
+   "Churned, Green"
+  ],
+  [
+   "3 Options Realty",
+   "csm_flag",
+   "Yellow",
+   "Red"
+  ],
+  [
+   "Cooper Zadeh Property Management, LLC",
+   "csm_flag",
+   "Yellow",
+   "Green"
+  ],
+  [
+   "FBM Real Estate Inc.",
+   "csm_flag",
+   "Green",
+   "Yellow"
+  ],
+  [
+   "Group Fox Management",
+   "csm_flag",
+   "Yellow",
+   "Green"
+  ],
+  [
+   "Howard Management Group Parent",
+   "csm_flag",
+   "Green",
+   "Yellow"
+  ],
+  [
+   "J & L Management Inc DBA Nexus Property Management - Fall River Property Management",
+   "csm_flag",
+   "Green",
+   "Yellow"
+  ],
+  [
+   "Legacy Invest Realty Parent",
+   "csm_flag",
+   "Red",
+   "Green"
+  ],
+  [
+   "Living In Town Realty Group LLC",
+   "csm_flag",
+   "Yellow",
+   "Green"
+  ],
+  [
+   "MGC Leasing &Property Management, LLC",
+   "csm_flag",
+   "",
+   "Red"
+  ],
+  [
+   "MJW Investments Parent",
+   "csm_flag",
+   "Red",
+   "Yellow"
+  ],
+  [
+   "Modern City Parent",
+   "csm_flag",
+   "Red",
+   "Yellow"
+  ],
+  [
+   "Optimum Properties",
+   "csm_flag",
+   "Yellow",
+   "Green"
+  ],
+  [
+   "Out Fast Property Management",
+   "csm_flag",
+   "Red",
+   "Green"
+  ],
+  [
+   "Real Property Management",
+   "csm_flag",
+   "Churned, Green",
+   "Churned, Green, Yellow"
+  ],
+  [
+   "Real Property Management Southland",
+   "csm_flag",
+   "Green",
+   "Yellow"
+  ],
+  [
+   "Reeder Companies LLC, REALTORS",
+   "csm_flag",
+   "Green",
+   "Yellow"
+  ],
+  [
+   "Rent Appeal, Inc.",
+   "csm_flag",
+   "Green",
+   "Yellow"
+  ],
+  [
+   "Specialized Realty, Inc.",
+   "csm_flag",
+   "Red",
+   "Green"
+  ],
+  [
+   "TPG Management Parent",
+   "csm_flag",
+   "Yellow",
+   "Green"
+  ],
+  [
+   "Team Cadwell Investments DBA Park Place PM",
+   "csm_flag",
+   "Red",
+   "Green"
+  ]
+ ],
+ "stale_notes": [
+  "Standard Management Company Parent: no HubSpot company match; units carried forward",
+  "Standard Management Company Parent: Pylon account not found this run; 9/2 tone carried forward",
+  "Willowdale Property Management: no HubSpot company match; units carried forward",
+  "Above Property Management: no HubSpot company match; units carried forward",
+  "Amerihome: no HubSpot company match; units carried forward",
+  "Bryten Real Estate Partners Parent: no HubSpot company match; units carried forward",
+  "Capital Property Management Parent: no HubSpot company match; units carried forward",
+  "Elda Management Services: no HubSpot company match; units carried forward",
+  "Exit Realty - Realty Place: no HubSpot company match; units carried forward",
+  "FBM Real Estate Inc.: no HubSpot company match; units carried forward",
+  "Firethorn Realty: no HubSpot company match; units carried forward",
+  "Group Fox Management: no HubSpot company match; units carried forward",
+  "Howard Management Group Parent: no HubSpot company match; units carried forward",
+  "Howard Management Group Parent: Pylon account not found this run; 9/2 tone carried forward",
+  "Infinite Property Management, LLC: no HubSpot company match; units carried forward",
+  "Legacy Invest Realty Parent: no HubSpot company match; units carried forward",
+  "Legacy Invest Realty Parent: Pylon account not found this run; 9/2 tone carried forward",
+  "MJW Investments Parent: no HubSpot company match; units carried forward",
+  "MS Coast Property Management II LLC: no HubSpot company match; units carried forward",
+  "Modern City Parent: no HubSpot company match; units carried forward",
+  "New City Property Management Parent: no HubSpot company match; units carried forward",
+  "North State Financial: no HubSpot company match; units carried forward",
+  "Real Property Management Southland: no HubSpot company match; units carried forward",
+  "Real Property Management Three Bridges: no HubSpot company match; units carried forward",
+  "Relogic: Pylon account not found this run; 9/2 tone carried forward",
+  "TPG Management Parent: no HubSpot company match; units carried forward",
+  "The Windsor Companies: no HubSpot company match; units carried forward",
+  "Weiss Parent: no HubSpot company match; units carried forward",
+  "Welcome Home Syr Inc: no HubSpot company match; units carried forward"
+ ],
+ "touched": {
+  "platform": 247,
+  "units_switched": 236,
+  "ccs": 131,
+  "pylon": 107,
+  "review_cadence": 21,
+  "exec_sponsor": 21,
+  "pms_flagged": 29,
+  "csm_flag": 23,
+  "units_carried": 9
+ }
+}

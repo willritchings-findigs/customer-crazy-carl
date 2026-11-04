@@ -1,0 +1,106 @@
+{
+ "Standard Management Company Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 3,
+  "pm_friction_titles": [
+   "8/26 Residential $50 chgs processed in Yardi not in EWB",
+   "Findigs Access needed",
+   "Findigs Access"
+  ],
+  "total_open_issues_90d": 22,
+  "note": "Verification pass 2026-09-28: classification confirmed Negative (3+ friction), but 2 of the original 3 cited titles were wrong -- 'SMC Application Issues' (#219159, a config/fee question) and 'URGENT - Apts.com - Apply Now' (#206722, integration coordination) are not genuine platform friction. Replaced with the real 3rd/4th friction tickets, both PM-filed access/login failures for Brooke Wright (bwright@standardmanagement.com): #206671 'Findigs Access needed' (portfolio-admin access request routed from pm-support) and #206047 'Findigs Access' (user_type=property manager, High priority, can't register despite repeated invitations). Original 'Yardi not in EWB' data-sync title confirmed correct and kept."
+ },
+ "Maymont Homes": {
+  "classification": "Negative",
+  "pm_friction_count": 4,
+  "pm_friction_titles": [
+   "FinDigs- Down- BTR",
+   "Findigs Promo Codes Not Working",
+   "All Applicant Releases Have Anchor Point Logo- This one is for Haven at Wild Wing...",
+   "Bulk Promo Code Update & Selection Limit"
+  ],
+  "total_open_issues_90d": 45,
+  "note": "Prior undercounted friction by 1: 'Bulk Promo Code Update & Selection Limit' is a genuine platform bug (promo code selection-limit malfunction) that was missed. Classification unchanged (still Negative). total_open_issues_90d independently re-derived as 45, not 46 as prior claimed (1-ticket mismatch)."
+ },
+ "Evernest": {
+  "classification": "Negative",
+  "pm_friction_count": 7,
+  "pm_friction_titles": [
+   "Ownership referral document upload issue",
+   "Reimbursement issues for applications not found in system",
+   "Outage status for Findigs service",
+   "Transfer error moving submitted application to unit",
+   "Property group missing for Evernest-Current tenant",
+   "Promo code failures for multiple tenants",
+   "Silvia Martinez"
+  ],
+  "total_open_issues_90d": 26,
+  "note": "Prior undercounted friction by 1: 'Silvia Martinez' (#191725) is a genuine login-failure ticket from a PM-domain requester that was never flagged. Classification unchanged (still Negative). total_open_issues_90d matches prior exactly at 26."
+ },
+ "Beztak Properties Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 12,
+  "pm_friction_titles": [
+   "support tab inoperative",
+   "Luxe March Billed 2x",
+   "Findigs Giving Incorrect Info at Hermitage",
+   "Missing Bedroom Count on Unit",
+   "Findigs/Yardi Occupant Discrepancy: Eddie Stewart",
+   "Application payment missing",
+   "Findigs",
+   "[Request ID :##6368##] : Yardi / Findigs",
+   "Pinebrook/Northbrook Audit Findigs",
+   "applying on ILSs",
+   "FINDIGS",
+   "[Request ID :##4980##] : Screening/Lease Discrepencies"
+  ],
+  "total_open_issues_90d": 163,
+  "note": "Major undercount: prior verified only its own 5 cited titles (all confirmed genuine) but never swept the other ~155 tickets. Independent full sweep found 7 additional genuine friction tickets: a payment-tracking discrepancy, an SOP-access data bug, a Yardi/Findigs access lockout, a decisioning anomaly (conditional approval despite a $6k collections balance), a broken ILS lead-tracking integration, a multi-week Jira-linked platform issue, and a recurring Findigs-to-Yardi occupant sync bug. Classification unchanged (still Negative). total_open_issues_90d independently re-derived as 163 (100+63 across 2 pages), not 160 as prior claimed (3-ticket mismatch)."
+ },
+ "Western Wealth Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 3,
+  "pm_friction_titles": [
+   "Site down?",
+   "Somerset Apply Now Link Issue",
+   "Fw: Delano- Findigs- Nicole Romo not able to get it - 2nd site"
+  ],
+  "total_open_issues_90d": 33,
+  "note": "All 3 prior-cited friction tickets independently confirmed genuine (login outage, an unfixable RealPage/Apartments.com integration bug, and a recurring access failure). pm_friction_count and classification hold exactly as prior claimed. total_open_issues_90d independently re-derived as 33, not 31 as prior claimed (2-ticket mismatch)."
+ },
+ "McKinley Companies, LLC": {
+  "classification": "Negative",
+  "pm_friction_count": 14,
+  "pm_friction_titles": [
+   "Signup errors for Granada at Westwood Suites",
+   "Application ID field preventing submissions in Michigan",
+   "Document download issues affecting bank statements",
+   "Crim Pending Not Appearing in Morning Report",
+   "Application submission issues reported in last 24 hours",
+   "Approval Push Delays to Yardi",
+   "Pending Document Engine Analysis Timeout",
+   "Orlando Apps: Submissions Stuck Awaiting Underwriting",
+   "Applications Stuck In Underwriting",
+   "Permission Details",
+   "Support Ticket Escalation",
+   "IDV Verification Spike Across Applications",
+   "Guest Card Creation Across Properties in Yardi",
+   "Voucher Rejections for Future Start Dates in Michigan Market"
+  ],
+  "total_open_issues_90d": 64,
+  "note": "Major undercount, consistent with prior agent's own admitted low-confidence heuristic verification on this account (only 1 of 6 titles actually checked via get_issue). Full independent sweep of all 64 tickets found 8 additional genuine friction tickets: a document-engine timeout bug, two separate Orlando/Florida underwriting-stuck incidents (9/3 and 9/18), a permissions misconfiguration, a support-ticket SLA escalation, an IDV verification spike tied to a possible platform change, a cross-property guest-card sync bug, and a systemic voucher-rejection bug. Classification unchanged (still Negative). total_open_issues_90d matches prior exactly at 64."
+ },
+ "Brick and Timber Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 5,
+  "pm_friction_titles": [
+   "Findigs Access",
+   "Conditional Approval Error",
+   "'Conditional Approval' Incorrectly Noted on Multiple Apps",
+   "Yardi Troubleshooting",
+   "Multiple Credit Scores Noted on Same App"
+  ],
+  "total_open_issues_90d": 25,
+  "note": "All 5 prior-cited friction tickets independently confirmed genuine (a team-wide access outage, a longstanding Yardi integration bug, unexplained duplicate credit scores, and 2 conditional-approval mislabeling bugs). pm_friction_count and classification hold exactly as prior claimed. total_open_issues_90d independently re-derived as 25, not 26 as prior claimed (1-ticket mismatch)."
+ }
+}

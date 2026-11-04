@@ -1,0 +1,74 @@
+{
+ "Imagine Homes Parent": {
+  "classification": "Neutral",
+  "pm_friction_count": 2,
+  "pm_friction_titles": [
+   "Decision Assist Processing Delays",
+   "Decision Assist Processing Delays"
+  ],
+  "total_open_issues_90d": 10,
+  "note": "Direct verification 2026-09-21: 10 open in-window issues confirmed. 'FFUP on Criminal BG - Khedonna Kelly-Goode' is an individual-applicant records escalation, not PM platform friction. Real frictions = the two distinct 'Decision Assist Processing Delays' tickets (9/8 #213376, 9/11 #215733) -> 2 frictions -> Neutral (agent had Negative)."
+ },
+ "Harbor Group Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 3,
+  "pm_friction_titles": [
+   "Stuck criminal record check on applications",
+   "Waterfield Court Application Not Found",
+   "VG2 - Unit Missing Address in MRI"
+  ],
+  "total_open_issues_90d": 43,
+  "note": "Direct verification 2026-09-21: 43 open confirmed exact. Dropped 'Question about product features' (a question, not friction); remaining 3 real platform/integration frictions -> still Negative at the 3+ threshold."
+ },
+ "Brick and Timber Parent": {
+  "pm_friction_count": 5,
+  "pm_friction_titles": [
+   "Not Able to Apply to Available Unit - #201534",
+   "Yardi Troubleshooting",
+   "Multiple Credit Scores Noted on Same App",
+   "Conditional Approval Error",
+   "'Conditional Approval' Incorrectly Noted on Multiple Apps"
+  ],
+  "total_open_issues_90d": 24,
+  "note": "Direct verification 2026-09-21: all 5 titles real; open count corrected 25 -> 24."
+ },
+ "Highmark Residential Parent": {
+  "pm_friction_count": 13,
+  "pm_friction_titles": [
+   "Missing applicant in system lookup",
+   "Account merging and apartment selection issue",
+   "Applicant applying to unit 8205 Long Creek Dr #202 fails",
+   "Allissa Mendez application",
+   "Missing Findigs Ledger Payments",
+   "Stonecreek - Applicant App in FD Applied in Yardi",
+   "Reason For Decline - Incorrect Reason for AI Suggestions",
+   "Ticket #208250 - Not Following HM SOP",
+   "Missing Ledger Payment - Woodland Lakes",
+   "Stone Creek - Applicant Not Auto Canceled After 7 Days and Reminders Question",
+   "Stonecreek - Approval Not in Yardi",
+   "Findigs Error Code",
+   "FW: Findigs - Park Place at Loyola - Duplicate guest card"
+  ],
+  "total_open_issues_90d": 93,
+  "note": "Direct verification 2026-09-21: all 14 titles real (>=8 are unambiguous platform/integration friction: ledger payments x2, Yardi sync x2, error code, AI decline reasons, SOP x2, duplicate guest card, auto-cancel); open count corrected 92 -> 93. Negative stands. Pet-verification tickets excluded from friction per Emma 2026-09-21 ('Not following HM Pet SOP' dropped, 14 -> 13)."
+ },
+ "McKinley Companies, LLC": {
+  "pm_friction_count": 12,
+  "pm_friction_titles": [
+   "Underwriting delays for 7 apps in Orlando",
+   "Applications Stuck In Underwriting",
+   "Pending Document Engine Analysis Timeout",
+   "Document download issues affecting bank statements",
+   "Orlando Apps: Submissions Stuck Awaiting Underwriting",
+   "Support Ticket Escalation",
+   "Approval Push Delays to Yardi",
+   "Crim Pending Not Appearing in Morning Report",
+   "Application ID field preventing submissions in Michigan",
+   "Application submission issues reported in last 24 hours",
+   "Applicant Verification Delays for Glencoe Hills and Golfside Lake III",
+   "Signup errors for Granada at Westwood Suites"
+  ],
+  "total_open_issues_90d": 62,
+  "note": "Direct verification 2026-09-21: all 12 titles real platform friction (stuck underwriting, Yardi push delays, submission blockers); open count corrected 61 -> 62. Negative stands."
+ }
+}

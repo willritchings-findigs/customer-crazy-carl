@@ -1,0 +1,77 @@
+{
+ "band_counts_old": {
+  "Yellow": 108,
+  "Red": 20,
+  "Churned": 8,
+  "Green": 130,
+  "None": 1
+ },
+ "band_counts_new": {
+  "Yellow": 106,
+  "Red": 22,
+  "Churned": 8,
+  "Green": 130,
+  "None": 1
+ },
+ "band_flips": [
+  {
+   "account": "Cooper Zadeh Property Management, LLC",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (50.8) | Strategic Alignment, Governance & Relationship (30%): Red (50.0) | Client Sentiment (20%): Yellow (71.4)"
+  },
+  {
+   "account": "Group Fox Management",
+   "old": "Yellow",
+   "new": "Red",
+   "kind": "data",
+   "why": "Platform & Product Metrics (50%): Red (36.8) | Strategic Alignment, Governance & Relationship (30%): Green (90.0) | Client Sentiment (20%): Red (0.0)"
+  }
+ ],
+ "csm_flag_changes": [],
+ "stale_notes": [
+  "Standard Management Company Parent: no HubSpot company match; units carried forward",
+  "Willowdale Property Management: no HubSpot company match; units carried forward",
+  "Above Property Management: no HubSpot company match; units carried forward",
+  "Amerihome: no HubSpot company match; units carried forward",
+  "Bryten Real Estate Partners Parent: no HubSpot company match; units carried forward",
+  "Capital Property Management Parent: no HubSpot company match; units carried forward",
+  "Capital Property Management Parent: Pylon account not found this run; 9/2 tone carried forward",
+  "Carolina Management Parent: no HubSpot company match; units carried forward",
+  "Elda Management Services: no HubSpot company match; units carried forward",
+  "Exit Realty - Realty Place: no HubSpot company match; units carried forward",
+  "FBM Real Estate Inc.: no HubSpot company match; units carried forward",
+  "Firethorn Realty: no HubSpot company match; units carried forward",
+  "First Place Management, Inc: no HubSpot company match; units carried forward",
+  "Group Fox Management: no HubSpot company match; units carried forward",
+  "Howard Management Group Parent: no HubSpot company match; units carried forward",
+  "ICR Consulting, LLC: no HubSpot company match; units carried forward",
+  "Infinite Property Management, LLC: no HubSpot company match; units carried forward",
+  "Legacy Invest Realty Parent: no HubSpot company match; units carried forward",
+  "MIG Management Inc.: no HubSpot company match; units carried forward",
+  "MJW Investments Parent: no HubSpot company match; units carried forward",
+  "MS Coast Property Management II LLC: no HubSpot company match; units carried forward",
+  "Modern City Parent: no HubSpot company match; units carried forward",
+  "New City Property Management Parent: no HubSpot company match; units carried forward",
+  "North State Financial: no HubSpot company match; units carried forward",
+  "Real Property Management Piedmont: Pylon account not found this run; 9/2 tone carried forward",
+  "Real Property Management Southland: no HubSpot company match; units carried forward",
+  "Real Property Management Three Bridges: no HubSpot company match; units carried forward",
+  "Remax Properties, Inc - Chuck Wartman: no HubSpot company match; units carried forward",
+  "TPG Management Parent: no HubSpot company match; units carried forward",
+  "Taylor & Taylor Realty Services LLC: no HubSpot company match; units carried forward",
+  "The Windsor Companies: no HubSpot company match; units carried forward",
+  "Weiss Parent: no HubSpot company match; units carried forward",
+  "Welcome Home Syr Inc: no HubSpot company match; units carried forward"
+ ],
+ "touched": {
+  "platform": 249,
+  "units_switched": 228,
+  "ccs": 142,
+  "pylon": 120,
+  "review_cadence": 25,
+  "exec_sponsor": 25,
+  "units_carried": 15
+ }
+}

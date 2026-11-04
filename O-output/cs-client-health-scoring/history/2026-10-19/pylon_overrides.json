@@ -1,0 +1,152 @@
+{
+ "Highmark Residential Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 19,
+  "pm_friction_titles": [
+   "applicantion issues",
+   "Applicant not showing on our side but approved here",
+   "Spinnaker Reach - [applicant]",
+   "[applicant] #1016 | The Emerson",
+   "Findigs - Eviction Look back Window",
+   "Findigs Data Transfer",
+   "Findigs Approved Application Not Transferring",
+   "Findigs website issue, double applicants for same unit approved",
+   "Applicant handling for unit 1216 without co-applicants",
+   "Findigs Eviction History Lookback Period Conflict",
+   "Findigs Screening Results Not Pushing to Yardi",
+   "Yardi Screening",
+   "Application Error",
+   "Missing Findigs Ledger Payments",
+   "Reason For Decline - Incorrect Reason for AI Suggestions",
+   "Missing Ledger Payment - Woodland Lakes",
+   "Stonecreek - Approval Not in Yardi",
+   "Findigs Error Code",
+   "approval question"
+  ],
+  "note": "Blind full re-pull (six-state set): 19 firm PM-side friction tickets of 147 in scope (four-state 18; 24 with borderlines). Batch read was 11. Classification unchanged: Negative. Pet-verification tickets excluded (4)."
+ },
+ "Maymont Homes": {
+  "classification": "Negative",
+  "pm_friction_count": 4,
+  "pm_friction_titles": [
+   "FinDigs- Down- BTR",
+   "All Applicant Releases Have Anchor Point Logo- ...",
+   "Welcome to Findigs Inc.",
+   "#07288623 - X7 - API Call Throttling"
+  ],
+  "note": "Blind full re-pull (six-state set): 4 firm PM-side friction tickets of 18 in scope; one borderline (collections-parsing decision notice) not counted. Batch read was 6. Classification unchanged: Negative."
+ },
+ "Kairos Living LLC Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 23,
+  "pm_friction_titles": [
+   "Login and submission system status check",
+   "Credit union bank statement misattributed to Chime",
+   "Income Verification Note Versus Verified Section Mismatch",
+   "Investigation of [applicant]'s group association",
+   "Flagging issue: incorrect fraud routing for income documentation",
+   "Urgent: Need remedies for current issues",
+   "Fraud Flagged Income Verification in Application",
+   "Fraud Flagging and Documentation Review in Application",
+   "Income Flag Not Reaching Fraud Department",
+   "Fraud/Identity Discrepancy in Application",
+   "Double Applications Within Single Application",
+   "Fraud Review for Income Discrepancy on Tax Return",
+   "Fraudulent Paystub Flagged in Task Service",
+   "Stuck Apps Investigation",
+   "Bank linking failures for multiple applicants",
+   "Cancellation workflow stalling in Request Documents step",
+   "App Fee Payments Without Application Submission",
+   "Chime bank account mislabeling issue",
+   "Performance Analytics loading issue",
+   "Bank name mismatch in payment alert",
+   "Production Testing",
+   "Assignment of Delisted Unit to [address]",
+   "Issue Reference to Yesterday's Discussion"
+  ],
+  "note": "Blind full re-pull (six-state set): 23 firm PM-side friction tickets of 86 in scope. Batch read was 7. Classification unchanged: Negative under any reading of the borderline tickets (16 if the seven fraud-routing tickets are read as applicant servicing; about 33 if all borderlines count)."
+ },
+ "McKinley Companies, LLC": {
+  "classification": "Negative",
+  "pm_friction_count": 8,
+  "pm_friction_titles": [
+   "FinDigs Service Outage Reported",
+   "App stuck in underwriting and routing to main page",
+   "Escalate",
+   "Pending Document Engine Analysis Timeout",
+   "Orlando Apps: Submissions Stuck Awaiting Underwriting",
+   "Application submission issues reported in last 24 hours",
+   "Findigs Concern: Co-Applicants",
+   "Approval Push Delays to Yardi"
+  ],
+  "note": "Blind full re-pull (six-state set): 8 firm PM-side friction tickets of 67 in scope (four-state 7). Batch read was 12. Classification unchanged: Negative. Pet-verification tickets excluded (2)."
+ },
+ "Oakwood Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 5,
+  "pm_friction_titles": [
+   "Error in [applicant]'s application",
+   "Prospect error code",
+   "Login Credentials NEEDED",
+   "duplicate attachments",
+   "Ponds at Madison"
+  ],
+  "note": "Blind full re-pull (six-state set): 5 friction tickets of 50 in scope. Four-state set gives 2 (Neutral), but six-state is the canonical set, so Negative. One open thread (portfolio-mapping coordination, waiting on Findigs since 10/5) was read and not counted as platform friction."
+ },
+ "Brick and Timber Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 4,
+  "pm_friction_titles": [
+   "Approved Status in Findigs Not Showing in CRM",
+   "Findigs Access to Yardi Properties",
+   "Findigs Access",
+   "Yardi Troubleshooting"
+  ],
+  "note": "Blind full re-pull (six-state set): 4 friction tickets of 21 in scope. Batch read was 3. Classification unchanged: Negative. Weakest ticket is the Yardi access item (client-side permissions); without it 3, still Negative."
+ },
+ "Beztak Properties Parent": {
+  "classification": "Negative",
+  "pm_friction_count": 4,
+  "pm_friction_titles": [
+   "support tab inoperative",
+   "Yardi Findigs Issue with Source",
+   "Promo code not applying for Fallpromo27",
+   "Tenant application status update for [applicant]"
+  ],
+  "note": "Blind full re-pull (six-state set): 4 friction tickets of 38 in scope. Two of the four are six-state only (on_engineering) and keep this Negative; four-state gives 2 (Neutral). One borderline QA-list ticket not counted (would be 5). Classification unchanged: Negative."
+ },
+ "Evernest": {
+  "classification": "Negative",
+  "pm_friction_count": 3,
+  "pm_friction_titles": [
+   "Outage status for Findigs service",
+   "Transfer error moving submitted application to unit",
+   "Ownership referral document upload issue"
+  ],
+  "note": "Blind full re-pull: 2 firm friction tickets of 14 in scope, pet refund ticket excluded. One borderline (missing upload button in an application, PM self-fixed) counted as friction because it is a product bug; 3 total, Negative. Batch read was 4. Without the borderline this would be Neutral (2)."
+ },
+ "Group Fox Management": {
+  "classification": "Negative",
+  "pm_friction_count": 4,
+  "pm_friction_titles": [
+   "Linero Applications 2180-308",
+   "2180-203",
+   "Incorrect Credit Criteria",
+   "Findigs <> Group Fox 8.25 Follow-Up"
+  ],
+  "note": "Blind full re-pull (six-state set): 4 friction tickets of 8 in scope. Two firm (a three-week escalation on reactivated denied applications; duplicate applications under one unit). Two borderline, counted: a credit-criteria mismatch published to applicants, and an escalated Yardi integration issue. Without the two borderlines this would be Neutral (2). One ticket was classified from its fields without the full thread. Classification: Negative."
+ },
+ "Sentral": {
+  "classification": "Negative",
+  "pm_friction_count": 6,
+  "pm_friction_titles": [
+   "Application closed due to concurrent submission",
+   "Joinery Phase 1-Applicant not showing in Findigs",
+   "Approval status missing for [applicant] [address]",
+   "Holding Deposit Refunds Not Posting to Tenant Ledgers",
+   "Case 19132291 - SecureCafe Change",
+   "Sentral Findigs Access for Joinery and Inkwell"
+  ],
+  "note": "Blind full re-pull (six-state set): 6 firm PM-side friction tickets of 67 in scope (four-state 5). Batch read was 5. Classification unchanged: Negative. Five borderline tickets not counted; counting any would only raise the total."
+ }
+}

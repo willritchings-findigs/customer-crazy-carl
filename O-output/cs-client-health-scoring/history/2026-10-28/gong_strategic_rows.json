@@ -1,0 +1,326 @@
+{
+ "Highmark Residential Parent": {
+  "calls_90d": 13,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Assistant Regional VP",
+   "Chief Accounting Officer",
+   "Director of Strategic Initiatives",
+   "Head Senior VP, Operations",
+   "SVP Operations",
+   "Southeast Region VP",
+   "Vice President, Information Technology",
+   "Vice President, Learning & Development"
+  ],
+  "sample_titles": [
+   "Support & Issue Topics - Part 2",
+   "Findigs Configuration Training",
+   "Findigs <> Highmark: Open Issues",
+   "Findigs <> Highmark: Affordable App Updates",
+   "Findigs <> Highmark - Weekly Sync"
+  ]
+ },
+ "Imagine Homes Parent": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Leasing and Retention"
+  ],
+  "sample_titles": [
+   "Imagine Homes - Mn/St.Paul Compliance Chat"
+  ]
+ },
+ "Brick and Timber Parent": {
+  "calls_90d": 12,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Brick + Timber | Findigs Weekly",
+   "Findigs || Brick & Timber Monthly",
+   "Brick + Timber | Findigs Weekly",
+   "Brick + Timber | Findigs Weekly",
+   "Brick + Timber | Findigs Weekly"
+  ]
+ },
+ "Sentral": {
+  "calls_90d": 13,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Associate Director of Business Intelligence",
+   "Director of Design Operations",
+   "Director of Portfolio Operations"
+  ],
+  "sample_titles": [
+   "Sentral + Findigs Bi-Weekly Call",
+   "Sentral Diega <> Findigs Training",
+   "Sentral <> Findigs Implementation Sync",
+   "Sentral + Findigs Bi-Weekly Call",
+   "Sentral <> Findigs Sync"
+  ]
+ },
+ "Evernest": {
+  "calls_90d": 4,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <-> Evernest Weekly Sync",
+   "Findigs DecisionAssist Training",
+   "Findigs <-> Evernest Weekly Sync",
+   "Findigs <-> Evernest Weekly Sync"
+  ]
+ },
+ "California Leasing": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner"
+  ],
+  "sample_titles": [
+   "DA Training/California Leasing",
+   "DA Training/California Leasing",
+   "California Leasing - DA check-in"
+  ]
+ },
+ "Jones and Jones Communities": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Ben &  Nichol Intro",
+   "Jones & Jones | Findigs Sync"
+  ]
+ },
+ "Oakwood Parent": {
+  "calls_90d": 5,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Oakwood | Findigs Sync",
+   "Findigs x Oakwood | Monthly Sync",
+   "Findigs Monthly Reschedule",
+   "Findigs x Oakwood Sync",
+   "Oakwood + Findigs Sync"
+  ]
+ },
+ "Kotarides Property Management": {
+  "calls_90d": 10,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase"
+  ]
+ },
+ "Kairos Living LLC Parent": {
+  "calls_90d": 9,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Executive Officer",
+   "Chief Operating Officer",
+   "Vice President of Leasing"
+  ],
+  "sample_titles": [
+   "Kairos | Findigs - Weekly Connect",
+   "Kairos | Findigs - Weekly Connect",
+   "Kairos | Findigs - Weekly Connect",
+   "Kairos | Findigs - Weekly Connect",
+   "Kairos | Findigs - Weekly Connect"
+  ]
+ },
+ "Blue Fox Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <> Blue Fox DecisionAssist/Credentialing"
+  ]
+ },
+ "Aulder Property Management": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Aulder | Findigs Sync",
+   "Findigs x Aulder | Sync",
+   "Meeting with Reese (Kelli Gordon Stepp)"
+  ]
+ },
+ "Maymont Homes": {
+  "calls_90d": 11,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Executive Officer",
+   "Director of Marketing Technology",
+   "VP of Product Management - Housing",
+   "VP, Leasing",
+   "Vice President of Operations"
+  ],
+  "sample_titles": [
+   "Findigs & Maymont Weekly",
+   "Findigs - Housing Verification Discussion",
+   "Findigs & Maymont Weekly",
+   "Findigs & Maymont Weekly",
+   "Simplified Applicant Experience - Demo"
+  ]
+ },
+ "Western Wealth Parent": {
+  "calls_90d": 14,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner",
+   "Vice President, Operations"
+  ],
+  "sample_titles": [
+   "Findigs | Western Weekly",
+   "Findigs | Western Weekly",
+   "Findigs & Western Wealth Implementation Weekly",
+   "Findigs | Western Weekly",
+   "Findigs & Western Wealth Implementation Weekly"
+  ]
+ },
+ "Beztak Properties Parent": {
+  "calls_90d": 18,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Assistant Vice President",
+   "Chief Executive Officer",
+   "Director of Compliance",
+   "President, Residential Division",
+   "Senior Vice President",
+   "Vice President",
+   "Vice President Beztak Owned Division",
+   "Vice President of Operations"
+  ],
+  "sample_titles": [
+   "Findigs | Christine's Portfolio",
+   "Findigs x Beztak LIHTC Discussion",
+   "Findigs | Dan's Portfolio",
+   "Findigs | Brandi's Portfolio",
+   "Findigs Review!"
+  ]
+ },
+ "McKinley Companies, LLC": {
+  "calls_90d": 5,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Vice President",
+   "Vice President, Asset Management and Marketing",
+   "Vice President, Information & Strategy"
+  ],
+  "sample_titles": [
+   "McKinley <> Findigs: Checkout Process Rundown",
+   "Findigs | McKinley- Monthly Operations Connect",
+   "McKinley Checkout Process Review",
+   "Findigs | McKinley- Monthly Operations Connect",
+   "Findigs | McKinley- Monthly Operations Connect"
+  ]
+ },
+ "Winfield Property Management, LLC": {
+  "calls_90d": 3,
+  "review_call_titles": [
+   "Winfield Business Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "WPM <> Findigs Sync",
+   "Winfield Business Review",
+   "WPM <> Findigs CSM Intro & DA Review"
+  ]
+ },
+ "Open Management": {
+  "calls_90d": 2,
+  "review_call_titles": [
+   "Open Mgmt | Findigs Business Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Open Mgmt | Findigs Business Review",
+   "Findigs Booked Sync - Natalie (Jose Mendoza)"
+  ]
+ },
+ "JMAX Property Management LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Decline Overview"
+  ]
+ },
+ "HNN Atlanta": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "DA Training/HNN Atlanta"
+  ]
+ },
+ "Lynco Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Lynco <> Findigs Sync"
+  ]
+ },
+ "SFR3 Operator, LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "American Avenue | Findigs Quarterly Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "American Avenue | Findigs Quarterly Review"
+  ]
+ },
+ "ResiHome": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "ResiHome | Findigs CSM Intro"
+  ]
+ },
+ "Optimum Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Operations & Asset Management"
+  ],
+  "sample_titles": [
+   "Optimum Prop | Findigs Sync"
+  ]
+ },
+ "Harbor Property Management, Inc.": {
+  "calls_90d": 2,
+  "review_call_titles": [
+   "QBR: Findigs <> Harbor PM",
+   "QBR: Findigs <> Harbor PM"
+  ],
+  "exec_titles_seen": [
+   "President"
+  ],
+  "sample_titles": [
+   "QBR: Findigs <> Harbor PM",
+   "QBR: Findigs <> Harbor PM"
+  ]
+ },
+ "Rookwood Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Booked Sync - Natalie (Lauren Beckley)"
+  ]
+ },
+ "Excalibur Homes": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Meeting with Reese (Callie Guzman)"
+  ]
+ }
+}

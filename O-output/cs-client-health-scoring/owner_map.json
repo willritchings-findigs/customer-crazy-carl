@@ -1,0 +1,1860 @@
+{
+ "_meta": {
+  "source": "CS Health Score xlsx (Drive 1BsOCmNqz2g-Nk9q5xq5LI2ai-2WExf-T), 'Overall Summary' tab, pulled 2026-09-14",
+  "sot_note": "Sheet is the ownership SOT per 9/11 finding (live HubSpot csm_owner not trustworthy - Evernest proved wrong). One edit here per book shift; switch to live HubSpot only after csm_owner is corrected.",
+  "thomas_confidence_note": "Sheet tab says 'Thomas'; mapped to Thomas McCarthy U07SM7JMHME (only internal Thomas in Slack) - Emma to confirm. 2026-10-15: Thomas McCarthy's full 5-account book moved to Stephanie Sparks (HubSpot owner 1311203029, Slack U09P0CXR1N0) per Emma.",
+  "slack_ids": {
+   "Natalie Jamnik": "U09E14MCRM3",
+   "Erin Holcomb": "U0553BX5NU9",
+   "Ryan Yorra": "U087UA3563Y",
+   "Ashley Settergren": "U0A16BK5HK3",
+   "Reese Ryan": "U06TY8N92LQ",
+   "Thomas McCarthy": "U07SM7JMHME",
+   "Javier Camargo": "U080L3P0RLG",
+   "Stephanie Sparks": "U09P0CXR1N0"
+  },
+  "sheet_name_aliases": {
+   "Beztak Properties Parent Company": "Beztak Properties Parent",
+   "Highmark": "Highmark Residential Parent",
+   "Imagine": "Imagine Homes Parent",
+   "Kairos Living LLC Parent Company": "Kairos Living LLC Parent"
+  }
+ },
+ "accounts": {
+  "10X Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "10X Property Management"
+  },
+  "3 Options Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "3 Options Realty"
+  },
+  "334 Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "334 Property Management"
+  },
+  "Above Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Above Property Management"
+  },
+  "Allegiant Management Group, Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Allegiant Management Group, Inc."
+  },
+  "Ashman Associates": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Ashman Associates"
+  },
+  "Aulder Property Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": "Ashley Settergren",
+   "csa_slack_id": "U0A16BK5HK3",
+   "sheet_account_name": "Aulder Property Management"
+  },
+  "Benjamin H Realty Corp.": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Benjamin H Realty Corp."
+  },
+  "Brandywine Homes Parent": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Brandywine Homes Parent"
+  },
+  "Brick and Timber Parent": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Brick and Timber Parent"
+  },
+  "Bridge Tower Properties LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Bridge Tower Properties LLC"
+  },
+  "Bryten Real Estate Partners Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Bryten Real Estate Partners Parent"
+  },
+  "CORE Residential": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "CORE Residential"
+  },
+  "CREC Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "CREC Property Management"
+  },
+  "CRI Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "CRI Property Management"
+  },
+  "California Leasing": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "California Leasing"
+  },
+  "California Realty Group": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "California Realty Group"
+  },
+  "Canyon Residential LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Canyon Residential LLC"
+  },
+  "Chevron Realty Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Chevron Realty Management"
+  },
+  "Chicago Turnkey Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Chicago Turnkey Properties"
+  },
+  "Cobalt Property Services Parent": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Cobalt Property Services Parent"
+  },
+  "Cooper Zadeh Property Management, LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Cooper Zadeh Property Management, LLC"
+  },
+  "Cornerstone Income Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Cornerstone Income Properties"
+  },
+  "CrestCore Realty LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "CrestCore Realty LLC"
+  },
+  "Crossview Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Crossview Property Management"
+  },
+  "Elda Management Services": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Elda Management Services"
+  },
+  "Elme Communities": {
+   "am": "Erin Holcomb",
+   "am_slack_id": "U0553BX5NU9",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Elme Communities",
+   "note": "Sheet lists 'Erin Holcomb, Ashley Settergren'; Erin kept primary, Ashley reachable via CSA lane. Account is Churned."
+  },
+  "Encore Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Encore Management"
+  },
+  "Equity Real Estate": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Equity Real Estate"
+  },
+  "Evernest": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Evernest"
+  },
+  "Exceptional Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Exceptional Property Management"
+  },
+  "Firethorn Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Firethorn Realty"
+  },
+  "GPM Property Management, LLC.": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "GPM Property Management, LLC."
+  },
+  "Garden City Property Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Garden City Property Management"
+  },
+  "Glover Property Management, Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Glover Property Management, Inc."
+  },
+  "HNN Atlanta": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "HNN Atlanta"
+  },
+  "Habitue Homes": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Habitue Homes"
+  },
+  "Harbor Property Management, Inc.": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Harbor Property Management, Inc."
+  },
+  "Hawaii Property Advisors": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Hawaii Property Advisors"
+  },
+  "HomeRiver Group Holdings LLC": {
+   "am": "Stephanie Sparks",
+   "am_slack_id": "U09P0CXR1N0",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "HomeRiver Group Holdings LLC"
+  },
+  "Infinite Property Management, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Infinite Property Management, LLC"
+  },
+  "InveServe Corp": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "InveServe Corp"
+  },
+  "Jones and Jones Communities": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Jones and Jones Communities"
+  },
+  "Journey Real Estate": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Journey Real Estate"
+  },
+  "KAIZEN Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "KAIZEN Realty"
+  },
+  "KCP Real Estate LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "KCP Real Estate LLC"
+  },
+  "KENCO Residential Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "KENCO Residential Parent"
+  },
+  "Lease Las Vegas, Gvre, LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Lease Las Vegas, Gvre, LLC"
+  },
+  "Legacy Invest Realty Parent": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Legacy Invest Realty Parent"
+  },
+  "Littell Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Littell Properties"
+  },
+  "Longstep Property Solutions": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Longstep Property Solutions"
+  },
+  "Lynco Properties": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Lynco Properties"
+  },
+  "MGC Leasing &Property Management, LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "MGC Leasing &Property Management, LLC"
+  },
+  "Metro Property Management Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Metro Property Management Parent"
+  },
+  "Midland Property Partners, LLC - DBA Real Property Management Main": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Midland Property Partners, LLC - DBA Real Property Management Main"
+  },
+  "Minnix Property Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Minnix Property Management"
+  },
+  "Modern City Parent": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Modern City Parent"
+  },
+  "NWA Peak Property Management LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "NWA Peak Property Management LLC"
+  },
+  "Neighborhood Revival": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Neighborhood Revival"
+  },
+  "Niguel Point Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Niguel Point Properties"
+  },
+  "North State Financial": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "North State Financial"
+  },
+  "Oakwood Parent": {
+   "am": "Stephanie Sparks",
+   "am_slack_id": "U09P0CXR1N0",
+   "csa": "Ashley Settergren",
+   "csa_slack_id": "U0A16BK5HK3",
+   "sheet_account_name": "Oakwood Parent"
+  },
+  "OneSource Real Estate LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "OneSource Real Estate LLC"
+  },
+  "Open House Management": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Open House Management"
+  },
+  "Out Fast Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Out Fast Property Management"
+  },
+  "Paragon Property Management Group LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Paragon Property Management Group LLC"
+  },
+  "Peak Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Peak Property Management"
+  },
+  "RPM Rental Solutions": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "RPM Rental Solutions"
+  },
+  "Real Property Management Consultants": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Consultants"
+  },
+  "Real Property Management Piedmont": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Piedmont"
+  },
+  "Real Property Management Southland": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Southland"
+  },
+  "Real Property Management Superior Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Superior Properties"
+  },
+  "Real Property Management Three Bridges": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Three Bridges"
+  },
+  "Red Bricks Property Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Red Bricks Property Management"
+  },
+  "Redwood Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Redwood Parent"
+  },
+  "Relogic": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Relogic"
+  },
+  "Remax Properties, Inc (Mark Jones)": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Remax Properties, Inc (Mark Jones)"
+  },
+  "Remax Properties, Inc - Chuck Wartman": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Remax Properties, Inc - Chuck Wartman"
+  },
+  "Rent Appeal, Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Rent Appeal, Inc."
+  },
+  "Rookwood Properties": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Rookwood Properties"
+  },
+  "SMD Management LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "SMD Management LLC"
+  },
+  "Schambs Property Management Group, Inc.": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Schambs Property Management Group, Inc."
+  },
+  "Sentral": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Sentral"
+  },
+  "Signature Real Estate Group": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Signature Real Estate Group"
+  },
+  "Sound City Realty, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Sound City Realty, LLC"
+  },
+  "Specialized Realty, Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Specialized Realty, Inc."
+  },
+  "Standard Management Company Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Standard Management Company Parent"
+  },
+  "Stevens Realty LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Stevens Realty LLC"
+  },
+  "Team Cadwell Investments DBA Park Place PM": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Team Cadwell Investments DBA Park Place PM"
+  },
+  "The Charleston Property Company": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "The Charleston Property Company"
+  },
+  "The Renshaw Company Realtors": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "The Renshaw Company Realtors"
+  },
+  "Toomey Property Advisors": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Toomey Property Advisors"
+  },
+  "TruHome Property Solutions": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "TruHome Property Solutions"
+  },
+  "Willowdale Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "WPM"
+  },
+  "West USA Realty": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "West USA Realty"
+  },
+  "White Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "White Property Management"
+  },
+  "Woodlake Properties Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Woodlake Properties Parent"
+  },
+  "Yancey Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Yancey Management"
+  },
+  "iProperties International": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "iProperties International"
+  },
+  "25th Century": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "25th Century"
+  },
+  "Amerihome": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Amerihome"
+  },
+  "Bridge Homes": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Bridge Homes"
+  },
+  "Campanas Property Management Inc": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Campanas Property Management Inc"
+  },
+  "D Land Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "D Land Parent"
+  },
+  "E&E Capital Management, LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "E&E Capital Management, LLC"
+  },
+  "Harbor Group Parent": {
+   "am": "Stephanie Sparks",
+   "am_slack_id": "U09P0CXR1N0",
+   "csa": "Ashley Settergren",
+   "csa_slack_id": "U0A16BK5HK3",
+   "sheet_account_name": "Harbor Group Parent"
+  },
+  "Living In Town Realty Group LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Living In Town Realty Group LLC"
+  },
+  "MJW Investments Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "MJW Investments Parent"
+  },
+  "McCaw Property Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "McCaw Property Management"
+  },
+  "McKinley Companies, LLC": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "McKinley Companies, LLC"
+  },
+  "Optimum Properties": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Optimum Properties"
+  },
+  "Real Property Management Hill Country": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Hill Country"
+  },
+  "Realty Solutions LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Realty Solutions LLC"
+  },
+  "Rent 805": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Rent 805"
+  },
+  "SFR3 Operator, LLC": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "SFR3 Operator, LLC"
+  },
+  "Sound Mind Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Sound Mind Realty"
+  },
+  "The Mor Group, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "The Mor Group, LLC"
+  },
+  "The Windsor Companies": {
+   "am": null,
+   "am_slack_id": null,
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "The Windsor Companies"
+  },
+  "White Property Management - Ridgewood Apartments": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "White Property Management - Ridgewood Apartments"
+  },
+  "33 Realty Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "33 Realty Management"
+  },
+  "40 Oaks PM LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "40 Oaks PM LLC"
+  },
+  "A Plus Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "A Plus Management"
+  },
+  "AD Distributions, LLC. Dba Black and Cherry": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "AD Distributions, LLC. Dba Black and Cherry"
+  },
+  "Access Property Management Group, LLC.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Access Property Management Group, LLC."
+  },
+  "Advantage Realty Services, Inc": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Advantage Realty Services, Inc"
+  },
+  "Aggus Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Aggus Realty"
+  },
+  "Apartments Niagara LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Apartments Niagara LLC"
+  },
+  "Aramis Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Aramis Realty"
+  },
+  "Atlanta Partners Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Atlanta Partners Property Management"
+  },
+  "Atlas Rental Property": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Atlas Rental Property"
+  },
+  "Augusta Partners Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Augusta Partners Property Management"
+  },
+  "BVW Property Management LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "BVW Property Management LLC"
+  },
+  "Barringer Investments & Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Barringer Investments & Property Management"
+  },
+  "Blue Fox Properties": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Blue Fox Properties"
+  },
+  "Blue Oak Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Blue Oak Property Management"
+  },
+  "Boardwalk Property Management, LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Boardwalk Property Management, LLC"
+  },
+  "Bouse Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Bouse Properties"
+  },
+  "Brick & Mortar Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Brick & Mortar Properties"
+  },
+  "Brim Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Brim Properties"
+  },
+  "Broadmoor Property Management LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Broadmoor Property Management LLC"
+  },
+  "Bueno & Finnick dba RE/MAX Center": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Bueno & Finnick dba RE/MAX Center"
+  },
+  "Bullseye Property Management LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Bullseye Property Management LLC"
+  },
+  "Byrd Palmer & Associates": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Byrd Palmer & Associates"
+  },
+  "Carolina Management Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Carolina Management Parent"
+  },
+  "Cleveland Property Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Cleveland Property Management"
+  },
+  "Coastal Group": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Coastal Group"
+  },
+  "Coastal One Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Coastal One Property Management"
+  },
+  "Coldwell Banker Residential Property Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Coldwell Banker Residential Property Management"
+  },
+  "Colonial Residential Properties Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Colonial Residential Properties Inc."
+  },
+  "Cowboy Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Cowboy Properties"
+  },
+  "D&K Property Management & Real Estate LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "D&K Property Management & Real Estate LLC"
+  },
+  "DS Huber Group": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "DS Huber Group"
+  },
+  "Dillon Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Dillon Realty"
+  },
+  "Discovery Investments": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Discovery Investments"
+  },
+  "Domain Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Domain Property Management"
+  },
+  "Dunfee Real Estate Services": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Dunfee Real Estate Services"
+  },
+  "EGL Properties, Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "EGL Properties, Inc."
+  },
+  "Edgewater Real Estate LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Edgewater Real Estate LLC"
+  },
+  "Elder Properties of Greensboro Inc. - DBA Your Home Triad": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Elder Properties of Greensboro Inc. - DBA Your Home Triad"
+  },
+  "Elevate Hawaii Management LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Elevate Hawaii Management LLC"
+  },
+  "Elite Team Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Elite Team Realty"
+  },
+  "Emerald Shores Realty Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Emerald Shores Realty Inc."
+  },
+  "Excalibur Homes": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Excalibur Homes"
+  },
+  "Exit Realty - Realty Place": {
+   "am": null,
+   "am_slack_id": null,
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Exit Realty - Realty Place"
+  },
+  "Fairin Realty, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Fairin Realty, LLC"
+  },
+  "Faranesh Real Estate and Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Faranesh Real Estate and Property Management"
+  },
+  "First Place Management, Inc": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "First Place Management, Inc"
+  },
+  "Futurevision Inc": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Futurevision Inc"
+  },
+  "GC Realty & Development, LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "GC Realty & Development, LLC"
+  },
+  "Group Fox Management": {
+   "am": null,
+   "am_slack_id": null,
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Group Fox Management"
+  },
+  "HomeRock, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "HomeRock, LLC"
+  },
+  "Homebox": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Homebox"
+  },
+  "Howard Management Group Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Howard Management Group Parent"
+  },
+  "Hudson Homes Management LLC": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Hudson Homes Management, LLC"
+  },
+  "ICR Consulting, LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "ICR Consulting, LLC"
+  },
+  "Intown Home Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Intown Home Property Management"
+  },
+  "J & L Management Inc DBA Nexus Property Management - Fall River Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "J & L Management Inc DBA Nexus Property Management - Fall River Property Management"
+  },
+  "JAMM Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "JAMM Property Management"
+  },
+  "JMAX Property Management LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "JMAX Property Management LLC"
+  },
+  "JMS Property": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "JMS Property"
+  },
+  "Jilot Property Managment": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Jilot Property Managment"
+  },
+  "KRS Holdings Inc": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "KRS"
+  },
+  "Keystone Brokers, Inc": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Keystone Brokers, Inc"
+  },
+  "Keyway Property Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Keyway Property Management"
+  },
+  "Kotarides Property Management": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Kotarides Property Management"
+  },
+  "Kunkel Wittenauer Group": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Kunkel Wittenauer Group"
+  },
+  "Lacy Management Inc": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Lacy Management Inc"
+  },
+  "Lighthouse Real Estate Services Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Lighthouse Real Estate Services Inc."
+  },
+  "MECA Realty LLC.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "MECA Realty LLC."
+  },
+  "MIG Management Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "MIG Management Inc."
+  },
+  "Managex": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Managex"
+  },
+  "Market Pro Realty, Inc DBA TouchPoint Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Market Pro Realty, Inc DBA TouchPoint Property Management"
+  },
+  "Maymont Homes": {
+   "am": "Stephanie Sparks",
+   "am_slack_id": "U09P0CXR1N0",
+   "csa": "Ryan Yorra",
+   "csa_slack_id": "U087UA3563Y",
+   "sheet_account_name": "Maymont Homes"
+  },
+  "Metropolitan Real Estate LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Metropolitan Real Estate LLC"
+  },
+  "Millennial Realty & Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Millennial Realty & Property Management"
+  },
+  "Mississippi Property Managers, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Mississippi Property Managers, LLC"
+  },
+  "Monarch Multifamily": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Monarch Multifamily"
+  },
+  "Mutual Property Management": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Mutual Property Management"
+  },
+  "NAB 324 LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "NAB 324 LLC"
+  },
+  "Navy to Navy Homes": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Navy to Navy Homes"
+  },
+  "New City Property Management Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "New City Property Management Parent"
+  },
+  "Oasys Properties": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Oasys Properties"
+  },
+  "Open Management": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Open Management"
+  },
+  "Orlando Real Estate and Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Orlando Real Estate and Property Management"
+  },
+  "Paielli Realty, Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Paielli Realty, Inc."
+  },
+  "Payton's Place Real Estate, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Payton's Place Real Estate, LLC"
+  },
+  "Perimeter Property Services": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Perimeter Property Services"
+  },
+  "Place Management LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Place Management LLC"
+  },
+  "Platinum Realty and Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Platinum Realty and Management"
+  },
+  "Point Real Estate Parent Company": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Point Real Estate Parent Company"
+  },
+  "PropertySourced": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "PropertySourced"
+  },
+  "RPM Charlotte Metro DBA Real Property Management Charlotte Metro": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "RPM Charlotte Metro DBA Real Property Management Charlotte Metro"
+  },
+  "Raynor Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Raynor Realty"
+  },
+  "Real Capital Group Property Management LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Capital Group Property Management LLC"
+  },
+  "Real Property Management - Agile": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management - Agile"
+  },
+  "Real Property Management - North Point": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management - North Point"
+  },
+  "Real Property Management Advantage": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Advantage"
+  },
+  "Real Property Management Central Valley": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Central Valley"
+  },
+  "Real Property Management Clarity": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Clarity"
+  },
+  "Real Property Management Ignite": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Ignite"
+  },
+  "Real Property Management Midlands": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Midlands"
+  },
+  "Real Property Management Midtown": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Midtown"
+  },
+  "Real Property Management Premium": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Premium"
+  },
+  "Real Property Management South Orlando": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management South Orlando"
+  },
+  "Real Property Management Titan": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management Titan"
+  },
+  "Red Realty, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Red Realty, LLC"
+  },
+  "Reeder Companies LLC, REALTORS": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Reeder Companies LLC, REALTORS"
+  },
+  "Rehmann Realty Group": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Rehmann Realty Group"
+  },
+  "Rent Solutions": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Rent Solutions"
+  },
+  "Rental Management Group LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Rental Management Group LLC"
+  },
+  "Rental Management Guys, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Rental Management Guys, LLC"
+  },
+  "Renters Warehouse": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Renters Warehouse"
+  },
+  "ResiHome": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "ResiHome"
+  },
+  "Residential Leasing and Management Corporation": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Residential Leasing and Management Corporation"
+  },
+  "River City Property Group LLC dba PMI Scenic City": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "River City Property Group LLC dba PMI Scenic City"
+  },
+  "Scout Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Scout Property Management"
+  },
+  "Soniat Realty": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Soniat Realty"
+  },
+  "Stever and Associates": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Stever and Associates"
+  },
+  "Stones River Property Management": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Stones River Property Management"
+  },
+  "T2M Real Estate": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "T2M Real Estate"
+  },
+  "Tampa's Best Realty, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Tampa's Best Realty, LLC"
+  },
+  "Taylor & Taylor Realty Services LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Taylor & Taylor Realty Services LLC"
+  },
+  "Thousand Oaks HOA": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Thousand Oaks HOA"
+  },
+  "Tim Carr Group": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Tim Carr Group"
+  },
+  "Trademark Property Management LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Trademark Property Management LLC"
+  },
+  "Valiant Realty & Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Valiant Realty & Management"
+  },
+  "Valley Homes": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Valley Homes"
+  },
+  "Vesta Real Estate, LLC": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Vesta Real Estate, LLC"
+  },
+  "Vision Realty & Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Vision Realty & Management"
+  },
+  "Waypoint Residential Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Waypoint Residential Management"
+  },
+  "Welcome Home Syr Inc": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Welcome Home Syr Inc"
+  },
+  "Western Wealth Parent": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Western Wealth Parent"
+  },
+  "Wilkinson PM, Inc.": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Wilkinson PM, Inc."
+  },
+  "Winfield Property Management, LLC": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Winfield Property Management, LLC"
+  },
+  "Foundation Property Management, LLC": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Foundation Property Management, LLC"
+  },
+  "Morgan Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Morgan Property Management"
+  },
+  "PF Holdings": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "PF Holdings"
+  },
+  "Real Property Management": {
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Real Property Management"
+  },
+  "Beztak Properties Parent": {
+   "am": "Stephanie Sparks",
+   "am_slack_id": "U09P0CXR1N0",
+   "csa": "Ryan Yorra",
+   "csa_slack_id": "U087UA3563Y",
+   "sheet_account_name": "Beztak Properties Parent Company"
+  },
+  "Highmark Residential Parent": {
+   "am": "Ashley Settergren",
+   "am_slack_id": "U0A16BK5HK3",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Highmark"
+  },
+  "Imagine Homes Parent": {
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "sheet_account_name": "Imagine"
+  },
+  "Kairos Living LLC Parent": {
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": "Ashley Settergren",
+   "csa_slack_id": "U0A16BK5HK3",
+   "sheet_account_name": "Kairos Living LLC Parent Company"
+  }
+ }
+}

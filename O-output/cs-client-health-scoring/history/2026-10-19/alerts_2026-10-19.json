@@ -1,0 +1,59 @@
+{
+ "posted": false,
+ "run": "2026-10-19",
+ "prev_run": "2026-10-13",
+ "channel": "C0B4QMETZ52",
+ "header": ":stethoscope: *Client health weekly refresh 2026-10-19* — 2 alert(s): 2 newly Red, 0 worsened to Yellow · <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard ↗>",
+ "alerts": [
+  {
+   "account": "Sentral",
+   "transition": "Yellow -> Red",
+   "band": "Red",
+   "am": "Natalie Jamnik",
+   "am_slack_id": "U09E14MCRM3",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "🔴 *Sentral* — moved Yellow → Red\nDrivers: Client Sentiment red · Platform & Product red\nSignals: Slack/Gong negative, Pylon negative · time-to-decision, override rate, QA rate, support-ticket ratio red · 6 Pylon friction issues (\"Application closed due to concurrent submission\", \"Joinery Phase 1-Applicant not showing in Findigs\")\nOwner: <@U09E14MCRM3> · <https://app-na2.hubspot.com/contacts/243635806/record/0-2/159374131925|HubSpot ↗> · <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard ↗>",
+   "posted": false
+  },
+  {
+   "account": "Encore Management",
+   "transition": "Yellow -> Red",
+   "band": "Red",
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "🔴 *Encore Management* — moved Yellow → Red\nDrivers: Strategic Alignment red · Platform & Product red · Client Sentiment yellow\nSignals: Executive sponsor alignment, Meeting/touchpoint cadence red / Performance review cadence, Multi-threaded relationship yellow · time-to-decision, volume trend red / approval rate, support-ticket ratio, technical escalations yellow\nOwner: <@U06TY8N92LQ> · <https://app-na2.hubspot.com/contacts/243635806/record/0-2/166645513922|HubSpot ↗> · <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard ↗>",
+   "posted": false
+  }
+ ],
+ "kudos": [],
+ "still_red_digest": {
+  "message": "⚪ Still Red this week (21), no change — grouped so no one gets re-pinged: Brandywine Homes Parent (Natalie, 8 wks) · Bridge Tower Properties LLC (Reese, 8 wks) · CORE Residential (Javier, 8 wks) · Elda Management Services (Reese, 8 wks) · Equity Real Estate (Reese, 8 wks) · Evernest (Natalie, 8 wks) · Exceptional Property Management (Javier, 8 wks) · HomeRiver Group Holdings LLC (Stephanie, 8 wks) · KAIZEN Realty (Javier, 8 wks) · Lynco Properties (Natalie, 8 wks) · Remax Properties, Inc - Chuck Wartman (Javier, 8 wks) · Rookwood Properties (Natalie, 8 wks) · Toomey Property Advisors (Javier, 8 wks) · TruHome Property Solutions (Reese, 8 wks) · Weiss Parent (unassigned, 8 wks) · 3 Options Realty (Javier, 7 wks) · MGC Leasing &Property Management, LLC (Reese, 7 wks) · Cooper Zadeh Property Management, LLC (Reese, 4 wks) · Group Fox Management (unassigned, 4 wks) · Harbor Group Parent (Stephanie, 3 wks) · MJW Investments Parent (Reese, 2 wks)",
+  "accounts": [
+   "Brandywine Homes Parent",
+   "Bridge Tower Properties LLC",
+   "CORE Residential",
+   "Elda Management Services",
+   "Equity Real Estate",
+   "Evernest",
+   "Exceptional Property Management",
+   "HomeRiver Group Holdings LLC",
+   "KAIZEN Realty",
+   "Lynco Properties",
+   "Remax Properties, Inc - Chuck Wartman",
+   "Rookwood Properties",
+   "Toomey Property Advisors",
+   "TruHome Property Solutions",
+   "Weiss Parent",
+   "3 Options Realty",
+   "MGC Leasing &Property Management, LLC",
+   "Cooper Zadeh Property Management, LLC",
+   "Group Fox Management",
+   "Harbor Group Parent",
+   "MJW Investments Parent"
+  ],
+  "posted": false
+ }
+}

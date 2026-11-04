@@ -1,0 +1,66 @@
+{
+ "Lynco Properties": {
+  "classification": "Neutral",
+  "channel_found": true,
+  "thin_sample": false,
+  "message_count_90d": 25,
+  "integration_friction": true,
+  "integration_note": "Spherexx/LRO integration friction in-window: LRO left on blocked applications at Union Mill (8/20, disabled as fix); Echo Trail backend integration issue pending at launch (8/25); Spherexx rent-quote push-back scoping unresolved (7/8).",
+  "rationale": "Directly read #p-lynco (agent hit channel-size limit). In-window: active DA transition with honored $40 pricing and OSBI/TransUnion re-credentialing (6/22-6/29); expansions launched Sunstone 7/13, Echo Trail 8/28, Crescent Falls 9/1, next tentatively 9/21; client referred Winfield to DA (6/18, 6/22). Friction: LRO blocked applications at Union Mill (8/20), 7/31 complaint that criminal/eviction records were missing from a report (attorney found records), and 8/25 note of DA-contract language they are not comfortable with. Engaged and expanding with worked friction = Neutral, not Negative.",
+  "override_reason": "Batch-1 agent could not classify (channel content too large to read); Donna read the channel directly on 2026-09-14 and classified from in-window messages."
+ },
+ "Benjamin H Realty Corp.": {
+  "classification": "Neutral",
+  "thin_sample": true,
+  "message_count_90d": 0,
+  "integration_friction": false,
+  "integration_note": null,
+  "rationale": "Channel is empty in-window (>= 2026-06-16); the AppFolio integration failure the agent cited is dated 2026-06-11, pre-window.",
+  "override_reason": "Window violation: Negative was built on a 6/11 pre-window event; direct channel read 9/14 shows zero in-window messages."
+ },
+ "CORE Residential": {
+  "classification": "Neutral",
+  "thin_sample": true,
+  "message_count_90d": 0,
+  "integration_friction": false,
+  "integration_note": null,
+  "rationale": "Channel is empty in-window; launch celebration and survey the agent cited are 5/07-5/21, pre-window.",
+  "override_reason": "Window violation: Positive was built on May pre-window events; direct read 9/14 shows zero in-window messages."
+ },
+ "KCP Real Estate LLC": {
+  "classification": "Neutral",
+  "thin_sample": true,
+  "message_count_90d": 1,
+  "integration_friction": false,
+  "integration_note": null,
+  "rationale": "One in-window message: 6/22 internal note moving account status onboarding->live ('seeing apps now'). Milestone noted, but a single internal message is too thin to score Positive.",
+  "override_reason": "Thin window: agent's Positive leaned on pre-window 6/04-6/11 training events; only one in-window message exists (6/22)."
+ },
+ "InveServe Corp": {
+  "classification": "Neutral",
+  "thin_sample": true,
+  "message_count_90d": 4,
+  "integration_friction": false,
+  "integration_note": null,
+  "rationale": "In-window traffic is automated 14/30-day survey pings (6/29, 7/15) and an internal config request to turn off auto-decisions (7/10). No client voice in-window; the 'pumped' onboarding reaction was 6/04, pre-window.",
+  "override_reason": "Window violation: Positive rested on pre-window launch enthusiasm; in-window content is automated/internal only."
+ },
+ "TruHome Property Solutions": {
+  "classification": "Neutral",
+  "thin_sample": true,
+  "message_count_90d": 0,
+  "integration_friction": false,
+  "integration_note": null,
+  "rationale": "Channel is empty in-window. The fail-to-launch decision the agent cited is 5/06, pre-window; in-window silence is Neutral by rule (unresponsive is not negative).",
+  "override_reason": "Window violation + silence-as-negative: direct read 9/14 shows zero in-window messages."
+ },
+ "Woodlake Properties Parent": {
+  "classification": "Neutral",
+  "thin_sample": false,
+  "message_count_90d": 13,
+  "integration_friction": true,
+  "integration_note": "AppFolio website structure issue on two properties delayed the expansion launch one week (6/16), resolved by the 6/24 go-live.",
+  "rationale": "In-window: 5-property expansion launched 6/24 (702 units) after a one-week AppFolio redirect fix; training went well (6/23). Client voice: Yossi flagged missing rev-share payments (6/29) and moved his SD-alternative program to Cosign (6/24). Successful launch offset by a billing complaint = Neutral.",
+  "override_reason": "Agent cited pre-window 3/24 and 4/16 events for Positive; direct read 9/14 shows mixed in-window evidence."
+ }
+}

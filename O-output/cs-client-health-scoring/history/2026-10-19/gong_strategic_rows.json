@@ -1,0 +1,611 @@
+{
+ "Maymont Homes": {
+  "calls_90d": 9,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Executive Officer",
+   "Director of Marketing Technology",
+   "VP of Product Management - Housing",
+   "VP, Leasing",
+   "Vice President of Operations"
+  ],
+  "sample_titles": [
+   "Promo Codes | Findigs",
+   "Findigs & Maymont Weekly - Labor Day Reschedule",
+   "Findigs & Maymont Weekly",
+   "Findigs - Housing Verification Discussion",
+   "Maymont - Scoping Call Source Attribution"
+  ],
+  "matched_call_ids": [
+   "7149565819474773792",
+   "4206053015738215955",
+   "6326364641201375999",
+   "2283392123527113851",
+   "6726348318030912298",
+   "8223589085535505885",
+   "2386547187790894397",
+   "3098425772775021900",
+   "5861497819774311342"
+  ]
+ },
+ "Evernest": {
+  "calls_90d": 5,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <-> Evernest Weekly Sync",
+   "Findigs DecisionAssist Training"
+  ],
+  "matched_call_ids": [
+   "5889759795229731094",
+   "3177007688244719657",
+   "5920470344980899493",
+   "7903961493074230737",
+   "8458565527567944703"
+  ]
+ },
+ "Beztak Properties Parent": {
+  "calls_90d": 20,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Compliance",
+   "President, Residential Division",
+   "Senior Vice President",
+   "Vice President",
+   "Vice President Beztak Owned Division",
+   "Vice President of Operations"
+  ],
+  "sample_titles": [
+   "Beztak | Findigs - Weekly Exec Meeting",
+   "Findigs | Read: Akiva's Region",
+   "Findigs | Brandi's Portfolio",
+   "Findigs | Andrea's Portfolio",
+   "Sarah's Region | Findigs"
+  ],
+  "matched_call_ids": [
+   "199626674848809554",
+   "3850704028167882632",
+   "1158607653708438874",
+   "5081751918795746876",
+   "5761482767324642171",
+   "4458487809837096936",
+   "1675048705759092141",
+   "5682096155011724884",
+   "8024750565238790885",
+   "6061068576030357046",
+   "5671445371692002852",
+   "3067497001956310001",
+   "1988981850251095929",
+   "6800864627301108308",
+   "1905235067867196100",
+   "8813753129123408056",
+   "2683648483543627041",
+   "642164912542626714",
+   "5863071397633098531",
+   "8017844966567450108"
+  ]
+ },
+ "Oakwood Parent": {
+  "calls_90d": 6,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "VP of Operations"
+  ],
+  "sample_titles": [
+   "Findigs x Oakwood | Bi-Weekly Sync",
+   "Oakwood + Findigs Sync",
+   "Oakwood | Findigs Sync",
+   "Findigs x Oakwood | Monthly Sync",
+   "Findigs Monthly Reschedule"
+  ],
+  "matched_call_ids": [
+   "258601793642676146",
+   "7022348441014952728",
+   "1466941580212855725",
+   "5096840792527660840",
+   "3095567267701095411",
+   "5835078315837638635"
+  ]
+ },
+ "Western Wealth Parent": {
+  "calls_90d": 15,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner",
+   "Vice President, Operations"
+  ],
+  "sample_titles": [
+   "Findigs | Western Weekly",
+   "Findigs Training",
+   "Findigs & Western Wealth Implementation Weekly",
+   "[Hold] Findigs Training"
+  ],
+  "matched_call_ids": [
+   "7213690021787926503",
+   "3266069405113151358",
+   "1583385780298322565",
+   "6738408157710197766",
+   "2929450338098721005",
+   "6234889775739795635",
+   "4982968387175301248",
+   "6140903382296612707",
+   "381518499271850475",
+   "3397064007757792081",
+   "8780261943690200897",
+   "6572127353171999619",
+   "219073282228978642",
+   "1286696864328444434",
+   "6499318797309592468"
+  ]
+ },
+ "McKinley Companies, LLC": {
+  "calls_90d": 5,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Digital Marketing",
+   "Vice President",
+   "Vice President, Asset Management and Marketing",
+   "Vice President, Information & Strategy"
+  ],
+  "sample_titles": [
+   "Findigs | McKinley- Monthly Operations Connect",
+   "McKinley <> Findigs: Checkout Process Rundown",
+   "Findigs <> McKinley: New App Walkthrough"
+  ],
+  "matched_call_ids": [
+   "7487794149916764895",
+   "8035649637735985297",
+   "5035103907714226031",
+   "26051328160012949",
+   "5308862740495807376"
+  ]
+ },
+ "Brick and Timber Parent": {
+  "calls_90d": 10,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Brick + Timber | Findigs Weekly",
+   "Findigs || Brick & Timber Monthly"
+  ],
+  "matched_call_ids": [
+   "4586562530575014777",
+   "4289713244392195999",
+   "4053420801500052726",
+   "571793083690499037",
+   "8144388211945794403",
+   "1756704692361521660",
+   "8053302114206531401",
+   "3834754149040325973",
+   "2786452369105792798",
+   "9021331084992560556"
+  ]
+ },
+ "Kairos Living LLC Parent": {
+  "calls_90d": 8,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Executive Officer",
+   "Chief Operating Officer",
+   "Vice President of Leasing"
+  ],
+  "sample_titles": [
+   "Kairos | Findigs - Bi-Weekly Connect",
+   "Kairos <> Findigs: Urgent Item Review",
+   "Demo + go-live timing for new Findigs application experience",
+   "Kairos | Findigs - Weekly Connect"
+  ],
+  "matched_call_ids": [
+   "6016312610212686304",
+   "8698705337608003237",
+   "3920658468248040486",
+   "5726974764121709630",
+   "1671923583851464137",
+   "148457804590460017",
+   "7565620360068479581",
+   "3297801681804878429"
+  ]
+ },
+ "Sentral": {
+  "calls_90d": 12,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Associate Director of Business Intelligence",
+   "Director of Design Operations",
+   "Director of Portfolio Operations"
+  ],
+  "sample_titles": [
+   "Sentral Joinery + Inkwell | Findigs Training",
+   "Sentral + Findigs Bi-Weekly Call",
+   "Sentral <> Jonah <> Findigs Sync [HOLD]",
+   "Sentral <> Findigs Weekly",
+   "Sentral Diega <> Findigs Training"
+  ],
+  "matched_call_ids": [
+   "2367331360827191221",
+   "3825556141434283722",
+   "7408335652140101269",
+   "8118171662267807158",
+   "5699886742499928223",
+   "9014591806019198857",
+   "9012014268527966170",
+   "4496869460472065599",
+   "8630316843746928118",
+   "5212434736319331374",
+   "7224118889978485264",
+   "427967869292748772"
+  ]
+ },
+ "Rookwood Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Booked Sync - Natalie (Lauren Beckley)"
+  ],
+  "matched_call_ids": [
+   "3001788464464227833"
+  ]
+ },
+ "Jones and Jones Communities": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Ben &  Nichol Intro",
+   "Jones & Jones | Findigs Sync"
+  ],
+  "matched_call_ids": [
+   "8462976861760407940",
+   "5083097584682274771"
+  ]
+ },
+ "Highmark Residential Parent": {
+  "calls_90d": 19,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Assistant Regional VP",
+   "Chief Accounting Officer",
+   "Director of Strategic Initiatives",
+   "Head Senior VP, Operations",
+   "SVP Operations",
+   "Senior Vice President, Asset Management",
+   "Southeast Region VP",
+   "Vice President, Information Technology",
+   "Vice President, Learning & Development"
+  ],
+  "sample_titles": [
+   "Findigs <> Highmark - Weekly Sync",
+   "Affordable Workflows - Pre-Review",
+   "Findigs x Highmark FL LIHTC App",
+   "Gina / Josiah Sync",
+   "Gina / Josiah"
+  ],
+  "matched_call_ids": [
+   "1753673033394212863",
+   "7520785293737076176",
+   "5413131350807490974",
+   "4383078875665719495",
+   "2370567101722189427",
+   "716311016867407497",
+   "5131395784881821052",
+   "1659709679719262479",
+   "8317829973924922922",
+   "8287691926568891",
+   "5521058033405974632",
+   "6443167323401205589",
+   "122842323720151120",
+   "7111323351636106316",
+   "3892237331431269378",
+   "5882422712747673823",
+   "8272549308343867012",
+   "8077878997499760186",
+   "7863295958416800053"
+  ]
+ },
+ "Imagine Homes Parent": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Leasing and Retention"
+  ],
+  "sample_titles": [
+   "Imagine Homes - Mn/St.Paul Compliance Chat"
+  ],
+  "matched_call_ids": [
+   "895375037074671259"
+  ]
+ },
+ "HomeRiver Group Holdings LLC": {
+  "calls_90d": 5,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Leasing",
+   "Regional VP"
+  ],
+  "sample_titles": [
+   "HRG / Findigs Weekly Meeting"
+  ],
+  "matched_call_ids": [
+   "1526772448193494265",
+   "7529289604403884287",
+   "6840988467303765407",
+   "3638758781572097235",
+   "2652119878779591692"
+  ]
+ },
+ "SFR3 Operator, LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "American Avenue | Findigs Quarterly Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "American Avenue | Findigs Quarterly Review"
+  ],
+  "matched_call_ids": [
+   "3522217087278895713"
+  ]
+ },
+ "Lynco Properties": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Lynco Sync",
+   "Lynco <> Findigs Sync"
+  ],
+  "matched_call_ids": [
+   "7161149468871641818",
+   "4289637992374410680"
+  ]
+ },
+ "Excalibur Homes": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Meeting with Reese (Callie Guzman)"
+  ],
+  "matched_call_ids": [
+   "3716649177480537147"
+  ]
+ },
+ "Open Management": {
+  "calls_90d": 2,
+  "review_call_titles": [
+   "Open Mgmt | Findigs Business Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Booked Sync - Natalie (Jose Mendoza)",
+   "Open Mgmt | Findigs Business Review"
+  ],
+  "matched_call_ids": [
+   "9054577646200270242",
+   "1377742956476117579"
+  ]
+ },
+ "Kotarides Property Management": {
+  "calls_90d": 11,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "KPM | Findigs Weekly Ticket Touchbase"
+  ],
+  "matched_call_ids": [
+   "4092742504076441391",
+   "8673050648275247004",
+   "4281584794084234967",
+   "9163704202797946312",
+   "4541703159157739239",
+   "5461915078004822256",
+   "1169508050534607400",
+   "7438575491766885809",
+   "2759119258216045104",
+   "6645739234637264186",
+   "7269549771506290633"
+  ]
+ },
+ "KRS Holdings Inc": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs/KRS Check In"
+  ],
+  "matched_call_ids": [
+   "3677771296066931103"
+  ]
+ },
+ "Aulder Property Management": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Aulder | Findigs Sync",
+   "Findigs x Aulder | Sync",
+   "Meeting with Reese (Kelli Gordon Stepp)"
+  ],
+  "matched_call_ids": [
+   "9188174152115004258",
+   "4301018825045644195",
+   "4421582819879395843"
+  ]
+ },
+ "Blue Fox Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <> Blue Fox DecisionAssist/Credentialing"
+  ],
+  "matched_call_ids": [
+   "55641066426249358"
+  ]
+ },
+ "California Leasing": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner"
+  ],
+  "sample_titles": [
+   "California Leasing - DA check-in",
+   "DA Training/California Leasing"
+  ],
+  "matched_call_ids": [
+   "2450618518258804067",
+   "1194447835762513917",
+   "4616400467875909405"
+  ]
+ },
+ "HNN Atlanta": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "DA Training/HNN Atlanta"
+  ],
+  "matched_call_ids": [
+   "2170698788404825395"
+  ]
+ },
+ "Harbor Property Management, Inc.": {
+  "calls_90d": 2,
+  "review_call_titles": [
+   "QBR: Findigs <> Harbor PM"
+  ],
+  "exec_titles_seen": [
+   "President"
+  ],
+  "sample_titles": [
+   "QBR: Findigs <> Harbor PM"
+  ],
+  "matched_call_ids": [
+   "3310486431622779771",
+   "8758832853243294414"
+  ]
+ },
+ "JMAX Property Management LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Decline Overview"
+  ],
+  "matched_call_ids": [
+   "3039571886652698616"
+  ]
+ },
+ "KENCO Residential Parent": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "Kenco Business Review"
+  ],
+  "exec_titles_seen": [
+   "President"
+  ],
+  "sample_titles": [
+   "Kenco Business Review"
+  ],
+  "matched_call_ids": [
+   "598197799317470627"
+  ]
+ },
+ "Littell Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "QBR - Littell Properties"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "QBR - Littell Properties"
+  ],
+  "matched_call_ids": [
+   "5074985442152299129"
+  ]
+ },
+ "Optimum Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Operations & Asset Management"
+  ],
+  "sample_titles": [
+   "Optimum Prop | Findigs Sync"
+  ],
+  "matched_call_ids": [
+   "7985105526607279103"
+  ]
+ },
+ "ResiHome": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Property Compliance"
+  ],
+  "sample_titles": [
+   "Resihome Sync",
+   "ResiHome | Findigs CSM Intro"
+  ],
+  "matched_call_ids": [
+   "5385998269656284195",
+   "7679623034814771917"
+  ]
+ },
+ "The Charleston Property Company": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Leasing"
+  ],
+  "sample_titles": [
+   "DecisionAssist Review"
+  ],
+  "matched_call_ids": [
+   "8769469633511216154"
+  ]
+ },
+ "Vision Realty & Management": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "Vision Realty & Management|Findigs Q2 Business Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Vision Realty & Management|Findigs Q2 Business Review"
+  ],
+  "matched_call_ids": [
+   "3869781296926698760"
+  ]
+ },
+ "Winfield Property Management, LLC": {
+  "calls_90d": 3,
+  "review_call_titles": [
+   "Winfield Business Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "WPM <> Findigs CSM Intro & DA Review",
+   "WPM <> Findigs Sync",
+   "Winfield Business Review"
+  ],
+  "matched_call_ids": [
+   "2257619407326087932",
+   "529960195713118582",
+   "1624592513448075471"
+  ]
+ },
+ "Woodlake Properties Parent": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Woodlake <> Findigs App Review"
+  ],
+  "matched_call_ids": [
+   "849130944474324584"
+  ]
+ }
+}

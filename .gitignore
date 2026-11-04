@@ -1,0 +1,14 @@
+# Secrets never go in this repo
+.env
+*.env
+.env.*
+**/API Keys and Access/
+
+# Local/session scratch
+scratch/
+*.tmp
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+~$*
