@@ -1,0 +1,512 @@
+{
+  "_about": "Layer 2 (exact logic + configuration) for client-health-refresh. Every value here changes what gets computed or pushed, so it is versioned in git and changed only by commit. Values captured from the 2026-10-28 run's merge_refresh.py (the version that actually ran), not the stale scripts/ copy.",
+  "_config_version": "2026-11-05",
+  "target": {
+    "api_base": "https://findigs-growth-hub.base44.app/api",
+    "app_id": "6a01dddd52a74acb4fd153bd",
+    "entity": "AccountHealthCache",
+    "record_id": "6a834cf871d5a0ff1897bfca",
+    "cache_key": "health_overview",
+    "snapshot_cache_key_prefix": "health_snapshot_",
+    "dashboard_url": "https://findigs-growth-hub.base44.app/cx/client-health",
+    "persisted_fields": [
+      "cache_key",
+      "computed_at",
+      "accounts"
+    ],
+    "expected_account_count": 268,
+    "auth_header": "Authorization: Bearer <token>"
+  },
+  "window": {
+    "trailing_days": 90,
+    "end": "run_date"
+  },
+  "sigma": {
+    "data_model_id": "d8c49faf-458b-4407-bdc3-85a9fbefb609",
+    "elements": {
+      "groups_bi": {
+        "id": "xv3TuuWX8Z",
+        "column_prefix": "inode-3t4SuoA2pU267qM43Rx4jl/",
+        "columns": {
+          "median_uw_hours": "Ad4D-EI2jp",
+          "has_decision_override": "W6x8udeWRR"
+        },
+        "feeds": [
+          "q1",
+          "q2"
+        ]
+      },
+      "support_cases_bi": {
+        "id": "Gz0-jqrI1V",
+        "column_prefix": "inode-1dBuhhkgQkWXslu27HE64N/",
+        "columns": {
+          "has_tech_escalation": "aXcJxyR08B",
+          "case_user_type": "EqUUI_mZyt"
+        },
+        "feeds": [
+          "q3"
+        ]
+      },
+      "companies_bi": {
+        "id": "VWI1PYJyy-",
+        "column_prefix": "inode-5OpIcdVfNb9CgO6UIt6Cbk/",
+        "columns": {
+          "unit_count_latest": "fYbMjAl9NA",
+          "unit_count_current_month": "6pSljhsuv9",
+          "sales_account_churn_risk": "raG5zMHzeS"
+        },
+        "feeds": [
+          "q4",
+          "q6"
+        ]
+      },
+      "revenue_actual_bi": {
+        "id": "VDO-u_D7p-",
+        "column_prefix": "inode-01S9MnIuLWteAJ8QRq5wee/",
+        "feeds": [
+          "q5"
+        ]
+      },
+      "user_application_funnel": {
+        "id": "apKoPbqWa9",
+        "column_prefix": "inode-54xB1eUhLxf1EJucb7r8Xk/",
+        "feeds": [
+          "q7"
+        ]
+      },
+      "unit_counts_bi": {
+        "id": "Y4dN5LDwns",
+        "feeds": [],
+        "_note": "Second reference for the gate-6 unit cross-check if the GROUP BY query is ever in doubt."
+      }
+    },
+    "rollup_renames": {
+      "_note": "current Sigma name -> stale resolved_name_sigma still on the record. Translate q-file keys to the record's name before merging. Add entries; never delete.",
+      "Beztak Properties Parent Company": "Beztak Properties Parent",
+      "Kairos Living LLC Parent Company": "Kairos Living LLC Parent",
+      "Hudson Homes Management, LLC": "Hudson Homes Management LLC"
+    },
+    "gate6_unit_crosscheck_sql": "SELECT \"inode-5OpIcdVfNb9CgO6UIt6Cbk/ROLLUP_COMPANY_NAME\" AS rollup_name, COUNT(*) AS n_children, SUM(\"6pSljhsuv9\") AS sum_units_cur_month, SUM(\"fYbMjAl9NA\") AS sum_units_latest FROM \"datamodel\".\"VWI1PYJyy-\" WHERE \"inode-5OpIcdVfNb9CgO6UIt6Cbk/ROLLUP_COMPANY_NAME\" IS NOT NULL GROUP BY rollup_name",
+    "q6_note": "GROUP BY alias on the first column is not honored; opaque ids come back, but column order is stable."
+  },
+  "support_filters": {
+    "case_user_type_exclude_ilike": [
+      "%applic%",
+      "%guarant%"
+    ],
+    "case_user_type_exclude_null": true,
+    "exclude_deleted": true,
+    "pet_exclusion": {
+      "sub_categories": [
+        "pet_verification_dispute",
+        "pet_policy_question",
+        "pet_fee_refund_request"
+      ],
+      "category_when_sub_category_null": "pets_disputes_consumer_requests",
+      "subject_ilike": "%pet%",
+      "sql_rule": "Wrap every sub-condition in COALESCE(..., FALSE) before OR-ing inside WHERE NOT (...).",
+      "columns": {
+        "sub_category": "CASE_SUB_CATEGORY",
+        "category": "CASE_CATEGORY",
+        "subject": "CASE_SUBJECT"
+      },
+      "sql_template": "NOT (COALESCE(CASE_SUB_CATEGORY IN ('pet_verification_dispute','pet_policy_question','pet_fee_refund_request'), FALSE) OR COALESCE(CASE_CATEGORY = 'pets_disputes_consumer_requests' AND CASE_SUB_CATEGORY IS NULL, FALSE) OR COALESCE(CASE_SUBJECT ILIKE '%pet%', FALSE))"
+    }
+  },
+  "hubspot": {
+    "portal_id": "243635806",
+    "company_properties": [
+      "name",
+      "domain",
+      "findigs_company_id",
+      "total_units_all",
+      "account_status__c",
+      "churned",
+      "churn_date",
+      "churn_reason",
+      "churn_lost_to",
+      "segment",
+      "client_health_score_override",
+      "client_health_rating",
+      "client_health_score",
+      "client_health_detail"
+    ],
+    "expected_matched_accounts_approx": 239,
+    "expected_matched_with_units_approx": 130
+  },
+  "gong": {
+    "review_call_title_regex": "QBR|EBR|business review|quarterly review|exec review|account review|performance review",
+    "exec_title_regex": "ceo|cfo|coo|cto|chief|president|founder|owner|principal|vp|evp|svp|managing director|managing partner|director of",
+    "sentiment_result_fields": [
+      "account",
+      "classification",
+      "thin_sample",
+      "n_briefs_read",
+      "rationale"
+    ]
+  },
+  "pylon": {
+    "open_states": [
+      "new",
+      "waiting_on_you",
+      "waiting_on_customer",
+      "on_hold",
+      "on_engineering",
+      "on_customer_success_team"
+    ],
+    "friction_bands": {
+      "positive_max": 0,
+      "neutral_max": 2
+    },
+    "catch_all_accounts_never_scan": {
+      "1566a785-0478-4391-b046-44798d18e632": "Applicant Account (DO NOT DELETE)",
+      "ca8c69b8-f92d-45e8-b2db-10c26892943d": "Pet Reviewer <> Support (findigsops.com)"
+    },
+    "pet_signals_union": {
+      "issue_categories": [
+        "pets_disputes_consumer_requests"
+      ],
+      "issue_sub_categories": [
+        "pet_verification_dispute"
+      ],
+      "tags": [
+        "Pets Inbound",
+        "Pets General",
+        "Pets Outbound",
+        "Pet Refund"
+      ],
+      "title_keywords": [
+        "pet SOP",
+        "ESA",
+        "PetV"
+      ]
+    },
+    "never_filter_by_fields": [
+      "is_pet_verification",
+      "is_decision_assist",
+      "is_cra_portfolio",
+      "is_termwise"
+    ],
+    "result_account_found_keys": [
+      "pylon_account_found",
+      "account_found"
+    ],
+    "result_split_fields": [
+      "pm_open_count",
+      "applicant_open_count"
+    ]
+  },
+  "slack_scan": {
+    "channel_pattern": "#p-<company>",
+    "approx_channels": 128,
+    "batches": 8,
+    "result_fields": [
+      "account",
+      "channel",
+      "channel_found",
+      "classification",
+      "thin_sample",
+      "message_count_90d",
+      "rationale",
+      "integration_friction",
+      "integration_note"
+    ]
+  },
+  "scoring": {
+    "metric_formulas": {
+      "approval_rate_pct": "approved / decisioned * 100",
+      "override_rate_pct": "overrides / decisioned * 100 (blended)",
+      "qa_pct": "qa_count / decisioned * 100",
+      "support_ticket_ratio_per_100": "pm_cases / decisioned * 100",
+      "tes_pct": "tes_cases / pm_cases * 100",
+      "volume_trend_pct": "(submitted_t90 - submitted_p90) / submitted_p90 * 100",
+      "median_ttd_hours": "max(median approved, median declined)  -- \"worse_of_two\""
+    },
+    "scored_notes": {
+      "revenue_trend_quarterly": "unscored, context only",
+      "qualitative_pillars.pms_integration_depth": "contextual object, NOT scored",
+      "metrics.pms_integration_depth": "scored row (weight in row_weights_platform)",
+      "nps_score": "weighted but no data has ever existed"
+    },
+    "_note": "Each metric: Green if the 'green' test passes, else Yellow if the 'yellow' test passes, else Red.",
+    "metric_bands": {
+      "approval_rate_pct": {
+        "green": [
+          ">",
+          50
+        ],
+        "yellow": [
+          ">=",
+          35
+        ],
+        "fs_accounts_always": "Yellow"
+      },
+      "override_rate_pct": {
+        "ENT": {
+          "green": [
+            "<=",
+            3
+          ],
+          "yellow": [
+            "<=",
+            6
+          ]
+        },
+        "MM": {
+          "green": [
+            "<=",
+            3
+          ],
+          "yellow": [
+            "<=",
+            6
+          ]
+        },
+        "SMB": {
+          "always": "Green"
+        },
+        "hard_gate_tripped_above": 6
+      },
+      "median_ttd_hours": {
+        "green": [
+          "<",
+          44
+        ],
+        "yellow": [
+          "<=",
+          60
+        ],
+        "value_used": "worse_of_two"
+      },
+      "qa_pct": {
+        "green": [
+          "<",
+          15
+        ],
+        "yellow": [
+          "<=",
+          20
+        ]
+      },
+      "support_ticket_ratio_per_100": {
+        "green": [
+          "<=",
+          15
+        ],
+        "yellow": [
+          "<=",
+          50
+        ]
+      },
+      "tes_pct": {
+        "ENT": {
+          "green": [
+            "<=",
+            3
+          ],
+          "yellow": [
+            "<=",
+            6
+          ]
+        },
+        "MM": {
+          "green": [
+            "<",
+            2
+          ],
+          "yellow": [
+            "<=",
+            5
+          ]
+        },
+        "SMB": {
+          "green": [
+            "<",
+            2.2
+          ],
+          "yellow": [
+            "<=",
+            4.0
+          ],
+          "provisional": true
+        }
+      },
+      "volume_trend_pct": {
+        "green": [
+          ">",
+          -20
+        ],
+        "yellow": [
+          ">=",
+          -40
+        ],
+        "pending": "Alex's replacement thresholds"
+      }
+    },
+    "row_weights_platform": {
+      "ENT": {
+        "median_ttd_hours": 6,
+        "approval_rate_pct": 6,
+        "override_rate_pct": 11,
+        "qa_pct": 6,
+        "support_ticket_ratio_per_100": 10,
+        "tes_pct": 3,
+        "volume_trend_pct": 3,
+        "pms_integration_depth": 3
+      },
+      "MM": {
+        "median_ttd_hours": 8,
+        "approval_rate_pct": 8,
+        "override_rate_pct": 12,
+        "qa_pct": 6,
+        "support_ticket_ratio_per_100": 10,
+        "tes_pct": 3,
+        "volume_trend_pct": 3,
+        "pms_integration_depth": 3
+      },
+      "SMB": {
+        "median_ttd_hours": 9,
+        "approval_rate_pct": 9,
+        "override_rate_pct": 9,
+        "qa_pct": 9,
+        "support_ticket_ratio_per_100": 13,
+        "tes_pct": 5,
+        "volume_trend_pct": 6,
+        "pms_integration_depth": 3
+      }
+    },
+    "row_weights_strategic": {
+      "ENT": {
+        "business_goals_documented": 8,
+        "kpis_defined_tracked": 4,
+        "performance_review_cadence": 5,
+        "executive_sponsor_alignment": 6,
+        "meeting_touchpoint_cadence": 4,
+        "multi_threaded_stakeholder_relationship": 4,
+        "csm_qualitative_risk_flag": 3
+      },
+      "MM": {
+        "business_goals_documented": 8,
+        "kpis_defined_tracked": 4,
+        "performance_review_cadence": 4,
+        "executive_sponsor_alignment": 4,
+        "meeting_touchpoint_cadence": 4,
+        "multi_threaded_stakeholder_relationship": 3,
+        "csm_qualitative_risk_flag": 2
+      },
+      "SMB": {
+        "business_goals_documented": 9,
+        "kpis_defined_tracked": 2,
+        "performance_review_cadence": 2,
+        "executive_sponsor_alignment": 2,
+        "meeting_touchpoint_cadence": 2,
+        "multi_threaded_stakeholder_relationship": 2,
+        "csm_qualitative_risk_flag": 2
+      }
+    },
+    "row_weights_sentiment": {
+      "ENT": {
+        "client_communication_sentiment": 6,
+        "pylon_ticket_tone": 5,
+        "nps_score": 4
+      },
+      "MM": {
+        "client_communication_sentiment": 6,
+        "pylon_ticket_tone": 5,
+        "nps_score": 4
+      },
+      "SMB": {
+        "client_communication_sentiment": 4,
+        "pylon_ticket_tone": 3,
+        "nps_score": 3
+      }
+    },
+    "segment_map": {
+      "ENT": "ENT",
+      "MM": "MM",
+      "SMB": "SMB",
+      "STRAT": "ENT"
+    },
+    "pillar_weights": {
+      "platform_product_metrics": 50,
+      "strategic_alignment_governance": 30,
+      "client_sentiment": 20
+    },
+    "band_to_score": {
+      "Green": 100,
+      "Yellow": 50,
+      "Red": 0
+    },
+    "pillar_value_bands": {
+      "green_min": 80,
+      "yellow_min": 60,
+      "cap_at_yellow_when_no_red_rows": true
+    },
+    "pillar_red_row_rules": {
+      "exactly_one_red_row": "Yellow",
+      "two_or_more_red_rows": "Red"
+    },
+    "composite_rules": {
+      "two_or_more_red_pillars": "Red",
+      "one_red_pillar": "Yellow",
+      "all_green": "Green",
+      "otherwise": "Yellow",
+      "csm_flag_red_forces": "Red",
+      "hubspot_override_precedence": "wins over CSM flag"
+    }
+  },
+  "validation": {
+    "join_coverage_floors": {
+      "q1": 150,
+      "q2": 150,
+      "q3": 120,
+      "q7": 150
+    },
+    "structural_diff_max_band_move": 25,
+    "_structural_diff_note": "OPEN DECISION: 25 began as a one-run exception on 2026-09-08 ('raised 20 -> 25 for this run only') and was copied forward. Original intent was 20.",
+    "pilot_accounts_unit_test": [
+      "Maymont Homes",
+      "Hudson Homes Management LLC",
+      "Evernest",
+      "Harbor Group Parent",
+      "Beztak Properties Parent",
+      "Oakwood Parent",
+      "Western Wealth Parent",
+      "McKinley Companies, LLC",
+      "Brandywine Homes Parent",
+      "Brick and Timber Parent",
+      "Kairos Living LLC Parent",
+      "Open House Management",
+      "Sentral",
+      "Rookwood Properties",
+      "Jones and Jones Communities",
+      "Standard Management Company Parent",
+      "Highmark Residential Parent",
+      "Imagine Homes Parent",
+      "Willowdale Property Management",
+      "Bridge Tower Properties LLC"
+    ]
+  },
+  "alerts": {
+    "slack_channel_id": "C0B4QMETZ52",
+    "slack_channel_name": "#p-account-health",
+    "negative_transitions": [
+      "Green->Yellow",
+      "Yellow->Red",
+      "Green->Red",
+      "new->Red",
+      "scored->Churned"
+    ],
+    "kudos_transitions": [
+      "Red->Yellow",
+      "Yellow->Green",
+      "Red->Green"
+    ],
+    "still_red": "one grouped digest with weeks-red counts; never re-ping individually",
+    "owner_source_of_truth": "O-output/cs-client-health-scoring/owner_map.json"
+  },
+  "failure_routing": {
+    "success": "post alerts to alerts.slack_channel_id and write the weekly report",
+    "any_stop_or_failure": "DM Will in Slack; post nothing to the channel"
+  }
+}
