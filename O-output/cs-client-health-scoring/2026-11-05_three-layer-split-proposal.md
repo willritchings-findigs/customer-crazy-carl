@@ -40,15 +40,15 @@ Old `SKILL.md` is still on `main` (and `ARCHIVE_SKILL_2026-10-29_pre-split.md` i
   misleading on the dashboard.
 - **Date constants are hand-edited every run** (`W_DATE`, `RUN`, Gong `FROM = '2026-06-10'`).
 
-## Open decisions for Will
+## Decisions (Will, 2026-11-05)
 
-1. **Structural-diff limit: 25 or 20?** It was raised 20 → 25 on 2026-09-08 "for this run
-   only" and then copied forward every week. Config keeps 25 so behavior doesn't change.
-2. **First-alert-batch review gate.** The old skill required a review-first for the first
-   alert batch under a new operator. Dropped per your 2026-11-04 decision to match the other
-   routines (channel on success, DM on any failure). Revisit after the first cloud run.
-3. **Dead reference.** The old skill pointed to `M-memory/project_cx_support_scorecard.md`,
-   which was never in the handoff. Dropped; the pet-exclusion SQL is now fully in config.
+1. **Structural-diff limit:** ±25 is the standard (was an undocumented exception; runbook updated).
+2. **First-alert-batch review gate:** dropped to match the other routines (channel on success,
+   DM on any failure). Revisit after the first cloud run.
+3. **Dead reference** to `M-memory/project_cx_support_scorecard.md`: dropped; the pet-exclusion
+   SQL lives in `queries/q3_support.sql`.
+4. **Gate 6** now reads Unit Counts BI, independent of q4 (matched q4 on all 692 rollups on 11/05).
+5. **q3** filters to Pylon cases. **q7** keeps the first-event cohort.
 
 ## Scripts wired to config (done 2026-11-05)
 

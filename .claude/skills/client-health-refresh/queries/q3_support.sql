@@ -4,6 +4,7 @@ SELECT
   COUNT(CASE WHEN "aXcJxyR08B" THEN 1 END) AS tes_cases
 FROM "datamodel"."Gz0-jqrI1V"
 WHERE "inode-1dBuhhkgQkWXslu27HE64N/CASE_IS_DELETED" = FALSE
+  AND "dyE5lEXjiZ" = 'pylon'
   AND "EqUUI_mZyt" IS NOT NULL
   AND "EqUUI_mZyt" NOT ILIKE '%applic%'
   AND "EqUUI_mZyt" NOT ILIKE '%guarant%'

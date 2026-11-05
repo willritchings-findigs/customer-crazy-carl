@@ -80,12 +80,12 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
 |---|---|---|
 | `q1_groups.sql` | `groups_bi` | decisioned, approved, median TTD approved/declined, median UW hours, overrides, QA. Window on decisioned-at. |
 | `q2_volume.sql` | `groups_bi` | submitted count in the window vs the equal prior window. |
-| `q3_support.sql` | `support_cases_bi` | PM cases and tech escalations, with user-type, deleted, and pet exclusions. |
+| `q3_support.sql` | `support_cases_bi` | PM cases and tech escalations, Pylon cases only, with user-type, deleted, and pet exclusions. |
 | `q4_companies.sql` | `companies_bi` | is_da, summed unit counts, statuses, churn risk, any_churned. Current state, no window. |
 | `q5_revenue.sql` | `revenue_actual_bi` | revenue by quarter of the run year. |
 | `q6_idmap.sql` | `companies_bi` | rollup id and child company ids (one row per child; see `config.sigma.q6_note`). |
 | `q7_funnel.sql` | `user_application_funnel` | funnel rows and completed applications, for people whose first event is in the window. |
-| `gate6_unit_crosscheck.sql` | `companies_bi` | unit sums for validation gate 6. |
+| `gate6_unit_crosscheck.sql` | `unit_counts_bi` | live units per rollup for the run month, from a source independent of q4 (validation gate 6). |
 
 **Rollup renames (every run).** Diff each q-file's names against the record's
 `resolved_name_sigma` set. Translate any name in `config.sigma.rollup_renames` (or a new
@@ -99,8 +99,9 @@ signal; it is a grab-bag.
 
 **Gate 6 prep.** Apply the same renames to `gate6_unit_crosscheck` and keep it for
 validation gate 6. Never trust q4's own unit output; a multi-portfolio rollup can silently
-return one child's count instead of the sum. (Open item in the runbook: this query is
-currently identical in logic to q4's unit sums, so it only catches a regression in q4.)
+return one child's count instead of the sum. The cross-check reads Unit Counts BI (one row
+per company per month), so it is independent of q4. If it returns no rows, the run month's
+unit counts have not loaded yet: stop and DM Will rather than skip the gate.
 
 ### HubSpot — `scripts/hubspot_pull.py`, then `scripts/match_hs_accounts.py`
 Pull companies with `findigs_company_id` and `config.hubspot.company_properties`, plus

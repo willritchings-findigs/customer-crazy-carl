@@ -52,7 +52,8 @@
         "column_prefix": "inode-1dBuhhkgQkWXslu27HE64N/",
         "columns": {
           "has_tech_escalation": "aXcJxyR08B",
-          "case_user_type": "EqUUI_mZyt"
+          "case_user_type": "EqUUI_mZyt",
+          "case_system": "dyE5lEXjiZ"
         },
         "feeds": [
           "q3"
@@ -113,9 +114,16 @@
       },
       "unit_counts_bi": {
         "id": "Y4dN5LDwns",
-        "feeds": [],
-        "_note": "Second reference for the gate-6 unit cross-check if the GROUP BY query is ever in doubt.",
-        "named_columns": []
+        "column_prefix": "inode-2XlQwTlI1rVsFvZQ8sG6SG/",
+        "feeds": [
+          "gate6"
+        ],
+        "_note": "Monthly unit-count time series, one row per company per month. Gate 6's independent source (decided 2026-11-05).",
+        "named_columns": [
+          "ROLLUP_COMPANY_NAME",
+          "UNIT_COUNT",
+          "UNIT_COUNT_AT"
+        ]
       }
     },
     "rollup_renames": {
@@ -139,7 +147,7 @@
       "q3_support": {
         "element": "support_cases_bi",
         "output": "q3_support_<MMDD>.json",
-        "purpose": "PM cases and tech escalations; applicant/guarantor/null user types, deleted, and pet tickets excluded"
+        "purpose": "PM cases and tech escalations; Pylon cases only; applicant/guarantor/null user types, deleted, and pet tickets excluded"
       },
       "q4_companies": {
         "element": "companies_bi",
@@ -162,9 +170,9 @@
         "purpose": "funnel rows and completed applications; cohort = people whose first event is in the window"
       },
       "gate6_unit_crosscheck": {
-        "element": "companies_bi",
+        "element": "unit_counts_bi",
         "output": "gate6_unit_crosscheck_<MMDD>.json",
-        "purpose": "validation gate 6 unit sums (see runbook open item: not independent of q4)"
+        "purpose": "validation gate 6: live units per rollup from Unit Counts BI for the run month, independent of q4"
       }
     },
     "_queries_note": "SQL lives in queries/<name>.sql; render with scripts/render_queries.py. Columns each element must have are derived from those files into elements.*.named_columns / columns."
@@ -191,7 +199,8 @@
         "subject": "CASE_SUBJECT"
       },
       "sql": "queries/q3_support.sql (the NOT (...) clause)"
-    }
+    },
+    "case_system": "pylon"
   },
   "hubspot": {
     "portal_id": "243635806",
@@ -545,7 +554,6 @@
       "q7": 150
     },
     "structural_diff_max_band_move": 25,
-    "_structural_diff_note": "OPEN DECISION: 25 began as a one-run exception on 2026-09-08 ('raised 20 -> 25 for this run only') and was copied forward. Original intent was 20.",
     "pilot_accounts_unit_test": [
       "Maymont Homes",
       "Hudson Homes Management LLC",
@@ -567,7 +575,8 @@
       "Imagine Homes Parent",
       "Willowdale Property Management",
       "Bridge Tower Properties LLC"
-    ]
+    ],
+    "_structural_diff_note": "25 is the standard (Will, 2026-11-05). It began as a one-run exception on 2026-09-08 and was confirmed as the standard."
   },
   "alerts": {
     "slack_channel_id": "C0B4QMETZ52",

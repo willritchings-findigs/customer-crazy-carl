@@ -52,7 +52,7 @@
 ## Push + verify (every run)
 
 1. Recompute locally against a fresh GET of the live record; **structural diff before pushing** — only expected fields may change.
-2. Abort and report to Will WITHOUT pushing if: overall band distribution moves more than ±20 accounts in any color vs last run; any account's data looks like a query bug (all-zero metric, 2x+ population swing); or a subagent verification fails.
+2. Abort and report to Will WITHOUT pushing if: overall band distribution moves more than ±25 accounts (`config.validation.structural_diff_max_band_move`; ±25 confirmed as the standard 2026-11-05) in any color vs last run; any account's data looks like a query bug (all-zero metric, 2x+ population swing); or a subagent verification fails.
 3. Push: `PUT /entities/AccountHealthCache/6a834cf871d5a0ff1897bfca`, header `Authorization: Bearer <token>` (see "Base44 auth scheme change" below — this was `api_key:` before 2026-10-28). Bash command must START with `curl` (settings.json allowlist is prefix-matched: `Bash(curl *findigs-growth-hub.base44.app*)`).
 4. Verify with a GET: account count, `computed_at`, spot-check 3 accounts (one DA, one FS, one Churned).
 5. Report to Will: distribution + week-over-week deltas, band flips with one-line reasons, anomalies flagged (not fixed), data-source failures skipped (a failed source means carry forward last week's values for those rows with a staleness note — never zero them out).
@@ -61,7 +61,7 @@
 
 **Where they live.** `.claude/skills/client-health-refresh/queries/*.sql`: q1–q7 plus the
 gate-6 cross-check. Dates are placeholders (`{window_start}`, `{window_end}`, `{prior_start}`,
-`{prior_end}`, `{revenue_year}`). `scripts/render_queries.py --run-date <date>` fills them in.
+`{prior_end}`, `{revenue_year}`, `{month_start}`, `{next_month_start}`). `scripts/render_queries.py --run-date <date>` fills them in.
 Before 2026-11-05 the queries were never saved; each run's agent rewrote them from prose.
 
 **Provenance.** Recovered on 2026-11-05 from the 2026-10-28 run's sub-agent transcripts. Each
@@ -84,19 +84,16 @@ window is exactly 90 × 24 hours. The prior window ends the day before `window_s
 same edge, so the trend comparison is like for like. The gap day (`prior_end` itself) is not
 counted in either window.
 
-### Open review items (raised 2026-11-05, not yet decided)
+### Review decisions (Will, 2026-11-05)
 
-| # | Item | Evidence (10/28 window) | Status |
+| # | Item | Evidence | Decision |
 |---|---|---|---|
-| 1 | **Gate 6 is not independent of q4.** Same element, same `SUM`, same `GROUP BY`, so they cannot disagree. It only catches a regression if q4's SQL changes. | Unit Counts BI (`Y4dN5LDwns`) is a separate monthly time series (`UNIT_COUNT_AT`, `UNIT_COUNT`) and could be the independent source, filtered to the latest month and summed by rollup. | Open. Needs a decision and a one-time comparison of the two sources. |
-| 2 | **q3 has no case-system filter**; the Support Metrics dashboard filters to Pylon (`"dyE5lEXjiZ" = 'pylon'`). | All 17,448 cases in q3's population were Pylon (382 TES, 253 accounts). No effect today. | Low risk. Adding the filter would keep the two dashboards aligned if another system appears. |
-| 3 | **q7 cohort = first event in the window**, not submission in the window. | 92,814 completed (current) vs 94,808 by first-submit date (+2.1%); 3,105 submitters started before the window. | Open. Definition choice: funnel cohort vs completions-in-period. |
-| 4 | **q6 is large** (~222K characters, one row per child company) and always overflows the tool output limit. | Every 10/28 execution auto-saved to a file. | Works as is; could aggregate to one row per rollup if it becomes a problem. |
-| 5 | **Window edge** (see above). | Run date excluded; prior windows have the same edge. | Accepted as consistent; document only. |
-
-Also open (from the three-layer split, 2026-11-05): the structural-diff limit is ±25 in
-`config.json`, but item 2 under "Push + verify" above says ±20. 25 began as a one-run
-exception on 2026-09-08 and was copied forward; Will to decide which is the standard.
+| 1 | **Gate 6 was not independent of q4.** Same element, same `SUM`, same `GROUP BY`, so they could not disagree. | One-time comparison on 2026-11-05: Unit Counts BI (`Y4dN5LDwns`), November rows summed by rollup, matched q4's current-month units on all 692 rollups (388,457 units both sides). | **Switched.** `gate6_unit_crosscheck.sql` now reads Unit Counts BI for the run month (`{month_start}` to `{next_month_start}`). No rows means the month hasn't loaded: stop and DM Will. |
+| 2 | **q3 had no case-system filter**; the Support Metrics dashboard filters to Pylon (`"dyE5lEXjiZ" = 'pylon'`). | Re-checked 2026-11-05 for the 10/28 window: one value, `pylon`, 17,448 cases, 382 TES. | **Filter added.** No score change today; keeps the two dashboards aligned if another system appears. |
+| 3 | **q7 cohort = first event in the window**, not submission in the window. | 92,814 completed vs 94,808 by submit date (+2.1%); 3,105 submitters started before the window. | **Kept.** Same group in numerator and denominator, so the completion rate is a true rate; matches every past run. |
+| 4 | **q6 is large** (~222K characters, one row per child company) and always overflows the tool output limit. | Every 10/28 execution auto-saved to a file. | Works as is; aggregate to one row per rollup only if it becomes a problem. |
+| 5 | **Window edge** (see above). | Run date excluded; prior windows have the same edge. | Accepted as consistent; documented only. |
+| 6 | **Structural-diff limit ±20 vs ±25.** 25 began as a one-run exception on 2026-09-08 and was copied forward. | — | **±25 is the standard.** Runbook and config agree. |
 
 ## Standing context
 
