@@ -89,10 +89,10 @@ Old `SKILL.md` is still on `main` (and `ARCHIVE_SKILL_2026-10-29_pre-split.md` i
 
 ## Still to do before the first cloud run
 
-1. **Save the q1–q7 SQL as files.** The Sigma queries have never been saved; each run's agent
-   rewrites them from the prose descriptions. This is the last piece of Layer 2 living only in
-   prose. Write them as templates in `queries/`, with the window and prefixes filled in from
-   config.
+1. ~~Save the q1–q7 SQL as files.~~ **Done 2026-11-05.** Recovered from the 10/28 run's
+   transcripts into `queries/`; rendering for 10/28 reproduces that SQL exactly; every column
+   confirmed live in Sigma; 12 previously undocumented columns added to the pre-flight
+   check. Review items logged in the runbook's "Sigma queries" section.
 2. **One fresh dry run** (pull + contract check + merge, no push) to prove the queries and
    the contract check against live Sigma.
 3. Credentials storage decision (env vars on the cloud environment vs. per routine).

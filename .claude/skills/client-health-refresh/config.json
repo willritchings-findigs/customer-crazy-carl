@@ -36,10 +36,14 @@
           "q2"
         ],
         "named_columns": [
-          "ROLLUP_COMPANY_NAME",
+          "GROUP_DECISIONED_AT",
+          "GROUP_IS_APPROVED",
           "GROUP_IS_DECISIONED",
           "GROUP_IS_SUBMITTED",
           "GROUP_STATUS",
+          "GROUP_SUBMITTED_AT",
+          "GROUP_WORKFLOW_STATUS",
+          "ROLLUP_COMPANY_NAME",
           "TIME_TO_DECISION_HOURS"
         ]
       },
@@ -54,11 +58,12 @@
           "q3"
         ],
         "named_columns": [
-          "ROLLUP_COMPANY_NAME",
-          "CASE_IS_DELETED",
-          "CASE_SUB_CATEGORY",
           "CASE_CATEGORY",
-          "CASE_SUBJECT"
+          "CASE_IS_DELETED",
+          "CASE_SUBJECT",
+          "CASE_SUB_CATEGORY",
+          "CREATED_AT",
+          "ROLLUP_COMPANY_NAME"
         ]
       },
       "companies_bi": {
@@ -74,7 +79,12 @@
           "q6"
         ],
         "named_columns": [
-          "ROLLUP_COMPANY_NAME"
+          "COMPANY_ID",
+          "IS_COMPANY_CHURNED",
+          "IS_DECISION_ASSIST_ENABLED",
+          "ROLLUP_COMPANY_ID",
+          "ROLLUP_COMPANY_NAME",
+          "SALES_ACCOUNT_STATUS"
         ]
       },
       "revenue_actual_bi": {
@@ -84,8 +94,9 @@
           "q5"
         ],
         "named_columns": [
-          "ROLLUP_COMPANY_NAME",
-          "FINDIGS_REVENUE_AMOUNT"
+          "FINDIGS_REVENUE_AMOUNT",
+          "REVENUE_AT",
+          "ROLLUP_COMPANY_NAME"
         ]
       },
       "user_application_funnel": {
@@ -95,8 +106,9 @@
           "q7"
         ],
         "named_columns": [
-          "ROLLUP_COMPANY_NAME",
-          "HIT_SUBMIT"
+          "FIRST_EVENT_AT",
+          "HIT_SUBMIT",
+          "ROLLUP_COMPANY_NAME"
         ]
       },
       "unit_counts_bi": {
@@ -112,8 +124,50 @@
       "Kairos Living LLC Parent Company": "Kairos Living LLC Parent",
       "Hudson Homes Management, LLC": "Hudson Homes Management LLC"
     },
-    "gate6_unit_crosscheck_sql": "SELECT \"inode-5OpIcdVfNb9CgO6UIt6Cbk/ROLLUP_COMPANY_NAME\" AS rollup_name, COUNT(*) AS n_children, SUM(\"6pSljhsuv9\") AS sum_units_cur_month, SUM(\"fYbMjAl9NA\") AS sum_units_latest FROM \"datamodel\".\"VWI1PYJyy-\" WHERE \"inode-5OpIcdVfNb9CgO6UIt6Cbk/ROLLUP_COMPANY_NAME\" IS NOT NULL GROUP BY rollup_name",
-    "q6_note": "GROUP BY alias on the first column is not honored; opaque ids come back, but column order is stable."
+    "q6_note": "GROUP BY alias on the first column is not honored; opaque ids come back, but column order is stable.",
+    "queries": {
+      "q1_groups": {
+        "element": "groups_bi",
+        "output": "q1_groups_<MMDD>.json",
+        "purpose": "decisioned, approved, median TTD approved/declined, median UW hours, overrides, QA; window on decisioned-at"
+      },
+      "q2_volume": {
+        "element": "groups_bi",
+        "output": "q2_volume_<MMDD>.json",
+        "purpose": "submitted count, trailing window vs the equal prior window"
+      },
+      "q3_support": {
+        "element": "support_cases_bi",
+        "output": "q3_support_<MMDD>.json",
+        "purpose": "PM cases and tech escalations; applicant/guarantor/null user types, deleted, and pet tickets excluded"
+      },
+      "q4_companies": {
+        "element": "companies_bi",
+        "output": "q4_companies_<MMDD>.json",
+        "purpose": "is_da, summed unit counts, statuses, churn risk, any_churned (current state)"
+      },
+      "q5_revenue": {
+        "element": "revenue_actual_bi",
+        "output": "q5_revenue_<MMDD>.json",
+        "purpose": "revenue by quarter of the run year"
+      },
+      "q6_idmap": {
+        "element": "companies_bi",
+        "output": "q6_idmap_<MMDD>.json",
+        "purpose": "rollup name -> rollup id -> child company ids (large: ~222K chars, auto-saves to a tool-results file)"
+      },
+      "q7_funnel": {
+        "element": "user_application_funnel",
+        "output": "q7_funnel_<MMDD>.json",
+        "purpose": "funnel rows and completed applications; cohort = people whose first event is in the window"
+      },
+      "gate6_unit_crosscheck": {
+        "element": "companies_bi",
+        "output": "gate6_unit_crosscheck_<MMDD>.json",
+        "purpose": "validation gate 6 unit sums (see runbook open item: not independent of q4)"
+      }
+    },
+    "_queries_note": "SQL lives in queries/<name>.sql; render with scripts/render_queries.py. Columns each element must have are derived from those files into elements.*.named_columns / columns."
   },
   "support_filters": {
     "case_user_type_exclude_ilike": [
@@ -136,7 +190,7 @@
         "category": "CASE_CATEGORY",
         "subject": "CASE_SUBJECT"
       },
-      "sql_template": "NOT (COALESCE(CASE_SUB_CATEGORY IN ('pet_verification_dispute','pet_policy_question','pet_fee_refund_request'), FALSE) OR COALESCE(CASE_CATEGORY = 'pets_disputes_consumer_requests' AND CASE_SUB_CATEGORY IS NULL, FALSE) OR COALESCE(CASE_SUBJECT ILIKE '%pet%', FALSE))"
+      "sql": "queries/q3_support.sql (the NOT (...) clause)"
     }
   },
   "hubspot": {

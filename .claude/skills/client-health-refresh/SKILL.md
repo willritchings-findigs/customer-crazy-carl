@@ -12,7 +12,7 @@ Rebuilds the `AccountHealthCache` record behind the Findigs Hub Client Health pa
 | Layer | File | Holds | Changes by |
 |---|---|---|---|
 | 1. Procedure | this file | order of operations, gates, rules for each step | commit |
-| 2. Logic + config | `config.json`, `scripts/` | every ID, threshold, weight, filter, channel | commit |
+| 2. Logic + config | `config.json`, `scripts/`, `queries/` | every ID, threshold, weight, filter, channel, and the exact Sigma SQL | commit |
 | 3. Context + history | `T-tools/02-workflows/client-health-weekly-refresh.md` | why each rule exists, incident log | anytime |
 
 This file never contains a number, ID, or threshold. Those live in `config.json` and are
@@ -35,9 +35,16 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
      also the WoW comparison point.
    - `sigma_describe_<key>.json`: raw `describe` output for every key in `config.sigma.elements`.
 4. **Run `scripts/contract_check.py https://api.hubapi.com --run-date <date> --scratch <dir>`.**
-   It checks the Base44 record's fields, cache_key, and account count; every configured Sigma
-   column; and every HubSpot property. It lists every failure at once. A changed account
-   count is not necessarily wrong: stop, ask Will, and update `config.json` if confirmed.
+   It lists every failure at once. Checklist:
+   - **Base44:** record has every `config.target.persisted_fields`; `cache_key` matches;
+     account count == `config.target.expected_account_count`.
+   - **Sigma:** every column in `config.sigma.elements.*.columns` and `*.named_columns` exists
+     in that element's describe output, **and** every column any `queries/*.sql` file uses
+     exists and is documented in `config.json`. A query using an undocumented column fails
+     the check: document it in config in the same commit as the query change.
+   - **HubSpot:** every property in `config.hubspot.company_properties` exists on companies.
+   A changed account count is not necessarily wrong: stop, ask Will, and update
+   `config.json` if confirmed.
 5. Config/record agreement is checked again by validation gate 1 inside the merge.
 
 **Setup rules:**
@@ -59,34 +66,41 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
 
 ## 1. Pull data
 
-### Sigma (`config.sigma`)
-Query `config.sigma.data_model_id` directly. Save each result as `{"columns", "rows"}` JSON.
-Oversized MCP results auto-save to a tool-results file: copy and parse it, never re-emit it.
+### Sigma (`config.sigma`, SQL in `queries/`)
+1. `python3 scripts/render_queries.py --run-date <date> --scratch <dir>` writes
+   `<name>_<MMDD>.sql` for every query in `config.sigma.queries`, with the window filled in.
+2. Send each rendered file's SQL to Sigma **exactly as written** (query type `datamodel`,
+   `config.sigma.data_model_id`). Never rewrite or "improve" a query during a run; query
+   changes are commits to `queries/`, reviewed like any other logic change.
+3. Save each result as `{"columns", "rows"}` JSON under that query's `output` name.
+   Oversized results (q6 always) auto-save to a tool-results file: copy and parse it, never
+   re-emit it.
 
-| # | Element (`config.sigma.elements.*`) | Grain: rollup company name + |
+| Query file | Element | Returns, per rollup company |
 |---|---|---|
-| q1 | `groups_bi` | decisioned, approved, median TTD-hours approved/declined, median UW hours, override count, QA count (status ILIKE '%QA%'). Window on decisioned-at. |
-| q2 | `groups_bi` | submitted count, trailing window vs prior window of equal length. |
-| q3 | `support_cases_bi` | PM cases, TES cases, with `config.support_filters` applied (incl. pet exclusion). |
-| q4 | `companies_bi` | is_da, unit counts (latest + current month), statuses, churn risk, any_churned. **`GROUP BY` rollup name with `SUM` on both unit columns.** |
-| q5 | `revenue_actual_bi` | SUM revenue by quarter of the current year; note the partial quarter's through-date. |
-| q6 | `companies_bi` | rollup name → rollup_id + child ids (see `config.sigma.q6_note`). |
-| q7 | `user_application_funnel` | funnel row count, SUM(HIT_SUBMIT). |
+| `q1_groups.sql` | `groups_bi` | decisioned, approved, median TTD approved/declined, median UW hours, overrides, QA. Window on decisioned-at. |
+| `q2_volume.sql` | `groups_bi` | submitted count in the window vs the equal prior window. |
+| `q3_support.sql` | `support_cases_bi` | PM cases and tech escalations, with user-type, deleted, and pet exclusions. |
+| `q4_companies.sql` | `companies_bi` | is_da, summed unit counts, statuses, churn risk, any_churned. Current state, no window. |
+| `q5_revenue.sql` | `revenue_actual_bi` | revenue by quarter of the run year. |
+| `q6_idmap.sql` | `companies_bi` | rollup id and child company ids (one row per child; see `config.sigma.q6_note`). |
+| `q7_funnel.sql` | `user_application_funnel` | funnel rows and completed applications, for people whose first event is in the window. |
+| `gate6_unit_crosscheck.sql` | `companies_bi` | unit sums for validation gate 6. |
 
 **Rollup renames (every run).** Diff each q-file's names against the record's
 `resolved_name_sigma` set. Translate any name in `config.sigma.rollup_renames` (or a new
 variant you find) to the record's name before merging. A rename makes joins miss silently.
 Add every new rename you find to `config.json` in the same commit as the run.
 
-**Pet exclusion (q3).** Use `config.support_filters.pet_exclusion.sql_template` exactly.
-Every sub-condition stays wrapped in `COALESCE(..., FALSE)`: without it, a NULL sub-category
-silently excludes ordinary tickets. Never treat the category alone as the pet signal; it is
-a grab-bag.
+**Pet exclusion (q3).** The `NOT (...)` clause in `q3_support.sql` is the filter. If it is
+ever edited, every sub-condition stays wrapped in `COALESCE(..., FALSE)`: without it, a NULL
+sub-category silently excludes ordinary tickets. Never treat the category alone as the pet
+signal; it is a grab-bag.
 
-**Gate 6 prep: q4 unit cross-check.** Run `config.sigma.gate6_unit_crosscheck_sql` once
-(covers every account), apply the same renames, and keep the result for validation gate 6.
-Never trust q4's own unit output; a multi-portfolio rollup can silently return one child's
-count instead of the sum.
+**Gate 6 prep.** Apply the same renames to `gate6_unit_crosscheck` and keep it for
+validation gate 6. Never trust q4's own unit output; a multi-portfolio rollup can silently
+return one child's count instead of the sum. (Open item in the runbook: this query is
+currently identical in logic to q4's unit sums, so it only catches a regression in q4.)
 
 ### HubSpot — `scripts/hubspot_pull.py`, then `scripts/match_hs_accounts.py`
 Pull companies with `findigs_company_id` and `config.hubspot.company_properties`, plus

@@ -14,7 +14,13 @@ Engineering handoff (2026-10). See `README.md` for what's in the repo.
 - **Don't trust a "done" from a script or sub-task.** Verify the result independently.
 - **Delegation discipline:** a sub-task gets only the inputs its job needs. Never hand
   it Base44 write credentials, HubSpot tokens, or Slack posting unless that is the job.
-- **Run from the repo root** (or set `REPO_ROOT`); scripts resolve paths from it.
+- **Three layers per skill.** `SKILL.md` = procedure only. `config.json` + `scripts/` +
+  `queries/` = every number, ID, and SQL statement, changed only by commit. The workflow doc in
+  `T-tools/02-workflows/` = why, incident log, open items. Never put a threshold, ID, or query
+  in a `SKILL.md`, and never let a run rewrite a query on the fly.
+- **Every refresh starts with a contract check** (Base44 fields, Sigma columns, HubSpot
+  properties) and stops on any drift.
+- Scripts run in place and take `--run-date` / `--scratch`; paths resolve from the repo.
 
 ## Slack routing (all refreshes)
 

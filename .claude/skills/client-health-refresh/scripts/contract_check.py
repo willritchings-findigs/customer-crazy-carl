@@ -8,10 +8,21 @@ Expects in <scratch>:
 Fetches HubSpot company property names itself. Exits non-zero on any failure, listing every
 failure at once, so the run stops before computing anything.
 """
-import json, os, sys, urllib.request
+import json, os, re, sys, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from ch_common import parse_run
+from ch_common import parse_run, SKILL_DIR
 import ch_secret
+
+
+def query_columns(cfg):
+    """Every quoted column identifier each element's query files use: {element_key: set of '"ident"'}."""
+    out = {}
+    for name, q in cfg["sigma"]["queries"].items():
+        el = cfg["sigma"]["elements"][q["element"]]
+        sql = open(os.path.join(SKILL_DIR, "queries", name + ".sql"), encoding="utf-8").read()
+        ids = {f'"{i}"' for i in re.findall(r'"([^"]+)"', sql) if i not in ("datamodel", el["id"])}
+        out.setdefault(q["element"], set()).update(ids)
+    return out
 
 RUN, ns = parse_run("Client health contract check", [(("base",), {"nargs": "?", "default": "https://api.hubapi.com"})])
 CFG = RUN.cfg
@@ -34,7 +45,8 @@ try:
 except FileNotFoundError as e:
     fails.append(f"Base44: baseline file not found ({e.filename})")
 
-# Sigma columns
+# Sigma columns: everything config documents, plus everything the query files actually use
+QCOLS = query_columns(CFG)
 for key, el in CFG["sigma"]["elements"].items():
     fn = f"sigma_describe_{key}.json"
     if not os.path.exists(RUN.path(fn)):
@@ -49,7 +61,11 @@ for key, el in CFG["sigma"]["elements"].items():
         fails.append(f"Sigma {key}: describe output is not for element {el['id']}")
         continue
     prefix = el.get("column_prefix", "")
-    want = [f'"{cid}"' for cid in el.get("columns", {}).values()] + [f'"{prefix}{c}"' for c in el.get("named_columns", [])]
+    documented = {f'"{cid}"' for cid in el.get("columns", {}).values()} | {f'"{prefix}{c}"' for c in el.get("named_columns", [])}
+    undocumented = sorted(QCOLS.get(key, set()) - documented)
+    if undocumented:
+        fails.append(f"Sigma {key}: queries use columns not documented in config.json {undocumented}")
+    want = sorted(documented | QCOLS.get(key, set()))
     gone = [w for w in want if w not in ddl]
     if gone:
         fails.append(f"Sigma {key}: columns not found {gone}")

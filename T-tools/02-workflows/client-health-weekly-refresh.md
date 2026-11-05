@@ -57,6 +57,47 @@
 4. Verify with a GET: account count, `computed_at`, spot-check 3 accounts (one DA, one FS, one Churned).
 5. Report to Will: distribution + week-over-week deltas, band flips with one-line reasons, anomalies flagged (not fixed), data-source failures skipped (a failed source means carry forward last week's values for those rows with a staleness note — never zero them out).
 
+## Sigma queries
+
+**Where they live.** `.claude/skills/client-health-refresh/queries/*.sql`: q1–q7 plus the
+gate-6 cross-check. Dates are placeholders (`{window_start}`, `{window_end}`, `{prior_start}`,
+`{prior_end}`, `{revenue_year}`). `scripts/render_queries.py --run-date <date>` fills them in.
+Before 2026-11-05 the queries were never saved; each run's agent rewrote them from prose.
+
+**Provenance.** Recovered on 2026-11-05 from the 2026-10-28 run's sub-agent transcripts. Each
+query ran 3–6 times that day with one identical SQL text, so these are exactly what produced
+the 10/28 numbers. Verified: rendering the templates for 2026-10-28 reproduces that SQL
+token-for-token for all eight queries. Every column they use was confirmed present in live
+Sigma on 2026-11-05.
+
+**Changing a query.**
+1. Edit the `.sql` file. Keep placeholders; no hardcoded dates.
+2. Document any new column in `config.json` (`sigma.elements.<key>.named_columns`, or
+   `columns` for opaque IDs). `contract_check.py` fails any run whose queries use an
+   undocumented column, and fails any run where a documented column has disappeared.
+3. Run one no-push dry run and compare the affected metric against the prior week.
+4. Note the change and its expected effect on the dashboard in the weekly report.
+
+**Window boundaries.** The window is `>= window_start AND <= window_end` against timestamp
+columns. A date literal compares as midnight, so the run date itself is excluded and each
+window is exactly 90 × 24 hours. The prior window ends the day before `window_start` with the
+same edge, so the trend comparison is like for like. The gap day (`prior_end` itself) is not
+counted in either window.
+
+### Open review items (raised 2026-11-05, not yet decided)
+
+| # | Item | Evidence (10/28 window) | Status |
+|---|---|---|---|
+| 1 | **Gate 6 is not independent of q4.** Same element, same `SUM`, same `GROUP BY`, so they cannot disagree. It only catches a regression if q4's SQL changes. | Unit Counts BI (`Y4dN5LDwns`) is a separate monthly time series (`UNIT_COUNT_AT`, `UNIT_COUNT`) and could be the independent source, filtered to the latest month and summed by rollup. | Open. Needs a decision and a one-time comparison of the two sources. |
+| 2 | **q3 has no case-system filter**; the Support Metrics dashboard filters to Pylon (`"dyE5lEXjiZ" = 'pylon'`). | All 17,448 cases in q3's population were Pylon (382 TES, 253 accounts). No effect today. | Low risk. Adding the filter would keep the two dashboards aligned if another system appears. |
+| 3 | **q7 cohort = first event in the window**, not submission in the window. | 92,814 completed (current) vs 94,808 by first-submit date (+2.1%); 3,105 submitters started before the window. | Open. Definition choice: funnel cohort vs completions-in-period. |
+| 4 | **q6 is large** (~222K characters, one row per child company) and always overflows the tool output limit. | Every 10/28 execution auto-saved to a file. | Works as is; could aggregate to one row per rollup if it becomes a problem. |
+| 5 | **Window edge** (see above). | Run date excluded; prior windows have the same edge. | Accepted as consistent; document only. |
+
+Also open (from the three-layer split, 2026-11-05): the structural-diff limit is ±25 in
+`config.json`, but item 2 under "Push + verify" above says ±20. 25 began as a one-run
+exception on 2026-09-08 and was copied forward; Will to decide which is the standard.
+
 ## Standing context
 
 - **TES = technical escalation share**: % of PM support tickets with `SUPPORT_CASE_HAS_TECH_ESCALATION=true` (Support Cases BI), segment-aware thresholds per the v8 rubric (ENT ≤3 / 3–6 / >6; MM <2 / 2–5 / >5). It is NOT "tenant experience score" — if any label expands it that way, the label is wrong.
