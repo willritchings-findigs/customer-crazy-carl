@@ -50,17 +50,52 @@ Old `SKILL.md` is still on `main` (and `ARCHIVE_SKILL_2026-10-29_pre-split.md` i
 3. **Dead reference.** The old skill pointed to `M-memory/project_cx_support_scorecard.md`,
    which was never in the handoff. Dropped; the pet-exclusion SQL is now fully in config.
 
-## Not done yet (this branch is not runnable)
+## Scripts wired to config (done 2026-11-05)
 
-The new `SKILL.md` describes the target state. Before it can run, the scripts must catch up:
+1. The 2026-10-28 `merge_refresh.py` is now the canonical `scripts/merge_refresh.py`.
+2. Every script reads `config.json`: weights, band rules, floors, limits, pilot list, batch
+   counts, HubSpot properties, Slack channel, portal, dashboard URL.
+3. No hand-edited dates. Every script takes `--run-date` and `--scratch` (`scripts/ch_common.py`).
+   Window, file suffixes, Gong pull range, and source-string dates all derive from the run date.
+4. Credentials via `scripts/ch_secret.py`: environment variables first, local `.env` second.
+   Works for either storage option still under discussion.
+5. `scripts/contract_check.py` runs the §0 checks and lists every failure at once.
+6. `archive_history.py` stops if `ts.txt` is missing (was: silently wrote `computed_at: null`),
+   dropped the one-time 9/14 backfill, and archives the exact `config.json` + scripts per run.
+7. `merge_refresh.py` stops with a clear message once the run date leaves Q4 2026, because the
+   revenue quarter fields (Q2→Q3 complete, Q4 partial) are also dashboard field names.
 
-1. Promote the 2026-10-28 `merge_refresh.py` to `scripts/` as the canonical version.
-2. Make every script read `config.json` instead of its own hardcoded constants.
-3. Replace hand-edited dates with a `--run-date` argument (merge, archive, Gong pull, matcher).
-4. Add the §0 contract checks (Sigma `describe`, Base44 GET, HubSpot property check).
-5. Equivalence test: re-run the new scripts on the 10/28 archived inputs and confirm output
-   matches `history/2026-10-28/new_record_1028.json`. The q1–q7 Sigma files were not archived
-   that week, so this needs one fresh dry run instead (pull + merge, no push).
+**Verification:**
+- **Equivalence:** the old 10/28 script and the new wired script ran on identical inputs
+  (rebuilt from the 10/28 baseline's own numerators/denominators). Both passed join coverage,
+  threshold reproduction, and the pilot unit test. Their outputs were **byte-identical**: the
+  3.5 MB record, the WoW diff, and stdout.
+- **Config is live:** changing one TTD threshold in a copy of the config made the merge abort
+  at threshold validation (10 reproductions failed), as it should.
+- **Quarter guard:** a 2027-01-05 run date stops with the revenue message.
+- **Chain:** archive → enrich → alerts ran end to end against a temporary copy of the history
+  folder (real history untouched). Archive refused to run without `ts.txt`.
+- **Contract check, live:** run against the 10/28 baseline with a real HubSpot property read.
+
+## Found by the contract check on its first live run
+
+- **`churn_lost_to` does not exist in HubSpot.** The real property is `churn_lost_to__c`.
+  The pull has requested a nonexistent field every week; HubSpot silently ignores unknown
+  property names, so it always came back empty. Nothing downstream reads it. Fixed in config.
+- **The live record has 267 accounts, not 268.** Confirmed by a read-only GET of the live
+  record (computed 2026-10-28). Config updated to 267.
+- **`gong_pull.py` had a fixed 6/10–9/08 window.** A run following the old canonical script
+  would have pulled two-month-old calls. Now derived from the run date.
+
+## Still to do before the first cloud run
+
+1. **Save the q1–q7 SQL as files.** The Sigma queries have never been saved; each run's agent
+   rewrites them from the prose descriptions. This is the last piece of Layer 2 living only in
+   prose. Write them as templates in `queries/`, with the window and prefixes filled in from
+   config.
+2. **One fresh dry run** (pull + contract check + merge, no push) to prove the queries and
+   the contract check against live Sigma.
+3. Credentials storage decision (env vars on the cloud environment vs. per routine).
 
 ## Where Notion fits
 

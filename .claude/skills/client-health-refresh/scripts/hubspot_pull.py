@@ -1,24 +1,18 @@
 """Weekly client-health refresh: HubSpot pulls via api.hubapi.com.
-(a) all companies with findigs_company_id set -> hs_findigs_companies.json
-(b) all companies churned=true -> hs_churned_0908.json
-Usage: python3 hubspot_pull.py https://api.hubapi.com
+(a) all companies with findigs_company_id set -> <scratch>/hs_findigs_companies.json
+(b) all companies churned=true -> <scratch>/hs_churned_<MMDD>.json
+Usage: python3 hubspot_pull.py https://api.hubapi.com --run-date YYYY-MM-DD --scratch <dir>
 """
-import json, sys, urllib.request, time
+import json, sys, os, urllib.request, time
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ch_common import parse_run
+import ch_secret
 
-BASE = sys.argv[1] if len(sys.argv) > 1 else 'https://api.hubapi.com'
-ENV = "C:/Users/Will Ritchings/Desktop/Claude/GTM_ENG/The Reserve/T-tools/API Keys and Access/.env"
+RUN, ns = parse_run("HubSpot company pulls", [(("base",), {"nargs": "?", "default": "https://api.hubapi.com"})])
+BASE = ns.base
 
 def find_token():
-    cands = []
-    with open(ENV) as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith('#'):
-                continue
-            low = line.lower()
-            if 'hubspot' in low and ':' in line:
-                cands.append(line.split(':', 1)[1].strip().strip('"').strip("'"))
-    for tok in cands:
+    for tok in [ch_secret.get('hubspot')]:
         req = urllib.request.Request(
             BASE + '/crm/v3/objects/companies?limit=1',
             headers={'Authorization': 'Bearer ' + tok})
@@ -28,15 +22,12 @@ def find_token():
                     return tok
         except Exception:
             continue
-    raise SystemExit('no working hubspot token found in .env')
+    raise SystemExit('HubSpot token did not authenticate')
 
 TOKEN = find_token()
 print('token OK (len %d)' % len(TOKEN))
 
-PROPS = ["name", "domain", "findigs_company_id", "total_units_all",
-         "account_status__c", "churned", "churn_date", "churn_reason",
-         "churn_lost_to", "segment", "client_health_score_override",
-         "client_health_rating", "client_health_score", "client_health_detail"]
+PROPS = RUN.cfg["hubspot"]["company_properties"]
 
 def search(filters, outfile):
     results, after = [], None
@@ -63,7 +54,7 @@ def search(filters, outfile):
         if not after:
             break
         time.sleep(0.25)
-    with open(outfile, 'w') as f:
+    with open(RUN.path(outfile), 'w') as f:
         json.dump(results, f)
     return results
 
@@ -76,5 +67,5 @@ print('  of those, total_units_all set:', n_units)
 
 print('pull (b): churned=true companies')
 b = search([{"propertyName": "churned", "operator": "EQ", "value": "true"}],
-           'hs_churned_0908.json')
+           f'hs_churned_{RUN.mmdd}.json')
 print('total churned=true:', len(b))

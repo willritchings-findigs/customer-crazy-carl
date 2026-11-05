@@ -30,22 +30,25 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
 2. **Connectors live.** Sigma, HubSpot, Pylon, and Slack each answer one cheap call. Gong API
    answers one probe (`gong_pull.py probe`). Connectors can drop mid-session; re-check before
    each long step.
-3. **Base44 contract.** GET `config.target` record with the Bearer token → save as the
-   baseline. Assert: HTTP 200; top-level keys include every `config.target.persisted_fields`;
-   account count == `config.target.expected_account_count` (a change is not an error, but stop
-   and ask). The baseline is also the WoW comparison point.
-4. **Sigma contract.** `describe` every element in `config.sigma.elements`. Assert every listed
-   column ID still exists. A missing column means Sigma changed; stop rather than guess.
-5. **HubSpot contract.** Confirm every property in `config.hubspot.company_properties` exists
-   on companies.
-6. **Config/record agreement.** Recompute metric bands for the baseline's own metric values
-   using `config.scoring.metric_bands`. Every band must reproduce the baseline exactly
-   (this is also validation gate 1). A mismatch means either the record or config changed.
+3. **Save the inputs for the contract check** into the scratch dir:
+   - `baseline_<MMDD>.json`: `curl` GET of the `config.target` record (Bearer token). This is
+     also the WoW comparison point.
+   - `sigma_describe_<key>.json`: raw `describe` output for every key in `config.sigma.elements`.
+4. **Run `scripts/contract_check.py https://api.hubapi.com --run-date <date> --scratch <dir>`.**
+   It checks the Base44 record's fields, cache_key, and account count; every configured Sigma
+   column; and every HubSpot property. It lists every failure at once. A changed account
+   count is not necessarily wrong: stop, ask Will, and update `config.json` if confirmed.
+5. Config/record agreement is checked again by validation gate 1 inside the merge.
 
 **Setup rules:**
-- Work in a scratch directory; run scripts from the repo root (or set `REPO_ROOT`).
-- Credentials are never printed, never written into the repo, and the Base44 token file is
-  deleted after the final verify. Strip quotes and whitespace from the token. The Base44
+- Every script runs in place from the repo (never copy scripts elsewhere) and takes
+  `--run-date YYYY-MM-DD --scratch <dir>`. Pulls and outputs live in the scratch dir; history
+  is written to the repo. Dates and file suffixes (`_<MMDD>`) all derive from `--run-date`.
+- **Credentials** come from `scripts/ch_secret.py`: environment variables (`HUBSPOT_TOKEN`,
+  `GONG_ACCESS_KEY`, `GONG_ACCESS_SECRET`, `BASE44_TOKEN`) when set, otherwise the local
+  `.env` (`Label: value` format). Scripts read them directly. For `curl`, write the Base44
+  token to a scratch file with `python3 scripts/ch_secret.py base44 <file>` and delete it
+  after the final verify. Never print a credential or write one into the repo. The Base44
   token must be generated from this app's own API page (Settings → API → Create access
   token); a token made elsewhere 403s with a workspace-membership error.
 - **Delegation discipline.** The Slack/Gong/Pylon scans run as separate, independently
@@ -189,7 +192,7 @@ Writes `history/<run-date>/` (baseline, pushed record, wow_diff, overrides, matc
 rows, the exact scripts and config used), appends `history/wow_history.json`, regenerates
 `wow_history.csv`, and emits the slim snapshot payload. Verify `computed_at` is non-null.
 
-Then `scripts/enrich_payload.py` recomputes `account_manager`/`csa` (owner map), `prior_band`,
+Then `scripts/enrich_payload.py <payload.json> <history/wow_history.json> <owner_map.json>` recomputes `account_manager`/`csa` (owner map), `prior_band`,
 `weeks_red`, and `band_history` (never carried forward). POST the snapshot record
 (`config.target.snapshot_cache_key_prefix` + date), re-PUT the enriched overview so it is the
 newest record, and LIST the entity to confirm both. If the dashboard misrenders after the
@@ -201,7 +204,7 @@ Band distribution and WoW deltas; every flip with a one-line reason (methodology
 CSM flag changes and contradictions; verified sentiment overrides and client intel;
 staleness notes; standing holds.
 
-## 6. AM Slack alerts — `scripts/build_alerts.py <scratch>`
+## 6. AM Slack alerts — `scripts/build_alerts.py --scratch <dir>`
 
 Uses the last two runs in `wow_history.json`, `config.alerts.owner_source_of_truth`, and
 `hs_account_match.json`. The owner map (built from the CS Health Score xlsx "Overall Summary"

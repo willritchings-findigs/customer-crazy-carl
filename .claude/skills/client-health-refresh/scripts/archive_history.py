@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
-"""Archive the 9/14 run into O-output history + extend WoW slim rows with why text (Emma, 2026-09-14).
+"""Archive a client-health run into O-output history.
 
-- Appends the 2026-09-14 entry to wow_history.json with why fields.
-- BACKFILLS why fields into the existing 2026-09-04 and 2026-09-08 entries from their archived
-  full records (history/2026-09-08/baseline_0908.json and new_record_0908.json).
-- Regenerates wow_history.csv (one row per account per run, why columns included).
-- Writes history/2026-09-14/ full archive.
-- Emits snapshot_payload_0914.json (slim Base44 snapshot record body) to the scratchpad.
+Usage: python3 archive_history.py --run-date YYYY-MM-DD --scratch <dir>
+- Appends this run to history/wow_history.json (slim per-account rows incl. why fields).
+- Regenerates history/wow_history.csv (one row per account per run).
+- Writes history/<run-date>/: baseline, pushed record, wow_diff, overrides, matches, Gong rows,
+  plus the exact config.json and scripts that produced the run.
+- Emits snapshot_payload_<MMDD>.json (slim Base44 snapshot body) to the scratch dir.
+Stops if ts.txt is missing (computed_at would silently be null).
 """
 import json, csv, os, shutil, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ch_common import parse_run, HIST, SKILL_DIR
 
-SCRATCH = "TODO_SET_TO_THIS_RUNS_SCRATCHPAD_PATH"  # session-specific temp dir; set when you copy this script into the scratchpad per the skill's Setup step
-# Repo root = cwd unless REPO_ROOT is set; scripts get copied to a scratchpad, so __file__ is unreliable.
-HIST = os.path.join(os.environ.get("REPO_ROOT", os.getcwd()), "O-output", "cs-client-health-scoring", "history")
-RUN = "2026-09-14"
+RUN_CTX, _ = parse_run("Archive a client-health run")
+SCRATCH = RUN_CTX.scratch
+RUN = RUN_CTX.iso
+MMDD = RUN_CTX.mmdd
 
 def aname(a): return a.get("resolved_name_sigma") or a.get("input_name")
 
@@ -101,32 +104,13 @@ def band_counts(rows):
 wow_path = os.path.join(HIST, "wow_history.json")
 wow = json.load(open(wow_path))
 
-# ---- backfill whys into existing entries from archived full records ----
-BACKFILL = {
-    "2026-09-04": os.path.join(HIST, "2026-09-08", "baseline_0908.json"),
-    "2026-09-08": os.path.join(HIST, "2026-09-08", "new_record_0908.json"),
-}
-for run_key, rec_path in BACKFILL.items():
-    if run_key not in wow or not os.path.exists(rec_path):
-        print(f"backfill skip {run_key}")
-        continue
-    rec = json.load(open(rec_path))
-    accts = rec.get("accounts") or rec  # new_record files may be {'accounts': [...]}
-    if isinstance(accts, dict):
-        accts = accts.get("accounts", [])
-    by_name = {aname(x): x for x in accts}
-    filled = 0
-    for row in wow[run_key]["accounts"]:
-        src = by_name.get(row["account"])
-        if src and "why" not in row:
-            row.update(why_fields(src))
-            filled += 1
-    print(f"backfilled whys {run_key}: {filled} rows")
-
 # ---- append this run ----
-new_rec = json.load(open(os.path.join(SCRATCH, "new_record_0914.json")))
+new_rec = json.load(open(os.path.join(SCRATCH, f"new_record_{MMDD}.json")))
 accounts = new_rec["accounts"]
-ts = open(os.path.join(SCRATCH, "ts.txt")).read().strip() if os.path.exists(os.path.join(SCRATCH, "ts.txt")) else None
+ts_path = os.path.join(SCRATCH, "ts.txt")
+if not os.path.exists(ts_path) or not open(ts_path).read().strip():
+    raise SystemExit(f"ABORT: {ts_path} missing or empty; computed_at would be null")
+ts = open(ts_path).read().strip()
 rows = [slim_row(a) for a in accounts]
 wow[RUN] = {"computed_at": ts, "accounts": rows, "band_counts": band_counts(rows)}
 json.dump(wow, open(wow_path, "w"), indent=1)
@@ -149,16 +133,19 @@ print("wow_history.csv regenerated")
 # ---- full run folder ----
 run_dir = os.path.join(HIST, RUN)
 os.makedirs(run_dir, exist_ok=True)
-for fn in ("baseline_0914.json", "new_record_0914.json", "wow_diff_0914.json",
-           "slack_overrides.json", "pylon_overrides.json", "merge_refresh.py",
+for fn in (f"baseline_{MMDD}.json", f"new_record_{MMDD}.json", f"wow_diff_{MMDD}.json",
+           "slack_overrides.json", "pylon_overrides.json",
            "hs_account_match.json", "gong_strategic_rows.json"):
     src = os.path.join(SCRATCH, fn)
     if os.path.exists(src):
         shutil.copy(src, os.path.join(run_dir, fn))
+shutil.copy(os.path.join(SKILL_DIR, "config.json"), os.path.join(run_dir, "config.json"))
+shutil.copytree(os.path.join(SKILL_DIR, "scripts"), os.path.join(run_dir, "scripts"),
+                dirs_exist_ok=True, ignore=shutil.ignore_patterns("__pycache__"))
 print(f"archived full run to {run_dir}")
 
 # ---- Base44 snapshot payload (slim) ----
-diff = json.load(open(os.path.join(SCRATCH, "wow_diff_0914.json")))
+diff = json.load(open(os.path.join(SCRATCH, f"wow_diff_{MMDD}.json")))
 snap = {
     "cache_key": f"health_snapshot_{RUN}",
     "computed_at": ts,
@@ -166,5 +153,6 @@ snap = {
     "band_flips": diff.get("band_flips"),
     "accounts": rows,
 }
-json.dump(snap, open(os.path.join(SCRATCH, "snapshot_payload_0914.json"), "w"))
-print(f"snapshot payload written ({os.path.getsize(os.path.join(SCRATCH, 'snapshot_payload_0914.json'))//1024} KB)")
+snap_path = os.path.join(SCRATCH, f"snapshot_payload_{MMDD}.json")
+json.dump(snap, open(snap_path, "w"))
+print(f"snapshot payload written ({os.path.getsize(snap_path)//1024} KB)")

@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """hs_account_match.json v3 — exact / phrase / units-confirmed token / full2; strict churn pool."""
-import json, re, unicodedata
+# Usage: python3 match_hs_accounts.py --run-date YYYY-MM-DD --scratch <dir>
+import json, os, re, sys, unicodedata
 from collections import defaultdict
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ch_common import parse_run
 
-SCRATCH = "TODO_SET_TO_THIS_RUNS_SCRATCHPAD_PATH"  # session-specific temp dir; set when you copy this script into the scratchpad per the skill's Setup step
-def load(fn): return json.load(open(f"{SCRATCH}/{fn}"))
+RUN, _ = parse_run("Match Sigma accounts to HubSpot companies")
+SCRATCH = RUN.scratch
+def load(fn): return json.load(open(os.path.join(SCRATCH, fn)))
 
 GENERIC = {"property","management","properties","realty","real","estate","group","parent","llc","inc",
            "co","company","companies","corp","corporation","homes","home","rental","rentals","residential",
@@ -46,11 +50,11 @@ BLOCK = {  # sigma name -> HubSpot names that must never match it
     "Place Management LLC": set(),  # keeps exact behavior; listed for documentation
 }
 
-base = load("baseline_0914.json")
+base = load(f"baseline_{RUN.mmdd}.json")
 def aname(a): return a.get("resolved_name_sigma") or a.get("input_name")
 accounts = base["accounts"]
 hs_main = load("hs_findigs_companies.json")
-hs_churned = load("hs_churned_0908.json")
+hs_churned = load(f"hs_churned_{RUN.mmdd}.json")
 
 def units_of(r):
     try:
@@ -160,7 +164,7 @@ for a in accounts:
         }
     log[stage.split("(")[0] if recs else ("churn-only" if crecs else stage.split("(")[0])].append(nm)
 
-json.dump(match, open(f"{SCRATCH}/hs_account_match.json", "w"), indent=1)
+json.dump(match, open(os.path.join(SCRATCH, "hs_account_match.json"), "w"), indent=1)
 print("matched:", len(match), "/", len(accounts))
 for stage, nms in sorted(log.items()):
     print(f"  {stage}: {len(nms)}")

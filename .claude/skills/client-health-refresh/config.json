@@ -14,7 +14,7 @@
       "computed_at",
       "accounts"
     ],
-    "expected_account_count": 268,
+    "expected_account_count": 267,
     "auth_header": "Authorization: Bearer <token>"
   },
   "window": {
@@ -34,6 +34,13 @@
         "feeds": [
           "q1",
           "q2"
+        ],
+        "named_columns": [
+          "ROLLUP_COMPANY_NAME",
+          "GROUP_IS_DECISIONED",
+          "GROUP_IS_SUBMITTED",
+          "GROUP_STATUS",
+          "TIME_TO_DECISION_HOURS"
         ]
       },
       "support_cases_bi": {
@@ -45,6 +52,13 @@
         },
         "feeds": [
           "q3"
+        ],
+        "named_columns": [
+          "ROLLUP_COMPANY_NAME",
+          "CASE_IS_DELETED",
+          "CASE_SUB_CATEGORY",
+          "CASE_CATEGORY",
+          "CASE_SUBJECT"
         ]
       },
       "companies_bi": {
@@ -58,6 +72,9 @@
         "feeds": [
           "q4",
           "q6"
+        ],
+        "named_columns": [
+          "ROLLUP_COMPANY_NAME"
         ]
       },
       "revenue_actual_bi": {
@@ -65,6 +82,10 @@
         "column_prefix": "inode-01S9MnIuLWteAJ8QRq5wee/",
         "feeds": [
           "q5"
+        ],
+        "named_columns": [
+          "ROLLUP_COMPANY_NAME",
+          "FINDIGS_REVENUE_AMOUNT"
         ]
       },
       "user_application_funnel": {
@@ -72,12 +93,17 @@
         "column_prefix": "inode-54xB1eUhLxf1EJucb7r8Xk/",
         "feeds": [
           "q7"
+        ],
+        "named_columns": [
+          "ROLLUP_COMPANY_NAME",
+          "HIT_SUBMIT"
         ]
       },
       "unit_counts_bi": {
         "id": "Y4dN5LDwns",
         "feeds": [],
-        "_note": "Second reference for the gate-6 unit cross-check if the GROUP BY query is ever in doubt."
+        "_note": "Second reference for the gate-6 unit cross-check if the GROUP BY query is ever in doubt.",
+        "named_columns": []
       }
     },
     "rollup_renames": {
@@ -124,7 +150,7 @@
       "churned",
       "churn_date",
       "churn_reason",
-      "churn_lost_to",
+      "churn_lost_to__c",
       "segment",
       "client_health_score_override",
       "client_health_rating",
@@ -143,7 +169,8 @@
       "thin_sample",
       "n_briefs_read",
       "rationale"
-    ]
+    ],
+    "sentiment_batches": 5
   },
   "pylon": {
     "open_states": [
@@ -194,7 +221,8 @@
     "result_split_fields": [
       "pm_open_count",
       "applicant_open_count"
-    ]
+    ],
+    "batches": 4
   },
   "slack_scan": {
     "channel_pattern": "#p-<company>",

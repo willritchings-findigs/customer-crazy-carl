@@ -1,18 +1,21 @@
-"""Weekly refresh: bulk Gong pull via api.gong.io raw REST (Basic auth from .env).
-Pulls all calls 2026-06-10 -> now via /v2/calls/extensive with parties + brief,
-saves pages to gong_calls_p<N>.json. Usage: python3 gong_pull.py https://api.gong.io [probe]
+"""Weekly refresh: bulk Gong pull via api.gong.io raw REST (Basic auth).
+Pulls all calls in the run window via /v2/calls/extensive with parties + brief, saves pages to
+<scratch>/gong_calls_p<N>.json.
+Usage: python3 gong_pull.py https://api.gong.io [probe] --run-date YYYY-MM-DD --scratch <dir>
 """
-import json, sys, base64, urllib.request, time
+import json, sys, os, base64, urllib.request, time
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ch_common import parse_run
+import ch_secret
 
-BASE = sys.argv[1] if len(sys.argv) > 1 else 'https://api.gong.io'
-PROBE = len(sys.argv) > 2 and sys.argv[2] == 'probe'
-ENV = "C:/Users/Will Ritchings/Desktop/Claude/GTM_ENG/The Reserve/T-tools/API Keys and Access/.env"
+RUN, ns = parse_run("Gong bulk pull", [(("base",), {"nargs": "?", "default": "https://api.gong.io"}),
+                                       (("mode",), {"nargs": "?", "default": None})])
+BASE = ns.base
+PROBE = ns.mode == 'probe'
 
-# .env line 2 = 'Gong API Key: <152-char secret>', line 3 = 'Access Key ID: <32-char key>'
 # Basic auth = base64(access_key_id:secret) -- verified HTTP 200 on 2026-09-08.
-envlines = open(ENV).read().splitlines()
-secret = envlines[1].split(':', 1)[1].strip()
-key = envlines[2].split(':', 1)[1].strip()
+secret = ch_secret.get('gong_secret')
+key = ch_secret.get('gong_key')
 TOK = base64.b64encode(f'{key}:{secret}'.encode()).decode()
 req = urllib.request.Request(BASE + '/v2/users?limit=1',
                              headers={'Authorization': 'Basic ' + TOK})
@@ -22,8 +25,8 @@ print('gong auth OK')
 if PROBE:
     raise SystemExit(0)
 
-FROM = '2026-06-10T00:00:00Z'
-TO = '2026-09-08T23:59:59Z'
+FROM = f'{RUN.window_start_iso}T00:00:00Z'
+TO = f'{RUN.iso}T23:59:59Z'
 cursor, page, total = None, 0, 0
 while True:
     body = {
@@ -62,7 +65,7 @@ while True:
                 for p in (c.get('parties') or [])
             ],
         })
-    with open(f'gong_calls_p{page}.json', 'w') as f:
+    with open(RUN.path(f'gong_calls_p{page}.json'), 'w') as f:
         json.dump(slim, f)
     rec = data.get('records', {})
     print(f'page {page}: {len(calls)} calls (cum {total} of {rec.get("totalRecords")})')

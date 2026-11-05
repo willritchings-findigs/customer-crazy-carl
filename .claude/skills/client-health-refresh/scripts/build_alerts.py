@@ -12,16 +12,18 @@ Output: history/<run>/alerts_<run>.json — payloads + resolved tags, reviewable
 and the dedupe ledger (each entry carries posted:false until a send marks it true; a rerun
 skips account+transition pairs already marked posted).
 """
+# Usage: python3 build_alerts.py --scratch <dir>   (current run = latest run in wow_history)
 import json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ch_common import parse_run, HIST, REPO_ROOT
 
-# Repo root = cwd unless REPO_ROOT is set; scripts get copied to a scratchpad, so __file__ is unreliable.
-CH_DIR = os.path.join(os.environ.get("REPO_ROOT", os.getcwd()), "O-output", "cs-client-health-scoring")
-HIST = os.path.join(CH_DIR, "history")
-OWNER_MAP = os.path.join(CH_DIR, "owner_map.json")
-SCRATCH = os.path.dirname(os.path.abspath(sys.argv[0])) if len(sys.argv) < 2 else sys.argv[1]
-PORTAL = "243635806"
-CHANNEL = "C0B4QMETZ52"  # #p-account-health — Emma switched from dedicated #client-health-alerts (C0C1MK83T9U), 9/14
-DASH_URL = "https://findigs-growth-hub.base44.app/cx/client-health"
+RUN, _ = parse_run("Build AM Slack alert payloads")
+CFG = RUN.cfg
+OWNER_MAP = os.path.join(REPO_ROOT, CFG["alerts"]["owner_source_of_truth"])
+SCRATCH = RUN.scratch
+PORTAL = CFG["hubspot"]["portal_id"]
+CHANNEL = CFG["alerts"]["slack_channel_id"]
+DASH_URL = CFG["target"]["dashboard_url"]
 BAND_EMOJI = {"Red": "\U0001F534", "Yellow": "\U0001F7E1", "Green": "\U0001F7E2", "Churned": "⚫"}
 
 def load(p): return json.load(open(p))
