@@ -44,7 +44,8 @@ Old `SKILL.md` is still on `main` (and `ARCHIVE_SKILL_2026-10-29_pre-split.md` i
 
 1. **Structural-diff limit:** ±25 is the standard (was an undocumented exception; runbook updated).
 2. **First-alert-batch review gate:** dropped to match the other routines (channel on success,
-   DM on any failure). Revisit after the first cloud run.
+   DM on any failure). **Confirmed 2026-11-06** after the first successful cloud run: no
+   additional review gates.
 3. **Dead reference** to `M-memory/project_cx_support_scorecard.md`: dropped; the pet-exclusion
    SQL lives in `queries/q3_support.sql`.
 4. **Gate 6** now reads Unit Counts BI, independent of q4 (matched q4 on all 692 rollups on 11/05).

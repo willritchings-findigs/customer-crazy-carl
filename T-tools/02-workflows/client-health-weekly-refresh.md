@@ -31,7 +31,9 @@
 **Cloud routine (2026-11-06):** "Client Health Refresh" (`trig_013GADddMEg9RbhmMmdZK5LZ`), repo
 `customer-crazy-carl` branch `main`, Default environment, Mondays 9:00 ET (an hour after GTM
 Dashboard Update and hubspot-hygiene-scan). Connectors named explicitly: Sigma, Pylon, Slack,
-HubSpot. First cloud run succeeded 2026-11-06 (pushed, verified, posted); schedule enabled the same day, first scheduled run Monday 2026-11-09. On success it pushes, commits
+HubSpot. First cloud run succeeded 2026-11-06 (pushed, verified, posted); schedule enabled the same day, first scheduled run Monday 2026-11-09. No human review gates (Will, 2026-11-06):
+the validation gates and read-back verify are the only checks; success posts straight to the
+channel, any stop DMs Will. On success it pushes, commits
 history and the report to `main`, and posts to `#p-account-health`; any stop DMs Will
 (push notification if Slack is down). Credentials: `cs-cx-cloud-environment.md`.
 **Target:** Base44 `AccountHealthCache` (app `6a01dddd52a74acb4fd153bd`, record `6a834cf871d5a0ff1897bfca`, base URL `https://findigs-growth-hub.base44.app/api`). The live dashboard is `findigs-growth-hub.base44.app/cx/client-health` — it renders whatever this record holds; display logic lives in the Base44 builder, never in this pipeline.
