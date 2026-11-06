@@ -110,6 +110,31 @@ Read-only. Each must pass:
 
 The first real PUT is proven by the run's own read-back verify (§3 of the skill).
 
+### Results, 2026-11-06 (routine `client-health-smoke-test`, trig_01QAwZbqwavRoRJJrqRS8Hqn, disabled, reusable)
+
+| Check | Result | Evidence |
+|---|---|---|
+| Repo clone + draft branch checkout on Default | PASS | GitHub access to `customer-crazy-carl` works |
+| `CH_PROXY_AUTH` | PASS | `hubspot,gong,base44` |
+| `ch_secret.py --check` | PASS | all four: `proxy (network secret)` |
+| Gong probe (username/password secret type) | PASS | `gong auth OK`: the secret type produces Gong's Basic auth, so no fallback variables needed |
+| HubSpot API, no client header | PASS | companies 200; properties 200 (524) |
+| Base44 GET, no client header | PASS | 200, `health_overview`, 267 accounts, computed 2026-10-28 |
+| Sigma connector | PASS **only when listed explicitly** in the routine's `mcp_connections` | first run (auto-attached connectors) had no Sigma; second run with Sigma listed: `begin_session` OK |
+| HubSpot connector | PASS | portal 243635806 |
+| Slack connector | FAIL | listed, but no tools loaded in the session |
+| Pylon connector | FAIL | listed, but no tools loaded; no error reported |
+
+Notes:
+- A routine gets only the connectors it names (or, if it names none, an auto-picked set that
+  omitted Sigma, Slack, and Pylon). The Client Health routine must list Sigma, Pylon, Slack,
+  and HubSpot explicitly.
+- Connector loading is intermittent in routines generally: GTM Dashboard Update's 2026-11-02
+  run lost the HubSpot connector (Slack worked) and stopped at step 1, while its run status
+  still read "succeeded". Don't trust routine status; read the run log.
+- The auto-mode classifier blocks commands that test whether credential environment variables
+  are set ("Credential Materialization"). Use `ch_secret.py --check` instead.
+
 ## After the first successful cloud run
 
 0. Confirm GTM Dashboard Update and hubspot-hygiene-scan still succeed on their next Monday
