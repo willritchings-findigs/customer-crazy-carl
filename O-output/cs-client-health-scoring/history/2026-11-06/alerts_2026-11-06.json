@@ -1,0 +1,70 @@
+{
+ "run": "2026-11-06",
+ "prev_run": "2026-10-28",
+ "channel": "C0B4QMETZ52",
+ "header": ":stethoscope: *Client health weekly refresh 2026-11-06* — 1 alert(s): 1 newly Red, 0 worsened to Yellow · 2 improved 🎉 · <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard ↗>",
+ "alerts": [
+  {
+   "account": "Firethorn Realty",
+   "transition": "Yellow -> Red",
+   "band": "Red",
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "🔴 *Firethorn Realty* — moved Yellow → Red\nDrivers: Strategic Alignment red · Platform & Product red · Client Sentiment yellow\nSignals: Meeting/touchpoint cadence, Multi-threaded relationship red · approval rate, QA rate red / support-ticket ratio, volume trend yellow\nOwner: <@U080L3P0RLG> · (no HubSpot record matched) · <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard ↗>",
+   "posted": true
+  }
+ ],
+ "kudos": [
+  {
+   "account": "MJW Investments Parent",
+   "transition": "Red -> Yellow",
+   "band": "Yellow",
+   "am": "Reese Ryan",
+   "am_slack_id": "U06TY8N92LQ",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "📈 *MJW Investments Parent* — improved Red → Yellow, nice work\nWhat moved: Client Sentiment Red → Yellow\nStill watching: Platform & Product still red · Strategic Alignment still yellow · Client Sentiment still yellow\nOwner: <@U06TY8N92LQ> · (no HubSpot record matched) · <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard ↗>",
+   "posted": true
+  },
+  {
+   "account": "Realty Solutions LLC",
+   "transition": "Yellow -> Green",
+   "band": "Green",
+   "am": "Javier Camargo",
+   "am_slack_id": "U080L3P0RLG",
+   "csa": null,
+   "csa_slack_id": null,
+   "message": "🎉 *Realty Solutions LLC* — improved Yellow → Green, nice work\nWhat moved: Client Sentiment Yellow → Green\nAll pillars Green\nOwner: <@U080L3P0RLG> · <https://app-na2.hubspot.com/contacts/243635806/record/0-2/154068284106|HubSpot ↗> · <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard ↗>",
+   "posted": true
+  }
+ ],
+ "still_red_digest": {
+  "message": "⚪ Still Red this week (21), no change — grouped so no one gets re-pinged: Brandywine Homes Parent (Natalie, 10 wks) · Bridge Tower Properties LLC (Reese, 10 wks) · CORE Residential (Javier, 10 wks) · Elda Management Services (Reese, 10 wks) · Equity Real Estate (Reese, 10 wks) · Evernest (Natalie, 10 wks) · Exceptional Property Management (Javier, 10 wks) · HomeRiver Group Holdings LLC (Stephanie, 10 wks) · KAIZEN Realty (Javier, 10 wks) · Lynco Properties (Natalie, 10 wks) · Remax Properties, Inc - Chuck Wartman (Javier, 10 wks) · Rookwood Properties (Natalie, 10 wks) · Toomey Property Advisors (Javier, 10 wks) · TruHome Property Solutions (Reese, 10 wks) · Weiss Parent (unassigned, 10 wks) · 3 Options Realty (Javier, 9 wks) · MGC Leasing &Property Management, LLC (Reese, 9 wks) · Cooper Zadeh Property Management, LLC (Reese, 6 wks) · Harbor Group Parent (Stephanie, 5 wks) · Encore Management (Reese, 3 wks) · Sentral (Natalie, 3 wks)",
+  "accounts": [
+   "Brandywine Homes Parent",
+   "Bridge Tower Properties LLC",
+   "CORE Residential",
+   "Elda Management Services",
+   "Equity Real Estate",
+   "Evernest",
+   "Exceptional Property Management",
+   "HomeRiver Group Holdings LLC",
+   "KAIZEN Realty",
+   "Lynco Properties",
+   "Remax Properties, Inc - Chuck Wartman",
+   "Rookwood Properties",
+   "Toomey Property Advisors",
+   "TruHome Property Solutions",
+   "Weiss Parent",
+   "3 Options Realty",
+   "MGC Leasing &Property Management, LLC",
+   "Cooper Zadeh Property Management, LLC",
+   "Harbor Group Parent",
+   "Encore Management",
+   "Sentral"
+  ],
+  "posted": true
+ }
+}
