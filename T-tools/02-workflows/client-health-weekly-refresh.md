@@ -27,6 +27,13 @@
 > narrowly: no write-capable credentials unless writing is literally its job.
 
 **Cadence:** every Monday morning. Will (or a scheduled nudge) kicks it off in a Claude Code session in The Reserve with: *"run the weekly client health refresh"* → invoke the `/client-health-refresh` skill.
+
+**Cloud routine (2026-11-06):** "Client Health Refresh" (`trig_013GADddMEg9RbhmMmdZK5LZ`), repo
+`customer-crazy-carl` branch `main`, Default environment, Mondays 9:00 ET (an hour after GTM
+Dashboard Update and hubspot-hygiene-scan). Connectors named explicitly: Sigma, Pylon, Slack,
+HubSpot. Created disabled; enable after the first supervised run. On success it pushes, commits
+history and the report to `main`, and posts to `#p-account-health`; any stop DMs Will
+(push notification if Slack is down). Credentials: `cs-cx-cloud-environment.md`.
 **Target:** Base44 `AccountHealthCache` (app `6a01dddd52a74acb4fd153bd`, record `6a834cf871d5a0ff1897bfca`, base URL `https://findigs-growth-hub.base44.app/api`). The live dashboard is `findigs-growth-hub.base44.app/cx/client-health` — it renders whatever this record holds; display logic lives in the Base44 builder, never in this pipeline.
 **Established:** 2026-09-03, per Emma ("set to re run every monday") after Alex assumed on the 9/2 call that the hub "refreshes." Reference implementations of the scoring rules live in `O-output/cs-client-health-scoring/` (`ref_phase4_rollup_and_churn.py`, `ref_phase5_contextual_fields.py`).
 
