@@ -1,0 +1,87 @@
+{
+ "Maymont Homes": {
+  "pm_friction_titles": [
+   "#249549 Last approval note with income (escalated, document_sync_failure, Jira FR-5507 open)",
+   "#246258 Showing approval amount (MRI approval note/amount stopped syncing across all markets, escalated)",
+   "#199494 FinDigs- Down- BTR (urgent, applicant/PM cannot access, bug)",
+   "#249207 Wrong verbiage on Income Approval Requirement (borderline: screening criteria said 2x vs 2.5x, escalated and fixed by criteria update; config bug)"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 28,
+  "note": "Independently re-pulled and re-adjudicated this run; FULL sweep: all 28 open-state issues in window pulled (one page, no applicant-filed or pet tickets present) and every title adjudicated; bodies read for #249207, #246258, #247337, #202570. 3 clear friction + 1 borderline (#249207). Classification is Negative even if the borderline is dropped (3). Ex"
+ },
+ "Real Property Management Southland": {
+  "pm_friction_titles": [
+   "#210043 Applications (71-message thread; bug letting applicants switch to de-listed units, escalated to technical teams; later configuration errors)",
+   "#210805 Delisted unit applications - follow up (engineering investigating; applicants able to apply to delisted unit)",
+   "#200144 17441 Jacquelyn Ln Unit 01 (prospect group vanished from Prospects after cancelling invites; bug, high, no first response yet)"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 5,
+  "note": "Independently re-pulled and re-adjudicated this run; FULL sweep: all 5 open-state issues. #250223 Application Screening excluded as pet ticket (category pets_disputes_consumer_requests). Bodies read for #249962, #210805, #200144 and the full message thread for #210043. Count matches the claim (3) but the set differs: claimed 'Closed Out Units / Proper"
+ },
+ "Group Fox Management": {
+  "pm_friction_titles": [
+   "#221826 Linero Applications 2180-308 (applicant/application PMS status mismatch, bug/integrations, high)",
+   "#215822 2180-203 (duplicate applications / Yardi shows wrong leaseholders, escalated to engineering)",
+   "#204424 Findigs <> Group Fox 8.25 Follow-Up (Yardi sync/status mismatch, escalated to technical lead)"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 10,
+  "note": "Independently re-pulled and re-adjudicated this run; All 10 issues paged and each adjudicated; bodies read for #219712, #217910, #215822, #204424. #221826 judged from title and Pylon category/sub-category (PMS status mismatch, bug, integrations), body not read. Excluded: #217910 FW: SOP Changes (customer SOP change request; escalated but a config chan"
+ },
+ "Imagine Homes Parent": {
+  "pm_friction_titles": [
+   "#215733 Decision Assist Processing Delays",
+   "#213376 Decision Assist Processing Delays (separate ticket)",
+   "#208786 Welcome to Findigs Inc. (invitation shows as expired on every signup attempt, access failure)",
+   "#194379 analytics (PM screenshot of analytics error, reproduced after retry, tagged bug)"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 7,
+  "note": "Independently re-pulled and re-adjudicated this run; All 7 issues paged and adjudicated; bodies read for #208786, #194379, #228395. #215733 and #213376 judged from title and bug/pm_technical_issue metadata (bodies not read). Excluded: #228395 criminal background timeline data request, #223703 income qualification question, #208439 CSM intro. Claimed 4"
+ },
+ "Winfield Property Management, LLC": {
+  "pm_friction_titles": [
+   "#249971 cant print applications (escalated, FR-5514 open)",
+   "#247790 Applications for Winfield Property Management all routing to One Eleven Greenwood",
+   "#240671 The Heights at Midtown (AppFolio unit sync found no units; borderline, new-property onboarding)",
+   "#237258 512 Gardens (AppFolio unit sync; borderline, onboarding)",
+   "#209546 Application for Wendolyn Martinez (applications still routed to wrong site)",
+   "#208673 Findigs issue (whole portfolio applications routed to wrong site)",
+   "#195072 Removing All Names (name-glitch bug, FR-4715)"
+  ],
+  "pm_friction_count": 7,
+  "classification": "Negative",
+  "total_open_issues_90d": 34,
+  "note": "Independently re-pulled and re-adjudicated this run; All 34 issues paged (single page, has_next_page false) and each title adjudicated; bodies read for #236838, #213075, #197777, #221727, #244459, #240671, #237258, #209546, #208673, #195072, #193787. Excluded as user-admin/access requests resolved by CSM: all Login Reset/Findigs Login/New Log In/Acces"
+ },
+ "Jones and Jones Communities": {
+  "pm_friction_titles": [
+   "#247968 Application Fee 611 Hampshire Rd. #513 (Yardi post-charges operation failed, escalated, second charge posted)",
+   "#236986 Application fees - 8220 Topanga Canyon Blvd. #115 (post charges failed; system error removed roommate record in Yardi)",
+   "#233284 Findigs updates in Yardi (applicants not merged, integrations bug)",
+   "#232500 Sync application - 12600 Braddock Drive #109 (applicants not merged, integrations bug)",
+   "#231775 sync application - 5018 Obama Blvd. #14 (document sync failure)"
+  ],
+  "pm_friction_count": 5,
+  "classification": "Negative",
+  "total_open_issues_90d": 8,
+  "note": "Independently re-pulled and re-adjudicated this run; All 8 issues paged and adjudicated; bodies read for #247968, #236986, #228729. #233284, #232500, #231775 judged from title and Pylon sub-category (applicants_not_merged / document_sync_failure, integrations, bug, high), bodies not read. Excluded: #228729 App fee help (CSM looked up transaction ID, b"
+ },
+ "ResiHome": {
+  "pm_friction_titles": [
+   "#239428 Duplicate Verified Income by Findigs - Robert Murphy (bug, escalated, Jira FR-5332)",
+   "#216997 Duplicate Listings and Delay in Loading Units (unit syncing bug, Jira FR-5171/FR-5299)",
+   "#213453 Removal of a co-applicant while Pending Review - Wendy Honaker (bug; PM escalation that submitted apps were editable)"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 22,
+  "note": "Independently re-pulled and re-adjudicated this run; All 22 open-state issues (single page, total=22) read; bodies read for #195604, #245510, #213453. Classification agrees but one claimed title does not: #195604 Applications shows as Group Ready but Invite is still outstanding is a how-it-works question (rejected); #213453 substituted as friction. Co"
+ }
+}

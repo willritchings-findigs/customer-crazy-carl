@@ -130,7 +130,8 @@
       "_note": "current Sigma name -> stale resolved_name_sigma still on the record. Translate q-file keys to the record's name before merging. Add entries; never delete.",
       "Beztak Properties Parent Company": "Beztak Properties Parent",
       "Kairos Living LLC Parent Company": "Kairos Living LLC Parent",
-      "Hudson Homes Management, LLC": "Hudson Homes Management LLC"
+      "Hudson Homes Management, LLC": "Hudson Homes Management LLC",
+      "Payton’s Place Real Estate, LLC": "Payton's Place Real Estate, LLC"
     },
     "q6_note": "GROUP BY alias on the first column is not honored; opaque ids come back, but column order is stable.",
     "queries": {
