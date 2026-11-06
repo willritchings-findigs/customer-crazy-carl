@@ -45,8 +45,10 @@ value. The contract check (pre-flight) runs the same check and stops on anything
 claude.ai/code → environment selector → settings icon on **Default**. Keep it **personal**
 (not shared): anyone who uses an environment can read its environment variables.
 
-- **Network access:** Custom, with "Also include default list" checked so the existing
-  routines keep everything they reach today, plus:
+- **Network access:** **Limited** (the UI's name, as of 2026-11-06, for "reach only what you
+  allow below"; the docs call it Custom). Default was already on Limited. Keep "Allow package
+  managers" checked and keep every existing entry so the other routines keep what they reach
+  today; add:
   ```
   api.hubapi.com
   api.gong.io
