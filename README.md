@@ -8,7 +8,7 @@ upsell/expansion, client health.
 
 | Workstream | Dashboard (Base44 entity) | In this repo | Cloud routine |
 |---|---|---|---|
-| Client Health | `AccountHealthCache` | Yes | Routine "Client Health Refresh" (`trig_013GADddMEg9RbhmMmdZK5LZ`), Mondays 9:00 ET, Default environment. Created **disabled** 2026-11-06 |
+| Client Health | `AccountHealthCache` | Yes | Routine "Client Health Refresh" (`trig_013GADddMEg9RbhmMmdZK5LZ`), Mondays 9:00 ET, Default environment. Enabled 2026-11-06 after the first successful cloud run |
 | Implementations | `ImplementationsCache` | Not yet | Not yet |
 | Support Metrics | `SupportCache` | Not yet | Not yet |
 | Churn Analysis | `ChurnCache` | Not yet | Not yet |
