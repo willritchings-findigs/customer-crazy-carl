@@ -95,7 +95,7 @@ Old `SKILL.md` is still on `main` (and `ARCHIVE_SKILL_2026-10-29_pre-split.md` i
    check. Review items logged in the runbook's "Sigma queries" section.
 2. **One fresh dry run** (pull + contract check + merge, no push) to prove the queries and
    the contract check against live Sigma.
-3. ~~Credentials storage decision.~~ **Decided 2026-11-06:** dedicated CS/CX cloud environment, network secrets where possible, fresh keys. Code done (`ch_secret.py`, `CH_PROXY_AUTH`); Will to create the environment and issue keys per `T-tools/02-workflows/cs-cx-cloud-environment.md`, then run the smoke test.
+3. ~~Credentials storage decision.~~ **Decided 2026-11-06:** Default cloud environment (revised from a dedicated one, 2026-11-06), network secrets where possible, fresh keys. Code done (`ch_secret.py`, `CH_PROXY_AUTH`); Will to create the environment and issue keys per `T-tools/02-workflows/cs-cx-cloud-environment.md`, then run the smoke test.
 
 ## Where Notion fits
 

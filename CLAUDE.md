@@ -11,8 +11,9 @@ Engineering handoff (2026-10). See `README.md` for what's in the repo.
   field-by-field diff. Base44 silently drops field names that aren't in the entity's
   original schema. Never invent new stored fields; derive new views from existing ones.
 - **Base44 auth** is `Authorization: Bearer <token>`. The old `api_key:` header fails.
-- **Cloud credentials** live only in the dedicated CS/CX cloud environment, as network
-  secrets where possible (the proxy adds the key; the session never sees it). Setup, scopes,
+- **Cloud credentials** live on the Default cloud environment (shared with the other
+  routines), as network secrets where possible (the proxy adds the key; the session never
+  sees it). Setup, scopes,
   and key owners: `T-tools/02-workflows/cs-cx-cloud-environment.md`.
 - **Don't trust a "done" from a script or sub-task.** Verify the result independently.
 - **Delegation discipline:** a sub-task gets only the inputs its job needs. Never hand
