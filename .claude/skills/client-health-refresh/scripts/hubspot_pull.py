@@ -11,21 +11,20 @@ import ch_secret
 RUN, ns = parse_run("HubSpot company pulls", [(("base",), {"nargs": "?", "default": "https://api.hubapi.com"})])
 BASE = ns.base
 
-def find_token():
-    for tok in [ch_secret.get('hubspot')]:
-        req = urllib.request.Request(
-            BASE + '/crm/v3/objects/companies?limit=1',
-            headers={'Authorization': 'Bearer ' + tok})
-        try:
-            with urllib.request.urlopen(req, timeout=30) as r:
-                if r.status == 200:
-                    return tok
-        except Exception:
-            continue
-    raise SystemExit('HubSpot token did not authenticate')
+AUTH = ch_secret.auth_headers('hubspot')
 
-TOKEN = find_token()
-print('token OK (len %d)' % len(TOKEN))
+def check_auth():
+    req = urllib.request.Request(BASE + '/crm/v3/objects/companies?limit=1', headers=AUTH)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            if r.status == 200:
+                return
+    except Exception as e:
+        raise SystemExit(f'HubSpot auth failed ({type(e).__name__}: {e})')
+    raise SystemExit('HubSpot auth failed')
+
+check_auth()
+print('hubspot auth OK (%s)' % ('network secret' if not AUTH else 'token'))
 
 PROPS = RUN.cfg["hubspot"]["company_properties"]
 
@@ -39,8 +38,7 @@ def search(filters, outfile):
         req = urllib.request.Request(
             BASE + '/crm/v3/objects/companies/search',
             data=json.dumps(body).encode(),
-            headers={'Authorization': 'Bearer ' + TOKEN,
-                     'Content-Type': 'application/json'},
+            headers={**AUTH, 'Content-Type': 'application/json'},
             method='POST')
         with urllib.request.urlopen(req, timeout=60) as r:
             data = json.load(r)

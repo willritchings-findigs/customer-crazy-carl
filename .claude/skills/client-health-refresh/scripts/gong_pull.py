@@ -14,11 +14,9 @@ BASE = ns.base
 PROBE = ns.mode == 'probe'
 
 # Basic auth = base64(access_key_id:secret) -- verified HTTP 200 on 2026-09-08.
-secret = ch_secret.get('gong_secret')
-key = ch_secret.get('gong_key')
-TOK = base64.b64encode(f'{key}:{secret}'.encode()).decode()
-req = urllib.request.Request(BASE + '/v2/users?limit=1',
-                             headers={'Authorization': 'Basic ' + TOK})
+# With a network secret (CH_PROXY_AUTH includes gong) the proxy adds the header instead.
+AUTH = ch_secret.auth_headers('gong')
+req = urllib.request.Request(BASE + '/v2/users?limit=1', headers=AUTH)
 with urllib.request.urlopen(req, timeout=30) as r:
     assert r.status == 200
 print('gong auth OK')
@@ -43,8 +41,7 @@ while True:
         body["cursor"] = cursor
     req = urllib.request.Request(BASE + '/v2/calls/extensive',
                                  data=json.dumps(body).encode(),
-                                 headers={'Authorization': 'Basic ' + TOK,
-                                          'Content-Type': 'application/json'},
+                                 headers={**AUTH, 'Content-Type': 'application/json'},
                                  method='POST')
     with urllib.request.urlopen(req, timeout=120) as r:
         data = json.load(r)

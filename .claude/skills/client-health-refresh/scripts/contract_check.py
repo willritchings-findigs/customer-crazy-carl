@@ -28,6 +28,13 @@ RUN, ns = parse_run("Client health contract check", [(("base",), {"nargs": "?", 
 CFG = RUN.cfg
 fails, notes = [], []
 
+# Credentials: every one resolves (names and sources only, never values)
+for n_, src in ch_secret.check():
+    if src:
+        notes.append(f"credential {n_}: {src}")
+    else:
+        fails.append(f"credential {n_}: missing (set {ch_secret.SECRETS[n_][0]} on the cloud environment)")
+
 # Base44 record
 try:
     rec = RUN.load(f"baseline_{RUN.mmdd}.json")
@@ -74,8 +81,7 @@ for key, el in CFG["sigma"]["elements"].items():
 
 # HubSpot company properties
 try:
-    tok = ch_secret.get("hubspot")
-    req = urllib.request.Request(ns.base + "/crm/v3/properties/companies", headers={"Authorization": "Bearer " + tok})
+    req = urllib.request.Request(ns.base + "/crm/v3/properties/companies", headers=ch_secret.auth_headers("hubspot"))
     with urllib.request.urlopen(req, timeout=60) as r:
         have = {p["name"] for p in json.load(r).get("results", [])}
     gone = [p for p in CFG["hubspot"]["company_properties"] if p not in have]

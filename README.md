@@ -24,4 +24,4 @@ Run scripts from the repo root, or set `REPO_ROOT`.
 
 ## Secrets
 
-No credentials are stored here. See `CLAUDE.md`.
+No credentials are stored here. See `CLAUDE.md` and `T-tools/02-workflows/cs-cx-cloud-environment.md`.

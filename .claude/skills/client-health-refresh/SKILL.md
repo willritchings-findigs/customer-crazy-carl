@@ -43,6 +43,8 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
      exists and is documented in `config.json`. A query using an undocumented column fails
      the check: document it in config in the same commit as the query change.
    - **HubSpot:** every property in `config.hubspot.company_properties` exists on companies.
+   - **Credentials:** every one resolves (network secret, environment variable, or local
+     file); the check prints sources only, never values.
    A changed account count is not necessarily wrong: stop, ask Will, and update
    `config.json` if confirmed.
 5. Config/record agreement is checked again by validation gate 1 inside the merge.
@@ -51,11 +53,14 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
 - Every script runs in place from the repo (never copy scripts elsewhere) and takes
   `--run-date YYYY-MM-DD --scratch <dir>`. Pulls and outputs live in the scratch dir; history
   is written to the repo. Dates and file suffixes (`_<MMDD>`) all derive from `--run-date`.
-- **Credentials** come from `scripts/ch_secret.py`: environment variables (`HUBSPOT_TOKEN`,
-  `GONG_ACCESS_KEY`, `GONG_ACCESS_SECRET`, `BASE44_TOKEN`) when set, otherwise the local
-  `.env` (`Label: value` format). Scripts read them directly. For `curl`, write the Base44
-  token to a scratch file with `python3 scripts/ch_secret.py base44 <file>` and delete it
-  after the final verify. Never print a credential or write one into the repo. The Base44
+- **Credentials** come from `scripts/ch_secret.py`, in order: network secrets on the cloud
+  environment (services listed in `CH_PROXY_AUTH`; the proxy adds the header, so send none),
+  environment variables (`HUBSPOT_TOKEN`, `GONG_ACCESS_KEY`, `GONG_ACCESS_SECRET`,
+  `BASE44_TOKEN`), then the local `.env` (`Label: value` format). Scripts handle all three.
+  For Base44 `curl`: if `CH_PROXY_AUTH` includes `base44`, send no `Authorization` header and
+  skip the token file. Otherwise write the token to a scratch file with
+  `python3 scripts/ch_secret.py base44 <file>` and delete it after the final verify.
+  Setup and key ownership: `T-tools/02-workflows/cs-cx-cloud-environment.md`. Never print a credential or write one into the repo. The Base44
   token must be generated from this app's own API page (Settings → API → Create access
   token); a token made elsewhere 403s with a workspace-membership error.
 - **Delegation discipline.** The Slack/Gong/Pylon scans run as separate, independently
@@ -196,7 +201,8 @@ The script reads `config.scoring` and applies these rules:
 2. Payload: `{"cache_key", "computed_at", "accounts"}` per `config.target`. Only
    `config.target.persisted_fields` survive; extra top-level keys (`band_counts`,
    `band_flips`) are silently dropped. The dashboard derives flips from `prior_band != band`.
-3. `curl` PUT to `<api_base>/apps/<app_id>/entities/<entity>/<record_id>` with the Bearer token.
+3. `curl` PUT to `<api_base>/apps/<app_id>/entities/<entity>/<record_id>` with the Bearer token
+   (or no `Authorization` header when Base44 is a network secret).
 4. **A 200 is not proof.** GET the record back and diff: computed_at, band counts, and 3–4
    spot values must match what you sent. Any mismatch → DM Will, stop.
 5. Delete the token file.
