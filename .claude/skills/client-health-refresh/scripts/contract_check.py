@@ -3,8 +3,10 @@
 Usage: python3 contract_check.py https://api.hubapi.com --run-date YYYY-MM-DD --scratch <dir>
 
 Expects in <scratch>:
-  baseline_<MMDD>.json            raw Base44 GET of the target record
-  sigma_describe_<element>.json   raw Sigma `describe` output for each config.sigma.elements key
+  baseline_<MMDD>.json              raw Base44 GET of the target record
+  sigma_probe_<element>_<MMDD>.json result of the probe query from `sigma_verify.py probes`
+                                    (preferred: Sigma itself proves every column exists), or
+  sigma_describe_<element>.json     raw Sigma `describe` output (fallback)
 Fetches HubSpot company property names itself. Exits non-zero on any failure, listing every
 failure at once, so the run stops before computing anything.
 """
@@ -12,17 +14,8 @@ import json, os, re, sys, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from ch_common import parse_run, SKILL_DIR
 import ch_secret
+from contract_cols import query_columns, documented as documented_cols, wanted
 
-
-def query_columns(cfg):
-    """Every quoted column identifier each element's query files use: {element_key: set of '"ident"'}."""
-    out = {}
-    for name, q in cfg["sigma"]["queries"].items():
-        el = cfg["sigma"]["elements"][q["element"]]
-        sql = open(os.path.join(SKILL_DIR, "queries", name + ".sql"), encoding="utf-8").read()
-        ids = {f'"{i}"' for i in re.findall(r'"([^"]+)"', sql) if i not in ("datamodel", el["id"])}
-        out.setdefault(q["element"], set()).update(ids)
-    return out
 
 RUN, ns = parse_run("Client health contract check", [(("base",), {"nargs": "?", "default": "https://api.hubapi.com"})])
 CFG = RUN.cfg
@@ -54,10 +47,25 @@ except FileNotFoundError as e:
 
 # Sigma columns: everything config documents, plus everything the query files actually use
 QCOLS = query_columns(CFG)
+WANT = wanted(CFG)
 for key, el in CFG["sigma"]["elements"].items():
+    undocumented = sorted(QCOLS.get(key, set()) - documented_cols(el))
+    if undocumented:
+        fails.append(f"Sigma {key}: queries use columns not documented in config.json {undocumented}")
+    want = WANT[key]
+    probe = RUN.path(f"sigma_probe_{key}_{RUN.mmdd}.json")
+    if os.path.exists(probe):
+        try:
+            d = json.load(open(probe, encoding="utf-8"))
+            assert isinstance(d.get("columns"), list) and isinstance(d.get("rows"), list)
+        except Exception as e:
+            fails.append(f"Sigma {key}: probe result unreadable ({type(e).__name__}); re-run the probe query")
+            continue
+        notes.append(f"Sigma {key}: {len(want)} columns OK (probe query ran)")
+        continue
     fn = f"sigma_describe_{key}.json"
     if not os.path.exists(RUN.path(fn)):
-        fails.append(f"Sigma {key}: {fn} not saved")
+        fails.append(f"Sigma {key}: neither sigma_probe_{key}_{RUN.mmdd}.json nor {fn} saved")
         continue
     raw = open(RUN.path(fn), encoding="utf-8").read()
     try:
@@ -67,17 +75,11 @@ for key, el in CFG["sigma"]["elements"].items():
     if f'"{el["id"]}"' not in ddl:
         fails.append(f"Sigma {key}: describe output is not for element {el['id']}")
         continue
-    prefix = el.get("column_prefix", "")
-    documented = {f'"{cid}"' for cid in el.get("columns", {}).values()} | {f'"{prefix}{c}"' for c in el.get("named_columns", [])}
-    undocumented = sorted(QCOLS.get(key, set()) - documented)
-    if undocumented:
-        fails.append(f"Sigma {key}: queries use columns not documented in config.json {undocumented}")
-    want = sorted(documented | QCOLS.get(key, set()))
     gone = [w for w in want if w not in ddl]
     if gone:
         fails.append(f"Sigma {key}: columns not found {gone}")
     else:
-        notes.append(f"Sigma {key}: {len(want)} columns OK")
+        notes.append(f"Sigma {key}: {len(want)} columns OK (describe)")
 
 # HubSpot company properties
 try:

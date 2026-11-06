@@ -116,6 +116,22 @@ counted in either window.
 Chronological record of bugs found, decisions made, and why each standing rule in the skill
 exists. If you're recalibrating something or wondering "why does it do it this way," start here.
 
+**2026-11-06 — Sigma results were always hand-copied; now proven against Sigma.** The first
+cloud run stopped safely before pushing: the Sigma connector returns results under its size
+limit inline, so saving q1–q5, q7 and gate 6 meant the agent retyping ~200 rows each, which it
+refused to do. Checking the 10/28 transcripts showed every past local run had done exactly that
+(a helper agent wrote q1 as 19K characters by hand) with no check against Sigma. The `describe`
+files for the contract check were hand-condensed for the same reason. Fix:
+`scripts/sigma_verify.py`. For every saved file Sigma computes a one-row fingerprint (row
+count, non-null and distinct counts, lengths, a character fingerprint of every text value,
+sums, true counts, each value tied to its account) and the script compares it with the same
+fingerprint computed from the file. Tests: an untouched auto-saved file passes; a dropped row,
+one changed character, two accounts' values swapped, a +1 on one number, a flipped boolean,
+and a blanked value all fail. Column checks now use `LIMIT 0` probe queries (Sigma rejects a
+missing column by name; no data returned), so nothing is retyped there either. Comparing the
+10/28 files against Sigma today fails, but only because Sigma's data has moved since (row and
+name terms match; counts drifted), so those copies could not be proven after the fact.
+
 **2026-09-08 — silent dict-vs-list loader bug.** A merge-time type mismatch produced 0 merges
 across the whole run with no error raised. This is why validation gate 3 (join coverage floors)
 exists — it would have caught this immediately.

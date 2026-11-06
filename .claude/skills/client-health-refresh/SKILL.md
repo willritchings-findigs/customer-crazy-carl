@@ -41,14 +41,19 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
 3. **Save the inputs for the contract check** into the scratch dir:
    - `baseline_<MMDD>.json`: `curl` GET of the `config.target` record (Bearer token). This is
      also the WoW comparison point.
-   - `sigma_describe_<key>.json`: raw `describe` output for every key in `config.sigma.elements`.
+   - `sigma_probe_<key>_<MMDD>.json` for every key in `config.sigma.elements`: run
+     `python3 scripts/sigma_verify.py probes --run-date <date> --scratch <dir>`, send each
+     `sigma_probe_<key>_<MMDD>.sql` to Sigma exactly as written, and save the result (it is
+     `{"columns":[],"rows":[]}`: `LIMIT 0`, no data) under that name. If Sigma rejects a probe,
+     a column is missing or renamed: save nothing, which fails the check. Don't save `describe`
+     output; it is too large to save without retyping.
 4. **Run `scripts/contract_check.py https://api.hubapi.com --run-date <date> --scratch <dir>`.**
    It lists every failure at once. Checklist:
    - **Base44:** record has every `config.target.persisted_fields`; `cache_key` matches;
      account count == `config.target.expected_account_count`.
-   - **Sigma:** every column in `config.sigma.elements.*.columns` and `*.named_columns` exists
-     in that element's describe output, **and** every column any `queries/*.sql` file uses
-     exists and is documented in `config.json`. A query using an undocumented column fails
+   - **Sigma:** every column in `config.sigma.elements.*.columns` and `*.named_columns`, and
+     every column any `queries/*.sql` file uses, exists (the probe query ran) and is
+     documented in `config.json`. A query using an undocumented column fails
      the check: document it in config in the same commit as the query change.
    - **HubSpot:** every property in `config.hubspot.company_properties` exists on companies.
    - **Credentials:** every one resolves (network secret, environment variable, or local
@@ -86,8 +91,22 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
    `config.sigma.data_model_id`). Never rewrite or "improve" a query during a run; query
    changes are commits to `queries/`, reviewed like any other logic change.
 3. Save each result as `{"columns", "rows"}` JSON under that query's `output` name.
-   Oversized results (q6 always) auto-save to a tool-results file: copy and parse it, never
-   re-emit it.
+   Oversized results (q6 always) auto-save to a tool-results file: `cp` it, never re-emit it.
+   Smaller results come back inline: write them out exactly as returned (every row, every
+   value, no reformatting, rounding, or reordering). The next step proves the copy.
+4. **Prove every saved file matches Sigma (required, every query, every run):**
+   - `python3 scripts/sigma_verify.py checks --run-date <date> --scratch <dir>` writes a
+     one-row fingerprint query `<name>_<MMDD>_check.sql` per saved file.
+   - Send each to Sigma exactly as written; save its one-row result as
+     `<name>_<MMDD>_check.json`, exactly as returned.
+   - `python3 scripts/sigma_verify.py compare --run-date <date> --scratch <dir>` must print
+     PASS for every query and exit 0. On any FAIL, re-run that query, re-save the file, and
+     repeat this step for it (`--only <name>`). If it still fails, stop and DM Will. Never
+     edit a saved file to make a check pass, and never skip this step.
+   - What it proves: row count; per column non-null and distinct counts, total length, a
+     character fingerprint of every text value, sums of every number, true counts; and each
+     value tied to its row's account. A dropped row, one wrong digit or letter, or two
+     accounts' values swapped all fail it.
 
 | Query file | Element | Returns, per rollup company |
 |---|---|---|
