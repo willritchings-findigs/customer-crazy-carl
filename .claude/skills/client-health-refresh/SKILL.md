@@ -30,6 +30,14 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
 2. **Connectors live.** Sigma, HubSpot, Pylon, and Slack each answer one cheap call. Gong API
    answers one probe (`gong_pull.py probe`). Connectors can drop mid-session; re-check before
    each long step.
+   - Find connector tools by server name, never by keyword: ToolSearch `+Sigma`, `+HubSpot`,
+     `+Pylon`, `+Slack`, or exact `select:mcp__<Server>__<tool>` names. Keyword searches
+     ("slack", "pylon") have returned nothing while the tools existed.
+   - Connectors finish connecting a few seconds into a run ("still connecting"). If one is
+     missing, wait ~20 seconds and search again, up to 3 tries (about a minute), before
+     calling it down.
+   - If Slack is the one that's down, the failure DM can't be sent: send the failure note as a
+     push notification instead.
 3. **Save the inputs for the contract check** into the scratch dir:
    - `baseline_<MMDD>.json`: `curl` GET of the `config.target` record (Bearer token). This is
      also the WoW comparison point.

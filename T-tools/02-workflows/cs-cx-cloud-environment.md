@@ -122,14 +122,19 @@ The first real PUT is proven by the run's own read-back verify (§3 of the skill
 | Base44 GET, no client header | PASS | 200, `health_overview`, 267 accounts, computed 2026-10-28 |
 | Sigma connector | PASS **only when listed explicitly** in the routine's `mcp_connections` | first run (auto-attached connectors) had no Sigma; second run with Sigma listed: `begin_session` OK |
 | HubSpot connector | PASS | portal 243635806 |
-| Slack connector | FAIL | listed, but no tools loaded in the session |
-| Pylon connector | FAIL | listed, but no tools loaded; no error reported |
+| Slack connector | PASS ×3 (retest) | first run FAIL was a false negative, see below; `#p-account-health` found (C0B4QMETZ52) |
+| Pylon connector | PASS ×3 (retest) | first run FAIL was a false negative; `search_issues` limit 1 answered |
 
 Notes:
 - A routine gets only the connectors it names (or, if it names none, an auto-picked set that
   omitted Sigma, Slack, and Pylon). The Client Health routine must list Sigma, Pylon, Slack,
   and HubSpot explicitly.
-- Connector loading is intermittent in routines generally: GTM Dashboard Update's 2026-11-02
+- **Why the first Slack/Pylon check failed (retest 2026-11-06, three runs, all PASS):**
+  connectors finish connecting a few seconds into a run (Pylon and Sigma showed "still
+  connecting" at start), and the first run searched by keyword ("slack", "pylon"), which
+  returned nothing. Searching by server (`+Slack`) or exact `select:` names found them every
+  time. The skill's pre-flight now searches that way and retries for about a minute.
+- Connector loading looked intermittent in routines generally, likely the same cause: GTM Dashboard Update's 2026-11-02
   run lost the HubSpot connector (Slack worked) and stopped at step 1, while its run status
   still read "succeeded". Don't trust routine status; read the run log.
 - The auto-mode classifier blocks commands that test whether credential environment variables
