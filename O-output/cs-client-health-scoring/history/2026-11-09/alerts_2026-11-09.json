@@ -2,7 +2,7 @@
  "run": "2026-11-09",
  "prev_run": "2026-11-06",
  "channel": "C0B4QMETZ52",
- "header": ":stethoscope: *Client health weekly refresh 2026-11-09* \u2014 0 alert(s): 0 newly Red, 0 worsened to Yellow \u00b7 1 improved \ud83c\udf89 \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
+ "header": ":stethoscope: *Client health weekly refresh 2026-11-09* — 0 alert(s): 0 newly Red, 0 worsened to Yellow · 1 improved 🎉 · <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard ↗>",
  "alerts": [],
  "kudos": [
   {
@@ -13,12 +13,12 @@
    "am_slack_id": "U09E14MCRM3",
    "csa": null,
    "csa_slack_id": null,
-   "message": "\ud83d\udcc8 *Sentral* \u2014 improved Red \u2192 Yellow, nice work\nWhat moved: Client Sentiment Red \u2192 Yellow\nStill watching: Platform & Product still red \u00b7 Client Sentiment still yellow\nOwner: <@U09E14MCRM3> \u00b7 <https://app-na2.hubspot.com/contacts/243635806/record/0-2/159374131925|HubSpot \u2197> \u00b7 <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard \u2197>",
-   "posted": false
+   "message": "📈 *Sentral* — improved Red → Yellow, nice work\nWhat moved: Client Sentiment Red → Yellow\nStill watching: Platform & Product still red · Client Sentiment still yellow\nOwner: <@U09E14MCRM3> · <https://app-na2.hubspot.com/contacts/243635806/record/0-2/159374131925|HubSpot ↗> · <https://findigs-growth-hub.base44.app/cx/client-health|Dashboard ↗>",
+   "posted": true
   }
  ],
  "still_red_digest": {
-  "message": "\u26aa Still Red this week (21), no change \u2014 grouped so no one gets re-pinged: Brandywine Homes Parent (Natalie, 11 wks) \u00b7 Bridge Tower Properties LLC (Reese, 11 wks) \u00b7 CORE Residential (Javier, 11 wks) \u00b7 Elda Management Services (Reese, 11 wks) \u00b7 Equity Real Estate (Reese, 11 wks) \u00b7 Evernest (Natalie, 11 wks) \u00b7 Exceptional Property Management (Javier, 11 wks) \u00b7 HomeRiver Group Holdings LLC (Stephanie, 11 wks) \u00b7 KAIZEN Realty (Javier, 11 wks) \u00b7 Lynco Properties (Natalie, 11 wks) \u00b7 Remax Properties, Inc - Chuck Wartman (Javier, 11 wks) \u00b7 Rookwood Properties (Natalie, 11 wks) \u00b7 Toomey Property Advisors (Javier, 11 wks) \u00b7 TruHome Property Solutions (Reese, 11 wks) \u00b7 Weiss Parent (unassigned, 11 wks) \u00b7 3 Options Realty (Javier, 10 wks) \u00b7 MGC Leasing &Property Management, LLC (Reese, 10 wks) \u00b7 Cooper Zadeh Property Management, LLC (Reese, 7 wks) \u00b7 Harbor Group Parent (Stephanie, 6 wks) \u00b7 Encore Management (Reese, 4 wks) \u00b7 Firethorn Realty (Javier, 2 wks)",
+  "message": "⚪ Still Red this week (21), no change — grouped so no one gets re-pinged: Brandywine Homes Parent (Natalie, 11 wks) · Bridge Tower Properties LLC (Reese, 11 wks) · CORE Residential (Javier, 11 wks) · Elda Management Services (Reese, 11 wks) · Equity Real Estate (Reese, 11 wks) · Evernest (Natalie, 11 wks) · Exceptional Property Management (Javier, 11 wks) · HomeRiver Group Holdings LLC (Stephanie, 11 wks) · KAIZEN Realty (Javier, 11 wks) · Lynco Properties (Natalie, 11 wks) · Remax Properties, Inc - Chuck Wartman (Javier, 11 wks) · Rookwood Properties (Natalie, 11 wks) · Toomey Property Advisors (Javier, 11 wks) · TruHome Property Solutions (Reese, 11 wks) · Weiss Parent (unassigned, 11 wks) · 3 Options Realty (Javier, 10 wks) · MGC Leasing &Property Management, LLC (Reese, 10 wks) · Cooper Zadeh Property Management, LLC (Reese, 7 wks) · Harbor Group Parent (Stephanie, 6 wks) · Encore Management (Reese, 4 wks) · Firethorn Realty (Javier, 2 wks)",
   "accounts": [
    "Brandywine Homes Parent",
    "Bridge Tower Properties LLC",
@@ -42,6 +42,6 @@
    "Encore Management",
    "Firethorn Realty"
   ],
-  "posted": false
+  "posted": true
  }
 }
