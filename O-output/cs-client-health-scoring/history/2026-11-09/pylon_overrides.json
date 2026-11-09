@@ -1,0 +1,203 @@
+{
+ "Maymont Homes": {
+  "pm_friction_titles": [
+   "#249549 Last approval note with income",
+   "#246258 Showing approval amount",
+   "#199494 FinDigs- Down- BTR"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 25,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). Window pull of 25 open tickets (no applicant/pet drops). Claim of 4 not fully supported: #235699 'Welcome to Findigs Inc.' is a CSM-originated onboarding/access thread (PM asked about portal access and a units-tab error, CSM answered) so counted as borderline, not friction. 3 tickets verified (document-sync/approval-note bug with Jira FR-5507, same family on #246258, and the Aug 19 outage-type 'Down' ticket, urgent). Still Negative (exactly at threshold of 3). Other borderline not counted: #243197 Findigs Chat (QA feedback), #232608 Understanding Group Workflow Status, #240574 Inadequate Income Denials."
+ },
+ "Beztak Properties Parent": {
+  "pm_friction_titles": [
+   "#250382 Chelsea Park West Yardi Support Ticket",
+   "#242257 [Request ID :##7575##] : Yardi and Findigs",
+   "#236743 Yardi Findigs Issue with Source",
+   "#244220 Citation Club Error",
+   "#245213 Changing unit on approved application",
+   "#243568 Gabriel Mateos - Sanchez Application",
+   "#229743 Promo code not applying for Fallpromo27",
+   "#228005 Tenant application status update for Nathaniel Arellano"
+  ],
+  "pm_friction_count": 8,
+  "classification": "Negative",
+  "total_open_issues_90d": 98,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). Account is 'Beztak' (www.beztak.com); 98 open, 2 pet tickets dropped (#251510, #248763). All 4 claimed tickets hold (#250382 approved applicant failed to push to Yardi, escalated to Yardi; three more are Yardi/error tickets, on_engineering or loading error). I additionally found 4 more PM-side escalated/on_engineering bug tickets with Jira FR links (#245213 FR-5518 unit change on approved app, #243568 FR-5430 unit unavailable error, #229743 FR-5219 promo code bug, #228005 FR-5188 Yardi rent mismatch), read bodies for these. Not read (judged routine/CSM-originated): many agenda/follow-up/user-role threads. Strongly Negative."
+ },
+ "Sentral": {
+  "pm_friction_titles": [
+   "#249932 SWM - NSF Admin on ledger when refunding on Findigs site",
+   "#225633 Holding Deposit Refunds Not Posting to Tenant Ledgers"
+  ],
+  "pm_friction_count": 2,
+  "classification": "Neutral",
+  "total_open_issues_90d": 73,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). DIFFERS: 2 verified, not 3 -> Neutral. Dropped #237529 'Joinery Phase 1-Applicant not showing in Findigs': body read, CSM found the application (applicant had finished and was waiting on co-applicant), i.e. routine lookup question, no platform fault. Counted #249932 (PM-reported NSF ledger entries on refunds, ~5 accounts, CSM attributes to Yardi side) and #225633 (VP Accounting escalation: refunds not reversing in Yardi; CSM says by design with engineering release planned) as friction, both borderline in cause but PM-impacting integration gaps. Other borderline not counted: #239164 'Issue with Application' (applicant closed during verification + UI copy shows 2.1x vs 2.5x income; escalated internally; mostly applicant-servicing), #248316 Joinery- Issue #247543 (applicant risk-signal status inqu"
+ },
+ "Highmark Residential Parent": {
+  "pm_friction_titles": [
+   "#251509 Approved App in Findigs Not Showing In Yardi",
+   "#245569 Findigs connectivity issues",
+   "#230808 Findigs Screening Results Not Pushing to Yardi",
+   "#231855 Findigs website issue, double applicants for same unit approved",
+   "#222610 Ana Ynoa - Application Showing as a Prospect in Yardi",
+   "#211160 Stonecreek - Applicant App in FD Applied in Yardi",
+   "#205793 Stonecreek - Approval Not in Yardi",
+   "#195552 Findigs Error Code",
+   "#245514 Site members can not print applications",
+   "#249258 Unit not showing"
+  ],
+  "pm_friction_count": 10,
+  "classification": "Negative",
+  "total_open_issues_90d": 189,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). 189 open (2 pages), 7 pet tickets dropped. All 10 claimed titles confirmed by title/category/subcategory metadata (not individually body-read). Many more PM-side friction tickets exist beyond the claim (about 10 further Yardi status-mismatch / unit-sync / missing-ledger-payment tickets e.g. #235837, #241027, #245982, #248856, #206796, #215244, #221740, #248055, #223543, #250181, #250583), so true count is well above 3. Strongly Negative."
+ },
+ "Oakwood Parent": {
+  "pm_friction_titles": [
+   "#228180 duplicate attachments",
+   "#239362 FW: Findigs Error at The Benajmin",
+   "#236547 Prospect error code"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 42,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). 3 verified, claimed 4. #236547 (applicants could not apply to any unit at The Benjamin; fixed 10/15) and #239362 (CSM-forwarded same Benjamin error, 'misconfiguration on our end') are the same incident logged as two tickets; if deduped by incident this falls to 2 (Neutral), so Negative is fragile. #228180 is on_engineering document sync failure. Dropped #219548 Ponds at Madison: body read, CSM-driven question about a property group missing from the Special Leasing portfolio (config coordination), borderline. Not read: #213227 'findigs' (unit syncing, waiting_on_you) and #227832 Yardi config updates (coordination)."
+ },
+ "Brick and Timber Parent": {
+  "pm_friction_titles": [
+   "#249157 Unit Not Available in Findigs",
+   "#231195 Approved Status in Findigs Not Showing in CRM",
+   "#212733 Findigs Access",
+   "#201747 Yardi Troubleshooting",
+   "#242442 Application Issues"
+  ],
+  "pm_friction_count": 5,
+  "classification": "Negative",
+  "total_open_issues_90d": 40,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). All 5 claimed hold. #212733: whole team lost access, confirmed Findigs outage 9/7 (urgent). #201747: Yardi integration issues, some confirmed Yardi-side, high. #242442 is borderline (credit-dispute thread, but flagged bug/integrations with Jira FR-5411; engineering change to offer-letter income notes); even without it count is 4. #249157 and #231195 judged by title/metadata (unit syncing, PMS status mismatch). Not read: #227850 Findigs Access to Yardi Properties. Negative."
+ },
+ "Imagine Homes Parent": {
+  "pm_friction_titles": [
+   "#215733 Decision Assist Processing Delays",
+   "#213376 Decision Assist Processing Delays",
+   "#194379 analytics"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 7,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). DIFFERS IN COMPOSITION, count still 3: #208786 'Welcome to Findigs Inc.' dropped (body read: sign-up 'invitation expired' because user already existed, CSM fixed access in the same reply, routine onboarding). Replaced with #194379 'analytics' (PM reported a recurring error screenshot, flagged bug, refresh suggested, unresolved): thin evidence, borderline. #215733 confirmed bug fixed/deployed 9/15 (high); #213376 same title/bug, not body-read. Without #194379 this is Neutral (2). Other 3 open tickets are applicant/income questions and a CSM intro."
+ },
+ "Lynco Properties": {
+  "pm_friction_titles": [
+   "#231640 FW: Findigs Help!",
+   "#217446 delayed log in",
+   "#208865 Error Logging In- Lynx Crossing/LynCo"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 26,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). All 3 claimed hold but exactly at threshold. #231640: unit-type changes not syncing to listings (bug/integrations, high; PM fixed via resync). #217446: SSO/2FA code login failure, urgent, still state new with no response. #208865: login error, high (title/metadata only). Borderline not counted: #214400 Norma Ramos apt 247 (unit not listed in RentManager; CSM explained, routine), #230906 1014 Leasing Issues Screenshot (applicant can't select lease quote, not body-read), #236830 LRO on for AVANTE (config request), numerous new-hire/user-reset access requests (routine). Negative but fragile."
+ },
+ "Kotarides Property Management": {
+  "pm_friction_titles": [
+   "#199490 Application Links not working",
+   "#201228 Another Merge Issue",
+   "#202989 Record Mismatch?",
+   "#200392 Merge Issue"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 16,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). Claim of 3 confirmed and extended: all three read as PM-reported friction (199490 = 404 on all application links, PM-reported despite applicant_technical_issue category; 201228/202989 = Yardi guest-card merge/record mismatch). Added #200392 (same Yardi merge failure, two guest cards not merged). Borderline, not counted: #194139 Preferred Move-in Date Issue (date overwritten on merge, PM asks why), #228845 Findigs Data Feed (request for one-time snapshot, not a defect). No applicant or pet tickets; user_type field is mostly unpopulated so applicant filter is by field only."
+ },
+ "Western Wealth Parent": {
+  "pm_friction_titles": [
+   "#223621 Megan Naylor",
+   "#218094 Somerset Apply Now Link Issue"
+  ],
+  "pm_friction_count": 2,
+  "classification": "Neutral",
+  "total_open_issues_90d": 27,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). Pylon name is 'Western Wealth Communities' (domain stored as a URL; resolved by domain search, single hit). Claim of 3 not supported: #244123 Embry unable to locate unit 0104 is a routine how-to (CSM explains Add to Existing Lease on an occupied unit), not friction. #223621 counts (regional PM lost dashboard access to Embry/Somerset three times, escalated to engineering). #218094 counts but borderline: apply-now link routed to RentCafe, root cause on RealPage/Apartments.com side, customer confirmed resolved 9/21. Borderline, not counted: #245270 Online Applications (one applicant bypassed Findigs via RentCafe, no fee charged, customer calls it a fluke), #205051 Apartments.com link (RealPage-side), #245995 collections criteria (routine config change). #251157/#250401/#250104 have is_pet_verifica"
+ },
+ "Kairos Living LLC Parent": {
+  "pm_friction_titles": [
+   "#250499 Password reset email not received for account",
+   "#248962 Notes Field Angled Brackets Blocking Interaction",
+   "#243705 Guest Card in Yardi Missing Daquan Data",
+   "#237902 Login and submission system status check",
+   "#223465 Yardi integration: Approval in Findigs should not modify Guest Card status",
+   "#222178 Flagging issue: incorrect fraud routing for income documentation",
+   "#219403 Urgent: Need remedies for current issues",
+   "#215796 Income Flag Not Reaching Fraud Department",
+   "#214331 Live deployment status impact on data feed",
+   "#210759 Stuck Apps Investigation: Unknown Cause in Known Issue",
+   "#208336 Bank linking failures for multiple applicants",
+   "#208054 Cancellation workflow stalling in Request Documents step",
+   "#204648 Chime bank account mislabeling issue",
+   "#204031 Performance Analytics loading issue with spinning circle",
+   "#200422 RentCafe Redirect Links and Lead Routing Update",
+   "#210998 Fraudulent Paystub Flagged in Task Service",
+   "#204941 Clarification on Post-Approval POI Issue",
+   "#218423 Fraud Flagged Income Verification in Application"
+  ],
+  "pm_friction_count": 18,
+  "classification": "Negative",
+  "total_open_issues_90d": 85,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). Pylon name 'Kairos Living'; resolved by domain. Negative either way (far above 3). My list of 18 differs from the claim by 3 swaps. Dropped: #231670 Credit union bank statement misattributed to Chime (CSM later states it was not a bug, just misunderstood logic), #213963 Duplicate Applicant IDs in Applicants Export (confirmed expected behavior), #244683 Escalation & Support Analysis (CSM-originated analysis, not a PM-filed problem). Added from live pull: #210998 (Task Service missed fraudulent paystub, engineering updating logic), #204941 (ongoing fraud-task bug), #218423 (system issue left a subset of apps without fraud check). Borderline kept: #237902 (issue resolved quickly), #208054 (acknowledged as underwriting error), #219403 (CSM follow-up thread on customer's escalation). Many other bug-"
+ },
+ "Jones and Jones Communities": {
+  "pm_friction_titles": [
+   "#233284 Findigs updates in Yardi",
+   "#232500 Sync application - 12600 Braddock Drive #109 - #600B109",
+   "#231775 sync application - 5018 Obama Blvd. #14 - #5018R14",
+   "#236986 Application fees - 8220 Topanga Canyon Blvd. #115 - #115",
+   "#247968 Application Fee 611 Hampshire Rd. #513 - #611H513"
+  ],
+  "pm_friction_count": 5,
+  "classification": "Negative",
+  "total_open_issues_90d": 8,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). Pylon name 'Jones & Jones Communities'. Claim of 3 confirmed (Yardi applicants-not-merged x2, document sync failure needing re-push). Added #236986 (engineering push error removed a roommate record in Yardi, PM asked to re-add) and #247968 (post-charges operation failed for a second app fee; fixed after escalation). Borderline, not counted: #228729 App fee help (fee not on ledger, CSM looked up transaction/pcode). Not friction: #245284 holiday greeting, #238408 new application experience launch question."
+ },
+ "Real Property Management Southland": {
+  "pm_friction_titles": [
+   "#210043 Applications",
+   "#210805 Delisted unit applications - follow up",
+   "#200144 17441 Jacquelyn Ln Unit 01"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 5,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). No domain on the Pylon record beyond rpmsouthland.com URL; resolved by exact name search (single hit, owner differs from other accounts). Pet dropped: #250223 Application Screening (category pets_disputes_consumer_requests, dog-breed SOP). Claim confirmed at 3 but with one swap. #249962 Closed Out Units / Properties is a routine how-to (reactivating a deactivated unit, plus a visibility question) and is dropped. Added #200144 (prospect group vanished from the Prospects tab after cancelling invites; ticket still in state new with no reply since 8/19). #210043 (bug lets applicants submit to deactivated unit, refund permission problem, escalated to engineering) and #210805 (follow-up on the same delisted-unit incident, refunds) are two tickets on one incident; a stricter reading would count them a"
+ },
+ "Winfield Property Management, LLC": {
+  "pm_friction_titles": [
+   "#247790 Applications for Winfield Property Management all routing to One Eleven Greenwood",
+   "#208673 Findigs issue",
+   "#195072 Removing All Names",
+   "#209546 Application for Wendolyn Martinez"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 31,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). Pylon name 'Winfield Property Management'. Claim of 4 confirmed in count but the set differs. Kept #247790 (all apps routed to wrong portfolio after offboarding) and #195072 (escalated, Jira FR-4715: name glitch kept reverting a team member). Added #208673 (apps routed to offboarded Echo Trail portfolio, same defect family, 9/1) and #209546 (application created before link-redirect fix, bug). Dropped #237258 512 Gardens (AppFolio access/implementation coordination). Borderline, not counted: #240671 The Heights at Midtown (unit sync finds no units because property group not set up in AppFolio; likely customer-side config), #244459 Application submission (PM override request). Login/access resets are routine and not counted. If #240671 were counted the result would be 5; still Negative."
+ },
+ "McKinley Companies, LLC": {
+  "pm_friction_titles": [
+   "#238018 FinDigs Service Outage Reported",
+   "#231142 Application stuck in underwriting and routing to main page",
+   "#217247 Pending Document Engine Analysis Timeout",
+   "#215459 Document download issues affecting bank statements",
+   "#210592 Orlando Apps: Submissions Stuck Awaiting Underwriting",
+   "#199850 Application submission issues reported in last 24 hours",
+   "#232735 Impact of Unit Type Code Rename in Yardi on Findig",
+   "#224431 Merge Prospect Issue"
+  ],
+  "pm_friction_count": 8,
+  "classification": "Negative",
+  "total_open_issues_90d": 58,
+  "note": "Independently re-pulled and re-adjudicated this run (live Pylon, exact account id, all pages). Pylon name 'McKinley Property Management'; resolved by domain. 58 open, mostly Slack-sourced (treated PM-side). Pets dropped: #220866 Link List for Multiple Applications and #218131 Pet verification stuck in application (category pets_disputes_consumer_requests). Claim confirmed except #238909 (2125550188 number pushing over to Guest Cards), which is a low-priority feature request, not counted; replaced by #224431 (Yardi merge-prospect integration bug, reopened, fix deployed). Borderline, not counted: #246474 Early alert: support tickets slowing down, #238364 / #242487 support queue backlog (support-delay escalations, no platform defect), #244070 Support & Escalation Analysis (CSM-originated), #200904 Permission Details (not read). Negative with wide margin."
+ }
+}
