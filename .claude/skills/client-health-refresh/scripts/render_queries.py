@@ -8,11 +8,13 @@ the result as the JSON named in that query's "output".
 Placeholders: {window_start} {window_end}  = trailing window ending on the run date
               {prior_start} {prior_end}    = the equal-length window immediately before it
               {revenue_year}               = the run date's year
+              plus any config.window.date_placeholders ({name: days offset from the run date}) and
+              config.sql_fragments ({name: repo-relative .sql file}) -- shared SQL such as the pet filter
               {month_start} {next_month_start} = first day of the run date's month / of the next
 """
 import datetime as dt, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from ch_common import parse_run, SKILL_DIR
+from ch_common import parse_run, SKILL_DIR, REPO_ROOT
 
 QUERY_DIR = os.path.join(SKILL_DIR, "queries")
 
@@ -26,6 +28,10 @@ def placeholders(run):
         "prior_start": (prior_end - dt.timedelta(days=days)).isoformat(),
         "prior_end": prior_end.isoformat(),
         "revenue_year": str(run.date.year),
+        **{k: (run.date + dt.timedelta(days=int(v))).isoformat()
+           for k, v in run.cfg["window"].get("date_placeholders", {}).items()},
+        **{k: open(os.path.join(REPO_ROOT, v), encoding="utf-8").read().strip()
+           for k, v in run.cfg.get("sql_fragments", {}).items() if not k.startswith("_")},
         "month_start": run.date.replace(day=1).isoformat(),
         "next_month_start": (run.date.replace(day=28) + dt.timedelta(days=4)).replace(day=1).isoformat(),
     }

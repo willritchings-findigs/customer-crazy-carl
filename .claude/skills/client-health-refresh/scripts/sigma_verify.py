@@ -73,13 +73,40 @@ def split_top(s):
     return out
 
 
+def final_select_list(sql):
+    """Select list of the outermost final SELECT (after any WITH ... CTEs): the last SELECT at
+    parenthesis depth 0 outside quotes, up to the next depth-0 FROM."""
+    depth, q, sel, frm = 0, None, [], []
+    up = sql.upper()
+    for i, ch in enumerate(sql):
+        if q:
+            if ch == q:
+                q = None
+            continue
+        if ch in "'\"":
+            q = ch
+        elif ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+        elif depth == 0 and (i == 0 or not (up[i - 1].isalnum() or up[i - 1] == "_")):
+            if up.startswith("SELECT", i) and not (up[i + 6:i + 7].isalnum()):
+                sel.append(i)
+            elif up.startswith("FROM", i) and not (up[i + 4:i + 5].isalnum()):
+                frm.append(i)
+    if not sel:
+        raise SystemExit("cannot find the top-level SELECT")
+    start = sel[-1] + 6
+    end = next((f for f in frm if f > start), None)
+    if end is None:
+        raise SystemExit("cannot find FROM after the top-level SELECT")
+    return sql[start:end]
+
+
 def aliases(sql):
-    """Output column aliases of the top-level SELECT, in order."""
-    m = re.search(r"^\s*SELECT\s+(.*?)\n\s*FROM\s", sql, re.S | re.I)
-    if not m:
-        raise SystemExit("cannot find the top-level SELECT ... FROM")
+    """Output column aliases of the outermost SELECT, in order (works with WITH ... CTEs)."""
     names = []
-    for item in split_top(m.group(1)):
+    for item in split_top(final_select_list(sql)):
         a = re.search(r'\bAS\s+"?(\w+)"?\s*$', item.strip(), re.I)
         if not a:
             raise SystemExit(f"select item has no AS alias: {item.strip()[:80]}")

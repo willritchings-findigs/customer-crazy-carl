@@ -6,7 +6,8 @@ Every script takes the same two flags:
 """
 import argparse, datetime as dt, json, operator, os
 
-SKILL_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Other CS/CX skills reuse these helpers by setting CX_SKILL_DIR to their own skill folder.
+SKILL_DIR = os.environ.get("CX_SKILL_DIR") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO_ROOT = os.environ.get("REPO_ROOT") or os.path.dirname(os.path.dirname(os.path.dirname(SKILL_DIR)))
 CH_DIR = os.path.join(REPO_ROOT, "O-output", "cs-client-health-scoring")
 HIST = os.path.join(CH_DIR, "history")
