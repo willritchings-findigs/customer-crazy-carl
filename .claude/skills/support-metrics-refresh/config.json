@@ -119,10 +119,15 @@
         "output": "s7_funnel_<MMDD>.json",
         "purpose": "applicants who started an application: d30, d7 and the same 12 weekly buckets"
       },
-      "s8_priority_agent": {
+      "s8_priority": {
         "element": "support_cases_bi",
-        "output": "s8_priority_agent_<MMDD>.json",
-        "purpose": "d30 counts by priority x agent x segment, with open counts and resolution hours"
+        "output": "s8_priority_<MMDD>.json",
+        "purpose": "d30 ticket and open counts by priority, for all tickets and per segment"
+      },
+      "s8_agents": {
+        "element": "support_cases_bi",
+        "output": "s8_agents_<MMDD>.json",
+        "purpose": "d30 ticket/open counts and resolution hours by agent: top N per view (all, PM, applicant), plus Unassigned and Other, ranked in SQL"
       },
       "s9_category_segment": {
         "element": "support_cases_bi",
@@ -221,7 +226,8 @@
   },
   "breakdowns": {
     "top_agents": 10,
-    "by_agent_rows": 20
+    "by_agent_rows": 20,
+    "_note": "by_agent shows the top by_agent_rows (named) agents; agent_breakdown shows top_agents named + Unassigned + Other. s8_agents ranks the top by_agent_rows per view in SQL."
   },
   "sla": {
     "_decision": "Will, 2026-11-12 (honest version): share of tickets whose first response came within the channel's target; pet and spam excluded; a ticket with no first response counts as a miss. Replaces the 2026-09-28 method (answered tickets only, pet and spam included).",

@@ -4,10 +4,11 @@ Reuses the client-health-refresh helpers (run date, config, query rendering, Sig
 checks, credentials) pointed at THIS skill's folder via CX_SKILL_DIR, and adds the SQL pieces that
 are generated from config.json rather than written by hand:
   {sla_target_hours}    CASE on channel -> first-response target in hours (config.channels)
-  {friction_case}       CASE on category + subject keywords -> theme (config.friction_themes)
+  {friction_case}       CASE on columns cat + subj (lowercased subject) -> theme (config.friction_themes)
   {friction_categories} the categories that have themes
   {na_statuses}         Needs Attention statuses (config.needs_attention)
   {na_limit}            Needs Attention list length
+  {top_agents}          named agents ranked per view in s8_agents (config.breakdowns.by_agent_rows)
 Every script imports this module first.
 """
 import json, os, sys
@@ -38,8 +39,8 @@ def generated_fragments(cfg):
     whens = []
     for catg, themes in ft.items():
         for theme, pats in themes:
-            likes = " OR ".join(f"LOWER({CASE_SUBJ}) LIKE {q(p)}" for p in pats)
-            whens.append(f"WHEN {CASE_CAT} = {q(catg)} AND ({likes}) THEN {q(theme)}")
+            likes = " OR ".join(f"subj LIKE {q(p)}" for p in pats)
+            whens.append(f"WHEN cat = {q(catg)} AND ({likes}) THEN {q(theme)}")
     friction = "CASE " + " ".join(whens) + " ELSE 'Other' END"
     na = cfg["needs_attention"]
     return {
@@ -48,6 +49,7 @@ def generated_fragments(cfg):
         "friction_categories": ", ".join(q(c) for c in ft),
         "na_statuses": ", ".join(q(s) for s in na["waiting_on_findigs_statuses"]),
         "na_limit": str(int(na["limit"])),
+        "top_agents": str(int(cfg["breakdowns"]["by_agent_rows"])),
     }
 
 
