@@ -231,7 +231,9 @@
   },
   "sla": {
     "_decision": "Will, 2026-11-12 (honest version): share of tickets whose first response came within the channel's target; pet and spam excluded; a ticket with no first response counts as a miss. Replaces the 2026-09-28 method (answered tickets only, pet and spam included).",
-    "include_unanswered_as_miss": true
+    "include_unanswered_as_miss": true,
+    "requester_segments": "segments.reported",
+    "_decision_2": "Will, 2026-11-12 (second decision): property-manager and applicant tickets only. Tickets with no requester type were mostly automated or internal email with no first response, which pulled email SLA to 76.5%."
   },
   "tickets_per_100_apps": {
     "_definition": "Pet- and spam-excluded tickets per 100 applicants who started an application (User Application Funnel, first event in the same window). Reproduces the 2026-09-28 values to within a point; applicant_only uses applicant tickets only."

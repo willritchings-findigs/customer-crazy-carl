@@ -15,7 +15,8 @@ SELECT
   CONCAT('w', CAST(week_idx AS VARCHAR)) AS bucket,
   COUNT(*) AS ticket_volume,
   MEDIAN(ttfr_min) AS median_ttfr_min,
-  SUM(hit) AS sla_hits,
+  COUNT(CASE WHEN segment IN ('property_manager', 'applicant') THEN 1 END) AS sla_n,
+  SUM(CASE WHEN segment IN ('property_manager', 'applicant') THEN hit ELSE 0 END) AS sla_hits,
   AVG(CASE WHEN segment = 'property_manager' THEN csat END) AS pm_csat,
   AVG(CASE WHEN segment = 'applicant' THEN csat END) AS applicant_csat
 FROM base

@@ -103,10 +103,15 @@ def build(run, live, fcr):
                 f"no sub-category, OR Case Subject mentions 'pet' ({s4['n_d7']:,} pet tickets excluded from d7, "
                 f"{s4['n_d30']:,} from d30). Spam excluded everywhere except the By Category list "
                 f"({spam7:,} d7 / {spam30:,} d30).")
-    sla_rows = lambda pred, w: (sum(r[f"hit_{w}"] for r in s5 if pred(r)), sum(r[f"n_{w}"] for r in s5 if pred(r)))
+    # SLA counts property-manager and applicant tickets only (Will, 2026-11-12): tickets with no
+    # requester type are mostly automated or internal mail that never gets a first response.
+    sla_rows = lambda pred, w: (sum(r[f"hit_{w}"] for r in s5 if r["segment"] in reported and pred(r)),
+                                sum(r[f"n_{w}"] for r in s5 if r["segment"] in reported and pred(r)))
     sla = lambda pred, w, f=PCT: f(*sla_rows(pred, w))
     sla_note = ("Share of tickets whose first response came within the channel target (chat and Slack 2 min, email "
-                "and form 4 h). Pet and spam excluded; a ticket with no first response counts as a miss. Exact census "
+                "and form 4 h), property-manager and applicant tickets only. Pet and spam excluded; a ticket with no "
+                "first response counts as a miss. Tickets with no requester type (mostly automated or internal mail) "
+                "are left out. Exact census "
                 f"from Sigma Support Cases BI, refreshed {run.iso}. Method changed 2026-11-12 (Will): the earlier "
                 "figure counted answered tickets only and included pet and spam.")
     kpis = {
@@ -126,7 +131,7 @@ def build(run, live, fcr):
                                   "d7": sla(lambda r, s=s: r["segment"] == s, "d7", PCT2)} for s in reported},
                            "note": "Segment = Pylon requester type, bucketed by shared/sql/support_segment.sql "
                                    "(property_manager includes Landlord / Portfolio Admin variants; applicant "
-                                   "includes Guarantor). Tickets with no requester type are in the overall figure only."},
+                                   "includes Guarantor). The overall figure is these two segments combined."},
             "last_computed": run.iso, "note": sla_note},
         "fcr_pct": {"d7": PCT(fcr["d7"]["fcr_n"], fcr["d7"]["closed_n"]), "d30": PCT(fcr["d30"]["fcr_n"], fcr["d30"]["closed_n"]),
                     "n_d7": fcr["d7"]["closed_n"], "n_d30": fcr["d30"]["closed_n"],
@@ -202,7 +207,7 @@ def build(run, live, fcr):
         w = s6[f"w{k}"]
         trend.append({"week_start": (anchor - dt.timedelta(days=7 * (k + 1))).isoformat(),
                       "ticket_volume": w["ticket_volume"], "median_ttfr_min": R1(w["median_ttfr_min"]),
-                      "sla_pct": PCT(w["sla_hits"], w["ticket_volume"]), "pm_csat": R2(w["pm_csat"]),
+                      "sla_pct": PCT(w["sla_hits"], w["sla_n"]), "pm_csat": R2(w["pm_csat"]),
                       "applicant_csat": R2(w["applicant_csat"]),
                       "tickets_per_100_apps": PCT(w["ticket_volume"], s7[f"w{k}"])})
 

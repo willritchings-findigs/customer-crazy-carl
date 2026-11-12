@@ -22,7 +22,7 @@ Owner: Will Ritchings. Taken over from Emma Kyber's handoff.
 | Needs Attention requesters | Property managers and applicants only. Tickets with no requester type were mostly automated or internal email. |
 | Spam | Excluded from every figure except the By Category list (where it is its own row). The headline therefore equals the sum of By Channel, priority, agent and segment views. |
 | FCR, SLA, tickets per 100 apps | Rebuilt now rather than carried forward. |
-| SLA | "Honest version": pet and spam excluded; a ticket with no first response counts as a miss. |
+| SLA | "Honest version": pet and spam excluded; a ticket with no first response counts as a miss. Second decision: property-manager and applicant tickets only (tickets with no requester type are mostly automated or internal mail that never gets a first response; including them pulled email SLA 7d to 76.5%). Trend SLA uses the same rule. |
 | Slack | Successes post to `#p-account-health` (`C0B4QMETZ52`); any stop or failure posts to `#gtm-automation-log` (`C0CJ1P9D0HE`). No DMs. |
 
 ## Method notes
@@ -55,14 +55,13 @@ Owner: Will Ritchings. Taken over from Emma Kyber's handoff.
 ## First automated run, 2026-11-12 (dry run)
 
 All 14 Sigma results fingerprint-verified, all build gates passed. Against the 10/29 record:
-tickets 30d 16,143 -> 15,325 (spam now excluded: 390), SLA 30d 83.1 -> 85.3 (new method),
+tickets 30d 16,143 -> 15,325 (spam now excluded: 390), SLA 30d 83.1 -> 89.0 (new method),
 FCR 30d 15.8 -> 14.5 and 7d 16.9 -> 8.2 (new scripted sample), applicant CSAT 3.41 -> 3.64,
 tickets per 100 applicants 27.7 -> 25.7. Needs Attention: 50 listed of 179 waiting, 79 stale.
 
+After the SLA requester change: SLA 30d 89.0%, 7d 88.8% (chat 83.9%, email 92.9%); PM 87.8%, applicant 89.8%.
+
 Open points for Will:
-- Email SLA 7d reads 76.5% (was 95.9%) because unset-requester email (automated and internal
-  mail) mostly never gets a first response and now counts as a miss. PM and applicant SLA are
-  87.8% and 89.8%. Option: exclude unset requesters from the SLA, as Needs Attention does.
 - The By Channel caption on the page says spam is included; the builder prompt to fix the
   caption is still to be written (display change, Base44 builder, Will runs it).
 

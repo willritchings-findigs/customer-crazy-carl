@@ -1,6 +1,6 @@
 # Support Metrics weekly refresh: 2026-11-12 (DRY RUN, nothing pushed)
 
-Record `support_overview` on SupportCache, computed 2026-11-12T17:15:30.000Z. Previous record computed 2026-10-29T21:13:17.000Z.
+Record `support_overview` on SupportCache, computed 2026-11-12T17:26:33.000Z. Previous record computed 2026-10-29T21:13:17.000Z.
 
 ## Headline numbers
 
@@ -9,8 +9,8 @@ Record `support_overview` on SupportCache, computed 2026-11-12T17:15:30.000Z. Pr
 | Tickets, 30d | 16,143 | 15,325 |
 | Tickets, 7d | 3,716 | 3,609 |
 | Median first response, 30d (min) | 2.0 | 1.0 |
-| SLA within target, 30d (%) | 83.1 | 85.3 |
-| SLA within target, 7d (%) | 85.3 | 85.8 |
+| SLA within target, 30d (%) | 83.1 | 89.0 |
+| SLA within target, 7d (%) | 85.3 | 88.8 |
 | FCR, 30d (%) | 15.8 | 14.5 |
 | FCR, 7d (%) | 16.9 | 8.2 |
 | PM CSAT, 30d | 4.41 | 4.49 |
