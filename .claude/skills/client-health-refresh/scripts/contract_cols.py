@@ -1,7 +1,7 @@
 """Sigma columns each element must have: everything config.json documents plus every quoted
 column identifier the query files use. Shared by contract_check.py and sigma_verify.py."""
 import os, re
-from ch_common import SKILL_DIR
+from ch_common import SKILL_DIR, REPO_ROOT
 
 
 def query_columns(cfg):
@@ -10,6 +10,9 @@ def query_columns(cfg):
     for name, q in cfg["sigma"]["queries"].items():
         el = cfg["sigma"]["elements"][q["element"]]
         sql = open(os.path.join(SKILL_DIR, "queries", name + ".sql"), encoding="utf-8").read()
+        for k, rel in cfg.get("sql_fragments", {}).items():
+            if not k.startswith("_"):
+                sql = sql.replace("{" + k + "}", open(os.path.join(REPO_ROOT, rel), encoding="utf-8").read())
         ids = {f'"{i}"' for i in re.findall(r'"([^"]+)"', sql) if i not in ("datamodel", el["id"])}
         out.setdefault(q["element"], set()).update(ids)
     return out

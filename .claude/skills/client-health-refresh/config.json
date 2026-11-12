@@ -629,5 +629,9 @@
   "failure_routing": {
     "success": "post alerts to alerts.slack_channel_id and write the weekly report",
     "any_stop_or_failure": "DM Will in Slack; post nothing to the channel"
+  },
+  "sql_fragments": {
+    "_note": "Shared SQL pasted into queries as {name}; see shared/sql/README.md. One pet filter for every dashboard.",
+    "pet_ticket": "shared/sql/pet_ticket.sql"
   }
 }
