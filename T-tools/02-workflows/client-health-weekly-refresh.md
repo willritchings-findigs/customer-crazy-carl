@@ -118,6 +118,28 @@ counted in either window.
 Chronological record of bugs found, decisions made, and why each standing rule in the skill
 exists. If you're recalibrating something or wondering "why does it do it this way," start here.
 
+**2026-11-12 — Gong strategic rows: committed builder; Findigs staff never count.** No builder
+for `gong_strategic_rows.json` was ever committed; every run since 9/14 had a sub-agent rewrite
+the call-to-account matching. Matched accounts went 57, 60, 51, **0** (10/05: every account's
+review-cadence and exec-sponsor bands silently carried forward), 35, 34, 27, 29, 29, although
+the Gong window was fixed at 6/10–9/08 until 10/28, so most swings were logic changes, not
+calls. The 10/28 version also credited exec titles of Findigs attendees, and Monday 11/09's
+version credited non-exec titles ("Project Coordinator") from another company on Maymont's
+calls. Decision (Will and Alex Schaper, 2026-11-12): Findigs employees are never counted or
+scored; the row measures whether Findigs' account team is engaging the client's
+decision-makers. Fix: `scripts/build_gong_strategic.py`, rules in `config.gong`; safety stop
+on zero matches or a drop below half of the prior run. Gong's party "affiliation" is
+Internal/External/Unknown, not a company name, so earlier "name matching" never matched
+anything: matching is by HubSpot company email domain, plus `account_domain_aliases`.
+Verified: on the 11/06 and 11/09 windows it matches the same 29 accounts as those runs and
+changes no dashboard band (the Findigs CEO attended two matched accounts' calls; both already
+had client execs).
+
+Still open (with Alex, not decided): count-based exec rule (2+ distinct client execs = Green),
+a weekly Gong-based multi-threaded score (that row is frozen from a one-time HubSpot pull), and
+expiry for bands that carry forward when no calls match (9 exec-sponsor bands still date from
+9/28). `client_attendees` / `exec_attendees` counts are already in the rows for that decision.
+
 **2026-11-06 — Sigma results were always hand-copied; now proven against Sigma.** The first
 cloud run stopped safely before pushing: the Sigma connector returns results under its size
 limit inline, so saving q1–q5, q7 and gate 6 meant the agent retyping ~200 rows each, which it

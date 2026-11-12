@@ -409,7 +409,7 @@ for a in accounts:
                 b, note = 'Yellow', (f"{n} real Gong call(s) matched in window, none titled as a business/exec review -- "
                                      f"e.g. {gs.get('sample_titles', [])[:3]}")
             strat['performance_review_cadence'] = {'band': b, 'note': note,
-                'source': f'Refreshed {W_DATE} -- Gong /v2/calls/extensive bulk pull, window {WINDOW}, domain/name-matched parties.'}
+                'source': f'Refreshed {W_DATE} -- Gong /v2/calls/extensive bulk pull, window {WINDOW}, client attendees matched by company email domain; Findigs staff excluded.'}
             n_touched['review_cadence'] += 1
         esa = strat.get('executive_sponsor_alignment')
         if isinstance(esa, dict) and esa.get('band'):
@@ -417,9 +417,9 @@ for a in accounts:
             if ex:
                 b, note = 'Green', f"{n} real Gong call(s) in window; exec-level attendee title(s) seen: {sorted(set(ex))[:4]}"
             else:
-                b, note = 'Red', f"{n} real Gong call(s) matched in window, no attendee carried an exec-level title in Gong's party data."
+                b, note = 'Red', f"{n} real Gong call(s) matched in window, no client attendee (Findigs staff excluded) carried an exec-level title in Gong's party data."
             strat['executive_sponsor_alignment'] = {'band': b, 'note': note,
-                'source': f'Refreshed {W_DATE} -- Gong /v2/calls/extensive bulk pull, window {WINDOW}, domain/name-matched parties.'}
+                'source': f'Refreshed {W_DATE} -- Gong /v2/calls/extensive bulk pull, window {WINDOW}, client attendees matched by company email domain; Findigs staff excluded.'}
             n_touched['exec_sponsor'] += 1
 
     flag = strat.get('csm_qualitative_risk_flag')

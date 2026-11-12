@@ -234,7 +234,29 @@
       "n_briefs_read",
       "rationale"
     ],
-    "sentiment_batches": 5
+    "sentiment_batches": 5,
+    "internal_email_domains": [
+      "findigs.com",
+      "findigsops.com"
+    ],
+    "free_email_domains": [
+      "gmail.com",
+      "yahoo.com",
+      "outlook.com",
+      "hotmail.com",
+      "icloud.com",
+      "aol.com",
+      "live.com",
+      "msn.com",
+      "me.com",
+      "comcast.net",
+      "protonmail.com"
+    ],
+    "min_matched_ratio_vs_prior": 0.5,
+    "_strategic_rows_note": "scripts/build_gong_strategic.py. Findigs employees never count (Gong 'Internal' or internal_email_domains); decided by Will and Alex Schaper 2026-11-12. Matching is by HubSpot company email domain only.",
+    "account_domain_aliases": {
+      "_note": "account name (resolved_name_sigma) -> extra email domains whose attendees count as that client, e.g. a parent company. Add only when confirmed; the builder prints candidate outside domains every run."
+    }
   },
   "pylon": {
     "open_states": [

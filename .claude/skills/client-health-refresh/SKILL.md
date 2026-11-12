@@ -145,10 +145,15 @@ matcher's ALIAS/BLOCK table is extended, never trimmed. Keep `hs_object_id` per 
 the baseline's `total_units_sold_hubspot` week over week; audit every change. Match counts
 should be near `config.hubspot.expected_matched_*`; unmatched accounts carry forward with a note.
 
-### Gong — `scripts/gong_pull.py`
-Pull slim calls for the window, then build `gong_strategic_rows.json` per matched account:
-calls_90d, review-call titles (`config.gong.review_call_title_regex`), exec titles seen
-(`config.gong.exec_title_regex`), sample titles.
+### Gong — `scripts/gong_pull.py`, then `scripts/build_gong_strategic.py`
+Pull slim calls for the window, then run
+`python3 scripts/build_gong_strategic.py --run-date <date> --scratch <dir>` (after
+`match_hs_accounts.py`; it needs `hs_account_match.json`). It writes `gong_strategic_rows.json`
+per matched account: calls, review-call titles, client exec titles, sample titles. Never write
+this file any other way. Findigs employees never count toward matching or exec credit
+(`config.gong.internal_email_domains` or Gong label "Internal"). If it exits non-zero (zero
+matches, or a sharp drop vs the prior run), stop and DM Will. Copy its "outside domains" list
+into the weekly report; Will decides which belong in `config.gong.account_domain_aliases`.
 
 ### Sentiment scans (sub-tasks): Slack, Gong, Pylon
 Batch inputs use `resolved_name_sigma` as the account key, never `input_name`. Never trust a
