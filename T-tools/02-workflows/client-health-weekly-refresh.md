@@ -135,6 +135,13 @@ Verified: on the 11/06 and 11/09 windows it matches the same 29 accounts as thos
 changes no dashboard band (the Findigs CEO attended two matched accounts' calls; both already
 had client execs).
 
+Same day: the exec-title pattern in config had no word boundaries, so "coo" matched
+"Coordinator" and "cto" matched "Director"; coordinators earned exec credit (from at least
+11/06). Fixed to whole words; any "Director" title now counts (was only "director of"). Effect on
+the dashboard: Aulder Property Management's exec-sponsor band goes Green -> Red on the next run
+(its only "exec" was an Operations Coordinator). Aliases added (Will): Maymont Homes <-
+brookfieldproperties.com (parent company), Western Wealth Parent <- westernwealthcapital.com.
+
 Still open (with Alex, not decided): count-based exec rule (2+ distinct client execs = Green),
 a weekly Gong-based multi-threaded score (that row is frozen from a one-time HubSpot pull), and
 expiry for bands that carry forward when no calls match (9 exec-sponsor bands still date from

@@ -226,7 +226,7 @@
   },
   "gong": {
     "review_call_title_regex": "QBR|EBR|business review|quarterly review|exec review|account review|performance review",
-    "exec_title_regex": "ceo|cfo|coo|cto|chief|president|founder|owner|principal|vp|evp|svp|managing director|managing partner|director of",
+    "exec_title_regex": "\\bceo\\b|\\bcfo\\b|\\bcoo\\b|\\bcto\\b|\\bchief\\b|\\bpresident\\b|\\bfounder\\b|\\bowner\\b|\\bprincipal\\b|\\bvp\\b|\\bevp\\b|\\bsvp\\b|\\bmanaging director\\b|\\bmanaging partner\\b|\\bdirector\\b",
     "sentiment_result_fields": [
       "account",
       "classification",
@@ -262,7 +262,8 @@
       "Western Wealth Parent": [
         "westernwealthcapital.com"
       ]
-    }
+    },
+    "_exec_title_regex_note": "Whole words only (2026-11-12): without word boundaries 'coo' matched 'Coordinator' and 'cto' matched 'Director', so coordinators earned exec credit. Any title with the word Director counts (formerly only 'director of', which treated 'Director, Operations' differently from 'Director of Operations')."
   },
   "pylon": {
     "open_states": [
