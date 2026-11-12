@@ -74,6 +74,8 @@ Open points for Will:
 
 ## Incident log
 
+- 2026-11-12, first cloud run (fired by hand): `build_record.py` failed to start on the cloud's Python 3.11 (a nested-quote f-string that only parses on 3.12+). The run rewrote that one line with no logic change, all 21 gates and the readback passed, and it reported the fix in `#gtm-automation-log` (commit 96163d8). The live record matched the local build field for field. Will then allowed this kind of small, logic-free fix in unattended runs (rule in `CLAUDE.md`, added to all three routine prompts). All skill scripts were scanned for the same quoting; none left.
+
 - 2026-11-12, first live push: Base44 rejected the PUT (422, nothing written) because ticket `age` must be a string; now sent as "90d". The fix briefly dropped `is_tes` from the tickets; the readback verify caught it (50 differences), the record was rebuilt and re-pushed, and the second readback passed. The record was live with blank TES flags for about two minutes.
 
 - 2026-11-12: the 10/29 values had been hand-typed into a push script; queries recovered from

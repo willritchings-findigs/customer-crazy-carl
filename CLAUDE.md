@@ -25,6 +25,13 @@ Engineering handoff (2026-10). See `README.md` for what's in the repo.
 - **Every refresh starts with a contract check** (credentials, Base44 fields, Sigma columns,
   HubSpot properties) and stops on any drift.
 - Scripts run in place and take `--run-date` / `--scratch`; paths resolve from the repo.
+- **Small fixes during an unattended run are allowed** (Will, 2026-11-12). A run may fix a script
+  that fails to run for a mechanical reason (syntax or Python-version compatibility, an import,
+  a path, a typo) when the fix changes no logic. It must not touch queries, config values,
+  thresholds, gates, scoring, labels, or account data, and must never edit a check to make it
+  pass. Every gate and the readback verify still have to pass afterwards. Commit the fix as its
+  own commit saying what broke and why the change is logic-free, and post that note to
+  `#gtm-automation-log` even when the run succeeds. Anything bigger: stop and post the failure.
 
 ## Slack routing (all refreshes)
 
