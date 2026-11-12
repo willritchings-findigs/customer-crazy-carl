@@ -1,0 +1,548 @@
+{
+ "run_date": "2026-11-10",
+ "health_computed_at": "2026-11-09T14:42:04Z",
+ "match_file": "/home/user/customer-crazy-carl/O-output/cs-client-health-scoring/history/2026-11-09/hs_account_match.json",
+ "red_count": 21,
+ "remove_at_risk": [
+  "MJW Investments Parent",
+  "Sentral"
+ ],
+ "add_at_risk": [
+  {
+   "entry": {
+    "name": "Firethorn Realty",
+    "hubspot_company_id": "308098546368",
+    "status": "At Risk (Client Health Red)",
+    "acv": 9630.0,
+    "segment": "SMB",
+    "product_segment": null,
+    "reason": null,
+    "sub_reasons": [],
+    "reason_source": "account_health_cache",
+    "effective_churn_date": null,
+    "csm": "Javier Camargo",
+    "hubspot_url": "https://app-na2.hubspot.com/contacts/243635806/record/0-2/308098546368",
+    "acv_resolved": true,
+    "is_ftl": null
+   },
+   "evidence": {
+    "weeks_red": 2,
+    "company_from": "HubSpot exact company name",
+    "deals": "1 Closed Won deal(s)"
+   }
+  }
+ ],
+ "add_churned": [],
+ "candidates": [
+  {
+   "hubspot_company_id": "153993774785",
+   "name": "Jaqua Realtors",
+   "churn_date": "2025-11-25",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-11-25 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "154088720120",
+   "name": "United Metro Properties",
+   "churn_date": "2025-09-15",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-09-15 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "154307748553",
+   "name": "Block Real Estate Services",
+   "churn_date": "2025-01-09",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-01-09 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "154294967003",
+   "name": "Block Multifamily Group",
+   "churn_date": "2025-01-09",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-01-09 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "158404824776",
+   "name": "Britt Lake Apartments",
+   "churn_date": "2025-09-15",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-09-15 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "158404824800",
+   "name": "Carden Springs",
+   "churn_date": "2025-09-15",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-09-15 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "158226768577",
+   "name": "Hall of Fame apartments",
+   "churn_date": "2025-09-15",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-09-15 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "158238046961",
+   "name": "Park Creek Apartment",
+   "churn_date": "2025-10-16",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-10-16 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "158187403996",
+   "name": "Stone Oak Property Management",
+   "churn_date": "2025-11-25",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-11-25 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "338238217958",
+   "name": "West USA Realty",
+   "churn_date": "2023-04-15",
+   "account_status": "Live",
+   "why_not_added": "churn date 2023-04-15 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "163992148690",
+   "name": "Hoban Management",
+   "churn_date": "2025-07-29",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-07-29 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "163768201918",
+   "name": "Twin Cities Home Rental",
+   "churn_date": "2025-04-01",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-01 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "164080213695",
+   "name": "Intempus Property Management",
+   "churn_date": "2025-01-27",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-01-27 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "164080213704",
+   "name": "Carolina Moves",
+   "churn_date": "2025-09-03",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-09-03 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "163912020696",
+   "name": "Alliance Property Management (owned by PURE)",
+   "churn_date": "2025-04-01",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-01 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "163995723494",
+   "name": "Structure Properties",
+   "churn_date": "2025-05-15",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-05-15 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166644820676",
+   "name": "Liberty Management Inc",
+   "churn_date": "2025-01-01",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-01-01 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166598771396",
+   "name": "Bluewater Property Management",
+   "churn_date": "2022-08-18",
+   "account_status": "Disqualified",
+   "why_not_added": "rejected: Bluewater Property Management: confirmed false positive 2026-09-24 (churn stamp cleared 2026-08-07; HubSpot flag never fixed); churn date 2022-08-18 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166656834255",
+   "name": "Silver River Property Management",
+   "churn_date": "2025-02-04",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-02-04 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166631863006",
+   "name": "Long & Foster Real Estate",
+   "churn_date": "2025-09-26",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-09-26 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166631892701",
+   "name": "Scotia Group Management",
+   "churn_date": "2025-03-07",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-03-07 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166571693759",
+   "name": "Sullivan Property Management",
+   "churn_date": "2025-07-30",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-07-30 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166658658000",
+   "name": "GID Investment Advisors",
+   "churn_date": "2024-10-25",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2024-10-25 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166645194467",
+   "name": "Bennett Property Management - acquired by PURE",
+   "churn_date": "2025-07-29",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-07-29 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166644757196",
+   "name": "Augusta Rental Homes",
+   "churn_date": "2025-07-16",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-07-16 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166684186348",
+   "name": "Advanced Property Management",
+   "churn_date": "2023-12-26",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2023-12-26 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166644920022",
+   "name": "The Bergen Grand",
+   "churn_date": "2025-04-18",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-18 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166664085240",
+   "name": "Real Property Management Rental Direction",
+   "churn_date": "2025-04-18",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-18 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166645206716",
+   "name": "Western States Lodging & Management",
+   "churn_date": "2025-04-07",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-07 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166658673379",
+   "name": "Real Property Management Three Bridges",
+   "churn_date": "2025-08-14",
+   "account_status": "Onboarding",
+   "why_not_added": "churn date 2025-08-14 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166553648838",
+   "name": "The PEAK Group Inc",
+   "churn_date": "2025-02-06",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-02-06 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166682192621",
+   "name": "Cross Properties",
+   "churn_date": "2025-05-22",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-05-22 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166598817496",
+   "name": "Schroeder Management",
+   "churn_date": "2024-08-19",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2024-08-19 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166664347380",
+   "name": "Bertram",
+   "churn_date": "2025-02-03",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-02-03 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166598847221",
+   "name": "Sunrise Fountains Apartments",
+   "churn_date": "2025-05-28",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-05-28 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166684219121",
+   "name": "Divvy Homes - acquired by Maymont",
+   "churn_date": "2025-03-31",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-03-31 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "333146986199",
+   "name": "Dix Road Property Management, LLC",
+   "churn_date": "2025-10-02",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-10-02 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166658707175",
+   "name": "Hershey Real Estate",
+   "churn_date": "2025-06-24",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-06-24 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166645513918",
+   "name": "PF Holdings - Landmark Square Apartments",
+   "churn_date": "2023-03-23",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2023-03-23 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166645513920",
+   "name": "The Klotz Group of Companies",
+   "churn_date": "2025-01-01",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-01-01 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166658707188",
+   "name": "Peacock Capital",
+   "churn_date": "2025-02-12",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-02-12 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166631946972",
+   "name": "WestMark Realtors",
+   "churn_date": "2025-04-09",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-09 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166656635616",
+   "name": "CWS Capital Partners LLC",
+   "churn_date": "2024-08-12",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2024-08-12 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166656538298",
+   "name": "APG Living",
+   "churn_date": "2025-08-13",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-08-13 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166682233551",
+   "name": "Airport Center Office Building",
+   "churn_date": "2025-02-14",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-02-14 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166647376599",
+   "name": "Poplar Homes",
+   "churn_date": "2025-02-11",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-02-11 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166684220136",
+   "name": "DBC Communities",
+   "churn_date": "2025-04-15",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-15 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166631946992",
+   "name": "Willner Realty & Development Co (WRDC)",
+   "churn_date": "2025-02-12",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-02-12 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166664122100",
+   "name": "Timber Pointe Apartment Homes",
+   "churn_date": "2025-04-18",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-18 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166684220146",
+   "name": "Best Rental Services",
+   "churn_date": "2025-01-29",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-01-29 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166658708189",
+   "name": "The Prager Group",
+   "churn_date": "2025-05-07",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-05-07 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166598848243",
+   "name": "480RealtyPM",
+   "churn_date": "2025-04-18",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-18 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166647377600",
+   "name": "Zendoor",
+   "churn_date": "2025-05-14",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-05-14 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166658708199",
+   "name": "Boutique Apartments",
+   "churn_date": "2024-08-06",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2024-08-06 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166647377620",
+   "name": "Apartments by Tonti",
+   "churn_date": "2025-04-15",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-04-15 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166664123107",
+   "name": "VRG Management",
+   "churn_date": "2025-07-07",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-07-07 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166645514941",
+   "name": "Oakloop Properties",
+   "churn_date": "2025-03-12",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-03-12 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166656636657",
+   "name": "La Colonia Mobile Home Park",
+   "churn_date": "2025-09-26",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-09-26 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166647377656",
+   "name": "New Horizons Housing",
+   "churn_date": "2025-06-03",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-06-03 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166554034879",
+   "name": "Lautrec",
+   "churn_date": "2025-07-02",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-07-02 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166721054422",
+   "name": "GEM Management, LLC",
+   "churn_date": "2025-05-12",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-05-12 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166763642574",
+   "name": "Peak Capital",
+   "churn_date": "2025-02-06",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-02-06 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166726917848",
+   "name": "Wood Partners LLC",
+   "churn_date": "2025-04-21",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-04-21 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166721131214",
+   "name": "Ameritex Property Management - acquired by HRG",
+   "churn_date": "2024-08-14",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2024-08-14 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166726917852",
+   "name": "Altman Companies (Acquired by RAM Partners)",
+   "churn_date": "2025-01-01",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-01-01 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166721131219",
+   "name": "Buckingham Property Management",
+   "churn_date": "2024-07-29",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2024-07-29 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166752662225",
+   "name": "Pangea Real Estate",
+   "churn_date": "2025-05-12",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2025-05-12 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "166728804071",
+   "name": "Echelon Property Group",
+   "churn_date": "2024-08-12",
+   "account_status": "Prospect",
+   "why_not_added": "churn date 2024-08-12 is older than 30 days"
+  },
+  {
+   "hubspot_company_id": "178672381645",
+   "name": "Volker",
+   "churn_date": "2025-12-05",
+   "account_status": "Disqualified",
+   "why_not_added": "churn date 2025-12-05 is older than 30 days"
+  }
+ ],
+ "ftl_candidates": [],
+ "churned_on_page_but_hubspot_status_live": [
+  "33 Realty Management",
+  "Advantage Property Management GA",
+  "Alliance Property Management, Inc.",
+  "Beyond Property Management",
+  "Chase International Property Management",
+  "Doorby Property Management",
+  "ERA Old South Properties",
+  "Foundation PM",
+  "Groma",
+  "HighPoint Real Estate",
+  "MT Properties Group",
+  "Metropolitan Holdings",
+  "Meybohm Bridges DBA Keyway Property Management",
+  "Ninety Nine Capital dba Alna Management",
+  "Orange Property Management",
+  "PFT Properties",
+  "Real Property Management - Viking (XPACE, LLC)",
+  "Real Property Management Agile",
+  "Real Property Management Instant Equity",
+  "Real Property Management Rental Solutions",
+  "Renters Warehouse Corporate",
+  "Sound City Realty"
+ ],
+ "churned_on_page_but_hubspot_not_churned": [],
+ "flags": []
+}
