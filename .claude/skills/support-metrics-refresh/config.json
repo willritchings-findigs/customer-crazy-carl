@@ -239,15 +239,21 @@
   "fcr": {
     "_definition": "Emma, 2026-09-22: share of closed tickets resolved in 2 or fewer agent replies. Pylon has no bulk touch count, so each run samples closed tickets through the Pylon connector (message history included) and scripts/fcr_sample.py counts agent replies.",
     "max_agent_replies": 2,
-    "sample_pages": {
-      "d7": 2,
-      "d30_earlier": 3
-    },
     "page_size": 100,
     "agent_reply": "message where from_customer is false, author_type is not 'system', and is_private is false",
     "exclude_tags": [
       "Spam"
-    ]
+    ],
+    "sample_days_ago": [
+      2,
+      5,
+      10,
+      16,
+      22,
+      28
+    ],
+    "start_hour_utc": 13,
+    "_sample_note": "One page per sampled day, oldest first from start_hour_utc (US morning). Days 2 and 5 form d7; all six form d30, each day weighted equally. Tickets with no public agent reply are left out of the rate."
   },
   "friction_themes": {
     "_note": "Keyword rules on lower(CASE_SUBJECT), first match wins, in order. Rebuilt 2026-11-12 under the 2026-09-24 theme names (the original rules were never saved). 'Other' is the expected long tail of one-off subjects.",
@@ -531,6 +537,10 @@
       ]
     ]
   },
+  "friction_category_labels": {
+    "_note": "Friction panel label where it differs from the By Category label (that one describes the pet-excluded remainder).",
+    "pets_disputes_consumer_requests": "Pets disputes / consumer requests"
+  },
   "validation": {
     "max_week_over_week_volume_change_pct": 40,
     "_wow_note": "Stop if d30 ticket volume moves more than this vs the live record (likely a broken query or a filter change).",
@@ -538,7 +548,7 @@
   },
   "slack": {
     "success_channel_name": "#gtm-automation-log",
-    "success_channel_id": "TBD",
+    "success_channel_id": "C0CJ1P9D0HE",
     "failure_dm_user": "U0BQ5AZK284"
   }
 }

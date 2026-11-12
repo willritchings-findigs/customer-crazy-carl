@@ -8,6 +8,7 @@ WITH base AS (
   WHERE {pylon_base}
     AND "inode-1dBuhhkgQkWXslu27HE64N/CREATED_AT" >= '{d30_start}' AND "inode-1dBuhhkgQkWXslu27HE64N/CREATED_AT" < '{anchor}'
     AND NOT ({pet_ticket})
+    AND COALESCE("inode-1dBuhhkgQkWXslu27HE64N/CASE_CATEGORY", '') <> 'spam'
 ),
 agg AS (
   SELECT 'all' AS view, agent, COUNT(*) AS n, SUM(is_open) AS open_n, SUM(res_hours) AS res_sum, COUNT(res_hours) AS res_n FROM base GROUP BY agent

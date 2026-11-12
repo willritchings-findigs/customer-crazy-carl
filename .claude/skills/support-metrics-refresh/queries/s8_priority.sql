@@ -7,6 +7,7 @@ WITH base AS (
   WHERE {pylon_base}
     AND "inode-1dBuhhkgQkWXslu27HE64N/CREATED_AT" >= '{d30_start}' AND "inode-1dBuhhkgQkWXslu27HE64N/CREATED_AT" < '{anchor}'
     AND NOT ({pet_ticket})
+    AND COALESCE("inode-1dBuhhkgQkWXslu27HE64N/CASE_CATEGORY", '') <> 'spam'
 )
 SELECT 'all' AS view, priority AS priority, COUNT(*) AS n, SUM(is_open) AS open_n FROM base GROUP BY priority
 UNION ALL
