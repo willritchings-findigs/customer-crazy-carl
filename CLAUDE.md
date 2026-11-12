@@ -44,6 +44,9 @@ Engineering handoff (2026-10). See `README.md` for what's in the repo.
 
 - Client Health: `docs/client-health/` (published to Notion; see its README). After any
   `config.json` change, run `python3 docs/client-health/build_docs.py` and republish.
+- Support Metrics: `docs/support-metrics/`; Churn Analysis: `docs/churn-analysis/` (both published to
+  Notion, hand-written: after a rule change in a skill's `config.json`, update the matching doc line in
+  the same commit and republish).
 
 ## Skills
 
