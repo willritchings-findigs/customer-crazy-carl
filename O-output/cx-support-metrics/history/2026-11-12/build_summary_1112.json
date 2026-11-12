@@ -19,7 +19,7 @@
   "ok   no unknown channels ",
   "ok   unclassified requester types 0.05% <= 1.0% (values: agent 1, employer 2, other 3, pr 1)",
   "ok   d30 volume 15325 >= 5000",
-  "ok   d30 volume vs live 16143: -5.1% (limit +/-40%)",
+  "ok   d30 volume vs live 15325: +0.0% (limit +/-40%)",
   "ok   FCR sample has d7 and d30 tickets",
   "ok   Needs Attention list 50 = min(179 waiting, 50)"
  ],

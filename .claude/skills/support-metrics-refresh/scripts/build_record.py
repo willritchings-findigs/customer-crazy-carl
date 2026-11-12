@@ -83,9 +83,10 @@ def build(run, live, fcr):
     unknown_ch = sorted({r["channel"] for r in s3 if r["category"] != spam} - set(chans))
     g.check(not unknown_ch, f"no unknown channels {unknown_ch or ''}")
     other_share = 100.0 * s1.get("other", {}).get("n_d30", 0) / n30 if n30 else 100
+    other_vals = ", ".join("%s %s" % (r["user_type"], r["n_d30"]) for r in s13) or "none"
     g.check(other_share <= cfg["segments"]["max_other_share_pct"],
             f"unclassified requester types {other_share:.2f}% <= {cfg['segments']['max_other_share_pct']}%"
-            f" (values: {', '.join(f'{r['user_type']} {r['n_d30']}' for r in s13) or 'none'})")
+            f" (values: {other_vals})")
     g.check(n30 >= cfg["validation"]["min_d30_tickets"], f"d30 volume {n30} >= {cfg['validation']['min_d30_tickets']}")
     live_n30 = (live.get("kpis") or {}).get("ticket_volume", {}).get("d30")
     if live_n30:

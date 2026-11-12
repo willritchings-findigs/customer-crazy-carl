@@ -1,24 +1,24 @@
 # Support Metrics weekly refresh: 2026-11-12
 
-Record `support_overview` on SupportCache, computed 2026-11-12T17:29:14.000Z. Previous record computed 2026-10-29T21:13:17.000Z.
+Record `support_overview` on SupportCache, computed 2026-11-12T17:53:12.000Z. Previous record computed 2026-11-12T17:29:14.000Z.
 
 ## Headline numbers
 
 | Metric | Before | Now |
 |---|---|---|
-| Tickets, 30d | 16,143 | 15,325 |
-| Tickets, 7d | 3,716 | 3,609 |
-| Median first response, 30d (min) | 2.0 | 1.0 |
-| SLA within target, 30d (%) | 83.1 | 89.0 |
-| SLA within target, 7d (%) | 85.3 | 88.8 |
-| FCR, 30d (%) | 15.8 | 14.5 |
-| FCR, 7d (%) | 16.9 | 8.2 |
-| PM CSAT, 30d | 4.41 | 4.49 |
-| Applicant CSAT, 30d | 3.41 | 3.64 |
-| Tickets per 100 applicants, 30d | 27.7 | 25.7 |
-| Handled without escalation, 30d (%) | 99.17 | 99.23 |
-| Median resolution, 30d (min) | 46.0 | 69.0 |
-| Pet SLA within 24h, 30d (%) | 65.1 | 63.6 |
+| Tickets, 30d | 15,325 | 15,325 |
+| Tickets, 7d | 3,609 | 3,609 |
+| Median first response, 30d (min) | 1.0 | 1.0 |
+| SLA within target, 30d (%) | 89.0 | 89.0 |
+| SLA within target, 7d (%) | 88.8 | 88.8 |
+| FCR, 30d (%) | 14.5 | 14.5 |
+| FCR, 7d (%) | 8.2 | 8.2 |
+| PM CSAT, 30d | 4.49 | 4.49 |
+| Applicant CSAT, 30d | 3.64 | 3.64 |
+| Tickets per 100 applicants, 30d | 25.7 | 25.7 |
+| Handled without escalation, 30d (%) | 99.23 | 99.23 |
+| Median resolution, 30d (min) | 69.0 | 69.0 |
+| Pet SLA within 24h, 30d (%) | 63.6 | 63.6 |
 
 Method notes: pet and spam excluded from every figure except By Category; SLA counts a ticket with no first response as a miss; FCR is a scripted sample (see the FCR note on the record).
 
@@ -55,7 +55,7 @@ Method notes: pet and spam excluded from every figure except By Category; SLA co
 - ok   no unknown channels 
 - ok   unclassified requester types 0.05% <= 1.0% (values: agent 1, employer 2, other 3, pr 1)
 - ok   d30 volume 15325 >= 5000
-- ok   d30 volume vs live 16143: -5.1% (limit +/-40%)
+- ok   d30 volume vs live 15325: +0.0% (limit +/-40%)
 - ok   FCR sample has d7 and d30 tickets
 - ok   Needs Attention list 50 = min(179 waiting, 50)
 
