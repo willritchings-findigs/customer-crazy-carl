@@ -60,7 +60,8 @@ if __name__ == "__main__":
         dest = os.path.join(C.HIST, run.iso)
         os.makedirs(dest, exist_ok=True)
         for fn in [f"churn_record_{run.mmdd}.json", f"build_summary_{run.mmdd}.json", f"baseline_{run.mmdd}.json",
-                   f"readback_{run.mmdd}.json", f"plan_{run.mmdd}.json", f"health_{run.mmdd}.json"]:
+                   f"readback_{run.mmdd}.json", f"plan_{run.mmdd}.json"]:
+            # not health_<MMDD>.json: Client Health archives its own record (3.5 MB); the plan keeps its computed_at
             if os.path.exists(run.path(fn)):
                 shutil.copy2(run.path(fn), dest)
         shutil.copy2(os.path.join(C.SKILL_DIR, "config.json"), os.path.join(dest, "config_used.json"))

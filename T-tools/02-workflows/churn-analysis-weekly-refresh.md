@@ -45,6 +45,15 @@ churned=true in HubSpot, 69 aren't on the page, and none has a churn date in the
 changed). A name-only join wrongly swapped MGC Leasing (page name vs Client Health name differ);
 the join now uses the HubSpot ID first.
 
+## First live cloud run (one-off test, run date 2026-11-10, fired 2026-11-12)
+
+Ran end to end in 2m13s with no stops and no fixes: credentials from network secrets, both Base44
+GETs, the HubSpot sync, all five gates, PUT 200, readback PASS, report and history committed
+(8ea80c8), success posted to `#p-account-health`. At Risk 22 -> 21 ($5.30M -> $4.92M), churn
+unchanged. Checked afterwards: the live record equals the run's build and the local dry run field
+for field, and recomputing from the live accounts reproduces every total. The archive also held a
+3.5 MB copy of the Client Health record; later runs no longer copy it.
+
 ## Open items
 
 - The 69 older churned=true companies need a human pass before any are approved.
