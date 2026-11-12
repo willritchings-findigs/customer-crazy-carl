@@ -1,0 +1,119 @@
+{
+ "d7": {
+  "closed_n": 170,
+  "fcr_n": 14
+ },
+ "d30": {
+  "closed_n": 505,
+  "fcr_n": 73
+ },
+ "by_segment": {
+  "property_manager": {
+   "closed_n": 219,
+   "fcr_n": 38
+  },
+  "applicant": {
+   "closed_n": 244,
+   "fcr_n": 13
+  }
+ },
+ "days": [
+  {
+   "k": 0,
+   "days_ago": 2,
+   "in_d7": true,
+   "window": [
+    "2026-11-10T13:00:00Z",
+    "2026-11-11T13:00:00Z"
+   ],
+   "pulled": 100,
+   "closed_that_day": 667,
+   "excluded_pet_or_spam": 9,
+   "no_agent_reply": 7,
+   "closed_n": 84,
+   "fcr_n": 9,
+   "rate": 0.10714285714285714
+  },
+  {
+   "k": 1,
+   "days_ago": 5,
+   "in_d7": true,
+   "window": [
+    "2026-11-07T13:00:00Z",
+    "2026-11-08T13:00:00Z"
+   ],
+   "pulled": 100,
+   "closed_that_day": 324,
+   "excluded_pet_or_spam": 14,
+   "no_agent_reply": 0,
+   "closed_n": 86,
+   "fcr_n": 5,
+   "rate": 0.05813953488372093
+  },
+  {
+   "k": 2,
+   "days_ago": 10,
+   "in_d7": false,
+   "window": [
+    "2026-11-02T13:00:00Z",
+    "2026-11-03T13:00:00Z"
+   ],
+   "pulled": 100,
+   "closed_that_day": 659,
+   "excluded_pet_or_spam": 15,
+   "no_agent_reply": 3,
+   "closed_n": 82,
+   "fcr_n": 16,
+   "rate": 0.1951219512195122
+  },
+  {
+   "k": 3,
+   "days_ago": 16,
+   "in_d7": false,
+   "window": [
+    "2026-10-27T13:00:00Z",
+    "2026-10-28T13:00:00Z"
+   ],
+   "pulled": 100,
+   "closed_that_day": 728,
+   "excluded_pet_or_spam": 13,
+   "no_agent_reply": 1,
+   "closed_n": 86,
+   "fcr_n": 15,
+   "rate": 0.1744186046511628
+  },
+  {
+   "k": 4,
+   "days_ago": 22,
+   "in_d7": false,
+   "window": [
+    "2026-10-21T13:00:00Z",
+    "2026-10-22T13:00:00Z"
+   ],
+   "pulled": 100,
+   "closed_that_day": 626,
+   "excluded_pet_or_spam": 18,
+   "no_agent_reply": 1,
+   "closed_n": 81,
+   "fcr_n": 10,
+   "rate": 0.12345679012345678
+  },
+  {
+   "k": 5,
+   "days_ago": 28,
+   "in_d7": false,
+   "window": [
+    "2026-10-15T13:00:00Z",
+    "2026-10-16T13:00:00Z"
+   ],
+   "pulled": 100,
+   "closed_that_day": 674,
+   "excluded_pet_or_spam": 7,
+   "no_agent_reply": 7,
+   "closed_n": 86,
+   "fcr_n": 18,
+   "rate": 0.20930232558139536
+  }
+ ],
+ "note": "Scripted sample of closed Pylon tickets, refreshed 2026-11-12: 6 sampled days (2, 5, 10, 16, 22, 28 days before the run), up to 100 tickets each from 13:00 UTC, 505 tickets rated. FCR = share answered in 2 or fewer public agent replies (Emma's 2026-09-22 definition); pet and spam excluded; tickets closed with no agent reply are left out. d7 uses the sampled days inside the last 7; each day counts equally."
+}

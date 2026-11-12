@@ -1,0 +1,74 @@
+{
+ "run_date": "2026-11-12",
+ "gates": [
+  "ok   segments sum to headline (15325 / 3609)",
+  "ok   category x channel minus spam (390 / 60) = headline",
+  "ok   category x segment = category x channel",
+  "ok   SLA base = headline",
+  "ok   priority rows (all) = 15325",
+  "ok   agent rows (all) = 15325",
+  "ok   priority rows (property_manager) = 5243",
+  "ok   agent rows (property_manager) = 5243",
+  "ok   priority rows (applicant) = 8731",
+  "ok   agent rows (applicant) = 8731",
+  "ok   trend week 0 = d7 volume",
+  "ok   funnel week 0 = d7 applicants",
+  "ok   trend has weeks w0-w11",
+  "ok   funnel has weeks w0-w11",
+  "ok   no unlabelled categories ",
+  "ok   no unknown channels ",
+  "ok   unclassified requester types 0.05% <= 1.0% (values: agent 1, employer 2, other 3, pr 1)",
+  "ok   d30 volume 15325 >= 5000",
+  "ok   d30 volume vs live 16143: -5.1% (limit +/-40%)",
+  "ok   FCR sample has d7 and d30 tickets",
+  "ok   Needs Attention list 50 = min(179 waiting, 50)"
+ ],
+ "failed": false,
+ "needs_attention": {
+  "listed": 50,
+  "waiting_within_90d": 179,
+  "stale_over_90d": 79
+ },
+ "open_backlog_by_status_0_30_30_90_over_90": {
+  "New": [
+   108,
+   85,
+   31
+  ],
+  "On Customer Success Team": [
+   15,
+   20,
+   42
+  ],
+  "On Engineering": [
+   14,
+   16,
+   31
+  ],
+  "On Hold": [
+   50,
+   30,
+   51
+  ],
+  "Waiting on Customer": [
+   487,
+   160,
+   123
+  ],
+  "Waiting on You": [
+   95,
+   68,
+   41
+  ]
+ },
+ "unclassified_requester_types": {
+  "agent": 1,
+  "employer": 2,
+  "other": 3,
+  "pr": 1
+ },
+ "applicants": {
+  "d7": 14188,
+  "d30": 59595
+ }
+}

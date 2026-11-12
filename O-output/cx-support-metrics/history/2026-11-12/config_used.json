@@ -1,0 +1,558 @@
+{
+  "_about": "Layer 2 (exact logic + configuration) for support-metrics-refresh. Every value here changes what gets computed or pushed; changed only by commit. Decisions: Will, 2026-11-12 (see T-tools/02-workflows/support-metrics-weekly-refresh.md).",
+  "_config_version": "2026-11-12",
+  "target": {
+    "api_base": "https://findigs-growth-hub.base44.app/api",
+    "app_id": "6a01dddd52a74acb4fd153bd",
+    "entity": "SupportCache",
+    "record_id": "6ab2a47fe51f717a0cccd58d",
+    "cache_key": "support_overview",
+    "dashboard_url": "https://findigs-growth-hub.base44.app/cx/support-metrics",
+    "managed_fields": [
+      "computed_at",
+      "kpis",
+      "by_channel",
+      "by_category",
+      "friction_themes",
+      "trend_12wk",
+      "by_priority",
+      "by_agent",
+      "priority_breakdown",
+      "agent_breakdown",
+      "priority_breakdown_by_segment",
+      "agent_breakdown_by_segment",
+      "by_category_by_segment",
+      "by_category_by_segment_methodology",
+      "tickets"
+    ],
+    "_managed_note": "The refresh owns these fields and rewrites them every run. Anything else on the record is left untouched; the read-back verify fails the run if anything else changed."
+  },
+  "window": {
+    "trailing_days": 30,
+    "_note": "Windows are [run date - N days, run date): the run date itself is excluded (partial day). d30 and d7 match the page's 30d / 7d columns.",
+    "date_placeholders": {
+      "anchor": 0,
+      "d7_start": -7,
+      "d30_start": -30,
+      "d90_start": -90,
+      "trend_start": -84
+    }
+  },
+  "sql_fragments": {
+    "_note": "Shared SQL; see shared/sql/README.md.",
+    "pylon_base": "shared/sql/pylon_base.sql",
+    "pet_ticket": "shared/sql/pet_ticket.sql",
+    "segment": "shared/sql/support_segment.sql"
+  },
+  "sigma": {
+    "data_model_id": "d8c49faf-458b-4407-bdc3-85a9fbefb609",
+    "elements": {
+      "support_cases_bi": {
+        "id": "Gz0-jqrI1V",
+        "column_prefix": "inode-1dBuhhkgQkWXslu27HE64N/",
+        "columns": {
+          "case_system": "dyE5lEXjiZ",
+          "case_is_archived": "oZBsplPk2k",
+          "is_test": "yKb4xRahxL",
+          "case_user_type": "EqUUI_mZyt",
+          "has_tech_escalation": "aXcJxyR08B",
+          "csat": "00TvMgGarP"
+        },
+        "named_columns": [
+          "CASE_IS_DELETED",
+          "CREATED_AT",
+          "CASE_CATEGORY",
+          "CASE_SUB_CATEGORY",
+          "CASE_SUBJECT",
+          "CASE_ORIGIN",
+          "CASE_STATUS",
+          "CASE_PRIORITY",
+          "CASE_OWNER",
+          "CASE_NUMBER",
+          "TICKET_TIME_TO_ASSIGNED_HOURS",
+          "TICKET_RESOLUTION_HOURS",
+          "ROLLUP_COMPANY_NAME"
+        ]
+      },
+      "user_application_funnel": {
+        "id": "apKoPbqWa9",
+        "column_prefix": "inode-54xB1eUhLxf1EJucb7r8Xk/",
+        "columns": {},
+        "named_columns": [
+          "FIRST_EVENT_AT"
+        ]
+      }
+    },
+    "queries": {
+      "s1_kpis_segment": {
+        "element": "support_cases_bi",
+        "output": "s1_kpis_segment_<MMDD>.json",
+        "purpose": "per requester segment: ticket counts, median first response and resolution, % handled without escalation, CSAT (pet excluded, spam included)"
+      },
+      "s2_kpis_all": {
+        "element": "support_cases_bi",
+        "output": "s2_kpis_all_<MMDD>.json",
+        "purpose": "same KPIs for all tickets (medians can't be summed from segments)"
+      },
+      "s3_category_channel": {
+        "element": "support_cases_bi",
+        "output": "s3_category_channel_<MMDD>.json",
+        "purpose": "ticket counts by category x channel (pet excluded, spam included; By Channel drops spam)"
+      },
+      "s4_pet_sla": {
+        "element": "support_cases_bi",
+        "output": "s4_pet_sla_<MMDD>.json",
+        "purpose": "pet tickets only: answered within 24h / 4h, no first response, median first response"
+      },
+      "s5_sla_segment": {
+        "element": "support_cases_bi",
+        "output": "s5_sla_segment_<MMDD>.json",
+        "purpose": "SLA within target by segment x channel (pet and spam excluded; no first response = miss)"
+      },
+      "s6_trend": {
+        "element": "support_cases_bi",
+        "output": "s6_trend_<MMDD>.json",
+        "purpose": "12 weekly buckets ending the day before the run date"
+      },
+      "s7_funnel": {
+        "element": "user_application_funnel",
+        "output": "s7_funnel_<MMDD>.json",
+        "purpose": "applicants who started an application: d30, d7 and the same 12 weekly buckets"
+      },
+      "s8_priority": {
+        "element": "support_cases_bi",
+        "output": "s8_priority_<MMDD>.json",
+        "purpose": "d30 ticket and open counts by priority, for all tickets and per segment"
+      },
+      "s8_agents": {
+        "element": "support_cases_bi",
+        "output": "s8_agents_<MMDD>.json",
+        "purpose": "d30 ticket/open counts and resolution hours by agent: top N per view (all, PM, applicant), plus Unassigned and Other, ranked in SQL"
+      },
+      "s9_category_segment": {
+        "element": "support_cases_bi",
+        "output": "s9_category_segment_<MMDD>.json",
+        "purpose": "category counts by segment (d30, d7)"
+      },
+      "s10_needs_attention": {
+        "element": "support_cases_bi",
+        "output": "s10_needs_attention_<MMDD>.json",
+        "purpose": "open tickets waiting on Findigs, created in the last 90 days, oldest first (50)"
+      },
+      "s11_open_backlog": {
+        "element": "support_cases_bi",
+        "output": "s11_open_backlog_<MMDD>.json",
+        "purpose": "open tickets by status x age band x segment (stale count, sizing)"
+      },
+      "s12_friction": {
+        "element": "support_cases_bi",
+        "output": "s12_friction_<MMDD>.json",
+        "purpose": "d30 ticket counts by category x friction theme (keyword rules below; spam excluded, pets category kept)"
+      },
+      "s13_user_types": {
+        "element": "support_cases_bi",
+        "output": "s13_user_types_<MMDD>.json",
+        "purpose": "requester values the segment rule can't classify (pre-flight)"
+      }
+    }
+  },
+  "segments": {
+    "reported": [
+      "property_manager",
+      "applicant"
+    ],
+    "all": [
+      "property_manager",
+      "applicant",
+      "unset",
+      "other"
+    ],
+    "max_other_share_pct": 1.0,
+    "_note": "Rule in shared/sql/support_segment.sql. 'other' = values the rule can't classify (agent, realtor, new typos). The run lists them in the report and stops only if they exceed max_other_share_pct of d30 volume."
+  },
+  "spam_category": "spam",
+  "channels": {
+    "chatWidget": {
+      "label": "Chat widget",
+      "sla_target": "2 min",
+      "target_hours": 0.0333333333
+    },
+    "email": {
+      "label": "Email",
+      "sla_target": "4 h",
+      "target_hours": 4
+    },
+    "form": {
+      "label": "Form",
+      "sla_target": "4 h",
+      "target_hours": 4
+    },
+    "slack": {
+      "label": "Slack",
+      "sla_target": "2 min",
+      "target_hours": 0.0333333333
+    }
+  },
+  "categories": {
+    "_note": "Pylon category slug -> page label, in page order. NULL category = 'uncategorized'. A slug missing here stops the run (pre-flight) so a new category is labelled on purpose. 'ticket' (added 2026-11-12) is a Pylon category value with no specific type; shown as its own row.",
+    "application_questions": "Application questions",
+    "application_actions": "Application actions",
+    "applicant_technical_issue": "Applicant technical issue",
+    "denial_disputes": "Denial disputes",
+    "payments_fees_finalization": "Payments, fees & finalization",
+    "pm_technical_issue": "PM technical issue",
+    "lease_details_change": "Lease details change",
+    "uncategorized": "Uncategorized / other",
+    "ticket": "Ticket (generic category)",
+    "spam": "Spam",
+    "prospect_inbound_sales": "Prospect inbound › sales",
+    "quality_internal_comms": "Quality & internal comms",
+    "consumer_report_requests": "Consumer report requests",
+    "termwise": "Termwise",
+    "conversation": "Conversation",
+    "pets_disputes_consumer_requests": "Pets category, non-pet-verification"
+  },
+  "needs_attention": {
+    "waiting_on_findigs_statuses": [
+      "New",
+      "Waiting on You",
+      "On Engineering",
+      "On Customer Success Team"
+    ],
+    "max_age_days": 90,
+    "limit": 50,
+    "ticket_url": "https://app.usepylon.com/issues?issueNumber={number}",
+    "_decision": "Will, 2026-11-12: open tickets where the ball is in Findigs' court, created in the last 90 days, oldest first. Older ones are counted as stale backlog, not listed. Pet and spam excluded. Will, 2026-11-12 (second decision): property-manager and applicant requesters only; tickets with no requester type were mostly automated/internal email (Gong recaps, login codes, recruiting and reimbursement notices). They still count in the open-backlog numbers."
+  },
+  "breakdowns": {
+    "top_agents": 10,
+    "by_agent_rows": 20,
+    "_note": "by_agent shows the top by_agent_rows (named) agents; agent_breakdown shows top_agents named + Unassigned + Other. s8_agents ranks the top by_agent_rows per view in SQL."
+  },
+  "sla": {
+    "_decision": "Will, 2026-11-12 (honest version): share of tickets whose first response came within the channel's target; pet and spam excluded; a ticket with no first response counts as a miss. Replaces the 2026-09-28 method (answered tickets only, pet and spam included).",
+    "include_unanswered_as_miss": true,
+    "requester_segments": "segments.reported",
+    "_decision_2": "Will, 2026-11-12 (second decision): property-manager and applicant tickets only. Tickets with no requester type were mostly automated or internal email with no first response, which pulled email SLA to 76.5%."
+  },
+  "tickets_per_100_apps": {
+    "_definition": "Pet- and spam-excluded tickets per 100 applicants who started an application (User Application Funnel, first event in the same window). Reproduces the 2026-09-28 values to within a point; applicant_only uses applicant tickets only."
+  },
+  "fcr": {
+    "_definition": "Emma, 2026-09-22: share of closed tickets resolved in 2 or fewer agent replies. Pylon has no bulk touch count, so each run samples closed tickets through the Pylon connector (message history included) and scripts/fcr_sample.py counts agent replies.",
+    "max_agent_replies": 2,
+    "page_size": 100,
+    "agent_reply": "message where from_customer is false, author_type is not 'system', and is_private is false",
+    "exclude_tags": [
+      "Spam"
+    ],
+    "sample_days_ago": [
+      2,
+      5,
+      10,
+      16,
+      22,
+      28
+    ],
+    "start_hour_utc": 13,
+    "_sample_note": "One page per sampled day, oldest first from start_hour_utc (US morning). Days 2 and 5 form d7; all six form d30, each day weighted equally. Tickets with no public agent reply are left out of the rate."
+  },
+  "friction_themes": {
+    "_note": "Keyword rules on lower(CASE_SUBJECT), first match wins, in order. Rebuilt 2026-11-12 under the 2026-09-24 theme names (the original rules were never saved). 'Other' is the expected long tail of one-off subjects.",
+    "application_questions": [
+      [
+        "Offer Letter / Ready-for-Review Notices",
+        [
+          "%offer letter%",
+          "%ready for review%"
+        ]
+      ],
+      [
+        "Income / Employment Verification",
+        [
+          "%income%",
+          "%employ%",
+          "%pay stub%",
+          "%paystub%",
+          "%bank statement%"
+        ]
+      ],
+      [
+        "Screening / Background / ID Verification",
+        [
+          "%criminal%",
+          "%background%",
+          "%screening%",
+          "%identity%",
+          "%id verif%"
+        ]
+      ],
+      [
+        "Application Status Inquiries",
+        [
+          "%status%",
+          "%timeline%",
+          "%next step%",
+          "%update%"
+        ]
+      ],
+      [
+        "Document / Account Requests",
+        [
+          "%document%",
+          "%docs%",
+          "%account%",
+          "%reference%"
+        ]
+      ]
+    ],
+    "application_actions": [
+      [
+        "Merge Applications",
+        [
+          "%merge%"
+        ]
+      ],
+      [
+        "Transfer Application",
+        [
+          "%transfer%"
+        ]
+      ],
+      [
+        "Rescreen",
+        [
+          "%rescreen%",
+          "%re-screen%"
+        ]
+      ],
+      [
+        "Cancel / Delete Application",
+        [
+          "%cancel%",
+          "%delet%",
+          "%withdraw%"
+        ]
+      ],
+      [
+        "Add / Remove Co-Applicant",
+        [
+          "%co-app%",
+          "%co app%",
+          "%coapp%",
+          "%remove%",
+          "%add %applicant%",
+          "%occupant%"
+        ]
+      ],
+      [
+        "Income / Override Requests",
+        [
+          "%income%",
+          "%override%",
+          "%overide%",
+          "%bypass%"
+        ]
+      ]
+    ],
+    "applicant_technical_issue": [
+      [
+        "Login / Account Access",
+        [
+          "%login%",
+          "%log in%",
+          "%password%",
+          "%account access%",
+          "%sign in%"
+        ]
+      ],
+      [
+        "Contact Info Changes",
+        [
+          "%phone%",
+          "%number change%",
+          "%email change%",
+          "%change email%",
+          "%contact info%"
+        ]
+      ],
+      [
+        "Application Errors",
+        [
+          "%error%",
+          "%glitch%",
+          "%not working%",
+          "%bug%"
+        ]
+      ],
+      [
+        "General Support / Help Requests",
+        [
+          "%help%",
+          "%assist%",
+          "%support%",
+          "%hello%"
+        ]
+      ]
+    ],
+    "denial_disputes": [
+      [
+        "Income Verification Disputes",
+        [
+          "%income%"
+        ]
+      ],
+      [
+        "Collections / Eviction History",
+        [
+          "%collection%",
+          "%eviction%",
+          "%credit%"
+        ]
+      ],
+      [
+        "Override Requests (Non-Income)",
+        [
+          "%override%",
+          "%overide%",
+          "%push through%",
+          "%guarantor%"
+        ]
+      ],
+      [
+        "Denial Reason Inquiries",
+        [
+          "%denial%",
+          "%denied%",
+          "%declin%",
+          "%reason%",
+          "%dispute%"
+        ]
+      ]
+    ],
+    "pets_disputes_consumer_requests": [
+      [
+        "Rabies Vaccination Documentation",
+        [
+          "%rabies%",
+          "%vaccin%"
+        ]
+      ],
+      [
+        "ESA / Support Animal Letters",
+        [
+          "%esa%",
+          "%support animal%",
+          "%service animal%",
+          "%emotional support%"
+        ]
+      ],
+      [
+        "General Pet Verification",
+        [
+          "%pet%"
+        ]
+      ]
+    ],
+    "pm_technical_issue": [
+      [
+        "System Monitoring Alerts (automated)",
+        [
+          "%alert%",
+          "%monitor%",
+          "%outage%"
+        ]
+      ],
+      [
+        "Login / Access",
+        [
+          "%login%",
+          "%log in%",
+          "%access%",
+          "%password%"
+        ]
+      ],
+      [
+        "Applicant Visibility / Sync Issues",
+        [
+          "%sync%",
+          "%visib%",
+          "%not appearing%",
+          "%missing%",
+          "%listing%"
+        ]
+      ]
+    ],
+    "payments_fees_finalization": [
+      [
+        "Refunds",
+        [
+          "%refund%"
+        ]
+      ],
+      [
+        "Payment Processing Issues",
+        [
+          "%payment%",
+          "%charge%",
+          "%card%"
+        ]
+      ],
+      [
+        "Application Fee Questions",
+        [
+          "%fee%",
+          "%promo%",
+          "%waiver%"
+        ]
+      ]
+    ],
+    "lease_details_change": [
+      [
+        "Move-in Date Changes",
+        [
+          "%move-in%",
+          "%move in%",
+          "%movein%"
+        ]
+      ],
+      [
+        "Rent Amount Updates",
+        [
+          "%rent amount%",
+          "%pricing%",
+          "%price%",
+          "%rent%"
+        ]
+      ],
+      [
+        "Unit / Floorplan / Property Change",
+        [
+          "%unit%",
+          "%floorplan%",
+          "%floor plan%",
+          "%property%",
+          "%apartment%",
+          "%apt%",
+          "%address%"
+        ]
+      ]
+    ]
+  },
+  "friction_category_labels": {
+    "_note": "Friction panel label where it differs from the By Category label (that one describes the pet-excluded remainder).",
+    "pets_disputes_consumer_requests": "Pets disputes / consumer requests"
+  },
+  "validation": {
+    "max_week_over_week_volume_change_pct": 40,
+    "_wow_note": "Stop if d30 ticket volume moves more than this vs the live record (likely a broken query or a filter change).",
+    "min_d30_tickets": 5000
+  },
+  "slack": {
+    "success_channel_name": "#p-account-health",
+    "success_channel_id": "C0B4QMETZ52",
+    "failure_channel_name": "#gtm-automation-log",
+    "failure_channel_id": "C0CJ1P9D0HE",
+    "_decision": "Will, 2026-11-12: successes to #p-account-health, failures to #gtm-automation-log (replaces the failure DM)."
+  }
+}

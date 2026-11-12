@@ -240,13 +240,13 @@ def build(run, live, fcr):
 
     # ---- Needs Attention --------------------------------------------------------------------
     na = cfg["needs_attention"]
-    tickets = []
+    tickets = []  # Base44 schema: age is a string ("90d")
     for r in s10:
         created = dt.datetime.fromisoformat(r["created_at"])
         tickets.append({"ticket_id": r["ticket_number"], "subject": r["subject"], "category": r["category"],
                         "priority": r["priority"], "status": r["status"], "agent": r["agent"],
                         "account_name": r["account_name"], "created_at": created.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
-                        "age": (anchor - created.date()).days, "is_tes": bool(r["is_tes"]),
+                        "age": f"{(anchor - created.date()).days}d", "is_tes": bool(r["is_tes"]),
                         "user_type_segment": r["segment"], "url": na["ticket_url"].format(number=r["ticket_number"])})
     waiting = [r for r in s11 if r["status"] in na["waiting_on_findigs_statuses"] and r["segment"] in reported]
     in_window = sum(r["n"] for r in waiting if r["age_band"] != "c_over_90d")

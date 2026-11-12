@@ -67,5 +67,7 @@ Open points for Will:
 
 ## Incident log
 
+- 2026-11-12, first live push: Base44 rejected the PUT (422, nothing written) because ticket `age` must be a string; now sent as "90d". The fix briefly dropped `is_tes` from the tickets; the readback verify caught it (50 differences), the record was rebuilt and re-pushed, and the second readback passed. The record was live with blank TES flags for about two minutes.
+
 - 2026-11-12: the 10/29 values had been hand-typed into a push script; queries recovered from
   the transcript and rebuilt here. Needs Attention was a frozen June-July snapshot; replaced.
