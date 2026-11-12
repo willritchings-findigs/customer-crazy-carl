@@ -6,6 +6,12 @@ implementations_ops` (`6aa833ac3d25aa397d5f6ba7`). Owner: Will Ritchings. Built 
 Emma's handoff (`The Reserve/O-output/implementations-dashboard/`: `pull_implementations_ops.py`,
 the builder prompts, three reports).
 
+## Cloud routine
+
+"Implementations Refresh" (`trig_01DFjSC1CTbLSncfQLvJ5y8o`), Mondays 11:30 ET, Default environment,
+connector Slack (HubSpot and Base44 via network secrets). Independent of Client Health; scheduled
+after Churn so the Monday runs never commit to `main` at the same time.
+
 ## Background
 
 The 10/29 page had two halves. The HubSpot half (stage funnel, triage queue, hygiene) came from the

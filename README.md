@@ -9,7 +9,7 @@ upsell/expansion, client health.
 | Workstream | Dashboard (Base44 entity) | In this repo | Cloud routine |
 |---|---|---|---|
 | Client Health | `AccountHealthCache` | Yes | Routine "Client Health Refresh" (`trig_013GADddMEg9RbhmMmdZK5LZ`), Mondays 9:00 ET, Default environment. Enabled 2026-11-06 after the first successful cloud run |
-| Implementations | `ImplementationsCache` | Not yet | Not yet |
+| Implementations | `ImplementationsCache` | Yes | Routine "Implementations Refresh" (`trig_01DFjSC1CTbLSncfQLvJ5y8o`), Mondays 11:30 ET, Default environment. HubSpot-sourced since 2026-11-12 (first live push by hand) |
 | Support Metrics | `SupportCache` | Yes | Routine "Support Metrics Refresh" (`trig_01PHatwxRHLEMvLiwe7CrCfB`), Mondays 10:00 ET, Default environment. First live refresh 2026-11-12 (run by hand); first scheduled run 2026-11-16 |
 | Churn Analysis | `ChurnCache` | Yes | Routine "Churn Analysis Refresh" (`trig_01BBKL3QwcNTXcNoF7b8L1Bp`), Mondays 11:00 ET, Default environment. Dry-run tested 2026-11-12; first live run 2026-11-16 |
 
