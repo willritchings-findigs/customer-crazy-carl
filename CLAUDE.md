@@ -31,6 +31,11 @@ Engineering handoff (2026-10). See `README.md` for what's in the repo.
 - Successful run: post to the workstream's channel (Client Health: `#p-account-health`).
 - Any stop, drift, or failure: DM Will instead. Channels only ever see successful runs.
 
+## Documentation
+
+- Client Health: `docs/client-health/` (published to Notion; see its README). After any
+  `config.json` change, run `python3 docs/client-health/build_docs.py` and republish.
+
 ## Skills
 
 - `client-health-refresh`: weekly CS Client Health rescore and push to `AccountHealthCache`.
