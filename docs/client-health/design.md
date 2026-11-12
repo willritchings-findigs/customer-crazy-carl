@@ -35,7 +35,7 @@ flowchart LR
   REPO[("GitHub repo<br/>customer-crazy-carl<br/>rules, code, history")]
   B44[("Base44<br/>AccountHealthCache<br/>= the dashboard")]
   CH["#p-account-health<br/>(success only)"]
-  DM["DM to Will<br/>(any stop)"]
+  DM["#gtm-automation-log<br/>(any stop)"]
   SIG & HS & GG & PY & SL --> PULL
   REPO -- "rules + code" --> Run
   PUSH --> B44
@@ -63,7 +63,7 @@ flowchart LR
 | HubSpot | Direct API (bulk company pull) + claude.ai connector | Read only | HubSpot private-app key (network secret) |
 | Gong | Direct API | Read | Gong API access key (network secret) |
 | Pylon | claude.ai connector | Read | Will's connected account |
-| Slack | claude.ai connector | Read channels; post to `#p-account-health`; DM Will | Will's connected account |
+| Slack | claude.ai connector | Read channels; post to `#p-account-health` and `#gtm-automation-log` | Will's connected account |
 | Base44 | Direct API | **Write** (the only write access) | Base44 app token (network secret) |
 | GitHub | Built into the routine | Read + commit to `main` | Routine's GitHub access |
 
@@ -206,7 +206,7 @@ Every metric and row on the dashboard. "Refreshed" says how current the value is
 | Slack posts: header, one alert per account that worsened, kudos per account that improved, one still-Red digest, run summary | `#p-account-health` | AMs, CSAs, leadership |
 | Weekly report (band counts, every flip with its reason, CSM flag changes, sentiment findings, churn signals, data notes) | Repo, `O-output/cs-client-health-scoring/<date>_weekly-refresh-report.md` | Will, leadership |
 | Full run archive (inputs, outputs, config and scripts used) | Repo, `O-output/cs-client-health-scoring/history/<date>/` | Audit, debugging |
-| Failure note (if the run stops) | DM to Will, or a phone push if Slack is down | Will |
+| Failure note (if the run stops) | Post to `#gtm-automation-log`, or a phone push if Slack is down | Will |
 
 <!-- BEGIN GENERATED: alert_rules -->
 - **Individual alert** (pings the owner) when an account moves: Green → Yellow, Yellow → Red, Green → Red, new → Red, scored → Churned.
@@ -234,7 +234,7 @@ A run never changes a rule on its own. If last week's bands can't be reproduced 
 ### Safeguards
 
 <!-- BEGIN GENERATED: validation -->
-Every run must pass all of these before anything is pushed. Any failure stops the run and DMs Will; nothing reaches the dashboard or the channel.
+Every run must pass all of these before anything is pushed. Any failure stops the run and posts to #gtm-automation-log; nothing reaches the dashboard or the channel.
 
 | Check | What it proves |
 |---|---|

@@ -23,7 +23,7 @@ Owner: Will Ritchings. Taken over from Emma Kyber's handoff.
 | Spam | Excluded from every figure except the By Category list (where it is its own row). The headline therefore equals the sum of By Channel, priority, agent and segment views. |
 | FCR, SLA, tickets per 100 apps | Rebuilt now rather than carried forward. |
 | SLA | "Honest version": pet and spam excluded; a ticket with no first response counts as a miss. |
-| Success post | `#gtm-automation-log` (`C0CJ1P9D0HE`). Failures DM Will. |
+| Success post | `#gtm-automation-log` (`C0CJ1P9D0HE`). Failures also post there (replaces the failure DM). |
 
 ## Method notes
 

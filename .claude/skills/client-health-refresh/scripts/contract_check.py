@@ -99,5 +99,5 @@ for n_ in notes:
 for f in fails:
     print("FAIL", f)
 if fails:
-    raise SystemExit(f"CONTRACT CHECK FAILED: {len(fails)} problem(s). DM Will; do not continue.")
+    raise SystemExit(f"CONTRACT CHECK FAILED: {len(fails)} problem(s). Post the failure to #gtm-automation-log; do not continue.")
 print("CONTRACT CHECK PASSED")

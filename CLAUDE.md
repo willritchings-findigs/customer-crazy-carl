@@ -29,7 +29,9 @@ Engineering handoff (2026-10). See `README.md` for what's in the repo.
 ## Slack routing (all refreshes)
 
 - Successful run: post to the workstream's channel (Client Health: `#p-account-health`).
-- Any stop, drift, or failure: DM Will instead. Channels only ever see successful runs.
+- Any stop, drift, or failure: post to `#gtm-automation-log` (`C0CJ1P9D0HE`) instead, with the step and
+  the error (Will, 2026-11-12: this channel replaces every failure DM). Success channels only ever
+  see successful runs. If Slack is down, send a push notification.
 
 ## Documentation
 

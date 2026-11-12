@@ -95,7 +95,7 @@ def block_validation():
     v = CFG["validation"]
     floors = ", ".join(f"{k} ≥ {n} accounts" for k, n in v["join_coverage_floors"].items())
     return "\n".join([
-        "Every run must pass all of these before anything is pushed. Any failure stops the run and DMs Will; nothing reaches the dashboard or the channel.",
+        "Every run must pass all of these before anything is pushed. Any failure stops the run and posts to #gtm-automation-log; nothing reaches the dashboard or the channel.",
         "",
         "| Check | What it proves |", "|---|---|",
         "| Pre-flight contract check | Credentials resolve; the Base44 record has the expected fields and account count; every Sigma column the queries use exists; every HubSpot property exists. |",

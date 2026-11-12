@@ -33,8 +33,8 @@
 Dashboard Update and hubspot-hygiene-scan). Connectors named explicitly: Sigma, Pylon, Slack,
 HubSpot. First cloud run succeeded 2026-11-06 (pushed, verified, posted); schedule enabled the same day, first scheduled run Monday 2026-11-09. No human review gates (Will, 2026-11-06):
 the validation gates and read-back verify are the only checks; success posts straight to the
-channel, any stop DMs Will. On success it pushes, commits
-history and the report to `main`, and posts to `#p-account-health`; any stop DMs Will
+channel, any stop posts to `#gtm-automation-log` (replaced the failure DM, Will 2026-11-12). On success it pushes, commits
+history and the report to `main`, and posts to `#p-account-health`; any stop posts to `#gtm-automation-log`
 (push notification if Slack is down). Credentials: `cs-cx-cloud-environment.md`.
 **Target:** Base44 `AccountHealthCache` (app `6a01dddd52a74acb4fd153bd`, record `6a834cf871d5a0ff1897bfca`, base URL `https://findigs-growth-hub.base44.app/api`). The live dashboard is `findigs-growth-hub.base44.app/cx/client-health` — it renders whatever this record holds; display logic lives in the Base44 builder, never in this pipeline.
 **Established:** 2026-09-03, per Emma ("set to re run every monday") after Alex assumed on the 9/2 call that the hub "refreshes." Reference implementations of the scoring rules live in `O-output/cs-client-health-scoring/` (`ref_phase4_rollup_and_churn.py`, `ref_phase5_contextual_fields.py`).
@@ -97,7 +97,7 @@ counted in either window.
 
 | # | Item | Evidence | Decision |
 |---|---|---|---|
-| 1 | **Gate 6 was not independent of q4.** Same element, same `SUM`, same `GROUP BY`, so they could not disagree. | One-time comparison on 2026-11-05: Unit Counts BI (`Y4dN5LDwns`), November rows summed by rollup, matched q4's current-month units on all 692 rollups (388,457 units both sides). | **Switched.** `gate6_unit_crosscheck.sql` now reads Unit Counts BI for the run month (`{month_start}` to `{next_month_start}`). No rows means the month hasn't loaded: stop and DM Will. |
+| 1 | **Gate 6 was not independent of q4.** Same element, same `SUM`, same `GROUP BY`, so they could not disagree. | One-time comparison on 2026-11-05: Unit Counts BI (`Y4dN5LDwns`), November rows summed by rollup, matched q4's current-month units on all 692 rollups (388,457 units both sides). | **Switched.** `gate6_unit_crosscheck.sql` now reads Unit Counts BI for the run month (`{month_start}` to `{next_month_start}`). No rows means the month hasn't loaded: stop and post the failure to `#gtm-automation-log`. |
 | 2 | **q3 had no case-system filter**; the Support Metrics dashboard filters to Pylon (`"dyE5lEXjiZ" = 'pylon'`). | Re-checked 2026-11-05 for the 10/28 window: one value, `pylon`, 17,448 cases, 382 TES. | **Filter added.** No score change today; keeps the two dashboards aligned if another system appears. |
 | 3 | **q7 cohort = first event in the window**, not submission in the window. | 92,814 completed vs 94,808 by submit date (+2.1%); 3,105 submitters started before the window. | **Kept.** Same group in numerator and denominator, so the completion rate is a true rate; matches every past run. |
 | 4 | **q6 is large** (~222K characters, one row per child company) and always overflows the tool output limit. | Every 10/28 execution auto-saved to a file. | Works as is; aggregate to one row per rollup only if it becomes a problem. |

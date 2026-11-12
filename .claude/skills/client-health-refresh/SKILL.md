@@ -16,14 +16,14 @@ Rebuilds the `AccountHealthCache` record behind the Findigs Hub Client Health pa
 | 3. Context + history | `T-tools/02-workflows/client-health-weekly-refresh.md` | why each rule exists, incident log | anytime |
 
 This file never contains a number, ID, or threshold. Those live in `config.json` and are
-referenced below as `config.<path>`. If this file and `config.json` disagree, stop and DM Will.
+referenced below as `config.<path>`. If this file and `config.json` disagree, stop and post the failure to `#gtm-automation-log`.
 
 **Never publish the Base44 app builder.** Data goes through the API only. Display changes
 are delivered as a builder prompt for Will to paste.
 
 ## 0. Pre-flight and contract check (stop on any failure)
 
-Run all of these before pulling data. Any failure → DM Will what failed, post nothing, stop.
+Run all of these before pulling data. Any failure → post what failed to `#gtm-automation-log`, post nothing to the success channel, stop.
 
 1. **Run date and window.** Run date = today (UTC). Window = `config.window.trailing_days`
    ending on the run date. Use the identical window string everywhere, including source strings.
@@ -36,7 +36,7 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
    - Connectors finish connecting a few seconds into a run ("still connecting"). If one is
      missing, wait ~20 seconds and search again, up to 3 tries (about a minute), before
      calling it down.
-   - If Slack is the one that's down, the failure DM can't be sent: send the failure note as a
+   - If Slack is the one that's down, the failure post can't be sent: send the failure note as a
      push notification instead.
 3. **Save the inputs for the contract check** into the scratch dir:
    - `baseline_<MMDD>.json`: `curl` GET of the `config.target` record (Bearer token). This is
@@ -101,7 +101,7 @@ Run all of these before pulling data. Any failure → DM Will what failed, post 
      `<name>_<MMDD>_check.json`, exactly as returned.
    - `python3 scripts/sigma_verify.py compare --run-date <date> --scratch <dir>` must print
      PASS for every query and exit 0. On any FAIL, re-run that query, re-save the file, and
-     repeat this step for it (`--only <name>`). If it still fails, stop and DM Will. Never
+     repeat this step for it (`--only <name>`). If it still fails, stop and post the failure to `#gtm-automation-log`. Never
      edit a saved file to make a check pass, and never skip this step.
    - What it proves: row count; per column non-null and distinct counts, total length, a
      character fingerprint of every text value, sums of every number, true counts; and each
@@ -133,7 +133,7 @@ signal; it is a grab-bag.
 validation gate 6. Never trust q4's own unit output; a multi-portfolio rollup can silently
 return one child's count instead of the sum. The cross-check reads Unit Counts BI (one row
 per company per month), so it is independent of q4. If it returns no rows, the run month's
-unit counts have not loaded yet: stop and DM Will rather than skip the gate.
+unit counts have not loaded yet: stop and post the failure to `#gtm-automation-log` rather than skip the gate.
 
 ### HubSpot — `scripts/hubspot_pull.py`, then `scripts/match_hs_accounts.py`
 Pull companies with `findigs_company_id` and `config.hubspot.company_properties`, plus
@@ -152,7 +152,7 @@ Pull slim calls for the window, then run
 per matched account: calls, review-call titles, client exec titles, sample titles. Never write
 this file any other way. Findigs employees never count toward matching or exec credit
 (`config.gong.internal_email_domains` or Gong label "Internal"). If it exits non-zero (zero
-matches, or a sharp drop vs the prior run), stop and DM Will. Copy its "outside domains" list
+matches, or a sharp drop vs the prior run), stop and post the failure to `#gtm-automation-log`. Copy its "outside domains" list
 into the weekly report; Will decides which belong in `config.gong.account_domain_aliases`.
 
 ### Sentiment scans (sub-tasks): Slack, Gong, Pylon
@@ -214,7 +214,7 @@ The script reads `config.scoring` and applies these rules:
   calls exist. Meeting cadence, multi-thread, and revenue MoM carry forward.
 - **Units:** `total_units_sold_hubspot` ← `total_units_all`; sold-vs-live = live / sold ·100.
 
-**Validation gates (all must pass, or stop and DM Will):**
+**Validation gates (all must pass, or stop and post the failure to `#gtm-automation-log`):**
 1. Threshold reproduction (also pre-flight step 6).
 2. Algorithm unit test: recompute `config.validation.pilot_accounts_unit_test` from baseline
    inputs; must reproduce exactly.
@@ -236,7 +236,7 @@ The script reads `config.scoring` and applies these rules:
 3. `curl` PUT to `<api_base>/apps/<app_id>/entities/<entity>/<record_id>` with the Bearer token
    (or no `Authorization` header when Base44 is a network secret).
 4. **A 200 is not proof.** GET the record back and diff: computed_at, band counts, and 3–4
-   spot values must match what you sent. Any mismatch → DM Will, stop.
+   spot values must match what you sent. Any mismatch → post the failure to `#gtm-automation-log`, stop.
 5. Delete the token file.
 
 ## 4. Archive history (required) — `scripts/archive_history.py --run-date <date>`

@@ -628,7 +628,9 @@
   },
   "failure_routing": {
     "success": "post alerts to alerts.slack_channel_id and write the weekly report",
-    "any_stop_or_failure": "DM Will in Slack; post nothing to the channel"
+    "any_stop_or_failure": "post the step and error to failure_channel_id (#gtm-automation-log); post nothing to the success channel",
+    "failure_channel_id": "C0CJ1P9D0HE",
+    "_decision": "Will, 2026-11-12: #gtm-automation-log replaces every failure DM."
   },
   "sql_fragments": {
     "_note": "Shared SQL pasted into queries as {name}; see shared/sql/README.md. One pet filter for every dashboard.",

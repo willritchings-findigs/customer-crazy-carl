@@ -26,7 +26,7 @@ Rules (all values in config.gong):
   account_domain_aliases (e.g. a parent company's domain). Free-mail domains never match. Gong's "affiliation"
   field holds Internal/External/Unknown, not a company name, so name matching is not possible
   from Gong data; accounts without a HubSpot domain cannot match.
-- Safety stop: exit 1 (stop the run, DM Will) if no account matches, or fewer than
+- Safety stop: exit 1 (stop the run, post the failure to #gtm-automation-log) if no account matches, or fewer than
   min_matched_ratio_vs_prior x the prior run's matched accounts.
 """
 import glob, json, os, re, sys
@@ -137,10 +137,10 @@ if __name__ == "__main__":
     pdate, prev = prior_rows(run)
     ratio = cfg["gong"]["min_matched_ratio_vs_prior"]
     if not out:
-        raise SystemExit("STOP: Gong matched 0 accounts. DM Will; do not merge.")
+        raise SystemExit("STOP: Gong matched 0 accounts. Post the failure to #gtm-automation-log; do not merge.")
     if prev and len(out) < ratio * len(prev):
         raise SystemExit(f"STOP: Gong matched {len(out)} accounts vs {len(prev)} on {pdate} "
-                         f"(below {ratio:.0%}). DM Will; do not merge.")
+                         f"(below {ratio:.0%}). Post the failure to #gtm-automation-log; do not merge.")
     if prev:
         gained, lost = sorted(set(out) - set(prev)), sorted(set(prev) - set(out))
         print(f"vs {pdate}: {len(prev)} -> {len(out)} accounts; new {gained}; dropped {lost}")

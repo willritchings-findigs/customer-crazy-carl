@@ -10,8 +10,8 @@ Procedure only. Every number, ID, threshold, and SQL statement lives in `config.
 incident log: `T-tools/02-workflows/support-metrics-weekly-refresh.md`.
 
 **Never publish the Base44 app builder.** Data goes through the API only.
-**Slack:** success posts to `config.slack.success_channel_id`; any stop, drift, or failure DMs
-`config.slack.failure_dm_user` instead, with the step and the error. Channels only see successes.
+**Slack:** success posts to `config.slack.success_channel_id`; any stop, drift, or failure posts to
+`config.slack.failure_channel_id` (`#gtm-automation-log`) instead, with the step and the error. Channels only see successes.
 
 Run every script from this skill folder as `python3 scripts/<name>.py ... --run-date <date>
 --scratch <dir>` (`<date>` = today UTC, `<MMDD>` its month and day). Paths resolve from the repo.
@@ -59,7 +59,7 @@ Run every script from this skill folder as `python3 scripts/<name>.py ... --run-
 (reconciliation of all views to one headline, unknown categories or channels, unclassified
 requester share, volume floor, week-over-week change, Needs Attention length) and writes
 `support_record_<MMDD>.json` + `build_summary_<MMDD>.json` only if all pass. Any FAIL: stop,
-DM Will with the failing lines. A new Pylon category stops the run until it is labelled in
+post the failing lines to the failure channel. A new Pylon category stops the run until it is labelled in
 `config.categories` by commit.
 
 ## 4. Push and verify
@@ -69,7 +69,7 @@ DM Will with the failing lines. A new Pylon category stops the run until it is l
    record URL from step 0.3.
 3. **A 200 is not proof.** `curl` GET the record again into `readback_<MMDD>.json`, then
    `scripts/push_verify.py verify` must PASS (every managed field exactly as sent, nothing else
-   changed). On FAIL: DM Will with the output and stop; do not re-push blindly.
+   changed). On FAIL: post the output to the failure channel and stop; do not re-push blindly.
 4. Delete the token file.
 
 ## 5. Report, archive, Slack
