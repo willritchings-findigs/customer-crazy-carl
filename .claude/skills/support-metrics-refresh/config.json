@@ -547,10 +547,10 @@
     "min_d30_tickets": 5000
   },
   "slack": {
-    "success_channel_name": "TBD",
-    "success_channel_id": "TBD",
+    "success_channel_name": "#p-account-health",
+    "success_channel_id": "C0B4QMETZ52",
     "failure_channel_name": "#gtm-automation-log",
     "failure_channel_id": "C0CJ1P9D0HE",
-    "_decision": "Will, 2026-11-12: successes to the client health channel, failures to #gtm-automation-log (replaces the failure DM)."
+    "_decision": "Will, 2026-11-12: successes to #p-account-health, failures to #gtm-automation-log (replaces the failure DM)."
   }
 }
