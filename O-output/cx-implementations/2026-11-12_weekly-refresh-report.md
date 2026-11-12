@@ -1,4 +1,4 @@
-# Implementations weekly refresh: 2026-11-12 (DRY RUN, nothing pushed)
+# Implementations weekly refresh: 2026-11-12
 
 Source: HubSpot implementation object only (system of record since 2026-11-06). Activity = days in the current stage.
 

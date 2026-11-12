@@ -47,9 +47,16 @@ records were bulk-imported (they haven't moved stage in HubSpot since). Nothing 
 Hyper-care in the last 30 days (Highmark's 10/30 phase launch, for example, isn't reflected).
 Gaps: 10 of 18 owned have no go-live date, 16 no kickoff date; 30 open have no segment.
 
-## Display changes needed (Base44 builder prompt, Will runs it)
+## First live push (2026-11-12)
 
-The page's captions still describe the sheet: "sourced from the tracked ops sheet" on Active
+Will published the display builder prompt first, then the HubSpot-sourced record was pushed. The
+first readback failed on one field: `board_totals` was sent as `{}` and Base44 stored its three schema
+keys (SE, CX, PDE) as null. The build now sends those three keys as null; re-pushed, and the second
+readback passed (all 11 fields). Success posted to `#p-account-health`.
+
+## Display changes (Base44 builder prompt, published by Will 2026-11-12)
+
+The page's captions described the sheet: "sourced from the tracked ops sheet" on Active
 Implementations, the "HubSpot owners vs ops-sheet rows" reconciliation line, and the Jira caption on
 Board Totals. Draft: `O-output/cx-implementations/base44_builder_prompt_2026-11-12_hubspot_source.md`.
 

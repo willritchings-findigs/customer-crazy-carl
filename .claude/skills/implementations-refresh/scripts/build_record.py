@@ -142,7 +142,9 @@ if __name__ == "__main__":
             "open_without_segment": sum(not r.get("impl_segment") for r in active),
             "no_source_on_hubspot": ["board_totals (Jira)", "follow_up (Jira PDE)", "commit_status", "effort", "priority", "churn_risk"]}
     record = {"computed_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S+00:00"), "hygiene": hygiene,
-              "stage_funnel": stage_funnel, "triage_queue": triage, "board_totals": {}, "ongoing_worklist": ongoing,
+              "stage_funnel": stage_funnel, "triage_queue": triage,
+              # Base44 keeps the schema's three board keys; send them blank so the readback matches
+              "board_totals": {"SE": None, "CX": None, "PDE": None}, "ongoing_worklist": ongoing,
               "recently_completed": recent, "aging_worklist": aging, "capacity_gantt": gantt, "capacity_weekly": weekly, "follow_up": []}
     summary = {"run_date": run.iso, "gates": gates + fails, "failed": bool(fails), "gaps": gaps,
                "before": {k: (base.get("hygiene") or {}).get(k) for k in hygiene}, "after": hygiene,
