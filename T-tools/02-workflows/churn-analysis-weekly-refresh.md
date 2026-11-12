@@ -5,6 +5,13 @@ https://findigs-growth-hub.base44.app/cx/churn, record `ChurnCache / churn_overv
 (`6ab534b48e57beb0fc0155b4`). Owner: Will Ritchings. Built 2026-11-12 from Emma's handoff
 (`The Reserve/O-output/churn-analysis/`: the 10/29 push script, data dictionary, reports).
 
+## Cloud routine
+
+"Churn Analysis Refresh" (`trig_01BBKL3QwcNTXcNoF7b8L1Bp`), Mondays 11:00 ET, Default environment,
+connector Slack (HubSpot and Base44 via network secrets). Runs two hours after Client Health so the
+At Risk sync uses this week's Red list; if Client Health didn't refresh, the run stops and posts to
+`#gtm-automation-log`.
+
 ## How the page's data works
 
 The `accounts` list is a vetted population, not a live HubSpot query. HubSpot's `churned` flag has

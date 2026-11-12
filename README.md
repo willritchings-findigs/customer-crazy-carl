@@ -11,7 +11,7 @@ upsell/expansion, client health.
 | Client Health | `AccountHealthCache` | Yes | Routine "Client Health Refresh" (`trig_013GADddMEg9RbhmMmdZK5LZ`), Mondays 9:00 ET, Default environment. Enabled 2026-11-06 after the first successful cloud run |
 | Implementations | `ImplementationsCache` | Not yet | Not yet |
 | Support Metrics | `SupportCache` | Yes | Routine "Support Metrics Refresh" (`trig_01PHatwxRHLEMvLiwe7CrCfB`), Mondays 10:00 ET, Default environment. First live refresh 2026-11-12 (run by hand); first scheduled run 2026-11-16 |
-| Churn Analysis | `ChurnCache` | Not yet | Not yet |
+| Churn Analysis | `ChurnCache` | Yes | Routine "Churn Analysis Refresh" (`trig_01BBKL3QwcNTXcNoF7b8L1Bp`), Mondays 11:00 ET, Default environment. Dry-run tested 2026-11-12; first live run 2026-11-16 |
 
 ## Layout
 
