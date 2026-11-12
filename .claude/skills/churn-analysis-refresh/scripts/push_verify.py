@@ -1,4 +1,4 @@
-"""Prepare the SupportCache PUT body and prove the write landed.
+"""Prepare the ChurnCache PUT body and prove the write landed.
 
 Usage:
   python3 push_verify.py payload --run-date D --scratch S
