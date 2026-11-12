@@ -5,6 +5,13 @@ Skill: `.claude/skills/support-metrics-refresh/` (procedure in `SKILL.md`, logic
 https://findigs-growth-hub.base44.app/cx/support-metrics, record `SupportCache / support_overview`.
 Owner: Will Ritchings. Taken over from Emma Kyber's handoff.
 
+## Cloud routine
+
+"Support Metrics Refresh" (`trig_01PHatwxRHLEMvLiwe7CrCfB`), Mondays 10:00 ET (an hour after Client
+Health, so the two never commit to `main` at once), Default environment, connectors Sigma, Pylon,
+Slack. Base44 auth comes from the network secret (`CH_PROXY_AUTH` includes `base44`). Works on
+`main`; success posts to `#p-account-health`, any stop to `#gtm-automation-log`.
+
 ## What the run does
 
 1. Sigma: 14 queries over Support Cases BI (Pylon rows) and the User Application Funnel, each

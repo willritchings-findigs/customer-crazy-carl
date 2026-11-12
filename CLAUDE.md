@@ -28,7 +28,7 @@ Engineering handoff (2026-10). See `README.md` for what's in the repo.
 
 ## Slack routing (all refreshes)
 
-- Successful run: post to the workstream's channel (Client Health: `#p-account-health`).
+- Successful run: post to the workstream's channel (Client Health and Support Metrics: `#p-account-health`).
 - Any stop, drift, or failure: post to `#gtm-automation-log` (`C0CJ1P9D0HE`) instead, with the step and
   the error (Will, 2026-11-12: this channel replaces every failure DM). Success channels only ever
   see successful runs. If Slack is down, send a push notification.
@@ -42,3 +42,5 @@ Engineering handoff (2026-10). See `README.md` for what's in the repo.
 
 - `client-health-refresh`: weekly CS Client Health rescore and push to `AccountHealthCache`.
   Decision history: `T-tools/02-workflows/client-health-weekly-refresh.md`.
+- `support-metrics-refresh`: weekly CX Support Metrics rebuild and push to `SupportCache`.
+  Decision history: `T-tools/02-workflows/support-metrics-weekly-refresh.md`.
