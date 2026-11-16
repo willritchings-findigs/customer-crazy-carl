@@ -1,0 +1,131 @@
+{
+  "_note": "Every number, ID and rule for the Churn Analysis refresh. Changed only by commit. Why: T-tools/02-workflows/churn-analysis-weekly-refresh.md",
+  "window": {
+    "trailing_days": 30,
+    "_note": "Required by the shared run helpers; Churn uses calendar YTD and month-to-date from the run date."
+  },
+  "target": {
+    "api_base": "https://findigs-growth-hub.base44.app/api",
+    "app_id": "6a01dddd52a74acb4fd153bd",
+    "entity": "ChurnCache",
+    "record_id": "6ab534b48e57beb0fc0155b4",
+    "cache_key": "churn_overview",
+    "dashboard_url": "https://findigs-growth-hub.base44.app/cx/churn",
+    "managed_fields": [
+      "computed_at",
+      "accounts",
+      "kpis",
+      "by_segment_size",
+      "by_segment_product",
+      "by_product_breakdown",
+      "churn_by_segment_ytd",
+      "churn_by_reason",
+      "reason_source_coverage"
+    ],
+    "_managed_note": "The refresh owns these fields. Base44 drops unknown field names, so nothing new is ever added; every value is recomputed from the accounts list."
+  },
+  "health_source": {
+    "entity": "AccountHealthCache",
+    "record_id": "6a834cf871d5a0ff1897bfca",
+    "cache_key": "health_overview",
+    "max_age_days": 2,
+    "red_band": "Red",
+    "match_file_glob": "O-output/cs-client-health-scoring/history/*/hs_account_match.json",
+    "segment_map": {
+      "ENT": "STRAT",
+      "MM": "MM + ENT",
+      "SMB": "SMB"
+    },
+    "_note": "At Risk = Client Health composite band Red (composite_score_partial.band). HubSpot company IDs come from the newest Client Health hs_account_match.json; segment from rubric_segment_column via segment_map (matched 9/9 rows on 2026-10-29)."
+  },
+  "hubspot": {
+    "company_properties": [
+      "name",
+      "churned",
+      "churn_date",
+      "churn_date__c",
+      "churn_reason",
+      "account_status__c",
+      "segment",
+      "findigs_products__c",
+      "go_live_date__c",
+      "failure_to_launch",
+      "csm_owner"
+    ],
+    "closed_won_stages": {
+      "2313721535": "3753890502",
+      "2313830082": "3752297196"
+    },
+    "_pipelines": "2313721535 New logo, 2313830082 Upsell / Expansion. ACV = sum of Closed Won deal amounts in these pipelines (the deal amount field; hs_acv / hs_arr / acv are unused).",
+    "max_deals_before_flag": 2,
+    "segment_map": {
+      "STRAT": "STRAT",
+      "MM + ENT": "MM + ENT",
+      "SMB": "SMB",
+      "SMB (<100)": "SMB (<250)"
+    },
+    "_segment_note": "HubSpot 'SMB (<100)' has always been shown as 'SMB (<250)' on this page (39/39 churned accounts, 2026-11-12).",
+    "product_rule": "DecisionAssist in findigs_products__c -> DA; else Screening -> FS; else Unknown"
+  },
+  "new_churns": {
+    "auto_add_window_days": 30,
+    "contradicting_statuses": [
+      "Live",
+      "Onboarding",
+      "Pilot"
+    ],
+    "rejected_company_ids": {
+      "166598771396": "Bluewater Property Management: confirmed false positive 2026-09-24 (churn stamp cleared 2026-08-07; HubSpot flag never fixed)"
+    },
+    "approved_additions": {},
+    "_decision": "Will, 2026-11-12: auto-add a HubSpot company with churned=true whose churn date is within auto_add_window_days of the run date, unless it is rejected, its status contradicts the churn, a Closed Won deal is dated after the churn date, its segment is unmapped, or its churn_reason is not in the taxonomy. Everything else (older flags, contradicted ones) is listed in the report as a candidate. To add a candidate, put its HubSpot company ID in approved_additions with a note, by commit. Nothing is ever removed automatically.",
+    "ftl_staleness_rule": "propose_only",
+    "_ftl_decision": "Will, 2026-11-12: the old rule that turned Failure-to-Launch accounts stale 6+ months into Churned is propose-only."
+  },
+  "taxonomy": {
+    "reason_order": [
+      "Uncategorized",
+      "Dissatisfaction with Product/Service",
+      "Merged/Acquired",
+      "Tech Stack Consolidation",
+      "Leadership Change",
+      "Integration",
+      "Price",
+      "Failure to Launch"
+    ],
+    "segment_order": [
+      "STRAT",
+      "MM + ENT",
+      "SMB",
+      "SMB (<250)"
+    ],
+    "product_labels": {
+      "DA": "DecisionAssist",
+      "FS": "Full-Screen"
+    },
+    "statuses": {
+      "churned": "Churned",
+      "at_risk": "At Risk (Client Health Red)"
+    },
+    "reason_source_coverage_keys": [
+      "sheet",
+      "hubspot_field",
+      "ftl_staleness_rule",
+      "none"
+    ],
+    "_coverage_note": "reason_source_coverage keeps its 4-key schema; sigma_reason_at_risk accounts count under 'none' (2026-10-29 decision)."
+  },
+  "validation": {
+    "max_at_risk_change": 8,
+    "_note": "Stop if more than this many accounts enter or leave At Risk in one run (likely a Client Health problem)."
+  },
+  "slack": {
+    "success_channel_name": "#p-account-health",
+    "success_channel_id": "C0B4QMETZ52",
+    "failure_channel_name": "#gtm-automation-log",
+    "failure_channel_id": "C0CJ1P9D0HE"
+  },
+  "at_risk_acv_overrides": {
+    "_note": "HubSpot company ID -> approved ACV for a new At Risk account with more than hubspot.max_deals_before_flag Closed Won deals (otherwise pushed as $0 and flagged). Add by commit."
+  }
+}
