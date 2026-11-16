@@ -1,0 +1,50 @@
+{
+  "_note": "Every ID, stage and rule for the Implementations refresh. Changed only by commit. Why: T-tools/02-workflows/implementations-weekly-refresh.md",
+  "window": {"trailing_days": 30, "_note": "Required by the shared run helpers."},
+  "target": {
+    "api_base": "https://findigs-growth-hub.base44.app/api",
+    "app_id": "6a01dddd52a74acb4fd153bd",
+    "entity": "ImplementationsCache",
+    "record_id": "6aa833ac3d25aa397d5f6ba7",
+    "cache_key": "implementations_ops",
+    "dashboard_url": "https://findigs-growth-hub.base44.app/cx/implementations",
+    "managed_fields": ["computed_at", "hygiene", "stage_funnel", "triage_queue", "board_totals", "ongoing_worklist", "recently_completed", "aging_worklist", "capacity_gantt", "capacity_weekly", "follow_up"],
+    "_managed_note": "Same fields the page already has; Base44 drops unknown field names, so nothing new is ever added."
+  },
+  "hubspot": {
+    "object_type": "2-230996902",
+    "portal_id": "243635806",
+    "properties": ["company_name", "hs_pipeline_stage", "impl_segment", "impl_project_health", "impl_go_live", "impl_expected_go_live", "impl_desired_go_live", "impl_kickoff_date", "impl_units", "impl_tcv_handoff", "impl_pms", "impl_product", "impl_days_in_pipeline", "hubspot_owner_id", "hs_v2_date_entered_current_stage", "hs_createdate", "hs_lastmodifieddate", "monday_last_synced"],
+    "stages": {
+      "3920961246": "Tech scoping", "3823191786": "Awaiting Kickoff", "3965879023": "Credentialing & Configuration",
+      "3965666037": "Testing", "3965183698": "Training", "3965927159": "Ready to Launch",
+      "3966156487": "Pilot Launched", "3965183699": "Hyper-care", "3823191787": "Live",
+      "3823159004": "Failure to Launch", "3965747922": "Churned", "3966156488": "Stalled - Back to Sales"
+    },
+    "open_stage_order": ["Tech scoping", "Awaiting Kickoff", "Credentialing & Configuration", "Testing", "Training", "Ready to Launch", "Pilot Launched", "Hyper-care"],
+    "completed_stages": ["Live", "Hyper-care"],
+    "_stage_note": "Today's 12-stage pipeline (2026-11-12). Alex proposed a new board on 2026-11-03 (Closed-Won/Awaiting Kick-Off, Kick-Off, Implementation In Progress, Launched-Hypercare, Won-Active, FTL); when HubSpot changes, update this block by commit. A stage ID not listed here stops the run.",
+    "junk_name_patterns": ["^\\s*zz\\s*canary", "^\\s*cv\\s*test\\b", "^\\s*test\\s*\\d*\\s*$"],
+    "at_risk_health": ["At risk", "Off track"]
+  },
+  "rules": {
+    "triage_stale_days": 30,
+    "aging_days_in_stage": 30,
+    "recently_completed_days": 30,
+    "capacity_weeks_back": 4,
+    "capacity_weeks_ahead": 12,
+    "_note": "Activity dates use the date a record entered its current stage (hs_v2_date_entered_current_stage), not last-modified: the Monday.com mirror touches most records every morning. Aging = open, owned or not, in its current stage for aging_days_in_stage+ days. Recently completed = entered Live or Hyper-care within recently_completed_days.",
+    "_decision": "Will, 2026-11-12: the worklist, aging, recently-completed and capacity sections come from the HubSpot implementation object (agreed system of record, 2026-11-06), replacing the Existing Launches sheet (a Jira export, unedited since October). Sparse HubSpot fields show as gaps and are reported, not filled in. Jira board totals and the PDE follow-up list have no HubSpot source and are left empty."
+  },
+  "validation": {
+    "min_records": 150,
+    "max_open_change_pct": 25,
+    "_note": "Stop if HubSpot returns fewer records than min_records, or the open count moves more than max_open_change_pct vs the live record."
+  },
+  "slack": {
+    "success_channel_name": "#p-account-health",
+    "success_channel_id": "C0B4QMETZ52",
+    "failure_channel_name": "#gtm-automation-log",
+    "failure_channel_id": "C0CJ1P9D0HE"
+  }
+}

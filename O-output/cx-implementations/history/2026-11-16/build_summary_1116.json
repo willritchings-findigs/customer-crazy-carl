@@ -1,0 +1,67 @@
+{
+ "run_date": "2026-11-16",
+ "gates": [
+  "ok   every record is in a known stage ",
+  "ok   227 records >= 150",
+  "ok   funnel 87 = triage 69 + ongoing 18",
+  "ok   open records 112 -> 111 (-0.9%, limit +/-25%)"
+ ],
+ "failed": false,
+ "gaps": {
+  "open_without_owner": 69,
+  "owned_without_go_live_date": 10,
+  "owned_without_kickoff_date": 16,
+  "owned_without_project_health": 2,
+  "open_without_units": 9,
+  "open_without_segment": 29,
+  "no_source_on_hubspot": [
+   "board_totals (Jira)",
+   "follow_up (Jira PDE)",
+   "commit_status",
+   "effort",
+   "priority",
+   "churn_risk"
+  ]
+ },
+ "before": {
+  "total_all_records": 228,
+  "total_active_open_stage": 112,
+  "excluded_test_junk_count": 23,
+  "triage_queue_count": 71,
+  "triage_queue_total_tcv": 16631378.78,
+  "triage_queue_total_units": 276438,
+  "already_owned_in_hubspot_count": 18,
+  "ongoing_worklist_count": 18,
+  "aging_worklist_count": 69,
+  "follow_up_count": 0,
+  "recently_completed_count": 0.0,
+  "pct_missing_health": 98.6,
+  "pct_missing_segment": 40.8,
+  "pct_missing_tcv": 12.7
+ },
+ "after": {
+  "total_all_records": 227,
+  "total_active_open_stage": 111,
+  "excluded_test_junk_count": 24,
+  "triage_queue_count": 69,
+  "triage_queue_total_tcv": 16503246.28,
+  "triage_queue_total_units": 274288,
+  "already_owned_in_hubspot_count": 18,
+  "ongoing_worklist_count": 18,
+  "aging_worklist_count": 69,
+  "follow_up_count": 0,
+  "recently_completed_count": 0,
+  "pct_missing_health": 98.6,
+  "pct_missing_segment": 40.6,
+  "pct_missing_tcv": 13.0
+ },
+ "owners_on_open": [
+  "Asaf Raz",
+  "Christian Votta",
+  "Corinne Reimers",
+  "Ellie Ribes",
+  "Hailey Hollins",
+  "Josiah Gaede",
+  "Thomas McCarthy"
+ ]
+}
