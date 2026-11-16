@@ -1,0 +1,223 @@
+{
+ "Kairos Living LLC Parent": {
+  "pm_friction_titles": [
+   "#253719 Verified income amount not updating; co-applicant invitation not processed (verified-income figure not reflecting verified income; incorrect screening data)",
+   "#253225 Data Feed Frozen: Stale Table Updated At Timestamp (SFTP data feed stopped updating; data sync failure)",
+   "#253170 ToG User SSO Access Issue and Team Members (SSO user cannot access and PM still cannot add Team Members; access failure)",
+   "#250499 Password reset email not received for account (reset emails never delivered after two requests; login/access failure)",
+   "#248962 Notes Field Angled Brackets Blocking Interaction (Findigs writes angle brackets into Yardi notes, locking guest cards; integration bug)",
+   "#243705 Guest Card in Yardi Missing Daquan Data (co-applicant data and docs not synced to Yardi guest card; sync failure)",
+   "#229852 Income Verification Note Versus Verified Section Mismatch (note and verified section disagree after an earlier fix; incorrect screening data, repeat)",
+   "#222178 Flagging issue: incorrect fraud routing for income documentation (system-flagged edited income docs not routed to fraud; escalation about product behaviour; same defect as #215796, #210998 and item 7 of #219403, counted once)",
+   "#214227 Double Applications Within Single Application (applicant able to apply twice inside one application; duplicate-application bug; same as item 8 of #219403)",
+   "#210759 Stuck Apps Investigation: Unknown Cause in Known Issue (submitted apps stuck, Findigs acknowledged known issue; repeated unresolved defect; same as item 1 of #219403)",
+   "#208336 Bank linking failures for multiple applicants (bank linking broken for 4+ applicants in one day; systemic failure; same as item 3 of #219403)",
+   "#208054 Cancellation workflow stalling in Request Documents step (cancel requests left in Request Documents instead of PM-QA; workflow defect)",
+   "#204648 Chime bank account mislabeling issue (non-Chime accounts labelled Chime in income verification; incorrect income data; #231670 is the same defect recurring, counted once)",
+   "#204031 Performance Analytics loading issue with spinning circle (dashboard never loads; outage)"
+  ],
+  "pm_friction_count": 14,
+  "classification": "Negative",
+  "total_open_issues_90d": 89,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 1). Account id resolves to 'Kairos Living' (matches). Total 89 vs scanner 88: one new issue (#255411 weekly follow-up) created 2026-11-16 after the scan; single page, has_next_page=false. Removed 8 scanner titles after reading bodies: #255375 (Findigs support outreach asking PM to fix $0 rent in their own PMS; support-originated, not a defect), #248817 (one-line statement that an override no longer applies to a specific applicant), #247619 (complaint that Findigs staff kept changing an app's status; service, not platform), #237902 (asks whether there are any login/submission issues; status check, nothing confirmed), #226344 (Findigs staff sent an app back to QA; ops action), #223465 (request to adjust the Yardi integration so approval does not change guest-card status; configuration/feature request), #214331 (asks whether a deployment is live and will affect the feed; no defect), #213963 (asks whether duplicate applicant IDs in the export are expected; question, likely by design). Merged as same incident: #231670 into #204648 (Chime mislabel recurring), #215796 into #222178 (fraud routing), and #219403 (formal escalation whose bug items are bank linking, stuck apps, fraud routing and duplicate apps, all already counted; its other items are service complaints). Scanner-missed candidates read and not added: #210998 (same fraud-routing defect), #244683 (CSM-sent escalation analysis), #206429 (new-hire onboarding), #204941/#229702/#238385 (underwriting-decision questions). No applicant-filed or pet issues. Not fragile: 14 distinct confirmed PM-side platform problems."
+ },
+ "Standard Management Company Parent": {
+  "pm_friction_titles": [
+   "#219078 [URGENT] Fw: Case ID: 19108494 - Need to turn off Application charges (Findigs pushing $50 app-fee charges into Yardi ledgers; integration/config defect; #254822 fees charged on tenant ledgers for all properties, #245097 urgent charges review and #236214 denied applicants charged $150 / double admin fee are the same fee-posting defect, counted once)",
+   "#248190 An application fee was charged, but reflects as unpaid in yardi (Findigs payment not posted to Yardi ledger; on engineering FR-5485; #248329 all Findigs payments missing from resident ledgers and #252670 payments appearing then removed with prior ticket unanswered are the same defect, counted once)",
+   "#224395 Section 8 Applicants (portfolio configured to accept vouchers when it never should have; configuration bug; #228813 'another Section 8 applicant pushed through - I thought this was corrected' is the repeat, counted once)",
+   "#206047 Findigs Access (PM never receives registration email after several invites; access failure)"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 34,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 1). Account id resolves to 'Standard Management Company' (matches). Total 34 matches scanner; single page. Removed #253416 (Findigs answered that A2EL add-to-existing-lease applications are not pushed to Yardi by design; PM objects to the double work - working-as-designed product limitation, not a defect). Collapsed the scanner's 11 titles into 4 distinct incidents: fee charges wrongly pushed to Yardi (#219078, #254822, #245097, #236214), Findigs payments not posting to Yardi ledgers (#248190, #248329, #252670), Section 8 voucher misconfiguration (#224395, #228813), registration email never received (#206047). Candidates read and not added: #219159 (admin-fee ownership and unit-offline configuration questions), #252736 (Get Covered website link leaked; not Findigs), #206722 (Apts.com apply-now links; implementation), #252588 (RentCafe portal integration thread), #253854 (asks for a phone contact), #241395 (denial-process questions). Pet drop #236243 and spam #246014 confirmed. Fragility: if the fee-push cluster and the payments-not-posting cluster are judged one Yardi ledger-integration defect the count falls to 3, still Negative but exactly at threshold."
+ },
+ "Sentral": {
+  "pm_friction_titles": [
+   "#252929 Ledger payment discrepancy for applicant 1805-732 ($565 payment missing from Yardi ledger; on engineering; payment sync failure)",
+   "#249932 SWM - NSF Admin on ledger when refunding on Findigs site (refunds issued in Findigs create NSF entries on ~5 resident ledgers; integration bug; #244464 Refunds for denied applicants reports the same NSF-on-refund behaviour, counted once)",
+   "#239164 Issue with Application (application terms display 2.1x instead of the configured 2.5x income requirement; configuration/display bug)",
+   "#237529 Joinery Phase 1-Applicant not showing in Findigs (applicant shown as applied in CRM absent from Findigs prospects and applicants; sync mismatch)",
+   "#225633 Holding Deposit Refunds Not Posting to Tenant Ledgers (refunds processed by Findigs missing from Yardi ledgers, subledger does not tie to GL; sync failure)"
+  ],
+  "pm_friction_count": 5,
+  "classification": "Negative",
+  "total_open_issues_90d": 69,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 1). Account id resolves to 'Sentral' (matches). Total 69 matches scanner; single page. Removed #254707 (SOP link for Diega opens the DTLA article; PM asks whether a Diega article exists - content/config request, not a platform failure). Scanner-missed #244464 (refund to denied applicant produced an NSF charge months later) is genuine friction but the same incident as #249932, so merged rather than added. Candidates read and not added: #248316 (complaint that the bot auto-closed #247543; underlying defect not stated), #231081 (employee needs to complete application; how-to), #219677 (applicant error screenshot on a unit transfer; setup), #220399/#210647/#219804 (RentCafe redirect-script and lead-attribution implementation), #243595/#240772/#239990 (auto-approval configuration), plus fee, invoice, training, contract and sponsorship threads. No applicant-filed or pet issues. Fragility: #239164 is partly an underwriting complaint, and #225633 could be merged with #249932 as one refund-to-ledger defect; under that strictest reading the count is 3, still Negative."
+ },
+ "Lynco Properties": {
+  "pm_friction_titles": [
+   "#231640 FW: Findigs Help! (Rolling Hills units vacant in PMS but Listed NO in Findigs; unit sync failure)",
+   "#214400 Fw: Norma Ramos apt 247 (persistent error on a unit after account reset via chat; triaged as unit syncing issue, bug-tagged)",
+   "#217446 delayed log in (PM login verification code never arrives; urgent, never answered; access failure)",
+   "#208865 Error Logging In- Lynx Crossing/LynCo (new manager cannot log in; invite says account in use and reset produces an error; access failure)"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 25,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 1). Account id resolves to 'LynCo Properties' (matches). Total 25 matches scanner; single page. All four scanner titles confirmed as distinct PM-side problems (two unit-sync incidents at different properties a month apart, two login failures for different users with different symptoms). Candidates read and not added: #230906 (prospect blocked because LRO was enabled before go-live; PM asks to turn it off - configuration request), #236830 (turn LRO on), #226645 (promo-code report question), #207719 (internal transfer user admin), the new-hire/user-add and property add/remove requests, CSM outreach. No applicant-filed or pet issues. Fragility: #214400 has a thin body ('it won't stop error' after account reset) and rests on triage sub-category; if dropped the count is 3, still Negative."
+ },
+ "Point Real Estate Parent Company": {
+  "pm_friction_titles": [
+   "#231903 Fw: EXTERNAL:Findigs Application Submitted By Applicants (Findigs accepting applications on occupied units and multiple applications per unit; second occurrence; escalated; unit-lock defect)",
+   "#206552 Guarantor Applications (guarantor could not submit after the one-application-per-unit lock; Findigs applied a backend configuration fix; configuration bug)"
+  ],
+  "pm_friction_count": 2,
+  "classification": "Neutral",
+  "total_open_issues_90d": 12,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 1). Account id resolves to 'Point Real Estate Management' (matches). Total 12 matches scanner; single page. Removed #231798 (AIRM pricing): the PM's own email shows Findigs displaying the same $1,840 as Yardi's unit table, and the thread has RealPage confirming that AIRM rates sit in a Yardi temp table and are not written to the unit price Findigs reads; the PM then asks Findigs to read pricing from RentCafe instead. That is a cross-vendor configuration/feature request, not a confirmed Findigs defect. Candidates read and not added: #218221 (how to mark a fee paid by check), #198758/#204636 (new property onboarding), #205225/#204580/#253919 (access/user adds), #202853 (remove LRO configuration), #218225 (spam/out-of-office). No applicant-filed or pet issues. Overturned from Negative to Neutral. Fragility: one more confirmed defect flips this back to Negative; if #231798 is scored as PM-perceived pricing friction regardless of root cause the count is exactly 3."
+ },
+ "Evernest": {
+  "pm_friction_titles": [
+   "#199467 Outage status for Findigs service (application links down; Findigs CSM confirmed Engineering was working it and later marked it resolved; outage)",
+   "#241354 Rental application link issue for unit lookup (unit application link still not working after retries; 10 touches, waiting on Findigs; unit link failure)"
+  ],
+  "pm_friction_count": 2,
+  "classification": "Neutral",
+  "total_open_issues_90d": 19,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 1). Account id resolves to 'Evernest' (matches). Total 19 matches scanner; single page. Removed #199742 (reimbursement for applications 'not found'): the thread shows the applications were not missing - the two applicants each started separate incomplete group applications and Findigs merged them on request; working as designed. The PM also mentions applicants 'still can't use promo codes', but the CSM asked for examples and the thread ends unconfirmed. #199467 kept after reading replies: the Findigs CSM confirmed an engineering issue and resolution, so it is a confirmed outage despite the PM's own link check. Pet drops #248823 and #203173 confirmed. Candidates read and not added: #200647 (owner-referral lead cannot see upload option; applicant-side plus PM in-progress visibility limit by design), #235924 (no issue stated), #227803 (PDF export request for an audit), the criminal/eviction report-delay tickets (applicant status), disputes, access requests. Overturned from Negative to Neutral. Fragility: if the unconfirmed promo-code complaint in #199742 is scored as a defect the count is exactly 3."
+ },
+ "Highmark Residential Parent": {
+  "pm_friction_titles": [
+   "#252368 p7412711-The Enclave Apartments at Waterway (application cancelled in Yardi with Findigs as agent, no site/applicant request; repeat occurrence; Findigs concedes agent-name attribution in Yardi is unreliable; escalated to weekly agenda)",
+   "#252123 FW: Findigs Rollout Phase 7 - Approved Credit Scores (approved credit criteria not applied; applicants wrongly declined/conditional; Findigs: 'a miss on our end', fix deployed, re-evaluation list demanded by exec)",
+   "#250181 Walden Legacy - Arriaga (application-fee receipt not pushed to Yardi; Findigs unable to re-push, PM must post manually; second example at Centro at Davie in same thread)",
+   "#248055 Missing application payments (paid application fees missing from Yardi ledger after group merge; 9-day engineering investigation; PM given check numbers to post manually)",
+   "#247897 Traffic Reporting (loss of original marketing-source attribution and inaccurate tour/application counts; repeated issue; written RCA and timeline demanded)",
+   "#245569 Findigs connectivity issues (Patricia Harris / The Emerson guest card rejected by Yardi because Findigs create_application did not send the required Show event; approved applicant absent from Yardi; same incident as #233537 and #229801, counted once)",
+   "#231855 Findigs website issue, double applicants for same unit approved (root cause per Findigs: reopened auto-cancelled application does not re-reserve the unit in Yardi; unit stayed listed; FR-5248)",
+   "#231108 Findigs Eviction History Lookback Period Conflict (5-year eviction lookback applied vs 3-year criteria; multiple wrongful denials; Asurint config audit; support also misattributed the delay to Highmark)",
+   "#206796 Missing Ledger Payment - Woodland Lakes (Findigs bug with duplicate Stripe transaction IDs left 16 application-fee receipts unposted to Yardi 5/27-8/21; PM must post manually; same incident as CSM follow-up #215244, counted once)",
+   "#207682 Reopen: Re-evaluate Rental Application Based on Actual Rent (Yardi rent updated to $1,451 but Findigs decision used stale rent; escalated FR-4943, on engineering since 9/1 with no update)"
+  ],
+  "pm_friction_count": 10,
+  "classification": "Negative",
+  "total_open_issues_90d": 183,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 2). Account id confirmed (Highmark Residential, highmarkres.com). My pull: 183 open issues (100 + 83 via cursor); scanner had 182 because #255418 was created 11/16 after its run, and scanner-cited #255398 is now CLOSED (resolved 11/16 14:49 via ServiceNow routing) so it is not in the open set and is not counted. Read all 21 cited titles plus ~20 uncited candidates. Removed 11 cited titles: #255398 (closed), #254555 and #250634 (Stripe Connect receipt posting takes up to 2 business days; working as designed, #250634 self-resolved), #254549 (application already approved; how-to on the Yardi approval page), #253677 (students did not declare status; one-guarantor SOP rule, working as designed), #249566 (Findigs matched to an existing Zillow guest card by email/phone/last name; applicant used legal name in Findigs; not a defect), #247639 (applicant chose a different unit because PM could not list the intended unit; unit transfer handled), #245982 (Findigs push to Yardi succeeded 10/28; unit status in Yardi blocked update; site team can approve manually), #230808 (Highmark's own compliance director closed it as 'not a Findigs issue, RentCafe/Yardi sync'), #223177 (Show-event configuration negotiation; implementation coordination), #205793 (affordable workflow: Yardi stays 'applied' until RentCafe step; working as designed; the complaint was a 2-day escalation delay, not a platform defect). Merged #233537 and #229801 into #245569 (all the Patricia Harris / Emerson guest-card incident). Added #206796 (PM-raised payment-posting bug, 16 impacted receipts; #215244 is the CSM follow-up on the same incident) and #207682 (rent-sync decision discrepancy on engineering 2.5 months; borderline because tagged as a dispute). Not counted but noted: #245154 Endpoint Redirect (Findigs cannot dynamically redirect multi-phase non-RentCafe sites; product limitation surfaced during Phase 8 rollout), #209439 (support AI gave incorrect decline reasons; feature disabled), #229743-style display issues. Pet tickets excluded as scanner did. Negative is robust: 10 distinct confirmed incidents, well above the 3 threshold; even dropping the two borderline items (#207682, #248055) leaves 8."
+ },
+ "Beztak Properties Parent": {
+  "pm_friction_titles": [
+   "#253931 Unit Status (Findigs changing unit status to Ready/Not Ready in Yardi, seen at multiple properties; marked urgent by PM software support manager; escalated, unresolved)",
+   "#245213 Changing unit on approved application (units available in Yardi not appearing in Findigs, e.g. 133-03 which passes every sync check; seen on other Beztak properties; on engineering FR-5518 since 10/28, Findigs opened a Yardi support ticket; unresolved)",
+   "#236743 Yardi Findigs Issue with Source (Findigs-created guest cards overwrite original marketing source in Yardi reporting; disputed root cause with Knock timing; on engineering FR-5339 for a month, PM requesting XML for Yardi review)",
+   "#228005 Tenant application status update for Nathaniel Arellano (unit's updated rent in Yardi not syncing to Findigs, application blocked; escalated FR-5188; PM chased updates repeatedly)"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 38,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 2). Account id confirmed (Pylon 'Beztak', beztak.com; HubSpot name 'Oakland Mgmt (Beztak)'). My pull: 38 open issues (scanner 37; one more 11/16 chat ticket since). Read all 7 cited plus 8 candidates. Removed 3 cited titles: #254627 (prospect not in Findigs because the applicant had not completed the Rental Information section; working as designed), #243568 (applicant blocked because the PM transferred an add-to-existing-lease application onto a normal listed unit that then de-listed; triage verdict 'behaving-as-coded', PM action caused it), #229743 (promo code had expired at midnight 10/2 per its own config; only a cosmetic 'active' status display issue, Jira resolved). Agree with scanner on exclusions #253355 (applicant hit a de-listed unit another applicant holds; PM should send a different link), #253500 (move-in date before Yardi availability; manually adjusted), #253969 (invoice/credit question). No missed friction found; #249920/#255414/#255395 are SOP overrides, #250416/#248916 Affordable pilot coordination, #240265 training scheduling. Fragility: Negative rests on exactly 4, and two of them (#245213, #236743) have root causes Findigs attributes partly to third parties (Yardi, Knock) although both remain open on Findigs engineering with the PM still experiencing the problem; if a reviewer excludes both, the account is Neutral at 2."
+ },
+ "Oakwood Parent": {
+  "pm_friction_titles": [
+   "#254641 Guarantor status mismatch with other open application (approved with guarantor in Findigs, but Yardi shows applicant twice and no guarantor; triage 'code-defect-suspected'; escalated FR-5576)",
+   "#249118 Applicant Submissions: Duplicate Names for 1425-213 (second submitted applicant not visible / not syncing to Yardi and PM UI; re-run failed, 'information is still wrong'; escalated FR-5578)",
+   "#236547 Prospect error code (4+ prospects unable to apply to any unit at The Benjamin; Findigs confirmed a misconfiguration on its side and fixed it; #239362 is the same incident forwarded by the ops director, counted once)",
+   "#208599 5765-211 (Findigs application-fee payment missing from Yardi ledger; Findigs: 'the transaction failed to post, we pushed it back into Yardi'; payment sync failure)"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 38,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 2). Account id confirmed (Oakwood Management Company, liveoakwood.com). My pull: 38 open issues (scanner 36; two new 11/16 tickets since). Read all 6 cited plus 10 candidates. Removed 3 cited titles: #228180 duplicate attachments (Findigs engineering checked Yardi Voyager via API and found single document sets; duplication is in the PM's Yardi CRM connection which Findigs does not control; Jira FR-5190 closed; disputed but no Findigs defect confirmed), #239362 (duplicate thread of #236547, merged), #219548 Ponds at Madison (property-group redirect not set up for a Special Leasing property; FR-5086 opened; implementation/configuration coordination rather than a platform defect, borderline). Added #208599 (PM-raised missing ledger payment that Findigs confirmed failed to post and re-pushed; scanner missed it). Agree with scanner that #249474, #246613, #227832, #214987 are Findigs-originated configuration/redirect-script threads and #225080 is a Yardi-config duplicate fee charge. #252809 is a Findigs-originated notice of a September processing-fee double-charge credit (billing, not counted). Fragility: exactly 4; if a reviewer re-admits #219548 as a configuration bug it is 5, and if they reject #208599 it is 3 — Negative holds in all these variants."
+ },
+ "Kotarides Property Management": {
+  "pm_friction_titles": [
+   "#201228 Another Merge Issue (un-merged applicant not reflected in Yardi CRM and decision not updated; Findigs: 'a bug in the code where we used the wrong third-party ID', re-ran operation; FR-4844)",
+   "#202989 Record Mismatch? (re-applied applicant activated two Yardi records; Findigs data pushing to the previously denied pcode; escalated as TES, RCA requested)",
+   "#199490 Application Links not working (all application links and rent.findigs.com returning 404/timeouts; Findigs confirmed platform-wide outage affecting other users; resolved within ~1 hour)",
+   "#200392 Merge Issue (merged applicants still two separate guest cards in Yardi CRM with wrong statuses; Findigs: matching logic collision, 'a documented issue our team is actively scoping', FR-4830; PM worked around in CRM)"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 14,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 2). Account id confirmed (Kotarides Property Management, kotarides.com). My pull: 14 open issues, matches scanner. Read all 14 bodies. Removed 1 cited title: #208296 Application Fee Description (Findigs engineering confirmed the long coded ledger description was an intentional release; converted to a feature request to make it configurable; 'working as designed'). Added #200392 Merge Issue, which the scanner left unread: it is a confirmed, Findigs-acknowledged merge-to-Yardi sync defect, distinct from #201228 (different applicants, different stated root cause: update collision vs wrong third-party ID) although in the same defect family. Not counted: #241361 (forged paystub not flagged because the PDF editor was not yet on the detection list; fraud-detection gap, escalated, borderline), #229313 Belmont (transient 404 plus waitlist unit matching driven by PM's PMS unit text), #210491 enhanced-checkout beta testing (leasing special not showing at checkout in test portfolio), #228845 data feed request, #199171 promo-code email feature request, #241003/#239350/#229371 app-remodel coordination, #222427 dispute. Fragility: if #200392 and #201228 are treated as one incident the count is 3 — still Negative; it drops to Neutral only if a reviewer also rejects one of the remaining three, which I do not see grounds for."
+ },
+ "Imagine Homes Parent": {
+  "pm_friction_titles": [
+   "#215733 Decision Assist Processing Delays (applications sitting unprocessed by Decision Assist for ~1 day, recurring; Findigs escalated, deployed a fix 9/15 and confirmed fixed 9/18; #213376 is the earlier thread on the same defect, counted once)"
+  ],
+  "pm_friction_count": 1,
+  "classification": "Neutral",
+  "total_open_issues_90d": 6,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 2). OVERTURNED: Negative -> Neutral. Account id confirmed (Imagine Homes Management, imagine-homes.com). My pull: 6 open issues, matches scanner. Read all 6 bodies. The scanner reached 3 by counting #215733 and #213376 separately; they are the same recurring Decision Assist processing defect (9/8 and 9/11 threads, same reporters, same fix), so under the same-incident rule they count once. Removed #208786 Welcome to Findigs Inc. (invitation showed 'expired' because the user already had an account; CSM granted portfolio access within 3 minutes; access provisioning, not a platform failure). Not counted: #228395 and #223703 (data/analytics questions), #208439 (CSM intro thread that also carries a revenue-share invoice discrepancy question; billing). No missed friction. Fragility: even if #208786 were re-admitted the count would be 2 (Neutral); reaching Negative requires counting the two DA threads as separate incidents, which the rules do not allow."
+ },
+ "MJW Investments Parent": {
+  "pm_friction_titles": [
+   "#233991 Ongoing Issues with Findigs Income Verification and Application Processing - MJW/Findigs (customer escalation to Findigs leadership: income-verification decisions inconsistent with MJW criteria, RentCafe applications not redirecting, and fee configuration not charging the $250 admin/holding fee (~$2,500 uncollected); Findigs re-aligned SOPs and reconfigured fees; #230566 'Glitch at sunset?' is the same fee-configuration incident, counted once)",
+   "#234159 Findigs <> MJW: Coventry Square Minimum Lease Duration (guest-card pushes to Yardi Voyager failing because Findigs hard-codes a 12-month lease term and cannot support MJW's 13-month minimum; applications stuck; Director of Operations pushback 'we should not have to change our lease requirements to accommodate a system limitation'; feature request added to sprint)"
+  ],
+  "pm_friction_count": 2,
+  "classification": "Neutral",
+  "total_open_issues_90d": 8,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 2). OVERTURNED: Negative -> Neutral. Account id confirmed (MJW Investments, mjwinvestments.com; HubSpot churn_risk already 'Churned', status Onboarding). My pull: 8 open issues, matches scanner. Read all 8 bodies. The scanner counted #230566 separately; its content (applicant charged $75 vs $60 because the fee was changed mid-application, and the admin fee not being charged) is the same fee-configuration incident that #233991 escalates four days later (Matt: 'how we've now adjusted the admin and app fee configuration'), so it counts once. #234159 is Findigs-originated but the customer's escalation and the failing Voyager pushes make it genuine PM-side friction, so I kept it. Not counted: #224998 Delano - Scott Norman Follow-Up (Findigs-originated RCA admitting an applicant was approved while income verification was still open and that a dashboard control was not working; single-applicant decision dispute, but it is the swing ticket - if a reviewer treats it as a confirmed incorrect-decision defect the account is Negative at 3), #238354 (PM double-charge/manual-ID request, how-to), #235880 access, #221651 call scheduling, #214084 implementation update. Fragility: high; the call sits at exactly 2 with one defensible third candidate (#224998) and one merge decision (#230566) that each flip it to Negative."
+ },
+ "McKinley Companies, LLC": {
+  "pm_friction_titles": [
+   "#254429 Not receiving Email code to login (PM admin reports coworker never receives the emailed MFA login code; escalated to engineering FR-5574, on_engineering, unresolved)",
+   "#238018 FinDigs Service Outage Reported (Oct 16 outage/blip; Findigs confirmed 'identified + fixed this cause')",
+   "#231142 Application stuck in underwriting and routing to main page (Findigs reproduced the routing bug and had engineering look; resolved next day)",
+   "#224431 Merge Prospect Issue (Yardi CRM IQ guest-card merge failing since go-live because Findigs pushes null sNotes and creates duplicate guest cards; Findigs logged an engineering ticket and enabled CLO search as mitigation)",
+   "#217247 Pending Document Engine Analysis Timeout (doc-engine timeout error 'E.0 - Pending Technical Review' on an application; escalated to engineering)",
+   "#210592 Orlando Apps: Submissions Stuck Awaiting Underwriting (Sep 3 engineering incident; 16 Orlando plus several Michigan apps stuck at submission, manual push impossible until eng fixed it)",
+   "#199850 Application submission issues reported in last 24 hours (Aug 19 incident; applicants unable to submit, Findigs confirmed and resolved 10:00 ET)"
+  ],
+  "pm_friction_count": 7,
+  "classification": "Negative",
+  "total_open_issues_90d": 60,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 3). Account id verified (name 'McKinley Property Management', domain mckinley.com). total 60 matches scanner, no next page. REMOVED 5 of 11 scanner titles: #253476, #246474, #242487 and #238364 are support-queue/responsiveness escalations (PM asking Findigs to clear ticket backlog), not platform defects, so excluded under the strict platform-friction rubric (they are real relationship friction and the CSM wrote #244070 analysing 32 such escalations; keep in mind qualitatively); #215459 Document download issues turned out to be applicant-side document problems (PNG not PDF, altered metadata) plus one UW oversight, not a platform fault. ADDED 1 missed title: #224431 Merge Prospect Issue, a long-running Yardi CRM IQ integration defect with an engineering ticket. Checked and excluded: #232735 (Yardi returning old unit type code, Yardi side), #238909 (bypass phone number on guest cards, working as designed, logged as low-priority FR-5335), #217186 (crim pending status question), #254440 (applicant payment failure, applicant side), #231744 (IDV profiles conflated because applicants shared an email), #201266/#229424 (third-party report delays), #244070/#244721/#222736/#237921 (CSM-originated or feedback threads), #205666 (ID theft partner feedback), #214138 (credit rerun, TransUnion data). Pet drops #220866 and #218131 confirmed. Three of the seven are confirmed platform incidents/outages on distinct dates (Aug 19, Sep 3, Oct 16). Negative is robust: 7 confirmed, well above the 3 threshold even if #254429 later proves to be the customer's own mail gateway."
+ },
+ "Brick and Timber Parent": {
+  "pm_friction_titles": [
+   "#212733 Findigs Access (entire team lost access on Sep 7; Findigs confirmed a platform outage, service restored ~5:30 PM ET)",
+   "#239431 Incorrect Deposit Amounts (deposit/conditional-approval logic treating qualified applicants as 'No Score'; Findigs confirmed a configuration error on its side and fixed it; same incident reported again in #242442, #243071 and #243103, counted once)",
+   "#251772 Application Issues (Findigs admitted a 'technical issue' auto-selected liquid assets from a linked business account and approved an application in error, plus Notes failing to capture underwriting context; flagged to engineering)",
+   "#201747 Yardi Troubleshooting (lease-signing/unit mismatch problems affecting ~25% of roommate leases since April, unresolved and escalated to the Integrations PM; partially attributed to Yardi, so the weakest of the four)"
+  ],
+  "pm_friction_count": 4,
+  "classification": "Negative",
+  "total_open_issues_90d": 34,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 3). Account id verified (name 'Brick and Timber, Inc', domain rentbt.com). total 34 matches scanner, no next page. REMOVED 3 of 7 scanner titles: #249157 Unit Not Available in Findigs - root cause was that Findigs' Yardi login lost access to property 4335 after the customer's own Yardi property-list clean-up (see #227850 where the Ballast systems manager says 'Sorry about that! I have corrected'), i.e. customer-caused configuration, not a Findigs defect; #231195 Approved Status in Findigs Not Showing in CRM - root cause was the same customer-side removal of two CLOs in Yardi ('This was me trying to clear up property lists'), and the status leg that remained broken was the Voyager-to-CRMIQ push on Yardi's side; #242442 Application Issues merged into #239431 because Findigs confirmed the same 'No Score' configuration error behind both (and behind #243071/#243103), and the unit-availability half of #242442 was again property 4378 not visible to the Findigs Yardi login. Also checked and excluded: #241000 ($1 verified-income display is a documented placeholder/display limitation, not a defect), #227850 (Findigs-originated config instruction), #244269 (reporting export), #223108 (Stripe meeting), #243071/#243103 (folded into the #239431 incident). Fragility: 4 counted, but #201747 is partly Yardi-side; without it the count is exactly 3 and Negative hangs on the threshold. Qualitatively the account is clearly frustrated (several threads chasing responses while the CSM was out) and the churn_risk field on the Pylon account is already Red."
+ },
+ "Jones and Jones Communities": {
+  "pm_friction_titles": [
+   "#247968 Application Fee 611 Hampshire Rd. #513 - #611H513 (Findigs confirmed the Yardi post-charges operation failed for the second applicant; engineering re-posted the charge)",
+   "#236986 Application fees - 8220 Topanga Canyon Blvd. #115 - #115 (post-charges operations failed for two applicants because prospect IDs were not updated; while engineering corrected it a 'system error' removed a roommate record from Yardi)",
+   "#231775 sync application - 5018 Obama Blvd. #14 - #5018R14 (guarantor documents and guarantor record failed to sync to Yardi; Findigs submitted a ticket to re-push; #233284 'Findigs updates in Yardi' is the same early-October sync/fee cluster and is counted once here)"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 8,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 3). Account id verified (name 'Jones & Jones Communities', domain jjcommunities.com). total 8 matches scanner, no next page; all PM-filed by the same leasing admin, no applicant or pet tickets. REMOVED 3 of 6 scanner titles: #232500 Sync application 12600 Braddock - Findigs found the co-applicant had entered her own contact details on the other applicant's account, so only one guest card was pushed; applicant-caused data error, not a sync defect; #228729 App fee help - the fee was on the ledger, Findigs simply supplied the transaction ID and pcode (how-to/lookup, not a failure); #233284 Findigs updates in Yardi - an umbrella email ('3 applications I need help with') covering the same Oct 6-8 sync and fee issues already counted under #231775, resolved on a Zoom call; counted once per the same-incident rule. Non-cited #245284 (holiday notice) and #238408 (launch announcement) confirmed non-friction. Fragility: exactly 3, so Negative sits on the threshold. #247968 and #236986 are the same defect class (Yardi post-charges failures) on different units three weeks apart and are treated as distinct incidents; if a reviewer merges them, or disagrees with excluding #232500, the count moves to 2 or 4 respectively. The repeated fee/sync failures are genuine integration friction, so Negative is defensible but not robust."
+ },
+ "Maymont Homes": {
+  "pm_friction_titles": [
+   "#199494 FinDigs- Down- BTR (Aug 19 outage affecting applicants across BTR communities; Findigs confirmed an incident, restored in ~45 minutes)",
+   "#249549 Last approval note with income (the 'Approved up to $' note is intermittently not pushed to the top of MRI notes; engineering confirmed a bug, Jira D3-1976 and FR-5507 open, on_engineering)",
+   "#249207 Wrong verbiage on Income Approval Requirement (applicant-facing screening criteria showed 2x while the SOP said 2.5x; internal notes show a Findigs CSA had accidentally reverted the Colorado 2x setting and the screening criteria had to be re-synced; configuration error on Findigs' side)"
+  ],
+  "pm_friction_count": 3,
+  "classification": "Negative",
+  "total_open_issues_90d": 10,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 3). Account id verified (name 'Maymont Homes', domain maymonthomes.com). total 10 matches scanner, no next page. All three scanner titles confirmed; none removed, none added, so classification and count match the scanner (changed_from_scanner is true only because the title annotations differ). Checked and excluded: #245577 (bank remittance discrepancy, billing), #252667 (manual review request), #202570/#199956 (CSM-originated config threads), #249558 (pilot kickoff invite), #247489 (account creation). Pet drop #255378 confirmed (pets category, Pets Inbound/General tags). Fragility: exactly 3. #249207 is the weakest - the PM's final answer was 'working as designed' for Colorado compliance, but the thread documents a real Findigs-side config mismatch (CSA 'accidentally changed it back') that confused applicants, so it is counted as a configuration bug. If a reviewer treats it as WAD the account drops to Neutral (2)."
+ },
+ "Group Fox Management": {
+  "pm_friction_titles": [
+   "#215822 2180-203 (Linero/Ereira group: Findigs and Yardi records conflicting, unmerged applicant, missing co-applicants, denied application still active in Yardi, post_charges not completing; escalated FR-5048; #221826 'Linero Applications 2180-308' is the PM's continuation of this same three-week saga and is counted once)",
+   "#219712 Incorrect Credit Criteria (applicant-facing criteria page still showed the old 550 minimum and the flow prompted a personal guarantor instead of TheGuarantors after the PM's SOP change; configuration lag that Findigs acknowledged internally)"
+  ],
+  "pm_friction_count": 2,
+  "classification": "Neutral",
+  "total_open_issues_90d": 13,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 3). Account id verified (name 'Group Fox Management', domain groupfox.com). total 13 matches scanner, no next page. OVERTURNED: scanner Negative (3) -> Neutral (2). The scanner counted #221826 and #215822 separately, but #221826 (Sep 21) explicitly describes the same Linero file: 'This has now been going on for almost three weeks, several help tickets and involves four applications', i.e. the continuation of #215822 (Sep 11, same applicants, same Yardi/Findigs mismatch), so the same-incident rule collapses them to one. #219712 confirmed as friction (criteria/config mismatch), although it is partly a knock-on of the pending SOP change in #217910. Checked and excluded: #217910 (SOP change request, config), #204424 (Findigs-originated go-live follow-up; the unit-hold/double-charge questions were explained as expected behaviour during launch), #253364 (criminal report pending, third party), #228878 (income dispute), weekly sync/pilot deck/training/reschedule threads. Fragility: if a reviewer keeps #221826 as a distinct incident (it does add a new symptom - denying one duplicate removed only one Yardi record) the count is 3 and the account is Negative again. Qualitative warning: the PM admin and an Assistant Regional Manager wrote on #221826 that 'Findigs may not be the best fit for Barrington' and asked when the 60-day pilot ends, so sentiment is worse than the ticket count implies."
+ },
+ "Winfield Property Management, LLC": {
+  "pm_friction_titles": [
+   "#247790 Applications for Winfield Property Management all routing to One Eleven Greenwood (Nov 2: applications for every property routed to the Townhomes at Centennial portfolio; CSM had to deactivate that portfolio, noting 'a similar issue occurred when Echo Trails was offboarded')",
+   "#208673 Findigs issue (Sep 1: after Echo Trail was offboarded on 8/24 the whole portfolio's applications routed to Echo Trail; Findigs made a backend change to fully deactivate it; #209546 'Application for Wendolyn Martinez' is a next-day report of an application created before that fix and is the same incident, counted once)"
+  ],
+  "pm_friction_count": 2,
+  "classification": "Neutral",
+  "total_open_issues_90d": 26,
+  "note": "Independently re-pulled and re-adjudicated this run (verifier 3). Account id verified (name 'Winfield Property Management', domain winfieldliving.com). total 26 matches scanner, no next page. OVERTURNED: scanner Negative (3) -> Neutral (2). #209546 (Sep 2) is explicitly the same Echo Trail routing incident as #208673 (Sep 1): Findigs replied that the application 'was created on 8/31 before the fix was completed' and the apply-now links were already redirecting correctly, so it is a follow-up on the same incident, not a repeat. #247790 (Nov 2, different offboarded portfolio) is a distinct recurrence of the same class of bug and is counted separately. Checked and excluded: #240671 and #237258 (re-enable/setup of The Heights at Midtown and 512 Gardens; engineering found no units under the AppFolio property IDs, customer-side setup), #231260 (logo plus user access), #198872 (property not live), #254762 (applicant could not edit employment after submitting, working as designed), #244459 (applicant submission trouble handled directly with the applicant), ~12 login reset / new user / access provisioning requests, #244525 (fee config), #238409 (launch note), #209555 (CSM intro), #199747 (navigation question). Fragility: if a reviewer counts #209546 separately the account returns to exactly 3 and Negative; the recurrence pattern (offboarded/deactivated portfolios capturing applications twice in two months) is a real product defect worth flagging to the CSM regardless of the Neutral label."
+ }
+}

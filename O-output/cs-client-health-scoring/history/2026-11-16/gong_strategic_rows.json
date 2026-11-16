@@ -1,0 +1,412 @@
+{
+ "10X Property Management": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "findigs <> 10x review"
+  ],
+  "client_attendees": 3,
+  "exec_attendees": 0
+ },
+ "Aulder Property Management": {
+  "calls_90d": 3,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Brook / Reese - Aulder intro",
+   "Meeting with Reese (Kelli Gordon Stepp)",
+   "Aulder | Findigs Sync"
+  ],
+  "client_attendees": 2,
+  "exec_attendees": 0
+ },
+ "BVW Property Management LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "FIndigs <> BVW"
+  ],
+  "client_attendees": 1,
+  "exec_attendees": 0
+ },
+ "Beztak Properties Parent": {
+  "calls_90d": 23,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Assistant Vice President",
+   "Director of Compliance",
+   "President, Residential Division",
+   "Senior Vice President",
+   "Vice President",
+   "Vice President Beztak Owned Division",
+   "Vice President of Operations"
+  ],
+  "sample_titles": [
+   "Findigs | Read: Akiva's Region",
+   "Findigs | Christine's Portfolio",
+   "Beztak | Findigs - Bi-Weekly Exec Meeting",
+   "Findigs Training | Ryan & Tiffany",
+   "Beztak x Findigs -- Affordable for Luxe Property"
+  ],
+  "client_attendees": 23,
+  "exec_attendees": 8
+ },
+ "Blue Fox Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <> Blue Fox DecisionAssist/Credentialing"
+  ],
+  "client_attendees": 2,
+  "exec_attendees": 0
+ },
+ "Brick and Timber Parent": {
+  "calls_90d": 12,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Brick + Timber | Findigs Weekly",
+   "Brick + Timber | Findigs Weekly",
+   "Brick + Timber | Findigs Weekly",
+   "Findigs || Brick & Timber Monthly",
+   "Brick + Timber | Findigs Weekly"
+  ],
+  "client_attendees": 4,
+  "exec_attendees": 0
+ },
+ "California Leasing": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner"
+  ],
+  "sample_titles": [
+   "Findigs <> California Leasing DA",
+   "California Leasing - DA check-in"
+  ],
+  "client_attendees": 4,
+  "exec_attendees": 1
+ },
+ "Evernest": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <-> Evernest Weekly Sync"
+  ],
+  "client_attendees": 1,
+  "exec_attendees": 0
+ },
+ "Excalibur Homes": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Meeting with Reese (Callie Guzman)"
+  ],
+  "client_attendees": 1,
+  "exec_attendees": 0
+ },
+ "GC Realty & Development, LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <> GC Realty"
+  ],
+  "client_attendees": 3,
+  "exec_attendees": 0
+ },
+ "Harbor Property Management, Inc.": {
+  "calls_90d": 3,
+  "review_call_titles": [
+   "QBR: Findigs <> Harbor PM",
+   "QBR: Findigs <> Harbor PM"
+  ],
+  "exec_titles_seen": [
+   "President"
+  ],
+  "sample_titles": [
+   "Findigs <> Harbor Automation flows",
+   "QBR: Findigs <> Harbor PM",
+   "QBR: Findigs <> Harbor PM"
+  ],
+  "client_attendees": 2,
+  "exec_attendees": 1
+ },
+ "Highmark Residential Parent": {
+  "calls_90d": 8,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Assistant Regional VP",
+   "Chief Accounting Officer",
+   "Director of Strategic Initiatives",
+   "Director, Compliance Administration, LIHTC",
+   "Director, Operations",
+   "Head Senior VP, Operations",
+   "SVP Operations",
+   "Southeast Region VP",
+   "Vice President, Information Technology",
+   "Vice President, Learning & Development"
+  ],
+  "sample_titles": [
+   "Findigs <> Highmark - Weekly Sync",
+   "Findigs <> Highmark - Weekly Sync",
+   "Findigs x Highmark FL LIHTC App",
+   "Gina / Josiah Sync",
+   "Gina / Josiah"
+  ],
+  "client_attendees": 17,
+  "exec_attendees": 10
+ },
+ "Jones and Jones Communities": {
+  "calls_90d": 2,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Jones & Jones | Findigs Sync",
+   "Ben &  Nichol Intro"
+  ],
+  "client_attendees": 1,
+  "exec_attendees": 0
+ },
+ "Kairos Living LLC Parent": {
+  "calls_90d": 12,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Executive Officer",
+   "Chief Operating Officer",
+   "Director of Resident Performance",
+   "Director, Business Analytics",
+   "Director, Technology",
+   "Vice President of Leasing"
+  ],
+  "sample_titles": [
+   "Kairos | Findigs - Weekly Connect",
+   "Kairos | Findigs - Weekly Connect",
+   "Kairos | Findigs - Bi-Weekly Connect",
+   "Kairos | Findigs - Bi-Weekly Connect",
+   "Kairos <> Findigs: Urgent Item Review"
+  ],
+  "client_attendees": 11,
+  "exec_attendees": 6
+ },
+ "Kotarides Property Management": {
+  "calls_90d": 10,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase",
+   "KPM | Findigs Weekly Ticket Touchbase"
+  ],
+  "client_attendees": 2,
+  "exec_attendees": 0
+ },
+ "Lynco Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Lynco <> Findigs Sync"
+  ],
+  "client_attendees": 2,
+  "exec_attendees": 0
+ },
+ "MJW Investments Parent": {
+  "calls_90d": 14,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director, Operations"
+  ],
+  "sample_titles": [
+   "Tee <> Brian",
+   "MJW Yardi UAT ReView",
+   "MJW Investments <> Findigs Check In",
+   "Findigs <> MJW UAT Review",
+   "MJW <> Findigs Sync"
+  ],
+  "client_attendees": 8,
+  "exec_attendees": 1
+ },
+ "Maymont Homes": {
+  "calls_90d": 11,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Chief Executive Officer",
+   "Director of Marketing Technology",
+   "VP of Product Management - Housing",
+   "VP, Leasing",
+   "Vice President of Operations"
+  ],
+  "sample_titles": [
+   "Maymont - Scoping Call Source Attribution",
+   "Findigs <> Brookfield - Lead Sourcing & Marketing Websites",
+   "Findigs & Maymont Weekly",
+   "Promo Codes | Findigs",
+   "Findigs & Maymont Weekly - Labor Day Reschedule"
+  ],
+  "client_attendees": 16,
+  "exec_attendees": 5
+ },
+ "McKinley Companies, LLC": {
+  "calls_90d": 6,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "National Director, Sales",
+   "Vice President",
+   "Vice President, Asset Management and Marketing",
+   "Vice President, Information & Strategy"
+  ],
+  "sample_titles": [
+   "Findigs | McKinley- Monthly Operations Connect",
+   "McKinley | Findigs: Operating Metrics",
+   "Findigs | McKinley- Monthly Operations Connect",
+   "McKinley <> Findigs: Checkout Process Rundown",
+   "Findigs | McKinley- Monthly Operations Connect"
+  ],
+  "client_attendees": 6,
+  "exec_attendees": 4
+ },
+ "Oakwood Parent": {
+  "calls_90d": 6,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "VP of Operations"
+  ],
+  "sample_titles": [
+   "Findigs x Oakwood | Monthly Sync",
+   "Findigs x Oakwood Sync",
+   "Oakwood + Findigs Sync",
+   "Oakwood | Findigs Sync",
+   "Findigs x Oakwood | Monthly Sync"
+  ],
+  "client_attendees": 3,
+  "exec_attendees": 1
+ },
+ "Open Management": {
+  "calls_90d": 2,
+  "review_call_titles": [
+   "Open Mgmt | Findigs Business Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Booked Sync - Natalie (Jose Mendoza)",
+   "Open Mgmt | Findigs Business Review"
+  ],
+  "client_attendees": 4,
+  "exec_attendees": 0
+ },
+ "Optimum Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Director of Operations & Asset Management"
+  ],
+  "sample_titles": [
+   "Optimum Prop | Findigs Sync"
+  ],
+  "client_attendees": 2,
+  "exec_attendees": 1
+ },
+ "Redwood Parent": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs <> Redwood Guarantors"
+  ],
+  "client_attendees": 1,
+  "exec_attendees": 0
+ },
+ "ResiHome": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "ResiHome | Findigs CSM Intro"
+  ],
+  "client_attendees": 2,
+  "exec_attendees": 0
+ },
+ "Rookwood Properties": {
+  "calls_90d": 1,
+  "review_call_titles": [],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Findigs Booked Sync - Natalie (Lauren Beckley)"
+  ],
+  "client_attendees": 3,
+  "exec_attendees": 0
+ },
+ "SFR3 Operator, LLC": {
+  "calls_90d": 1,
+  "review_call_titles": [
+   "American Avenue | Findigs Quarterly Review"
+  ],
+  "exec_titles_seen": [
+   "Director"
+  ],
+  "sample_titles": [
+   "American Avenue | Findigs Quarterly Review"
+  ],
+  "client_attendees": 2,
+  "exec_attendees": 1
+ },
+ "Sentral": {
+  "calls_90d": 13,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Associate Director of Business Intelligence",
+   "DIRECTOR, PORTFOLIO OPERATIONS",
+   "Director of Design Operations",
+   "Director of Portfolio Operations",
+   "Operations Director, Portfolio"
+  ],
+  "sample_titles": [
+   "Call with Sentral - Kristen Mauro",
+   "Sentral + Findigs Bi-Weekly Call",
+   "Sentral + Findigs Bi-Weekly Call",
+   "Sentral | Findigs Makeup Meeting",
+   "Sentral + Findigs Bi-Weekly Call"
+  ],
+  "client_attendees": 44,
+  "exec_attendees": 6
+ },
+ "Western Wealth Parent": {
+  "calls_90d": 11,
+  "review_call_titles": [],
+  "exec_titles_seen": [
+   "Owner",
+   "Vice President, Operations"
+  ],
+  "sample_titles": [
+   "Findigs | Western Weekly",
+   "Findigs | Western Monthly",
+   "Marlee to join Findigs sales team call!",
+   "Findigs | Western Weekly",
+   "Findigs & Western Wealth Implementation Weekly"
+  ],
+  "client_attendees": 8,
+  "exec_attendees": 2
+ },
+ "Winfield Property Management, LLC": {
+  "calls_90d": 3,
+  "review_call_titles": [
+   "Winfield Business Review"
+  ],
+  "exec_titles_seen": [],
+  "sample_titles": [
+   "Winfield Business Review",
+   "WPM <> Findigs CSM Intro & DA Review",
+   "WPM <> Findigs Sync"
+  ],
+  "client_attendees": 1,
+  "exec_attendees": 0
+ }
+}
