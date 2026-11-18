@@ -24,10 +24,19 @@ Failure to Launch (shown live on the page from is_ftl): 114 accounts, $4,275,428
 
 - None added this week
 
-## Candidates not added (71)
+## Churn date updates (1)
 
-HubSpot says churned=true but the page doesn't list them. To add one, put its HubSpot ID in `config.new_churns.approved_additions` (with a note) by commit.
+Effective churn dates re-synced to HubSpot's churn date field (config.hubspot.churn_date_fields).
 
+- Chroma Property Management: 2026-07-31 -> 2026-10-27 (HubSpot churn_date)
+
+## Candidates not added (74)
+
+HubSpot says churned=true but the page doesn't list them as Churned. To add one, put its HubSpot ID in `config.new_churns.approved_additions` (with a note) by commit. Ones marked *on the page as At Risk* stay At Risk until they pass the rule or are approved.
+
+- Harbor Group Management (335497258711): churn date 2026-11-05, status Prospect: churn_reason 'moved to Yardi' is not in the taxonomy *(on the page as At Risk (Client Health Red))*
+- Weiss Entities (166553684666): churn date 2026-11-04, status Onboarding: status is Onboarding; churn_reason 'Charges were never configured to post to their ledger. UAT was marked complete in Jira before it was actually finalized. Their Yardi “Apply Now” links stopped redirecting to Findigs, so Findigs received only one application. Refunds, fee discrepancies, and income-verification and fraud-threshold questions piled up in September. Their main contact was out of office for about two weeks and slow to respond. They skipped the 10/16 sync and didn’t answer the reschedule request.' is not in the taxonomy *(on the page as At Risk (Client Health Red))*
+- Evernest (345640538863): churn date 2025-09-29, status Live: churn date 2025-09-29 is older than 30 days *(on the page as At Risk (Client Health Red))*
 - McCaw Property Management (158245221098): churn date 2026-11-16, status Onboarding: status is Onboarding; churn_reason 'Consolidating leasing tech under Boom.' is not in the taxonomy
 - MJW Investments (166645268173): churn date 2026-11-09, status Onboarding: status is Onboarding; churn_reason 'Misunderstanding of how the product could work with their existing process and expectations. They had no internal alignment on their SOP and that lead to further issues with how Findigs works for them.' is not in the taxonomy
 - Volker (178672381645): churn date 2025-12-05, status Disqualified: churn date 2025-12-05 is older than 30 days
@@ -50,10 +59,7 @@ HubSpot says churned=true but the page doesn't list them. To add one, put its Hu
 - Augusta Rental Homes (166644757196): churn date 2025-07-16, status Prospect: churn date 2025-07-16 is older than 30 days
 - VRG Management (166664123107): churn date 2025-07-07, status Prospect: churn date 2025-07-07 is older than 30 days
 - Lautrec (166554034879): churn date 2025-07-02, status Disqualified: churn date 2025-07-02 is older than 30 days
-- Hershey Real Estate (166658707175): churn date 2025-06-24, status Prospect: churn date 2025-06-24 is older than 30 days
-- New Horizons Housing (166647377656): churn date 2025-06-03, status Prospect: churn date 2025-06-03 is older than 30 days
-- Sunrise Fountains Apartments (166598847221): churn date 2025-05-28, status Prospect: churn date 2025-05-28 is older than 30 days
-- ...and 46 more, all listed in plan_1118.json in the history folder
+- ...and 49 more, all listed in plan_1118.json in the history folder
 
 ## Failure-to-Launch candidates (propose-only): 0
 
@@ -71,7 +77,8 @@ HubSpot says churned=true but the page doesn't list them. To add one, put its Hu
 ## Gates
 
 - ok   recompute reproduces the live record from its own accounts
-- ok   churned 378 -> 378 (+0 added, none removed)
+- ok   churned 378 -> 378 (+0 added, +0 from At Risk, none removed)
+- ok   churn date updates applied to churned rows: 1 of 1
 - ok   At Risk 22 = Client Health Red 22
 - ok   At Risk moved by 0 (limit 8)
 - ok   no duplicate HubSpot company IDs 

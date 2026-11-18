@@ -52,6 +52,11 @@
       "failure_to_launch",
       "csm_owner"
     ],
+    "churn_date_fields": [
+      "churn_date",
+      "churn_date__c"
+    ],
+    "_churn_date_note": "Will, 2026-11-18: the churn date is HubSpot's churn_date (Company information group, written by the CRM UI and workflows since 2026-07). churn_date__c is the 2025 Salesforce import and is read only when churn_date is blank. Every run re-syncs each churned account's effective_churn_date to this field and lists the changes in the report.",
     "closed_won_stages": {
       "2313721535": "3753890502",
       "2313830082": "3752297196"
@@ -79,6 +84,8 @@
     },
     "approved_additions": {},
     "_decision": "Will, 2026-11-12: auto-add a HubSpot company with churned=true whose churn date is within auto_add_window_days of the run date, unless it is rejected, its status contradicts the churn, a Closed Won deal is dated after the churn date, its segment is unmapped, or its churn_reason is not in the taxonomy. Everything else (older flags, contradicted ones) is listed in the report as a candidate. To add a candidate, put its HubSpot company ID in approved_additions with a note, by commit. Nothing is ever removed automatically.",
+    "at_risk_to_churned": "auto_add_rule",
+    "_at_risk_to_churned_note": "Will, 2026-11-18: the churned checkbox decides whether an account is churned. An At Risk account whose HubSpot churned=true is treated like any other churned=true company: it converts to Churned (replacing its At Risk row) when it passes the auto-add rule or is in approved_additions; otherwise it is listed as a candidate marked 'on the page as At Risk'.",
     "ftl_staleness_rule": "propose_only",
     "_ftl_decision": "Will, 2026-11-12: the old rule that turned Failure-to-Launch accounts stale 6+ months into Churned is propose-only."
   },

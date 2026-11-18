@@ -2,7 +2,8 @@
  "run_date": "2026-11-18",
  "gates": [
   "ok   recompute reproduces the live record from its own accounts",
-  "ok   churned 378 -> 378 (+0 added, none removed)",
+  "ok   churned 378 -> 378 (+0 added, +0 from At Risk, none removed)",
+  "ok   churn date updates applied to churned rows: 1 of 1",
   "ok   At Risk 22 = Client Health Red 22",
   "ok   At Risk moved by 0 (limit 8)",
   "ok   no duplicate HubSpot company IDs "
