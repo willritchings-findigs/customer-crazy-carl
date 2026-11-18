@@ -31,6 +31,28 @@ that again before changing anything.
 | Schedule | Mondays 11:00 ET, after Client Health (9:00). Stops if Client Health is more than 2 days old. |
 | Slack | Success to `#p-account-health`; any stop to `#gtm-automation-log`. |
 
+## Decisions (2026-11-18, Will)
+
+Prompted by Alex Schaper's 11/17 question: Harbor Group had been marked churned in HubSpot but the
+page still showed it At Risk.
+
+| Topic | Decision |
+|---|---|
+| Churned or not | HubSpot's `churned` checkbox decides. An At Risk account whose checkbox is true is treated like any other churned=true company: it converts to Churned (replacing its At Risk row) when it passes the auto-add rule or is in `approved_additions`; otherwise it is listed as a candidate marked "on the page as At Risk". Before this the sync skipped every HubSpot ID already on the page, so an At Risk account that churned was never surfaced. |
+| Churn date | HubSpot's `churn_date` (Company information group, written by the CRM UI and workflows since 2026-07). `churn_date__c` is the 2025 Salesforce import, read only when `churn_date` is blank; the code used to prefer it. Order in `config.hubspot.churn_date_fields`. Every run re-syncs each churned account's `effective_churn_date` to it and lists changes in the report. First run changed one account (Chroma Property Management, 2026-07-31 -> 2026-10-27, the date a person set in HubSpot on 10/27). |
+| Failure to Launch | Will asked for Account Status = "Failure to Launch". On 2026-11-18 no company carries that status (the option exists; automations overwrite statuses with Prospect/Disqualified), the `failure_to_launch` checkbox is on 108 companies (101 churned; 95 of the page's 114 FTL accounts), and the page's `is_ftl` comes from a blank go-live date. Switching to the status as-is would empty the FTL card and move 114 accounts ($4.28M) into the true-churn headline. **Not changed; pending Will's call** between the status (once populated), the checkbox, and the go-live rule. |
+
+What the 11/18 check found about Harbor Group (HubSpot 335497258711): `churned` set 2026-11-05 by a
+workflow, `churn_date` 2026-11-05, `churn_reason` "moved to Yardi" (not in the taxonomy; the
+matching value is Tech Stack Consolidation), Account Status reverted from Churned to Prospect by a
+HubSpot workflow within seconds each time Alex set it (enrollments 1800424495809 and
+1800424481497). Client Health still scores it Red (HubSpot health override). Two other At Risk
+accounts are churned=true: Weiss Entities (2026-11-04, status Onboarding, free-text reason) and
+Evernest (2025-09-29, status Live). All three are now candidates in the report. Also from Alex: the
+page's "view in table" on Churn by Segment (YTD) lists At Risk accounts because the Base44 page
+filters the drill-down by segment only; the stored table is right (STRAT 0 / $0). That is a page
+fix in the builder, not a data fix.
+
 Earlier decisions still in force (from Emma's handoff): FTL accounts stay in `accounts` with
 `is_ftl=true`, excluded from the four true-churn KPIs and shown live on the page from `is_ftl`
 (2026-10-29, Alex's proposal, Will's sign-off); `reason_source_coverage` keeps its 4-key schema
@@ -56,6 +78,10 @@ for field, and recomputing from the live accounts reproduces every total. The ar
 
 ## Open items
 
+- FTL source: Account Status (empty today), the `failure_to_launch` checkbox, or the go-live rule. Will to decide; see 2026-11-18.
+- Harbor Group: fix `churn_reason` in HubSpot to a taxonomy value (or approve by ID) so it converts; find the HubSpot workflow that resets Account Status.
+- Client Health keeps scoring HubSpot-churned accounts (Harbor Group Parent, Weiss Parent, Evernest are Red with `hs_churned_any=true`); decide whether it should drop them.
+- Base44 page: the Churn by Segment (YTD) drill-down should filter to Churned with a churn date in the year.
 - The 69 older churned=true companies need a human pass before any are approved.
 - The 22 churned-but-Live accounts need the deal-level evidence standard from the 9/24 review.
 - The sub-reason ACV overlap display note (Emma's 10/5 builder prompt) is still not pasted.

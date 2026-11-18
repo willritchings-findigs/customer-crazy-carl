@@ -6,8 +6,11 @@ and build_summary_<MMDD>.json, only if every gate passes; otherwise exits 1 and 
 Gates:
   - the recompute reproduces the baseline's own numbers from the baseline's accounts (proves the
     logic and the live record agree before anything changes)
-  - no churned account is removed; churned count grows by exactly the planned additions
-  - At Risk ends up equal to Client Health's Red list (less any Red account already churned)
+  - no churned account is removed; churned count grows by exactly the planned additions (new churns
+    plus At Risk rows converted to Churned)
+  - every planned churn-date update lands on a churned row
+  - At Risk ends up equal to Client Health's Red list (less any Red account already churned, including
+    the rows converted this run)
   - At Risk moves by no more than config.validation.max_at_risk_change
   - no duplicate HubSpot company IDs
 """
@@ -57,17 +60,24 @@ if __name__ == "__main__":
 
     accts = deepcopy(base["accounts"])
     n_churned_before = sum(a["status"] == st["churned"] for a in accts)
-    drop = set(plan["remove_at_risk"])
+    converted = plan.get("at_risk_to_churned", [])
+    drop = set(plan["remove_at_risk"]) | {x["replaces_at_risk"] for x in converted}
     accts = [a for a in accts if not (a["status"] == st["at_risk"] and a["name"] in drop)]
-    accts += [x["entry"] for x in plan["add_at_risk"]] + [x["entry"] for x in plan["add_churned"]]
+    accts += [x["entry"] for x in plan["add_at_risk"]] + [x["entry"] for x in plan["add_churned"]] + [x["entry"] for x in converted]
+    dates = {d["hubspot_company_id"]: d["to"] for d in plan.get("date_updates", [])}
+    applied = 0
+    for a in accts:
+        if a["status"] == st["churned"] and a.get("hubspot_company_id") in dates:
+            a["effective_churn_date"], applied = dates[a["hubspot_company_id"]], applied + 1
     churned = [a for a in accts if a["status"] == st["churned"]]
     at_risk = [a for a in accts if a["status"] == st["at_risk"]]
-    check(len(churned) == n_churned_before + len(plan["add_churned"]),
-          f"churned {n_churned_before} -> {len(churned)} (+{len(plan['add_churned'])} added, none removed)")
-    skipped = sum("already on the page as Churned" in f for f in plan["flags"])
+    check(len(churned) == n_churned_before + len(plan["add_churned"]) + len(converted),
+          f"churned {n_churned_before} -> {len(churned)} (+{len(plan['add_churned'])} added, +{len(converted)} from At Risk, none removed)")
+    check(applied == len(dates), f"churn date updates applied to churned rows: {applied} of {len(dates)}")
+    skipped = sum("already on the page as Churned" in f for f in plan["flags"]) + len(converted)
     check(len(at_risk) == plan["red_count"] - skipped,
           f"At Risk {len(at_risk)} = Client Health Red {plan['red_count']}" + (f" less {skipped} already churned" if skipped else ""))
-    moved = len(plan["remove_at_risk"]) + len(plan["add_at_risk"])
+    moved = len(plan["remove_at_risk"]) + len(plan["add_at_risk"]) + len(converted)
     check(moved <= cfg["validation"]["max_at_risk_change"],
           f"At Risk moved by {moved} (limit {cfg['validation']['max_at_risk_change']})")
     ids = [a["hubspot_company_id"] for a in accts if a.get("hubspot_company_id")]

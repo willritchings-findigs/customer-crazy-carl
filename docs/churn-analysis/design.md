@@ -69,7 +69,7 @@ flowchart LR
 
 | Source | What we take | Why |
 |---|---|---|
-| **HubSpot companies** | `churned`, churn date (`churn_date__c`, else `churn_date`), `churn_reason`, account status, segment, Findigs products, go-live date, CSM owner | The system of record for the commercial relationship and the churn decision. |
+| **HubSpot companies** | `churned` (the checkbox that decides whether an account is churned), churn date (`churn_date`; the Salesforce-era `churn_date__c` only when that is blank), `churn_reason`, account status, segment, Findigs products, go-live date, CSM owner | The system of record for the commercial relationship and the churn decision. |
 | **HubSpot deals** | Closed Won deals in the New Logo and Upsell / Expansion pipelines, and their amounts | ACV = the sum of Closed Won deal amounts. HubSpot's `hs_acv` / `hs_arr` / `acv` properties are unused and never populated. |
 | **Client Health record** (Base44) | Which accounts are Red this week, their segment and AM; HubSpot IDs from Client Health's own account match | At Risk on this page *means* Client Health Red, so it is read straight from that record rather than re-derived. |
 | **Historic sources** (kept, not re-pulled) | Reasons and sub-reasons from Emma's hand-tagged sheet and Sigma's "reason at risk" column, the 2026 FTL review | Set once during the 2026 cleanup; the run never overwrites an existing account's reason. |
@@ -95,6 +95,8 @@ An account is never both.
 | **At Risk joins** | A new Red account. HubSpot ID from Client Health's match (or one exact company-name match). ACV = Closed Won deals summed. If there's no HubSpot match, no Closed Won deal, or more than 2 deals, it joins at **$0 and is flagged**; an approved figure goes in `config.at_risk_acv_overrides`. Segment from Client Health (ENT → STRAT, MM → MM + ENT, SMB → SMB). |
 | **New churn, added automatically** | HubSpot says churned with a churn date in the **last 30 days**, and none of these: on the rejected list, account status Live / Onboarding / Pilot, a Closed Won deal dated after the churn date, an unmapped segment, a `churn_reason` outside the taxonomy. |
 | **New churn, added by approval** | Any other company whose HubSpot ID Will adds to `config.new_churns.approved_additions`, by commit. |
+| **At Risk account churns** | An At Risk account whose HubSpot `churned` checkbox is true is treated like any other churned company (since 2026-11-18): it converts to Churned under the same auto-add rule, or by approval, and its At Risk row is replaced. Until then it stays At Risk and is listed as a candidate marked *on the page as At Risk*. |
+| **Churn dates** | Every run re-syncs each churned account's effective churn date to HubSpot's `churn_date` and lists any change in the report (since 2026-11-18). |
 | **Everything else** | Listed in the report as a *candidate*, with why it wasn't added. Failure-to-Launch companies not on the page are listed too (propose-only; nothing converts automatically). |
 | **Never** | A churned account is never removed, and no account's reason is changed, by the run. |
 

@@ -25,15 +25,23 @@ if __name__ == "__main__":
     L += [f"- Left At Risk: {n}" for n in plan["remove_at_risk"]] or ["- None left"]
     L += [f"- Added: {x['entry']['name']} ({money(x['entry']['acv'])}; HubSpot {x['entry']['hubspot_company_id']} via "
           f"{x['evidence']['company_from']}; {x['evidence']['deals']}; AM {x['entry']['csm']})" for x in plan["add_at_risk"]] or ["- None added"]
+    conv = plan.get("at_risk_to_churned", [])
     L += ["", "## New churns", ""]
     L += [f"- Added: {x['entry']['name']} (churned {x['entry']['effective_churn_date']}, {money(x['entry']['acv'])}, "
           f"{x['entry']['reason']}; {x['evidence']['rule']})" for x in plan["add_churned"]] or ["- None added this week"]
+    L += [f"- Converted from At Risk ({x['replaces_at_risk']}): {x['entry']['name']} (churned {x['entry']['effective_churn_date']}, "
+          f"{money(x['entry']['acv'])}, {x['entry']['reason']}; {x['evidence']['rule']})" for x in conv]
+    dates = plan.get("date_updates", [])
+    L += ["", f"## Churn date updates ({len(dates)})", "",
+          "Effective churn dates re-synced to HubSpot's churn date field (config.hubspot.churn_date_fields).", ""]
+    L += [f"- {d['name']}: {d['from']} -> {d['to']} (HubSpot {d['field']})" for d in dates] or ["- None"]
     L += ["", f"## Candidates not added ({len(plan['candidates'])})", "",
-          "HubSpot says churned=true but the page doesn't list them. To add one, put its HubSpot ID in "
-          "`config.new_churns.approved_additions` (with a note) by commit.", ""]
-    recent = sorted(plan["candidates"], key=lambda c: c["churn_date"] or "", reverse=True)
+          "HubSpot says churned=true but the page doesn't list them as Churned. To add one, put its HubSpot ID in "
+          "`config.new_churns.approved_additions` (with a note) by commit. Ones marked *on the page as At Risk* stay "
+          "At Risk until they pass the rule or are approved.", ""]
+    recent = sorted(plan["candidates"], key=lambda c: (bool(c.get("on_page_as")), c["churn_date"] or ""), reverse=True)
     L += [f"- {c['name']} ({c['hubspot_company_id']}): churn date {c['churn_date']}, status {c['account_status']}: {c['why_not_added']}"
-          for c in recent[:25]]
+          + (f" *(on the page as {c['on_page_as']})*" if c.get("on_page_as") else "") for c in recent[:25]]
     if len(recent) > 25:
         L.append(f"- ...and {len(recent) - 25} more, all listed in plan_{run.mmdd}.json in the history folder")
     L += ["", f"## Failure-to-Launch candidates (propose-only): {len(plan['ftl_candidates'])}", ""]
@@ -52,7 +60,8 @@ if __name__ == "__main__":
     slack = (f"Churn Analysis refreshed for {run.iso} ({t['dashboard_url']}). True churn: {a['accounts_churned_count']} accounts, "
              f"{money(a['churned_acv_total'])} ({money(a['churned_acv_ytd'])} YTD). At Risk: {a['at_risk_count']} accounts, "
              f"{money(a['at_risk_acv_best_effort'])} (+{len(plan['add_at_risk'])} / -{len(plan['remove_at_risk'])} vs last week). "
-             f"New churns added: {len(plan['add_churned'])}. {len(plan['flags'])} flag(s) in the report. Readback verified.")
+             f"New churns added: {len(plan['add_churned']) + len(conv)}"
+             + (f" ({len(conv)} converted from At Risk)" if conv else "") + f". {len(plan['flags'])} flag(s) in the report. Readback verified.")
     open(run.path(f"slack_success_{run.mmdd}.txt"), "w", encoding="utf-8").write(slack + "\n")
     print("report:", rpath)
     print("slack:", slack)

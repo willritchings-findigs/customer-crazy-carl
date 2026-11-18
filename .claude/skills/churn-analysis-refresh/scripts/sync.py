@@ -9,7 +9,10 @@ Writes plan_<MMDD>.json:
   remove_at_risk  At Risk accounts that are no longer Client Health Red
   add_at_risk     new Red accounts, with HubSpot ID, segment, AM, ACV and how it was found
   add_churned     new churns that meet the auto-add rule, or are in config approved_additions
-  candidates      churned=true companies not on the page that were NOT added, with the reason
+  at_risk_to_churned  At Risk accounts whose HubSpot churned=true passed the same rule; each replaces its At Risk row
+  candidates      churned=true companies not Churned on the page that were NOT added, with the reason
+                  (on_page_as marks the ones currently listed as At Risk)
+  date_updates    churned accounts whose HubSpot churn date (config.hubspot.churn_date_fields) differs from the page
   ftl_candidates  Failure-to-Launch companies not on the page (propose-only, never added)
   flags           anything a person should look at
 Stops (exit 1) if the Client Health record is older than config.health_source.max_age_days.
@@ -94,6 +97,14 @@ def product(p):
     return "DA" if "DecisionAssist" in v else "FS" if "Screening" in v else "Unknown"
 
 
+def churn_date(p):
+    """(date, field) from the first populated field in config.hubspot.churn_date_fields."""
+    for f in HS["churn_date_fields"]:
+        if p.get(f):
+            return C.pdate(p[f]), f
+    return None, None
+
+
 def main():
     base = C.one(RUN.load(f"baseline_{RUN.mmdd}.json"))
     health = C.one(RUN.load(f"health_{RUN.mmdd}.json"))
@@ -111,6 +122,7 @@ def main():
     in_cache = {a["hubspot_company_id"] for a in accts if a.get("hubspot_company_id")}
     churned_ids = {a["hubspot_company_id"] for a in accts if a["status"] == st["churned"]}
     risk_now = {a["name"]: a for a in accts if a["status"] == st["at_risk"]}
+    risk_name_by_id = {a["hubspot_company_id"]: n for n, a in risk_now.items() if a.get("hubspot_company_id")}
     red = {x["input_name"]: x for x in health["accounts"]
            if (x.get("composite_score_partial") or {}).get("band") == CFG["health_source"]["red_band"]}
 
@@ -166,12 +178,20 @@ def main():
     hs_churned = search_companies([{"propertyName": "churned", "operator": "EQ", "value": "true"}])
     json.dump(hs_churned, open(RUN.path(f"hs_churned_{RUN.mmdd}.json"), "w"))
     cutoff = RUN.date - dt.timedelta(days=NC["auto_add_window_days"])
-    add_churned, candidates = [], []
+    add_churned, at_risk_to_churned, candidates, date_updates = [], [], [], []
+    hs_by_id = {p["id"]: p for p in hs_churned}
+    for a in accts:
+        p = hs_by_id.get(a.get("hubspot_company_id")) if a["status"] == st["churned"] else None
+        hs_date, hs_field = churn_date(p) if p else (None, None)
+        if hs_date and str(hs_date) != (a.get("effective_churn_date") or "")[:10]:
+            date_updates.append({"hubspot_company_id": a["hubspot_company_id"], "name": a["name"],
+                                 "from": a.get("effective_churn_date"), "to": str(hs_date), "field": hs_field})
     for p in hs_churned:
         cid = p["id"]
-        if cid in in_cache:
+        if cid in churned_ids:
             continue
-        cdate = C.pdate(p.get("churn_date__c") or p.get("churn_date"))
+        on_page_as = risk_name_by_id.get(cid)  # an At Risk row with this HubSpot ID, else None
+        cdate, cdate_field = churn_date(p)
         approved = cid in NC["approved_additions"]
         why = []
         if cid in NC["rejected_company_ids"]:
@@ -182,7 +202,8 @@ def main():
             why.append(f"churn date {cdate} is far in the future")
         if why and not approved:
             candidates.append({"hubspot_company_id": cid, "name": p.get("name"), "churn_date": str(cdate) if cdate else None,
-                               "account_status": p.get("account_status__c"), "why_not_added": "; ".join(why)})
+                               "account_status": p.get("account_status__c"), "why_not_added": "; ".join(why),
+                               "on_page_as": st["at_risk"] if on_page_as else None})
             continue
         seg = HS["segment_map"].get(p.get("segment"))
         reason_raw = (p.get("churn_reason") or "").strip()
@@ -202,17 +223,22 @@ def main():
             why.append("rejected")
         if why:
             candidates.append({"hubspot_company_id": cid, "name": p.get("name"), "churn_date": str(cdate) if cdate else None,
-                               "account_status": p.get("account_status__c"), "why_not_added": "; ".join(why)})
+                               "account_status": p.get("account_status__c"), "why_not_added": "; ".join(why),
+                               "on_page_as": st["at_risk"] if on_page_as else None})
             continue
         acv = C.r2(sum(float(d.get("amount") or 0) for d in cw))
-        add_churned.append({
+        item = {
             "entry": {"name": p.get("name"), "hubspot_company_id": cid, "status": st["churned"], "acv": acv, "segment": seg,
                       "product_segment": product(p), "reason": reason, "sub_reasons": [], "reason_source": rsrc,
                       "effective_churn_date": str(cdate), "csm": owner_name(p.get("csm_owner")), "hubspot_url": C.hs_url(cid),
                       "acv_resolved": True if cw else None, "is_ftl": not p.get("go_live_date__c")},
             "evidence": {"rule": "approved_additions" if approved else f"churned=true, churn date within {NC['auto_add_window_days']} days",
-                         "churn_date_field": "churn_date__c" if p.get("churn_date__c") else "churn_date",
-                         "closed_won_deals": len(cw), "account_status": p.get("account_status__c")}})
+                         "churn_date_field": cdate_field, "closed_won_deals": len(cw), "account_status": p.get("account_status__c")}}
+        if on_page_as:
+            item["replaces_at_risk"] = on_page_as
+            at_risk_to_churned.append(item)
+        else:
+            add_churned.append(item)
         if len(cw) > HS["max_deals_before_flag"]:
             flags.append(f"New churn {p.get('name')}: {len(cw)} Closed Won deals summed to ${acv:,.2f}; check the ACV")
 
@@ -225,13 +251,17 @@ def main():
     not_flagged = sorted(a["name"] for a in accts if a["status"] == st["churned"] and a["hubspot_company_id"] not in status_by_id)
     plan = {"run_date": RUN.iso, "health_computed_at": health["computed_at"], "match_file": mfile,
             "red_count": len(red), "remove_at_risk": remove_at_risk, "add_at_risk": add_at_risk,
-            "add_churned": add_churned, "candidates": candidates, "ftl_candidates": ftl_candidates,
+            "add_churned": add_churned, "at_risk_to_churned": at_risk_to_churned, "candidates": candidates,
+            "date_updates": date_updates, "ftl_candidates": ftl_candidates,
             "churned_on_page_but_hubspot_status_live": still_live,
             "churned_on_page_but_hubspot_not_churned": not_flagged, "flags": flags}
     json.dump(plan, open(RUN.path(f"plan_{RUN.mmdd}.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print(f"Client Health computed {health['computed_at']} ({age}d old); {len(red)} Red")
     print(f"At Risk: -{len(remove_at_risk)} {remove_at_risk}  +{len(add_at_risk)} {[x['entry']['name'] for x in add_at_risk]}")
     print(f"New churns added: {len(add_churned)} {[x['entry']['name'] for x in add_churned]}; candidates not added: {len(candidates)}")
+    print(f"At Risk -> Churned: {len(at_risk_to_churned)} {[x['replaces_at_risk'] for x in at_risk_to_churned]}; "
+          f"At Risk still listed as candidates: {[c['name'] for c in candidates if c.get('on_page_as')]}")
+    print(f"Churn date updates: {len(date_updates)} {[(d['name'], d['from'], d['to']) for d in date_updates]}")
     print(f"FTL candidates (propose-only): {len(ftl_candidates)}")
     for f in flags:
         print("FLAG", f)

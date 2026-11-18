@@ -48,6 +48,7 @@ These charts include FTL accounts, so they add up to true churn **plus** FTL, no
 | An At Risk account shows **$0 ACV** | No HubSpot match, no Closed Won deal, or many deals that need a check | Tell Will the right ACV; he approves it in the configuration. |
 | A churned account has **Uncategorized** reason | No reason was recorded | Set the **Churn reason** in HubSpot when an account churns; new churns pick it up automatically. Use one of the reasons on the page. |
 | A customer who left **isn't on the page** | Its HubSpot churn date is missing or older than 30 days, or its status still says Live / Onboarding / Pilot, or it has a recent Closed Won deal | Make sure HubSpot has **churned = true, a churn date, a churn reason**, and a non-live status. Or ask Will to approve it. |
+| A customer who left **still shows At Risk** | HubSpot has churned = true, but the account fails the same checks as above (most often a churn reason outside the taxonomy, or a status still Live / Onboarding) | Fix the HubSpot fields and it converts on the next run; the report lists it as a candidate *on the page as At Risk*. |
 | A churned account is actually still a customer | Possible win-back | Tell Will with the evidence (a new Closed Won deal or a written correction). The system never removes a churn on its own. |
 
 ---
