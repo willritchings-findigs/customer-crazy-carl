@@ -113,7 +113,7 @@ for field, and recomputing from the live accounts reproduces every total. The ar
 
 ## Open items
 
-- **Set the Base44 "Daily Churn Cache Refresh" workflow inactive** (a Findigs Hub admin, Workflows tab). Until then it overwrites the page every morning at 06:00 ET, and the Monday run restores it and alerts.
+- **Set the Base44 "Daily Churn Cache Refresh" workflow inactive** (Findigs Hub, Workflows tab). Owner: Rey Davila (asked 2026-11-23); if Rey lacks app admin, find who inherited Asaf's app. Until then it overwrites the page every morning at 06:00 ET, and the Monday run restores it and alerts.
 - Client Health routine: list Sigma and Pylon explicitly in its connectors so it stops failing at pre-flight; At Risk only syncs once it runs again.
 - Harbor Group: find the HubSpot workflow that resets Account Status from Churned to Prospect (enrollments 1800424495809 and 1800424481497).
 - Client Health keeps scoring HubSpot-churned accounts (Weiss Parent and Evernest are Red with `hs_churned_any=true`); decide whether it should drop them.
