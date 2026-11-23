@@ -13,6 +13,8 @@ Gates:
     the rows converted this run)
   - At Risk moves by no more than config.validation.max_at_risk_change
   - no duplicate HubSpot company IDs
+  - every planned Account Status FTL update lands on a churned row
+Then every churned-population row is labelled Churned or Failure to Launch from is_ftl (cr_common.normalize_status).
 """
 import datetime as dt, json, sys
 from copy import deepcopy
@@ -59,7 +61,7 @@ if __name__ == "__main__":
     check(not d, "recompute reproduces the live record from its own accounts" + (f": {d[:5]}" if d else ""))
 
     accts = deepcopy(base["accounts"])
-    n_churned_before = sum(a["status"] == st["churned"] for a in accts)
+    n_churned_before = sum(C.is_churned_row(a, cfg) for a in accts)
     converted = plan.get("at_risk_to_churned", [])
     drop = set(plan["remove_at_risk"]) | {x["replaces_at_risk"] for x in converted}
     accts = [a for a in accts if not (a["status"] == st["at_risk"] and a["name"] in drop)]
@@ -67,12 +69,28 @@ if __name__ == "__main__":
     dates = {d["hubspot_company_id"]: d["to"] for d in plan.get("date_updates", [])}
     applied = 0
     for a in accts:
-        if a["status"] == st["churned"] and a.get("hubspot_company_id") in dates:
+        if C.is_churned_row(a, cfg) and a.get("hubspot_company_id") in dates:
             a["effective_churn_date"], applied = dates[a["hubspot_company_id"]], applied + 1
-    churned = [a for a in accts if a["status"] == st["churned"]]
+    flips = {u["hubspot_company_id"]: u["to_ftl"] for u in plan.get("ftl_updates", [])}
+    flipped = 0
+    for a in accts:
+        if C.is_churned_row(a, cfg) and a.get("hubspot_company_id") in flips:
+            a["is_ftl"] = flips[a["hubspot_company_id"]]
+            a["status"] = st["ftl"] if a["is_ftl"] else st["churned"]
+            flipped += 1
+    relabelled = C.normalize_status(accts, cfg)
+    # Base44 added churn_date and account_status to the stored row schema on 2026-11-20 (the in-app writer) and
+    # stores null when a row omits them; the page reads churn_date. Fill both on every row, every run.
+    hs_status = plan.get("account_status_by_id", {})
+    for a in accts:
+        a["churn_date"] = a.get("effective_churn_date") if C.is_churned_row(a, cfg) else None
+        a["account_status"] = hs_status.get(a.get("hubspot_company_id"), a.get("account_status"))
+    churned = [a for a in accts if C.is_churned_row(a, cfg)]
     at_risk = [a for a in accts if a["status"] == st["at_risk"]]
     check(len(churned) == n_churned_before + len(plan["add_churned"]) + len(converted),
           f"churned {n_churned_before} -> {len(churned)} (+{len(plan['add_churned'])} added, +{len(converted)} from At Risk, none removed)")
+    check(flipped == len(flips), f"Account Status FTL updates applied to churned rows: {flipped} of {len(flips)}"
+          + (f"; {relabelled} rows relabelled Churned / Failure to Launch from is_ftl" if relabelled else ""))
     check(applied == len(dates), f"churn date updates applied to churned rows: {applied} of {len(dates)}")
     skipped = sum("already on the page as Churned" in f for f in plan["flags"]) + len(converted)
     check(len(at_risk) == plan["red_count"] - skipped,

@@ -45,16 +45,44 @@ def latest_match_file(cfg):
     return files[-1]
 
 
+def is_churned_row(a, cfg):
+    """Churned population = Churned or Failure to Launch rows (FTL is a churn outcome, split out)."""
+    st = cfg["taxonomy"]["statuses"]
+    return a.get("status") in (st["churned"], st["ftl"])
+
+
+def is_ftl_row(a, cfg):
+    return bool(a.get("is_ftl")) or a.get("status") == cfg["taxonomy"]["statuses"]["ftl"]
+
+
+def normalize_status(accts, cfg):
+    """Label every churned-population row consistently: status 'Failure to Launch' with is_ftl=true, or
+    'Churned' with is_ftl=false. Matches HubSpot Account Status and the shape the Base44 page reads
+    (2026-11-23). Aggregates are unchanged by this: recompute treats both labels as churned. Returns
+    the number of rows relabelled."""
+    st = cfg["taxonomy"]["statuses"]
+    n = 0
+    for a in accts:
+        if not is_churned_row(a, cfg):
+            continue
+        ftl = is_ftl_row(a, cfg)
+        want = (st["ftl"] if ftl else st["churned"], ftl)
+        if (a.get("status"), a.get("is_ftl")) != want:
+            a["status"], a["is_ftl"] = want
+            n += 1
+    return n
+
+
 def recompute(accts, cfg, today):
     """Every aggregate field, rebuilt from accts. Returns (fields, report_only)."""
     tx = cfg["taxonomy"]
-    st_churned, st_risk = tx["statuses"]["churned"], tx["statuses"]["at_risk"]
-    churned = [a for a in accts if a["status"] == st_churned]
+    st_risk = tx["statuses"]["at_risk"]
+    churned = [a for a in accts if is_churned_row(a, cfg)]
     at_risk = [a for a in accts if a["status"] == st_risk]
     if len(churned) + len(at_risk) != len(accts):
-        raise SystemExit("STOP: an account has a status other than Churned / At Risk")
-    true_churn = [a for a in churned if not a.get("is_ftl")]
-    ftl = [a for a in churned if a.get("is_ftl")]
+        raise SystemExit("STOP: an account has a status other than Churned / Failure to Launch / At Risk")
+    true_churn = [a for a in churned if not is_ftl_row(a, cfg)]
+    ftl = [a for a in churned if is_ftl_row(a, cfg)]
     ytd_start, month_start = dt.date(today.year, 1, 1), today.replace(day=1)
 
     def acv_sum(lst):

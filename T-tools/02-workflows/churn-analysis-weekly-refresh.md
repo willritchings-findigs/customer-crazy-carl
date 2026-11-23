@@ -58,6 +58,41 @@ Earlier decisions still in force (from Emma's handoff): FTL accounts stay in `ac
 (2026-10-29, Alex's proposal, Will's sign-off); `reason_source_coverage` keeps its 4-key schema
 with `sigma_reason_at_risk` counted under `none`; no new stored fields (Base44 drops them).
 
+## Incident and decisions (2026-11-23)
+
+**What broke.** The Monday run stopped at step 1: Client Health was 7 days old (its own run failed at
+pre-flight when the Sigma and Pylon connectors didn't attach), and the churn run hard-stopped on that.
+Separately, a second writer had appeared. A Base44 workflow in the Findigs Hub app, **"Daily Churn
+Cache Refresh"** (id `6b00a2b2875125e5d4e78261`, function `refreshChurnCache`, created 2026-11-20,
+daily 06:00 ET, three runs by 11/23), rebuilt `ChurnCache.accounts` from HubSpot each morning. Its
+comment says it "replaces the old external cache writer". On 11/23 at 11:03 UTC it wrote 458 rows
+(256 Churned, 180 Failure to Launch, 22 At Risk) and left the stored KPIs and breakdowns alone. It
+dropped 16 vetted churned accounts ($935K) whose HubSpot status is Live, and it re-added Bluewater
+(the confirmed false positive). It name-matched At Risk, so 10 of 22 At Risk rows had no ACV
+($4.92M fell to $1.08M), and it read ACV from `acv__c`, a frozen Salesforce snapshot. The app was
+created by Asaf Raz, who was deactivated on 11/23. The same build added `churn_date` and
+`account_status` to the stored row schema, and Base44 now returns null for a row that omits them.
+
+**Decisions (Will, 2026-11-23).**
+
+| Topic | Decision |
+|---|---|
+| Who writes ChurnCache | This skill only, with the vetted list and its rules. The Base44 workflow is to be set **inactive** (Findigs Hub, Workflows tab, "Daily Churn Cache Refresh", toggle off). Claude was not permitted to change it through the API. |
+| Foreign writes | `guard.py` (step 0.4) compares the live accounts with the newest archived readback. If they differ, it saves the live copy as `foreign_<MMDD>.json`, rebuilds from the vetted record, restores it at the push, and alerts `#gtm-automation-log`. Each run also reports whether the workflow is still active. |
+| FTL source | HubSpot **Account Status** decides, now that it is populated (180 companies are Failure to Launch, 247 are Churned). A churned row with status Failure to Launch is FTL and is stored with status `Failure to Launch` (the label the page has read since 11/20). A row with status Churned is true churn. Any other status leaves the row as it is and is reported. More than `validation.max_ftl_flips` (10) moves in one run are held and flagged. On 11/23 nothing moved: all 114 page FTL rows already had the FTL status. The 66 FTL-status companies not on the page stay propose-only. |
+| Stale Client Health | No longer a stop. At Risk is carried over unchanged and flagged, and the rest of the refresh runs. |
+| New-churn pool | churned=true **or** Account Status Churned (the checkbox may be retired). Reason = Churn Category, else churn_reason, mapped through `taxonomy.reason_aliases` (the one-to-one renames from `churn_category_migration_plan.md`), so the planned picklist migration doesn't block adds. |
+| Stored row fields | Every row now carries `churn_date` (= effective churn date for churned rows) and `account_status` (HubSpot), so the page works whether it reads the old fields or the new ones. |
+
+**Restore run (2026-11-23, run by hand from Will's machine).** The guard caught the foreign write and
+rebuilt from the 11/18 readback. Two churns passed the existing rule: Harbor Group Management (converted
+from At Risk; HubSpot status Churned and category Tech Stack Consolidation, $1,282,842.20, churned 11/05;
+this is the account from Alex's 11/17 question) and McCaw Property Management ($79,868.40, churned 11/16).
+At Risk was carried over (Client Health stale). True churn 264 to 266, $10.36M to $11.72M ($5.62M YTD);
+At Risk 22 to 21, $3.63M. The first PUT's readback failed on the two new schema fields (null vs
+missing) and nothing else; the build now fills them, and the second PUT read back with PASS. A simulated
+11/30 run against the restored record passed every gate with no changes.
+
 ## First dry run (run date 2026-11-10, against the 11/09 Client Health)
 
 All gates passed. At Risk 22 -> 21 ($5.30M -> $4.92M): MJW Investments Parent and Sentral left
@@ -78,10 +113,11 @@ for field, and recomputing from the live accounts reproduces every total. The ar
 
 ## Open items
 
-- FTL source: Account Status (empty today), the `failure_to_launch` checkbox, or the go-live rule. Will to decide; see 2026-11-18.
-- Harbor Group: fix `churn_reason` in HubSpot to a taxonomy value (or approve by ID) so it converts; find the HubSpot workflow that resets Account Status.
-- Client Health keeps scoring HubSpot-churned accounts (Harbor Group Parent, Weiss Parent, Evernest are Red with `hs_churned_any=true`); decide whether it should drop them.
+- **Set the Base44 "Daily Churn Cache Refresh" workflow inactive** (a Findigs Hub admin, Workflows tab). Until then it overwrites the page every morning at 06:00 ET, and the Monday run restores it and alerts.
+- Client Health routine: list Sigma and Pylon explicitly in its connectors so it stops failing at pre-flight; At Risk only syncs once it runs again.
+- Harbor Group: find the HubSpot workflow that resets Account Status from Churned to Prospect (enrollments 1800424495809 and 1800424481497).
+- Client Health keeps scoring HubSpot-churned accounts (Weiss Parent and Evernest are Red with `hs_churned_any=true`); decide whether it should drop them.
 - Base44 page: the Churn by Segment (YTD) drill-down should filter to Churned with a churn date in the year.
-- The 69 older churned=true companies need a human pass before any are approved.
-- The 22 churned-but-Live accounts need the deal-level evidence standard from the 9/24 review.
+- The 66 Failure-to-Launch-status companies not on the page (propose-only) and the older churned=true candidates need a human pass before any are approved.
+- The 22 churned-but-Live/Onboarding/Pilot accounts (the in-app writer dropped the 16 Live ones) still need the deal-level evidence standard from the 9/24 review.
 - The sub-reason ACV overlap display note (Emma's 10/5 builder prompt) is still not pasted.

@@ -22,7 +22,13 @@
       "churn_by_reason",
       "reason_source_coverage"
     ],
-    "_managed_note": "The refresh owns these fields. Base44 drops unknown field names, so nothing new is ever added; every value is recomputed from the accounts list."
+    "_managed_note": "The refresh owns these fields. Base44 drops unknown field names, so nothing new is ever added; every value is recomputed from the accounts list.",
+    "foreign_writer": {
+      "base44_workflow_id": "6b00a2b2875125e5d4e78261",
+      "base44_workflow_name": "Daily Churn Cache Refresh",
+      "base44_function": "refreshChurnCache",
+      "_note": "Will, 2026-11-23: this skill is the only writer of ChurnCache. The Base44 workflow (created 2026-11-20, daily 06:00 ET) rebuilt the record from HubSpot and was set inactive. guard.py restores the last vetted readback whenever the live accounts differ from it; check_writer in SKILL.md step 0 re-checks the workflow is inactive."
+    }
   },
   "health_source": {
     "entity": "AccountHealthCache",
@@ -36,7 +42,8 @@
       "MM": "MM + ENT",
       "SMB": "SMB"
     },
-    "_note": "At Risk = Client Health composite band Red (composite_score_partial.band). HubSpot company IDs come from the newest Client Health hs_account_match.json; segment from rubric_segment_column via segment_map (matched 9/9 rows on 2026-10-29)."
+    "_note": "At Risk = Client Health composite band Red (composite_score_partial.band). HubSpot company IDs come from the newest Client Health hs_account_match.json; segment from rubric_segment_column via segment_map (matched 9/9 rows on 2026-10-29).",
+    "_stale_note": "Will, 2026-11-23: if Client Health is older than max_age_days or unreadable, the run carries At Risk over unchanged, flags it, and goes ahead (it used to stop)."
   },
   "hubspot": {
     "company_properties": [
@@ -50,7 +57,8 @@
       "findigs_products__c",
       "go_live_date__c",
       "failure_to_launch",
-      "csm_owner"
+      "csm_owner",
+      "churn_category__c"
     ],
     "churn_date_fields": [
       "churn_date",
@@ -70,7 +78,12 @@
       "SMB (<100)": "SMB (<250)"
     },
     "_segment_note": "HubSpot 'SMB (<100)' has always been shown as 'SMB (<250)' on this page (39/39 churned accounts, 2026-11-12).",
-    "product_rule": "DecisionAssist in findigs_products__c -> DA; else Screening -> FS; else Unknown"
+    "product_rule": "DecisionAssist in findigs_products__c -> DA; else Screening -> FS; else Unknown",
+    "churn_statuses": [
+      "Churned"
+    ],
+    "ftl_status": "Failure to Launch",
+    "_status_note": "Will, 2026-11-23: HubSpot Account Status (account_status__c) decides FTL. A churned row whose status is 'Failure to Launch' is FTL; 'Churned' is true churn; any other status leaves is_ftl as it is and is reported. New-churn candidates come from churned=true OR a status in churn_statuses."
   },
   "new_churns": {
     "auto_add_window_days": 30,
@@ -112,7 +125,8 @@
     },
     "statuses": {
       "churned": "Churned",
-      "at_risk": "At Risk (Client Health Red)"
+      "at_risk": "At Risk (Client Health Red)",
+      "ftl": "Failure to Launch"
     },
     "reason_source_coverage_keys": [
       "sheet",
@@ -120,11 +134,20 @@
       "ftl_staleness_rule",
       "none"
     ],
-    "_coverage_note": "reason_source_coverage keeps its 4-key schema; sigma_reason_at_risk accounts count under 'none' (2026-10-29 decision)."
+    "_coverage_note": "reason_source_coverage keeps its 4-key schema; sigma_reason_at_risk accounts count under 'none' (2026-10-29 decision).",
+    "reason_aliases": {
+      "_note": "New Churn Category labels from churn_category_migration_plan.md (2026-11-12) mapped back to the page's taxonomy, so the picklist migration does not block auto-adds. Only the migration plan's one-to-one renames, plus its bulk default. Labels not listed here make a churn a candidate.",
+      "Integration Issues": "Integration",
+      "Leadership/Team-Change": "Leadership Change",
+      "Tech Stack Consolidation / Change": "Tech Stack Consolidation",
+      "Product/Capability": "Dissatisfaction with Product/Service"
+    }
   },
   "validation": {
     "max_at_risk_change": 8,
-    "_note": "Stop if more than this many accounts enter or leave At Risk in one run (likely a Client Health problem)."
+    "_note": "Stop if more than this many accounts enter or leave At Risk in one run (likely a Client Health problem).",
+    "max_ftl_flips": 10,
+    "_ftl_note": "Hold every Account Status FTL move (none applied, flagged) if more than this many churned rows would switch between true churn and FTL in one run."
   },
   "slack": {
     "success_channel_name": "#p-account-health",

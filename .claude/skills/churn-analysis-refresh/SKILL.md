@@ -27,17 +27,24 @@ Run every script from this skill folder as `python3 scripts/<name>.py ... --run-
    `python3 ../client-health-refresh/scripts/ch_secret.py base44 <scratch>/.b44` and send
    `-H "Authorization: Bearer $(cat <scratch>/.b44)"`; delete the file after the final verify.
    Never print a credential. Base44 calls start with `curl`.
-3. **Baseline and Client Health.** `curl` GET
+3. **Baseline, Client Health, workflows.** `curl` GET
    `<api_base>/apps/<app_id>/entities/<entity>/<record_id>` for `config.target` into
-   `baseline_<MMDD>.json`, and for `config.health_source` into `health_<MMDD>.json`.
+   `baseline_<MMDD>.json`, for `config.health_source` into `health_<MMDD>.json`, and
+   `<api_base>/apps/<app_id>/workflows` into `workflows_<MMDD>.json`. Only a failed baseline GET stops
+   the run; if the other two fail, carry on (the scripts flag it).
+4. **Guard.** `python3 scripts/guard.py`. If something other than this skill rewrote the record, it
+   saves the live copy and swaps the baseline for the last vetted readback, so this run restores the
+   page. It also records whether the Base44 workflow in `config.target.foreign_writer` is still active.
+   It never stops the run.
 
 ## 1. Plan
 
-`python3 scripts/sync.py https://api.hubapi.com`. It stops if Client Health is older than
-`config.health_source.max_age_days` (run Client Health first). It writes `plan_<MMDD>.json`:
+`python3 scripts/sync.py https://api.hubapi.com`. If Client Health is older than
+`config.health_source.max_age_days` or unreadable, At Risk is carried over unchanged and flagged; the
+run does not stop. It writes `plan_<MMDD>.json`:
 At Risk removals and additions (with HubSpot ID, ACV and how each was found), new churns that pass
 the auto-add rule or are in `approved_additions`, candidates not added and why, Failure-to-Launch
-candidates (propose-only), and flags.
+candidates (propose-only), FTL updates from HubSpot Account Status, and flags.
 
 ## 2. Build and gate
 
@@ -63,5 +70,8 @@ duplicate HubSpot IDs. Any FAIL: stop and post the failing lines to the failure 
    `slack_success_<MMDD>.txt`.
 2. Commit the report and history folder (no credentials) and push.
 3. Post the Slack text, unchanged, to the success channel.
+4. If `slack_alert_<MMDD>.txt` exists, post it, unchanged, to the failure channel too. It means the run
+   worked around something (a foreign write it restored, an active Base44 writer, stale Client Health,
+   held FTL changes) that a person should fix.
 
 Dry run: stop after step 2 and run `python3 scripts/report.py --dry-run`.

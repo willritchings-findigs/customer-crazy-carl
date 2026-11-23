@@ -104,11 +104,11 @@ An account is never both.
 
 Top-level reasons, in page order: Uncategorized, Dissatisfaction with Product/Service, Merged/Acquired, Tech Stack Consolidation, Leadership Change, Integration, Price, Failure to Launch. Each reason lists the accounts behind it, and most have sub-reasons. An account can carry more than one sub-reason, so sub-reason ACVs can add up to more than their parent reason (known; today in one bucket).
 
-**Reason source** records where each reason came from: HubSpot's churn-reason field, the hand-tagged sheet, Sigma's reason-at-risk column, the old FTL staleness rule, or none. A new auto-added churn takes HubSpot's `churn_reason` if it has one, otherwise *Uncategorized*.
+**Reason source** records where each reason came from: HubSpot's churn-reason field, the hand-tagged sheet, Sigma's reason-at-risk column, the old FTL staleness rule, or none. A new auto-added churn takes HubSpot's Churn Category (`churn_category__c`), else `churn_reason`, when it maps to the taxonomy (new picklist labels map back through `config.taxonomy.reason_aliases`); blank is *Uncategorized*; anything else makes it a candidate.
 
 ### 4.4 Failure to Launch vs true churn
 
-**FTL** (`is_ftl`) means a churned account that never went live (no go-live date in HubSpot). Since 2026-10-29 (Alex's proposal, Will's sign-off), FTL accounts stay on the page and in every breakdown, but the four headline figures (churned ACV total, YTD, this month, and churned account count) are **true churn only**, so the headline reflects realized revenue loss rather than pilots that never launched. The FTL card is computed live on the page from `is_ftl`. This is broader than the *Failure to Launch* **reason**, which only covers accounts whose churn was attributed to never launching.
+**FTL** (`is_ftl`, stored with status *Failure to Launch*) means a churned account that never went live. Since 2026-11-23 HubSpot **Account Status** decides it: *Failure to Launch* is FTL, *Churned* is true churn, any other status leaves the row as it was (reported). More than 10 moves in one run are held and flagged. Since 2026-10-29 (Alex's proposal, Will's sign-off), FTL accounts stay on the page and in every breakdown, but the four headline figures (churned ACV total, YTD, this month, and churned account count) are **true churn only**, so the headline reflects realized revenue loss rather than pilots that never launched. The FTL card is computed live on the page from `is_ftl`. This is broader than the *Failure to Launch* **reason**, which only covers accounts whose churn was attributed to never launching.
 
 ### 4.5 The totals
 
@@ -139,7 +139,7 @@ Product: DecisionAssist if HubSpot lists DecisionAssist, else Full-Screen if it 
 
 ### When
 
-Mondays at 11:00 ET; a run takes about 2–3 minutes. If Client Health hasn't refreshed in the last 2 days, the run stops rather than sync At Risk to a stale Red list.
+Mondays at 11:00 ET; a run takes about 2–3 minutes. If Client Health hasn't refreshed in the last 2 days, At Risk is carried over unchanged (flagged) and the rest of the refresh still runs (since 2026-11-23; it used to stop). This job is the only writer of the Churn record: if anything else rewrites it, the next run restores the last vetted record and alerts `#gtm-automation-log`.
 
 ### What changes from week to week, and what doesn't
 
@@ -156,7 +156,8 @@ A run never changes a rule, a reason, or a churned account. It may fix a script 
 
 | Check | What it proves |
 |---|---|
-| Client Health freshness | The Red list is at most 2 days old. |
+| Client Health freshness | The Red list is at most 2 days old, or At Risk is not synced this run (flagged, not a stop). |
+| Single writer | The live record equals the last vetted readback; if not, the vetted record is restored and the run alerts. |
 | Reproduce first | Recomputing every total from last week's account list reproduces last week's numbers exactly, so the logic and the live record agree before anything changes. |
 | Churn only grows | Churned count = last week's + the planned additions; nothing removed. |
 | At Risk = Red | At Risk ends up equal to Client Health's Red count (less any Red account already churned). |
@@ -168,7 +169,7 @@ A run never changes a rule, a reason, or a churned account. It may fix a script 
 
 ## 6. How a run works, step by step
 
-1. **Pre-flight.** Confirms Slack answers and the keys resolve; reads the Churn and Client Health records from Base44.
+1. **Pre-flight.** Confirms Slack answers and the keys resolve; reads the Churn and Client Health records and the Base44 workflow list; the guard restores the vetted record after any outside rewrite.
 2. **Plan.** Compares At Risk with the Red list; pulls every churned company from HubSpot and the deals of any company it needs an ACV for; applies the auto-add rule; writes the plan with the evidence for every change and every candidate.
 3. **Recompute and gate.** Proves the recompute on last week's list, applies the plan, recomputes every total, runs every gate.
 4. **Publish.** Pushes, reads back and diffs, archives the run, writes the report, posts the summary.
