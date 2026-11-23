@@ -1,0 +1,36 @@
+{
+ "run_date": "2026-11-23",
+ "gates": [
+  "ok   recompute reproduces the live record from its own accounts",
+  "ok   churned 378 -> 380 (+1 added, +1 from At Risk, none removed)",
+  "ok   Account Status FTL updates applied to churned rows: 0 of 0; 114 rows relabelled Churned / Failure to Launch from is_ftl",
+  "ok   churn date updates applied to churned rows: 0 of 0",
+  "ok   At Risk 21 = Client Health Red 22 less 1 already churned",
+  "ok   At Risk moved by 1 (limit 8)",
+  "ok   no duplicate HubSpot company IDs "
+ ],
+ "failed": false,
+ "report_only": {
+  "ftl_count": 114,
+  "ftl_acv_total": 4275428.56,
+  "forward_dated": [
+   "Morgan Property Management"
+  ]
+ },
+ "before": {
+  "accounts_churned_count": 264,
+  "churned_acv_total": 10357706.61,
+  "churned_acv_ytd": 4258464.25,
+  "at_risk_count": 22,
+  "at_risk_acv_best_effort": 4917289.5,
+  "total_acv_tracked": 19550424.67
+ },
+ "after": {
+  "accounts_churned_count": 266,
+  "churned_acv_total": 11720417.21,
+  "churned_acv_ytd": 5621174.85,
+  "at_risk_count": 21,
+  "at_risk_acv_best_effort": 3634447.3,
+  "total_acv_tracked": 19630293.07
+ }
+}

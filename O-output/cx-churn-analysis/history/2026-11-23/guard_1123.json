@@ -1,0 +1,41 @@
+{
+ "run_date": "2026-11-23",
+ "foreign_write": true,
+ "vetted_source": "O-output/cx-churn-analysis/history/2026-11-18/readback_1118.json",
+ "vetted_computed_at": "2026-11-18T19:36:17.000Z",
+ "live_computed_at": "2026-11-23T11:03:33.301Z",
+ "live_updated_date": "2026-11-23T11:03:33.605000",
+ "live_accounts": 458,
+ "vetted_accounts": 400,
+ "live_by_status": {
+  "Churned": 256,
+  "Failure to Launch": 180,
+  "At Risk (Client Health Red)": 22
+ },
+ "vetted_by_status": {
+  "Churned": 378,
+  "At Risk (Client Health Red)": 22
+ },
+ "only_in_live": 83,
+ "only_in_vetted": 25,
+ "dropped_vetted_churned": [
+  "33 Realty Management",
+  "Advantage Property Management GA",
+  "Alliance Property Management, Inc.",
+  "Chase International Property Management",
+  "ERA Old South Properties",
+  "Foundation PM",
+  "HighPoint Real Estate",
+  "MT Properties Group",
+  "Meybohm Bridges DBA Keyway Property Management",
+  "PFT Properties",
+  "Real Property Management - Viking (XPACE, LLC)",
+  "Real Property Management Agile",
+  "Real Property Management Instant Equity",
+  "Real Property Management Rental Solutions",
+  "Renters Warehouse Corporate",
+  "Sound City Realty"
+ ],
+ "writer_workflow_status": "active",
+ "writer_workflow_last_run_at": "2026-11-23T11:03:34.268000Z"
+}

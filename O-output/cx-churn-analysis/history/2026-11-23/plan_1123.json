@@ -1,0 +1,881 @@
+{
+ "run_date": "2026-11-23",
+ "health_computed_at": "2026-11-16T15:05:52Z",
+ "match_file": null,
+ "at_risk_synced": false,
+ "red_count": 22,
+ "ftl_updates": [],
+ "ftl_updates_held": [],
+ "account_status_by_id": {
+  "154132727493": "Onboarding",
+  "323602719472": "Live",
+  "339651827395": "Live",
+  "154555071212": "Live",
+  "154543652550": "Live",
+  "155711276733": "Onboarding",
+  "155980022503": "Live",
+  "158187144952": "Live",
+  "345640538863": "Live",
+  "158404825794": "Live",
+  "338238217958": "Live",
+  "160558666469": "Live",
+  "339990335225": "Live",
+  "164906829513": "Live",
+  "166571666163": "Live",
+  "166660424420": "Live",
+  "166645268173": "Onboarding",
+  "166645194477": "Live",
+  "166553647862": "Live",
+  "166658673379": "Onboarding",
+  "166658707192": "Live",
+  "166664164032": "Onboarding",
+  "166553684666": "Onboarding",
+  "166664436463": "Live",
+  "166684221160": "Onboarding",
+  "166647377655": "Onboarding",
+  "166741432017": "Onboarding",
+  "154201930484": "Churned",
+  "154066268889": "Churned",
+  "154135325377": "Churned",
+  "154306582204": "Churned",
+  "154307748552": "Churned",
+  "154307278552": "Churned",
+  "154294309564": "Churned",
+  "154472360681": "Churned",
+  "155157686001": "Churned",
+  "155180352249": "Churned",
+  "154543809237": "Churned",
+  "154506400478": "Churned",
+  "156658856683": "Churned",
+  "157181304533": "Churned",
+  "158184794860": "Churned",
+  "158253257419": "Churned",
+  "158343525110": "Churned",
+  "158422478572": "Churned",
+  "158403026638": "Churned",
+  "158228779745": "Churned",
+  "158228779746": "Churned",
+  "158245221098": "Churned",
+  "159905266403": "Churned",
+  "159955841744": "Churned",
+  "159964443351": "Churned",
+  "160240807646": "Churned",
+  "160412908229": "Churned",
+  "160675057366": "Churned",
+  "163966617293": "Churned",
+  "164078347977": "Churned",
+  "164080212710": "Churned",
+  "163997578999": "Churned",
+  "163995723462": "Churned",
+  "164087384791": "Churned",
+  "163992148682": "Churned",
+  "164087384794": "Churned",
+  "163995723463": "Churned",
+  "163912020673": "Churned",
+  "163912020674": "Churned",
+  "164080110278": "Churned",
+  "163964968680": "Churned",
+  "163997477621": "Churned",
+  "164080212724": "Churned",
+  "164080110283": "Churned",
+  "163768201919": "Churned",
+  "163912020684": "Churned",
+  "163768201925": "Churned",
+  "164083789534": "Churned",
+  "163993920186": "Churned",
+  "164085590749": "Churned",
+  "164078347998": "Churned",
+  "164085590751": "Churned",
+  "163992150719": "Churned",
+  "163992150720": "Churned",
+  "163768201930": "Churned",
+  "163997482741": "Churned",
+  "164080213702": "Churned",
+  "164078348019": "Churned",
+  "164085593832": "Churned",
+  "164078348022": "Churned",
+  "164085593837": "Churned",
+  "163553051358": "Churned",
+  "164087384809": "Churned",
+  "163997579973": "Churned",
+  "163997483709": "Churned",
+  "163768202998": "Churned",
+  "163553051361": "Churned",
+  "163964969661": "Churned",
+  "163993921259": "Churned",
+  "163912020702": "Churned",
+  "163992150770": "Churned",
+  "163993921260": "Churned",
+  "164080213709": "Churned",
+  "163912020704": "Churned",
+  "163992150772": "Churned",
+  "163997483713": "Churned",
+  "163995723499": "Churned",
+  "164082015980": "Churned",
+  "163990363870": "Churned",
+  "163992150777": "Churned",
+  "164078348990": "Churned",
+  "163993921268": "Churned",
+  "164083789547": "Churned",
+  "163964969664": "Churned",
+  "163997483716": "Churned",
+  "164087384817": "Churned",
+  "164214425296": "Churned",
+  "164291494642": "Churned",
+  "164205494972": "Churned",
+  "164214563550": "Churned",
+  "164420082379": "Churned",
+  "164219115226": "Churned",
+  "335497258711": "Churned",
+  "165847773883": "Churned",
+  "165994615493": "Churned",
+  "165188889331": "Churned",
+  "166027032288": "Churned",
+  "165996427966": "Churned",
+  "166023459544": "Churned",
+  "166609436362": "Churned",
+  "166630045374": "Churned",
+  "166645357255": "Churned",
+  "166660423357": "Churned",
+  "166662217430": "Churned",
+  "166644819704": "Churned",
+  "166645157590": "Churned",
+  "166631860948": "Churned",
+  "166644984546": "Churned",
+  "166630045431": "Churned",
+  "166553600716": "Churned",
+  "166630046394": "Churned",
+  "166644820702": "Churned",
+  "166649055956": "Churned",
+  "166645236419": "Churned",
+  "166571666138": "Churned",
+  "166660423415": "Churned",
+  "166644984563": "Churned",
+  "166658630380": "Churned",
+  "166662218441": "Churned",
+  "166660424399": "Churned",
+  "166571667144": "Churned",
+  "166571667148": "Churned",
+  "166645158647": "Churned",
+  "166630046453": "Churned",
+  "166598770406": "Churned",
+  "166645436143": "Churned",
+  "166644875970": "Churned",
+  "166645358326": "Churned",
+  "166644714176": "Churned",
+  "166663978741": "Churned",
+  "166573438651": "Churned",
+  "166598771396": "Churned",
+  "166645159647": "Churned",
+  "166598771425": "Churned",
+  "166663979741": "Churned",
+  "166656834271": "Churned",
+  "166662221501": "Churned",
+  "166660425459": "Churned",
+  "166644715196": "Churned",
+  "166664041154": "Churned",
+  "166571670222": "Churned",
+  "166663980733": "Churned",
+  "166645437159": "Churned",
+  "166664041173": "Churned",
+  "166647246532": "Churned",
+  "166647246533": "Churned",
+  "166664070849": "Churned",
+  "166644905679": "Churned",
+  "166645460723": "Churned",
+  "166644905687": "Churned",
+  "166645461693": "Churned",
+  "166644905691": "Churned",
+  "166553631432": "Churned",
+  "166645192413": "Churned",
+  "166656864974": "Churned",
+  "166644905707": "Churned",
+  "166658658002": "Churned",
+  "166553631454": "Churned",
+  "166645020351": "Churned",
+  "166658658028": "Churned",
+  "166684186348": "Churned",
+  "166658673342": "Churned",
+  "166598816453": "Churned",
+  "166645287644": "Churned",
+  "166645287648": "Churned",
+  "166571709172": "Churned",
+  "166645119693": "Churned",
+  "166598816498": "Churned",
+  "166645474030": "Churned",
+  "166645409496": "Churned",
+  "166682193629": "Churned",
+  "166645289709": "Churned",
+  "166656448188": "Churned",
+  "166682194647": "Churned",
+  "166658675445": "Churned",
+  "166658707153": "Churned",
+  "166631945967": "Churned",
+  "166664163038": "Churned",
+  "166647375597": "Churned",
+  "166656537302": "Churned",
+  "166682232562": "Churned",
+  "166647375602": "Churned",
+  "166647375607": "Churned",
+  "166645513918": "Churned",
+  "166664348367": "Churned",
+  "166664122054": "Churned",
+  "166664255211": "Churned",
+  "166664255212": "Churned",
+  "166598848212": "Churned",
+  "166682233549": "Churned",
+  "166658708158": "Churned",
+  "166647294677": "Churned",
+  "166647294680": "Churned",
+  "166656538321": "Churned",
+  "166684001990": "Churned",
+  "166647376620": "Churned",
+  "166656538336": "Churned",
+  "166664123072": "Churned",
+  "166664164069": "Churned",
+  "166684091113": "Churned",
+  "166647377606": "Churned",
+  "166664256240": "Churned",
+  "166647295711": "Churned",
+  "166664436448": "Churned",
+  "166664256245": "Churned",
+  "166631948010": "Churned",
+  "166645513971": "Churned",
+  "166664350451": "Churned",
+  "166684221132": "Churned",
+  "166656539351": "Churned",
+  "166684221136": "Churned",
+  "166647377630": "Churned",
+  "166664123125": "Churned",
+  "166647377639": "Churned",
+  "166664124095": "Churned",
+  "166571751126": "Churned",
+  "166684221162": "Churned",
+  "166599254749": "Churned",
+  "166741500662": "Churned",
+  "166763642572": "Churned",
+  "166721131211": "Churned",
+  "166749002444": "Churned",
+  "166767239869": "Churned",
+  "166726820544": "Churned",
+  "166721322692": "Churned",
+  "166761846485": "Churned",
+  "166554109662": "Churned",
+  "166721206001": "Churned",
+  "166721435353": "Churned",
+  "166726917847": "Churned",
+  "166763642575": "Churned",
+  "166554109665": "Churned",
+  "166741427906": "Churned",
+  "166721435355": "Churned",
+  "166721131218": "Churned",
+  "166752662227": "Churned",
+  "166749002449": "Churned",
+  "166754577084": "Churned",
+  "166767239873": "Churned",
+  "166758170336": "Churned",
+  "166761846495": "Churned",
+  "166752666340": "Churned",
+  "166745257670": "Churned",
+  "166599339752": "Churned",
+  "166765445831": "Churned",
+  "185541722816": "Churned",
+  "312692044475": "Churned",
+  "153994164967": "Failure to Launch",
+  "154398918379": "Failure to Launch",
+  "155248476860": "Failure to Launch",
+  "158237910743": "Failure to Launch",
+  "158354252524": "Failure to Launch",
+  "158187402974": "Failure to Launch",
+  "158285991632": "Failure to Launch",
+  "158203709148": "Failure to Launch",
+  "158245221097": "Failure to Launch",
+  "158203709161": "Failure to Launch",
+  "158420683465": "Failure to Launch",
+  "158238046955": "Failure to Launch",
+  "158226768581": "Failure to Launch",
+  "158187872986": "Failure to Launch",
+  "158422536905": "Failure to Launch",
+  "160615682789": "Failure to Launch",
+  "160655564528": "Failure to Launch",
+  "163993919211": "Failure to Launch",
+  "163553051338": "Failure to Launch",
+  "164080212718": "Failure to Launch",
+  "164080212719": "Failure to Launch",
+  "163997477619": "Failure to Launch",
+  "163912020678": "Failure to Launch",
+  "163993919217": "Failure to Launch",
+  "163912020682": "Failure to Launch",
+  "164085590741": "Failure to Launch",
+  "163993919222": "Failure to Launch",
+  "163768201923": "Failure to Launch",
+  "163997478593": "Failure to Launch",
+  "163964968689": "Failure to Launch",
+  "163553051352": "Failure to Launch",
+  "164078347996": "Failure to Launch",
+  "164085590747": "Failure to Launch",
+  "163995723477": "Failure to Launch",
+  "164083789535": "Failure to Launch",
+  "164080110292": "Failure to Launch",
+  "163912020688": "Failure to Launch",
+  "164080213700": "Failure to Launch",
+  "164080213703": "Failure to Launch",
+  "163964968694": "Failure to Launch",
+  "164085593838": "Failure to Launch",
+  "163964969658": "Failure to Launch",
+  "163993921254": "Failure to Launch",
+  "163912020699": "Failure to Launch",
+  "163995723495": "Failure to Launch",
+  "163995723498": "Failure to Launch",
+  "163990363869": "Failure to Launch",
+  "163912020707": "Failure to Launch",
+  "163992150774": "Failure to Launch",
+  "163995723501": "Failure to Launch",
+  "164083789546": "Failure to Launch",
+  "164085593848": "Failure to Launch",
+  "163993921270": "Failure to Launch",
+  "165854983888": "Failure to Launch",
+  "165866128070": "Failure to Launch",
+  "166645357253": "Failure to Launch",
+  "166664038101": "Failure to Launch",
+  "166631860938": "Failure to Launch",
+  "166645071609": "Failure to Launch",
+  "166630045422": "Failure to Launch",
+  "166645236423": "Failure to Launch",
+  "166660424396": "Failure to Launch",
+  "166573437662": "Failure to Launch",
+  "166649058026": "Failure to Launch",
+  "166664070847": "Failure to Launch",
+  "166664070851": "Failure to Launch",
+  "166571692771": "Failure to Launch",
+  "166598802144": "Failure to Launch",
+  "166598802150": "Failure to Launch",
+  "166571693767": "Failure to Launch",
+  "166647246583": "Failure to Launch",
+  "166645389043": "Failure to Launch",
+  "166645472991": "Failure to Launch",
+  "166598816445": "Failure to Launch",
+  "166647437003": "Failure to Launch",
+  "166684187348": "Failure to Launch",
+  "166682192593": "Failure to Launch",
+  "166664132310": "Failure to Launch",
+  "166664132333": "Failure to Launch",
+  "166631910130": "Failure to Launch",
+  "166645289667": "Failure to Launch",
+  "166647440076": "Failure to Launch",
+  "166553649896": "Failure to Launch",
+  "166647375583": "Failure to Launch",
+  "166598847219": "Failure to Launch",
+  "166664348346": "Failure to Launch",
+  "166684001001": "Failure to Launch",
+  "166664164026": "Failure to Launch",
+  "166598848201": "Failure to Launch",
+  "166664435430": "Failure to Launch",
+  "166571748080": "Failure to Launch",
+  "166664348374": "Failure to Launch",
+  "166682233566": "Failure to Launch",
+  "166664123081": "Failure to Launch",
+  "166553683705": "Failure to Launch",
+  "166647377595": "Failure to Launch",
+  "166656636615": "Failure to Launch",
+  "166684221121": "Failure to Launch",
+  "166664436439": "Failure to Launch",
+  "166658708208": "Failure to Launch",
+  "166707678908": "Failure to Launch",
+  "166721211081": "Failure to Launch",
+  "166767243985": "Failure to Launch",
+  "166754580195": "Failure to Launch",
+  "166721135293": "Failure to Launch",
+  "166754580197": "Failure to Launch",
+  "166599339753": "Failure to Launch",
+  "166767243987": "Failure to Launch",
+  "166752666341": "Failure to Launch",
+  "185486192314": "Failure to Launch",
+  "185489786582": "Failure to Launch",
+  "185488001764": "Failure to Launch",
+  "238156815050": "Failure to Launch",
+  "285412812481": "Failure to Launch"
+ },
+ "remove_at_risk": [],
+ "add_at_risk": [],
+ "add_churned": [
+  {
+   "entry": {
+    "name": "McCaw Property Management",
+    "hubspot_company_id": "158245221098",
+    "status": "Churned",
+    "acv": 79868.4,
+    "segment": "SMB",
+    "product_segment": "Unknown",
+    "reason": "Tech Stack Consolidation",
+    "sub_reasons": [],
+    "reason_source": "hubspot_field",
+    "effective_churn_date": "2026-11-16",
+    "csm": "Reese Ryan",
+    "hubspot_url": "https://app-na2.hubspot.com/contacts/243635806/record/0-2/158245221098",
+    "acv_resolved": true,
+    "is_ftl": false
+   },
+   "evidence": {
+    "rule": "churned=true, churn date within 30 days",
+    "churn_date_field": "churn_date",
+    "closed_won_deals": 1,
+    "account_status": "Churned"
+   }
+  }
+ ],
+ "at_risk_to_churned": [
+  {
+   "entry": {
+    "name": "Harbor Group Management",
+    "hubspot_company_id": "335497258711",
+    "status": "Churned",
+    "acv": 1282842.2,
+    "segment": "STRAT",
+    "product_segment": "Unknown",
+    "reason": "Tech Stack Consolidation",
+    "sub_reasons": [],
+    "reason_source": "hubspot_field",
+    "effective_churn_date": "2026-11-05",
+    "csm": "Stephanie Sparks",
+    "hubspot_url": "https://app-na2.hubspot.com/contacts/243635806/record/0-2/335497258711",
+    "acv_resolved": true,
+    "is_ftl": false
+   },
+   "evidence": {
+    "rule": "churned=true, churn date within 30 days",
+    "churn_date_field": "churn_date",
+    "closed_won_deals": 1,
+    "account_status": "Churned"
+   },
+   "replaces_at_risk": "Harbor Group Parent"
+  }
+ ],
+ "candidates": [
+  {
+   "hubspot_company_id": "345640538863",
+   "name": "Evernest",
+   "churn_date": "2025-09-29",
+   "account_status": "Live",
+   "why_not_added": "churn date 2025-09-29 is older than 30 days",
+   "on_page_as": "At Risk (Client Health Red)"
+  },
+  {
+   "hubspot_company_id": "338238217958",
+   "name": "West USA Realty",
+   "churn_date": "2023-04-15",
+   "account_status": "Live",
+   "why_not_added": "churn date 2023-04-15 is older than 30 days",
+   "on_page_as": null
+  },
+  {
+   "hubspot_company_id": "166645268173",
+   "name": "MJW Investments",
+   "churn_date": "2026-11-09",
+   "account_status": "Onboarding",
+   "why_not_added": "status is Onboarding",
+   "on_page_as": null
+  },
+  {
+   "hubspot_company_id": "166658673379",
+   "name": "Real Property Management Three Bridges",
+   "churn_date": "2025-08-14",
+   "account_status": "Onboarding",
+   "why_not_added": "churn date 2025-08-14 is older than 30 days",
+   "on_page_as": null
+  },
+  {
+   "hubspot_company_id": "166553684666",
+   "name": "Weiss Entities",
+   "churn_date": "2026-11-04",
+   "account_status": "Onboarding",
+   "why_not_added": "status is Onboarding",
+   "on_page_as": "At Risk (Client Health Red)"
+  },
+  {
+   "hubspot_company_id": "166598771396",
+   "name": "Bluewater Property Management",
+   "churn_date": "2022-08-18",
+   "account_status": "Churned",
+   "why_not_added": "rejected: Bluewater Property Management: confirmed false positive 2026-09-24 (churn stamp cleared 2026-08-07; HubSpot flag never fixed); churn date 2022-08-18 is older than 30 days",
+   "on_page_as": null
+  },
+  {
+   "hubspot_company_id": "166684186348",
+   "name": "Advanced Property Management",
+   "churn_date": "2023-12-26",
+   "account_status": "Churned",
+   "why_not_added": "churn date 2023-12-26 is older than 30 days",
+   "on_page_as": null
+  },
+  {
+   "hubspot_company_id": "166645513918",
+   "name": "PF Holdings - Landmark Square Apartments",
+   "churn_date": "2023-03-23",
+   "account_status": "Churned",
+   "why_not_added": "churn date 2023-03-23 is older than 30 days",
+   "on_page_as": null
+  }
+ ],
+ "date_updates": [],
+ "ftl_candidates": [
+  {
+   "hubspot_company_id": "153993774785",
+   "name": "Jaqua Realtors",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "154088720120",
+   "name": "United Metro Properties",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "154307748553",
+   "name": "Block Real Estate Services",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "154294967003",
+   "name": "Block Multifamily Group",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "158404824776",
+   "name": "Britt Lake Apartments",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "158404824800",
+   "name": "Carden Springs",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "158226768577",
+   "name": "Hall of Fame apartments",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "158238046961",
+   "name": "Park Creek Apartment",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "158187403996",
+   "name": "Stone Oak Property Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "163992148690",
+   "name": "Hoban Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "163768201918",
+   "name": "Twin Cities Home Rental",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "164080213695",
+   "name": "Intempus Property Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "164080213704",
+   "name": "Carolina Moves",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "163912020696",
+   "name": "Alliance Property Management (owned by PURE)",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "163995723494",
+   "name": "Structure Properties",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "165994911425",
+   "name": "Desert Canyon Properties (Aloe PM)",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166644820676",
+   "name": "Liberty Management Inc",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166656834255",
+   "name": "Silver River Property Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166631863006",
+   "name": "Long & Foster Real Estate",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166631892701",
+   "name": "Scotia Group Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166571693759",
+   "name": "Sullivan Property Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166658658000",
+   "name": "GID Investment Advisors",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166645194467",
+   "name": "Bennett Property Management - acquired by PURE",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166644757196",
+   "name": "Augusta Rental Homes",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166644920022",
+   "name": "The Bergen Grand",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166664085240",
+   "name": "Real Property Management Rental Direction",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166645206716",
+   "name": "Western States Lodging & Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166553648838",
+   "name": "The PEAK Group Inc",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166682192621",
+   "name": "Cross Properties",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166598817496",
+   "name": "Schroeder Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166664347380",
+   "name": "Bertram",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166598847221",
+   "name": "Sunrise Fountains Apartments",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166684219121",
+   "name": "Divvy Homes - acquired by Maymont",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "333146986199",
+   "name": "Dix Road Property Management, LLC",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166658707175",
+   "name": "Hershey Real Estate",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166645513920",
+   "name": "The Klotz Group of Companies",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166658707188",
+   "name": "Peacock Capital",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166631946972",
+   "name": "WestMark Realtors",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166656635616",
+   "name": "CWS Capital Partners LLC",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166656538298",
+   "name": "APG Living",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166682233551",
+   "name": "Airport Center Office Building",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166647376599",
+   "name": "Poplar Homes",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166684220136",
+   "name": "DBC Communities",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166631946992",
+   "name": "Willner Realty & Development Co (WRDC)",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166664122100",
+   "name": "Timber Pointe Apartment Homes",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166684220146",
+   "name": "Best Rental Services",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166658708189",
+   "name": "The Prager Group",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166598848243",
+   "name": "480RealtyPM",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166647377600",
+   "name": "Zendoor",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166658708199",
+   "name": "Boutique Apartments",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166647377620",
+   "name": "Apartments by Tonti",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166664123107",
+   "name": "VRG Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166684221134",
+   "name": "MBC Group",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166645514941",
+   "name": "Oakloop Properties",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166656636657",
+   "name": "La Colonia Mobile Home Park",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166647377656",
+   "name": "New Horizons Housing",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166554034879",
+   "name": "Lautrec",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166721054422",
+   "name": "GEM Management, LLC",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166763642574",
+   "name": "Peak Capital",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166726917848",
+   "name": "Wood Partners LLC",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166721131214",
+   "name": "Ameritex Property Management - acquired by HRG",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166726917852",
+   "name": "Altman Companies (Acquired by RAM Partners)",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166721131219",
+   "name": "Buckingham Property Management",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166752662225",
+   "name": "Pangea Real Estate",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "166728804071",
+   "name": "Echelon Property Group",
+   "churned": ""
+  },
+  {
+   "hubspot_company_id": "178672381645",
+   "name": "Volker",
+   "churned": ""
+  }
+ ],
+ "churned_on_page_but_hubspot_status_live": [
+  "33 Realty Management",
+  "Advantage Property Management GA",
+  "Alliance Property Management, Inc.",
+  "Beyond Property Management",
+  "Chase International Property Management",
+  "Doorby Property Management",
+  "ERA Old South Properties",
+  "Foundation PM",
+  "Groma",
+  "HighPoint Real Estate",
+  "MT Properties Group",
+  "Metropolitan Holdings",
+  "Meybohm Bridges DBA Keyway Property Management",
+  "Ninety Nine Capital dba Alna Management",
+  "Orange Property Management",
+  "PFT Properties",
+  "Real Property Management - Viking (XPACE, LLC)",
+  "Real Property Management Agile",
+  "Real Property Management Instant Equity",
+  "Real Property Management Rental Solutions",
+  "Renters Warehouse Corporate",
+  "Sound City Realty"
+ ],
+ "churned_on_page_but_hubspot_not_churned": [],
+ "flags": [
+  "At Risk NOT synced this run: Client Health record computed 2026-11-16T15:05:52Z (7 days old, limit 2). The 22 At Risk accounts are carried over unchanged; re-run after Client Health refreshes to sync them."
+ ]
+}
