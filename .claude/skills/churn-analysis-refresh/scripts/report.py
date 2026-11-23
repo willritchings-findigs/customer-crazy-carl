@@ -85,9 +85,10 @@ if __name__ == "__main__":
         notes.append(f"restored the vetted account list after an outside rewrite ({guard.get('live_accounts')} accounts, "
                      f"{len(guard.get('dropped_vetted_churned') or [])} vetted churns dropped; likely the Base44 "
                      "Daily Churn Cache Refresh workflow)")
+    ops = []  # operator-only notes: alert channel, not the success post
     ws = guard.get("writer_workflow_status")
     if ws and ws not in ("inactive", "not found (deleted)"):
-        notes.append(f"the Base44 'Daily Churn Cache Refresh' workflow is {ws}; it will overwrite this record at 06:00 ET "
+        ops.append(f"the Base44 'Daily Churn Cache Refresh' workflow is {ws}; it will overwrite this record at 06:00 ET "
                      "until a Base44 admin sets it inactive (Workflows tab of the Findigs Hub app)")
     if not plan.get("at_risk_synced", True):
         notes.append("At Risk carried over unchanged because Client Health is stale")
@@ -95,7 +96,8 @@ if __name__ == "__main__":
         notes.append(f"{len(fh)} FTL status changes held (over the limit)")
     if notes:
         slack += " Note: " + "; ".join(notes) + "."
-        alert = (f":warning: Churn Analysis refresh {run.iso} succeeded with workarounds: " + "; ".join(notes)
+    if notes or ops:
+        alert = (f":warning: Churn Analysis refresh {run.iso} succeeded with workarounds: " + "; ".join(notes + ops)
                  + f". Details: O-output/cx-churn-analysis/{run.iso}_weekly-refresh-report.md")
         open(run.path(f"slack_alert_{run.mmdd}.txt"), "w", encoding="utf-8").write(alert + "\n")
         print("alert:", alert)
